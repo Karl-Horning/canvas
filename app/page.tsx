@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
     return (
-        <main className="max-w-240 p-8">
+        <article className="max-w-240 p-8">
             <h1 className="text-3xl font-bold mb-6">Canvas</h1>
 
             <h2 className="text-xl font-semibold mt-6 mb-2">
@@ -220,6 +220,6 @@ export default function Home() {
                     </Link>
                 </li>
             </ul>
-        </main>
+        </article>
     );
 }
