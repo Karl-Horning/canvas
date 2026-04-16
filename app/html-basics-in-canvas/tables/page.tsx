@@ -61,36 +61,38 @@ export default function page() {
                 applying a consistent table style.
             </p>
 
-            <table className="ic-Table mb-4">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Email address</th>
-                        <th>Section</th>
-                        <th>Role</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Alex Rivers</td>
-                        <td>alex.rivers@example.com</td>
-                        <td>Advanced students</td>
-                        <td>Student</td>
-                    </tr>
-                    <tr>
-                        <td>Jamie Patel</td>
-                        <td>jamie.patel@example.com</td>
-                        <td>Advanced students</td>
-                        <td>Student</td>
-                    </tr>
-                    <tr>
-                        <td>Morgan Lee</td>
-                        <td>morgan.lee@example.com</td>
-                        <td>Advanced students</td>
-                        <td>Student</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div className="overflow-x-auto mb-4">
+                <table className="ic-Table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email address</th>
+                            <th>Section</th>
+                            <th>Role</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alex Rivers</td>
+                            <td>alex.rivers@example.com</td>
+                            <td>Advanced students</td>
+                            <td>Student</td>
+                        </tr>
+                        <tr>
+                            <td>Jamie Patel</td>
+                            <td>jamie.patel@example.com</td>
+                            <td>Advanced students</td>
+                            <td>Student</td>
+                        </tr>
+                        <tr>
+                            <td>Morgan Lee</td>
+                            <td>morgan.lee@example.com</td>
+                            <td>Advanced students</td>
+                            <td>Student</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
             <CodeBlock>{`<table class="ic-Table">
   <thead>
@@ -132,36 +134,38 @@ export default function page() {
                 still available for course content.
             </p>
 
-            <table className="ic-Table ic-Table--hover-row ic-Table--striped mb-4">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Email address</th>
-                        <th>Section</th>
-                        <th>Role</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Alex Rivers</td>
-                        <td>alex.rivers@example.com</td>
-                        <td>Advanced students</td>
-                        <td>Student</td>
-                    </tr>
-                    <tr>
-                        <td>Jamie Patel</td>
-                        <td>jamie.patel@example.com</td>
-                        <td>Advanced students</td>
-                        <td>Student</td>
-                    </tr>
-                    <tr>
-                        <td>Morgan Lee</td>
-                        <td>morgan.lee@example.com</td>
-                        <td>Advanced students</td>
-                        <td>Student</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div className="overflow-x-auto mb-4">
+                <table className="ic-Table ic-Table--hover-row ic-Table--striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email address</th>
+                            <th>Section</th>
+                            <th>Role</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alex Rivers</td>
+                            <td>alex.rivers@example.com</td>
+                            <td>Advanced students</td>
+                            <td>Student</td>
+                        </tr>
+                        <tr>
+                            <td>Jamie Patel</td>
+                            <td>jamie.patel@example.com</td>
+                            <td>Advanced students</td>
+                            <td>Student</td>
+                        </tr>
+                        <tr>
+                            <td>Morgan Lee</td>
+                            <td>morgan.lee@example.com</td>
+                            <td>Advanced students</td>
+                            <td>Student</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
             <CodeBlock>{`<table class="ic-Table ic-Table--hover-row ic-Table--striped">
   <thead>
@@ -201,32 +205,34 @@ export default function page() {
                 This can be useful when displaying tables with many rows.
             </p>
 
-            <table className="ic-Table ic-Table--striped ic-Table--hover-row ic-Table--condensed mb-4">
-                <thead>
-                    <tr>
-                        <th>Column A</th>
-                        <th>Column B</th>
-                        <th>Column C</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Row 1, A</td>
-                        <td>Row 1, B</td>
-                        <td>Row 1, C</td>
-                    </tr>
-                    <tr>
-                        <td>Row 2, A</td>
-                        <td>Row 2, B</td>
-                        <td>Row 2, C</td>
-                    </tr>
-                    <tr>
-                        <td>Row 3, A</td>
-                        <td>Row 3, B</td>
-                        <td>Row 3, C</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div className="overflow-x-auto mb-4">
+                <table className="ic-Table ic-Table--striped ic-Table--hover-row ic-Table--condensed">
+                    <thead>
+                        <tr>
+                            <th>Column A</th>
+                            <th>Column B</th>
+                            <th>Column C</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Row 1, A</td>
+                            <td>Row 1, B</td>
+                            <td>Row 1, C</td>
+                        </tr>
+                        <tr>
+                            <td>Row 2, A</td>
+                            <td>Row 2, B</td>
+                            <td>Row 2, C</td>
+                        </tr>
+                        <tr>
+                            <td>Row 3, A</td>
+                            <td>Row 3, B</td>
+                            <td>Row 3, C</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
             <CodeBlock>{`<table class="ic-Table ic-Table--striped ic-Table--hover-row ic-Table--condensed">
   <thead>
@@ -276,81 +282,83 @@ export default function page() {
                 </li>
             </ul>
 
-            <table className="border-collapse w-full mb-4 text-[0.95rem]">
-                <caption className="text-left font-bold py-2">
-                    Example: Module weekly activities
-                </caption>
+            <div className="overflow-x-auto mb-4">
+                <table className="border-collapse w-full text-[0.95rem]">
+                    <caption className="text-left font-bold py-2">
+                        Example: Module weekly activities
+                    </caption>
 
-                <thead>
-                    <tr className="bg-[#f0f0f0]">
-                        <th
-                            scope="col"
-                            className="border border-[#ccc] p-2 text-left"
-                        >
-                            Week
-                        </th>
-                        <th
-                            scope="col"
-                            className="border border-[#ccc] p-2 text-left"
-                        >
-                            Topic
-                        </th>
-                        <th
-                            scope="col"
-                            className="border border-[#ccc] p-2 text-left"
-                        >
-                            Activities
-                        </th>
-                    </tr>
-                </thead>
+                    <thead>
+                        <tr className="bg-[#f0f0f0]">
+                            <th
+                                scope="col"
+                                className="border border-[#ccc] p-2 text-left"
+                            >
+                                Week
+                            </th>
+                            <th
+                                scope="col"
+                                className="border border-[#ccc] p-2 text-left"
+                            >
+                                Topic
+                            </th>
+                            <th
+                                scope="col"
+                                className="border border-[#ccc] p-2 text-left"
+                            >
+                                Activities
+                            </th>
+                        </tr>
+                    </thead>
 
-                <tbody>
-                    <tr className="bg-white">
-                        <th
-                            scope="row"
-                            className="border border-[#ccc] p-2 text-left"
-                        >
-                            1
-                        </th>
-                        <td className="border border-[#ccc] p-2">
-                            Introduction to the module
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            Welcome video, syllabus quiz
-                        </td>
-                    </tr>
+                    <tbody>
+                        <tr className="bg-white">
+                            <th
+                                scope="row"
+                                className="border border-[#ccc] p-2 text-left"
+                            >
+                                1
+                            </th>
+                            <td className="border border-[#ccc] p-2">
+                                Introduction to the module
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                Welcome video, syllabus quiz
+                            </td>
+                        </tr>
 
-                    <tr className="bg-[#f9f9f9]">
-                        <th
-                            scope="row"
-                            className="border border-[#ccc] p-2 text-left"
-                        >
-                            2
-                        </th>
-                        <td className="border border-[#ccc] p-2">
-                            Research basics
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            Reading task, short discussion post
-                        </td>
-                    </tr>
+                        <tr className="bg-[#f9f9f9]">
+                            <th
+                                scope="row"
+                                className="border border-[#ccc] p-2 text-left"
+                            >
+                                2
+                            </th>
+                            <td className="border border-[#ccc] p-2">
+                                Research basics
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                Reading task, short discussion post
+                            </td>
+                        </tr>
 
-                    <tr className="bg-white">
-                        <th
-                            scope="row"
-                            className="border border-[#ccc] p-2 text-left"
-                        >
-                            3
-                        </th>
-                        <td className="border border-[#ccc] p-2">
-                            Literature searching
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            Video demonstration, practice worksheet
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                        <tr className="bg-white">
+                            <th
+                                scope="row"
+                                className="border border-[#ccc] p-2 text-left"
+                            >
+                                3
+                            </th>
+                            <td className="border border-[#ccc] p-2">
+                                Literature searching
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                Video demonstration, practice worksheet
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
             <CodeBlock>{`<table style="border-collapse: collapse; width: 100%; margin-bottom: 1rem; font-size: 0.95rem;">
   <caption style="text-align: left; font-weight: bold; padding: 0.5rem 0;">
@@ -396,8 +404,8 @@ export default function page() {
             <ul>
                 <li>
                     Always include a clear heading or{" "}
-                    <code>&lt;caption&gt;</code>{" "}
-                    explaining what the table shows.
+                    <code>&lt;caption&gt;</code> explaining what the table
+                    shows.
                 </li>
                 <li>
                     Use <code>&lt;th&gt;</code> for header cells, and add{" "}

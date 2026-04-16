@@ -86,164 +86,190 @@ export default function page() {
 
             <h2>Colours suitable for body text on white (AAA / AA)</h2>
 
-            <table className="border-collapse w-full mb-4 text-[0.95rem]">
-                <thead>
-                    <tr className="bg-[#f0f0f0]">
-                        <th
-                            scope="col"
-                            className="border border-[#ccc] p-2 text-left"
-                        >
-                            Colour
-                        </th>
-                        <th
-                            scope="col"
-                            className="border border-[#ccc] p-2 text-left"
-                        >
-                            Hex
-                        </th>
-                        <th
-                            scope="col"
-                            className="border border-[#ccc] p-2 text-left"
-                        >
-                            Example
-                        </th>
-                        <th
-                            scope="col"
-                            className="border border-[#ccc] p-2 text-left"
-                        >
-                            Rating (on white)
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">Black</td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#000000</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#000000] text-white">
-                                Text
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">AAA / AA</td>
-                    </tr>
-                    <tr className="bg-[#f9f9f9]">
-                        <td className="border border-[#ccc] p-2">Dark</td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#232333</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#232333] text-white">
-                                Text
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">AAA / AA</td>
-                    </tr>
-                    <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">Navy</td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#000080</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#000080] text-white">
-                                Text
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">AAA / AA</td>
-                    </tr>
-                    <tr className="bg-[#f9f9f9]">
-                        <td className="border border-[#ccc] p-2">
-                            Imperial Blue
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#0000cd</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#0000cd] text-white">
-                                Text
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">AAA / AA</td>
-                    </tr>
-                    <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">
-                            Saddle Brown
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#8b4513</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#8b4513] text-white">
-                                Text
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">AAA / AA</td>
-                    </tr>
-                    <tr className="bg-[#f9f9f9]">
-                        <td className="border border-[#ccc] p-2">Teal</td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#008080</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#008080] text-white">
-                                Text
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">AAA / AA</td>
-                    </tr>
-                    <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">
-                            Medium Violet Red
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#c71585</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#c71585] text-white">
-                                Text
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">AAA / AA</td>
-                    </tr>
-                    <tr className="bg-[#f9f9f9]">
-                        <td className="border border-[#ccc] p-2">Indigo</td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#4b0082</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#4b0082] text-white">
-                                Text
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">AAA / AA</td>
-                    </tr>
-                    <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">Crimson</td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#dc143c</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#dc143c] text-white">
-                                Text
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">AAA / AA</td>
-                    </tr>
-                    <tr className="bg-[#f9f9f9]">
-                        <td className="border border-[#ccc] p-2">Dark Green</td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#006400</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#006400] text-white">
-                                Text
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">AAA / AA</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div className="overflow-x-auto mb-4">
+                <table className="border-collapse w-full text-[0.95rem]">
+                    <thead>
+                        <tr className="bg-[#f0f0f0]">
+                            <th
+                                scope="col"
+                                className="border border-[#ccc] p-2 text-left"
+                            >
+                                Colour
+                            </th>
+                            <th
+                                scope="col"
+                                className="border border-[#ccc] p-2 text-left"
+                            >
+                                Hex
+                            </th>
+                            <th
+                                scope="col"
+                                className="border border-[#ccc] p-2 text-left"
+                            >
+                                Example
+                            </th>
+                            <th
+                                scope="col"
+                                className="border border-[#ccc] p-2 text-left"
+                            >
+                                Rating (on white)
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr className="bg-white">
+                            <td className="border border-[#ccc] p-2">Black</td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#000000</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#000000] text-white">
+                                    Text
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                AAA / AA
+                            </td>
+                        </tr>
+                        <tr className="bg-[#f9f9f9]">
+                            <td className="border border-[#ccc] p-2">Dark</td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#232333</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#232333] text-white">
+                                    Text
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                AAA / AA
+                            </td>
+                        </tr>
+                        <tr className="bg-white">
+                            <td className="border border-[#ccc] p-2">Navy</td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#000080</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#000080] text-white">
+                                    Text
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                AAA / AA
+                            </td>
+                        </tr>
+                        <tr className="bg-[#f9f9f9]">
+                            <td className="border border-[#ccc] p-2">
+                                Imperial Blue
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#0000cd</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#0000cd] text-white">
+                                    Text
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                AAA / AA
+                            </td>
+                        </tr>
+                        <tr className="bg-white">
+                            <td className="border border-[#ccc] p-2">
+                                Saddle Brown
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#8b4513</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#8b4513] text-white">
+                                    Text
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                AAA / AA
+                            </td>
+                        </tr>
+                        <tr className="bg-[#f9f9f9]">
+                            <td className="border border-[#ccc] p-2">Teal</td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#008080</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#008080] text-white">
+                                    Text
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                AAA / AA
+                            </td>
+                        </tr>
+                        <tr className="bg-white">
+                            <td className="border border-[#ccc] p-2">
+                                Medium Violet Red
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#c71585</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#c71585] text-white">
+                                    Text
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                AAA / AA
+                            </td>
+                        </tr>
+                        <tr className="bg-[#f9f9f9]">
+                            <td className="border border-[#ccc] p-2">Indigo</td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#4b0082</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#4b0082] text-white">
+                                    Text
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                AAA / AA
+                            </td>
+                        </tr>
+                        <tr className="bg-white">
+                            <td className="border border-[#ccc] p-2">
+                                Crimson
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#dc143c</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#dc143c] text-white">
+                                    Text
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                AAA / AA
+                            </td>
+                        </tr>
+                        <tr className="bg-[#f9f9f9]">
+                            <td className="border border-[#ccc] p-2">
+                                Dark Green
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#006400</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#006400] text-white">
+                                    Text
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                AAA / AA
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
             <h2>Colours for large text, headings or UI (AA on white)</h2>
 
@@ -254,88 +280,94 @@ export default function page() {
                 paragraphs.
             </p>
 
-            <table className="border-collapse w-full mb-4 text-[0.95rem]">
-                <thead>
-                    <tr className="bg-[#f0f0f0]">
-                        <th
-                            scope="col"
-                            className="border border-[#ccc] p-2 text-left"
-                        >
-                            Colour
-                        </th>
-                        <th
-                            scope="col"
-                            className="border border-[#ccc] p-2 text-left"
-                        >
-                            Hex
-                        </th>
-                        <th
-                            scope="col"
-                            className="border border-[#ccc] p-2 text-left"
-                        >
-                            Example
-                        </th>
-                        <th
-                            scope="col"
-                            className="border border-[#ccc] p-2 text-left"
-                        >
-                            Rating (on white)
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">Slate Grey</td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#708090</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#708090] text-white">
-                                Text
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">AA</td>
-                    </tr>
-                    <tr className="bg-[#f9f9f9]">
-                        <td className="border border-[#ccc] p-2">
-                            Medium Blue Slate
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#7b68ee</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#7b68ee] text-white">
-                                Text
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">AA</td>
-                    </tr>
-                    <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">Red</td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#ff0000</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#ff0000] text-white">
-                                Text
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">AA</td>
-                    </tr>
-                    <tr className="bg-[#f9f9f9]">
-                        <td className="border border-[#ccc] p-2">Orange Red</td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#ff4500</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#ff4500] text-white">
-                                Text
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">AA</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div className="overflow-x-auto mb-4">
+                <table className="border-collapse w-full text-[0.95rem]">
+                    <thead>
+                        <tr className="bg-[#f0f0f0]">
+                            <th
+                                scope="col"
+                                className="border border-[#ccc] p-2 text-left"
+                            >
+                                Colour
+                            </th>
+                            <th
+                                scope="col"
+                                className="border border-[#ccc] p-2 text-left"
+                            >
+                                Hex
+                            </th>
+                            <th
+                                scope="col"
+                                className="border border-[#ccc] p-2 text-left"
+                            >
+                                Example
+                            </th>
+                            <th
+                                scope="col"
+                                className="border border-[#ccc] p-2 text-left"
+                            >
+                                Rating (on white)
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr className="bg-white">
+                            <td className="border border-[#ccc] p-2">
+                                Slate Grey
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#708090</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#708090] text-white">
+                                    Text
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">AA</td>
+                        </tr>
+                        <tr className="bg-[#f9f9f9]">
+                            <td className="border border-[#ccc] p-2">
+                                Medium Blue Slate
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#7b68ee</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#7b68ee] text-white">
+                                    Text
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">AA</td>
+                        </tr>
+                        <tr className="bg-white">
+                            <td className="border border-[#ccc] p-2">Red</td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#ff0000</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#ff0000] text-white">
+                                    Text
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">AA</td>
+                        </tr>
+                        <tr className="bg-[#f9f9f9]">
+                            <td className="border border-[#ccc] p-2">
+                                Orange Red
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#ff4500</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#ff4500] text-white">
+                                    Text
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">AA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
             <h2>Accent and background colours (not for text on white)</h2>
 
@@ -346,259 +378,271 @@ export default function page() {
                 provided the contrast with any overlaid text is checked.
             </p>
 
-            <table className="border-collapse w-full mb-4 text-[0.95rem]">
-                <thead>
-                    <tr className="bg-[#f0f0f0]">
-                        <th
-                            scope="col"
-                            className="border border-[#ccc] p-2 text-left"
-                        >
-                            Colour
-                        </th>
-                        <th
-                            scope="col"
-                            className="border border-[#ccc] p-2 text-left"
-                        >
-                            Hex
-                        </th>
-                        <th
-                            scope="col"
-                            className="border border-[#ccc] p-2 text-left"
-                        >
-                            Example
-                        </th>
-                        <th
-                            scope="col"
-                            className="border border-[#ccc] p-2 text-left"
-                        >
-                            Notes
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">White</td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#ffffff</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 border border-[#ccc] bg-white text-black">
-                                Background
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            Use as a background, not as text on white.
-                        </td>
-                    </tr>
-                    <tr className="bg-[#f9f9f9]">
-                        <td className="border border-[#ccc] p-2">
-                            White Smoke
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#f5f5f5</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 border border-[#ccc] bg-[#f5f5f5] text-black">
-                                Background
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            Use as a light background panel.
-                        </td>
-                    </tr>
-                    <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">
-                            Deep Sky Blue
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#00bfff</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#00bfff] text-black">
-                                Swatch
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            Accent or background; not recommended for text on
-                            white.
-                        </td>
-                    </tr>
-                    <tr className="bg-[#f9f9f9]">
-                        <td className="border border-[#ccc] p-2">Yellow</td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#ffff00</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#ffff00] text-black">
-                                Swatch
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            Highlight or accent only; very low contrast as text.
-                        </td>
-                    </tr>
-                    <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">Khaki</td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#f0e68c</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#f0e68c] text-black">
-                                Swatch
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            Use as a soft background or accent.
-                        </td>
-                    </tr>
-                    <tr className="bg-[#f9f9f9]">
-                        <td className="border border-[#ccc] p-2">Turquoise</td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#40e0d0</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#40e0d0] text-black">
-                                Swatch
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            Accent colour; check contrast if used behind text.
-                        </td>
-                    </tr>
-                    <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">
-                            Pale Turquoise
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#afeeee</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#afeeee] text-black">
-                                Swatch
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            Light background only; avoid for text.
-                        </td>
-                    </tr>
-                    <tr className="bg-[#f9f9f9]">
-                        <td className="border border-[#ccc] p-2">Violet</td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#ee82ee</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#ee82ee] text-black">
-                                Swatch
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            Accent colour; not for body text on white.
-                        </td>
-                    </tr>
-                    <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">Light Pink</td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#ffb6c1</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#ffb6c1] text-black">
-                                Swatch
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            Light background only.
-                        </td>
-                    </tr>
-                    <tr className="bg-[#f9f9f9]">
-                        <td className="border border-[#ccc] p-2">Lavender</td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#e6e6fa</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#e6e6fa] text-black">
-                                Swatch
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            Subtle background panel or highlight.
-                        </td>
-                    </tr>
-                    <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">Salmon</td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#fa8072</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#fa8072] text-black">
-                                Swatch
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            Accent; avoid as text on white.
-                        </td>
-                    </tr>
-                    <tr className="bg-[#f9f9f9]">
-                        <td className="border border-[#ccc] p-2">
-                            Dark Orange
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#ff8c00</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#ff8c00] text-black">
-                                Swatch
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            Accent colour; check contrast when used.
-                        </td>
-                    </tr>
-                    <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">Orange</td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#ffa500</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#ffa500] text-black">
-                                Swatch
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            Accent only; not recommended for text on white.
-                        </td>
-                    </tr>
-                    <tr className="bg-[#f9f9f9]">
-                        <td className="border border-[#ccc] p-2">
-                            Spring Green
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#00ff7f</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#00ff7f] text-black">
-                                Swatch
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            Highlight or accent; check contrast carefully.
-                        </td>
-                    </tr>
-                    <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">Pale Green</td>
-                        <td className="border border-[#ccc] p-2">
-                            <code>#98fb98</code>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            <span className="inline-block px-2 py-1 bg-[#98fb98] text-black">
-                                Swatch
-                            </span>
-                        </td>
-                        <td className="border border-[#ccc] p-2">
-                            Soft background only; avoid for text on white.
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div className="overflow-x-auto mb-4">
+                <table className="border-collapse w-full text-[0.95rem]">
+                    <thead>
+                        <tr className="bg-[#f0f0f0]">
+                            <th
+                                scope="col"
+                                className="border border-[#ccc] p-2 text-left"
+                            >
+                                Colour
+                            </th>
+                            <th
+                                scope="col"
+                                className="border border-[#ccc] p-2 text-left"
+                            >
+                                Hex
+                            </th>
+                            <th
+                                scope="col"
+                                className="border border-[#ccc] p-2 text-left"
+                            >
+                                Example
+                            </th>
+                            <th
+                                scope="col"
+                                className="border border-[#ccc] p-2 text-left"
+                            >
+                                Notes
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr className="bg-white">
+                            <td className="border border-[#ccc] p-2">White</td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#ffffff</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 border border-[#ccc] bg-white text-black">
+                                    Background
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                Use as a background, not as text on white.
+                            </td>
+                        </tr>
+                        <tr className="bg-[#f9f9f9]">
+                            <td className="border border-[#ccc] p-2">
+                                White Smoke
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#f5f5f5</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 border border-[#ccc] bg-[#f5f5f5] text-black">
+                                    Background
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                Use as a light background panel.
+                            </td>
+                        </tr>
+                        <tr className="bg-white">
+                            <td className="border border-[#ccc] p-2">
+                                Deep Sky Blue
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#00bfff</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#00bfff] text-black">
+                                    Swatch
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                Accent or background; not recommended for text
+                                on white.
+                            </td>
+                        </tr>
+                        <tr className="bg-[#f9f9f9]">
+                            <td className="border border-[#ccc] p-2">Yellow</td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#ffff00</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#ffff00] text-black">
+                                    Swatch
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                Highlight or accent only; very low contrast as
+                                text.
+                            </td>
+                        </tr>
+                        <tr className="bg-white">
+                            <td className="border border-[#ccc] p-2">Khaki</td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#f0e68c</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#f0e68c] text-black">
+                                    Swatch
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                Use as a soft background or accent.
+                            </td>
+                        </tr>
+                        <tr className="bg-[#f9f9f9]">
+                            <td className="border border-[#ccc] p-2">
+                                Turquoise
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#40e0d0</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#40e0d0] text-black">
+                                    Swatch
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                Accent colour; check contrast if used behind
+                                text.
+                            </td>
+                        </tr>
+                        <tr className="bg-white">
+                            <td className="border border-[#ccc] p-2">
+                                Pale Turquoise
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#afeeee</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#afeeee] text-black">
+                                    Swatch
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                Light background only; avoid for text.
+                            </td>
+                        </tr>
+                        <tr className="bg-[#f9f9f9]">
+                            <td className="border border-[#ccc] p-2">Violet</td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#ee82ee</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#ee82ee] text-black">
+                                    Swatch
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                Accent colour; not for body text on white.
+                            </td>
+                        </tr>
+                        <tr className="bg-white">
+                            <td className="border border-[#ccc] p-2">
+                                Light Pink
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#ffb6c1</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#ffb6c1] text-black">
+                                    Swatch
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                Light background only.
+                            </td>
+                        </tr>
+                        <tr className="bg-[#f9f9f9]">
+                            <td className="border border-[#ccc] p-2">
+                                Lavender
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#e6e6fa</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#e6e6fa] text-black">
+                                    Swatch
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                Subtle background panel or highlight.
+                            </td>
+                        </tr>
+                        <tr className="bg-white">
+                            <td className="border border-[#ccc] p-2">Salmon</td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#fa8072</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#fa8072] text-black">
+                                    Swatch
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                Accent; avoid as text on white.
+                            </td>
+                        </tr>
+                        <tr className="bg-[#f9f9f9]">
+                            <td className="border border-[#ccc] p-2">
+                                Dark Orange
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#ff8c00</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#ff8c00] text-black">
+                                    Swatch
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                Accent colour; check contrast when used.
+                            </td>
+                        </tr>
+                        <tr className="bg-white">
+                            <td className="border border-[#ccc] p-2">Orange</td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#ffa500</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#ffa500] text-black">
+                                    Swatch
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                Accent only; not recommended for text on white.
+                            </td>
+                        </tr>
+                        <tr className="bg-[#f9f9f9]">
+                            <td className="border border-[#ccc] p-2">
+                                Spring Green
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#00ff7f</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#00ff7f] text-black">
+                                    Swatch
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                Highlight or accent; check contrast carefully.
+                            </td>
+                        </tr>
+                        <tr className="bg-white">
+                            <td className="border border-[#ccc] p-2">
+                                Pale Green
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <code>#98fb98</code>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                <span className="inline-block px-2 py-1 bg-[#98fb98] text-black">
+                                    Swatch
+                                </span>
+                            </td>
+                            <td className="border border-[#ccc] p-2">
+                                Soft background only; avoid for text on white.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
             <h2>Using these colours in Canvas content</h2>
 
