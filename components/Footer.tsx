@@ -20,7 +20,7 @@ export default function Footer() {
             : `${START_YEAR}`;
 
     return (
-        <footer className="border-t border-[#e5e7eb] px-6 py-4 text-sm text-[#4b5563]">
+        <footer className="border-t border-[#e5e7eb] px-6 py-4 text-sm text-[#4b5563] dark:border-[#374151] dark:text-[#9ca3af]">
             <p className="m-0 text-center">
                 A reference guide for styling content in Canvas LMS.
             </p>

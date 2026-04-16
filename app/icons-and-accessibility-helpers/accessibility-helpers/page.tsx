@@ -72,7 +72,7 @@ export default function page() {
                 <li>Adding extra labelling for context.</li>
             </ul>
 
-            <div className="mb-4 bg-[#f9f9f9] p-3">
+            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <p>
                     <span className="screenreader-only">
                         This sentence is only read by screen readers.

@@ -45,7 +45,7 @@ export default function page() {
                 bullet points.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] p-3">
+            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <ul>
                     <li>First unordered item</li>
                     <li>Second unordered item</li>
@@ -66,7 +66,7 @@ export default function page() {
                 meaningful, such as steps in a process or ranked items.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] p-3">
+            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <ol>
                     <li>List item one</li>
                     <li>List item two</li>
@@ -90,7 +90,7 @@ export default function page() {
                 <code>style="list-style: none; padding: 0; margin: 0;"</code>.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] p-3">
+            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <ul className="unstyled">
                     <li>Unstyled list item one</li>
                     <li>Unstyled list item two</li>
@@ -112,7 +112,7 @@ export default function page() {
                 glossaries, key-value pairs, or structured explanation lists.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] p-3">
+            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <dl>
                     <dt>Placeholder term</dt>
                     <dd>A short description relating to the term.</dd>
@@ -160,7 +160,7 @@ export default function page() {
                 .
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] p-3">
+            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <dl className="dl-horizontal">
                     <dt>Placeholder term</dt>
                     <dd>A short description relating to the term.</dd>

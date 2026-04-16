@@ -78,7 +78,7 @@ export default function page() {
                 controls.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] p-3">
+            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <audio controls>
                     <source src="YOUR_AUDIO_FILE_URL" type="audio/mpeg" />
                     Your browser does not support the audio element.
@@ -99,7 +99,7 @@ export default function page() {
                 video.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] p-3">
+            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <iframe
                     title="Imperial College London — YouTube video"
                     width="560"
@@ -127,7 +127,7 @@ export default function page() {
                 shows an embedded map for Imperial College London.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] p-3">
+            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <iframe
                     title="Imperial College London — Google Maps"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.7844898572976!2d-0.17745378699239867!3d51.498822171693895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760567da220a01%3A0x31911b371c692e86!2sImperial%20College%20London!5e0!3m2!1sen!2suk!4v1763656310877!5m2!1sen!2suk"
@@ -159,7 +159,7 @@ export default function page() {
                 attribute sets a placeholder image.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] p-3">
+            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <video
                     controls
                     width="620"

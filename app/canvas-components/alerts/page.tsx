@@ -93,7 +93,7 @@ export default function page() {
 
             <div
                 role="status"
-                className="mb-4 p-4 rounded-md bg-[#e8f2ff] [border-left:6px_solid_#4c9dcd]"
+                className="mb-4 p-4 rounded-md bg-[#e8f2ff] dark:bg-[#1e3a5f] [border-left:6px_solid_#4c9dcd]"
             >
                 <strong>Info:</strong> This is an inline-styled information
                 alert.
@@ -101,14 +101,14 @@ export default function page() {
 
             <div
                 role="status"
-                className="mb-4 p-4 rounded-md bg-[#e8f8ea] [border-left:6px_solid_#2d8a3b]"
+                className="mb-4 p-4 rounded-md bg-[#e8f8ea] dark:bg-[#14532d] [border-left:6px_solid_#2d8a3b]"
             >
                 <strong>Success:</strong> Action completed successfully.
             </div>
 
             <div
                 role="alert"
-                className="mb-4 p-4 rounded-md bg-[#fdeaea] [border-left:6px_solid_#cb2d6f]"
+                className="mb-4 p-4 rounded-md bg-[#fdeaea] dark:bg-[#3b0a0a] [border-left:6px_solid_#cb2d6f]"
             >
                 <strong>Error:</strong> Something has gone wrong and needs
                 attention.

@@ -51,7 +51,7 @@ export default function page() {
                 box.
             </p>
 
-            <div className="mb-4 bg-[#f5f5f5] px-5 py-4 border border-[#dddddd] rounded-lg">
+            <div className="mb-4 bg-[#f5f5f5] dark:bg-[#1f2937] px-5 py-4 border border-[#dddddd] rounded-lg">
                 <h3 className="mt-0 mb-2">
                     By the end of this activity you should be able to:
                 </h3>
@@ -87,7 +87,7 @@ export default function page() {
                 layout on narrow screens.
             </p>
 
-            <div className="mb-4 border border-[#dddddd] rounded-lg px-5 py-4 bg-white">
+            <div className="mb-4 border border-[#dddddd] rounded-lg px-5 py-4 bg-white dark:bg-[#1f2937]">
                 <h3 className="mt-0 mb-3">Assessment summary</h3>
                 <div className="grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-x-6 gap-y-3">
                     <div>
@@ -172,7 +172,7 @@ export default function page() {
                 </p>
                 <a
                     href="#"
-                    className="inline-block px-[1.1rem] py-[0.6rem] bg-white text-[#0000cd] no-underline rounded-full font-semibold text-[0.95rem]"
+                    className="inline-block px-[1.1rem] py-[0.6rem] bg-white dark:bg-[#1f2937] text-[#0000cd] no-underline rounded-full font-semibold text-[0.95rem]"
                 >
                     Go to the next activity
                 </a>
@@ -216,7 +216,7 @@ export default function page() {
             </p>
 
             <div className="mb-4 grid grid-cols-[minmax(0,2fr)_minmax(0,1fr)] gap-4">
-                <div className="px-5 py-4 border border-[#dddddd] rounded-lg bg-white">
+                <div className="px-5 py-4 border border-[#dddddd] rounded-lg bg-white dark:bg-[#1f2937]">
                     <h3 className="mt-0 mb-3">Main explanation</h3>
                     <p className="mt-0">
                         Use this area for the primary content, such as a worked
@@ -227,7 +227,7 @@ export default function page() {
                         up dense information.
                     </p>
                 </div>
-                <aside className="px-5 py-4 border border-[#dddddd] rounded-lg bg-[#f5f5f5]">
+                <aside className="px-5 py-4 border border-[#dddddd] rounded-lg bg-[#f5f5f5] dark:bg-[#1f2937]">
                     <h3 className="mt-0 mb-3">Notes and tips</h3>
                     <ul className="m-0 pl-5">
                         <li>Highlight common mistakes or misconceptions.</li>
@@ -280,7 +280,7 @@ export default function page() {
             </p>
 
             <div className="mb-4 grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-4">
-                <div className="border border-[#dddddd] rounded-lg px-4 py-[0.9rem] bg-white">
+                <div className="border border-[#dddddd] rounded-lg px-4 py-[0.9rem] bg-white dark:bg-[#1f2937]">
                     <h3 className="mt-0 mb-2 text-[1.05rem]">Core reading</h3>
                     <p className="mt-0 mb-2">
                         Introduction to the main concepts covered in this week.
@@ -290,7 +290,7 @@ export default function page() {
                     </a>
                 </div>
 
-                <div className="border border-[#dddddd] rounded-lg px-4 py-[0.9rem] bg-white">
+                <div className="border border-[#dddddd] rounded-lg px-4 py-[0.9rem] bg-white dark:bg-[#1f2937]">
                     <h3 className="mt-0 mb-2 text-[1.05rem]">Worked example</h3>
                     <p className="mt-0 mb-2">
                         Step-by-step example showing how to apply the method.
@@ -300,7 +300,7 @@ export default function page() {
                     </a>
                 </div>
 
-                <div className="border border-[#dddddd] rounded-lg px-4 py-[0.9rem] bg-white">
+                <div className="border border-[#dddddd] rounded-lg px-4 py-[0.9rem] bg-white dark:bg-[#1f2937]">
                     <h3 className="mt-0 mb-2 text-[1.05rem]">
                         Optional extension
                     </h3>
@@ -366,7 +366,7 @@ export default function page() {
             </p>
 
             <div className="mb-4 grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-4">
-                <div className="border border-[#dddddd] rounded-lg bg-white overflow-hidden">
+                <div className="border border-[#dddddd] rounded-lg bg-white dark:bg-[#1f2937] overflow-hidden">
                     <img
                         src="https://placehold.co/400x225?text=Core+reading"
                         alt="Illustrative placeholder image for core reading"
@@ -386,7 +386,7 @@ export default function page() {
                     </div>
                 </div>
 
-                <div className="border border-[#dddddd] rounded-lg bg-white overflow-hidden">
+                <div className="border border-[#dddddd] rounded-lg bg-white dark:bg-[#1f2937] overflow-hidden">
                     <img
                         src="https://placehold.co/400x225?text=Worked+example"
                         alt="Illustrative placeholder image for a worked example"
@@ -406,7 +406,7 @@ export default function page() {
                     </div>
                 </div>
 
-                <div className="border border-[#dddddd] rounded-lg bg-white overflow-hidden">
+                <div className="border border-[#dddddd] rounded-lg bg-white dark:bg-[#1f2937] overflow-hidden">
                     <img
                         src="https://placehold.co/400x225?text=Optional+extension"
                         alt="Illustrative placeholder image for an optional extension resource"

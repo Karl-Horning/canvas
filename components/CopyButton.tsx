@@ -34,7 +34,7 @@ export default function CopyButton({ text }: CopyButtonProps) {
             type="button"
             onClick={handleCopy}
             aria-label="Copy code to clipboard"
-            className="absolute top-2 right-2 px-2 py-1 text-xs bg-white border border-[#ddd] rounded cursor-pointer hover:bg-[#f0f0f0]"
+            className="absolute top-2 right-2 px-2 py-1 text-xs bg-white border border-[#ddd] rounded cursor-pointer hover:bg-[#f0f0f0] dark:bg-[#374151] dark:border-[#4b5563] dark:text-[#e5e7eb] dark:hover:bg-[#4b5563]"
         >
             {copied ? "Copied!" : "Copy"}
         </button>

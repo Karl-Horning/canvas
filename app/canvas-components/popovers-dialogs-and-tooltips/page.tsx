@@ -64,7 +64,7 @@ export default function page() {
                 alone.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] p-3">
+            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <div
                     id="example-popover"
                     className="enhanceable_content dialog"
@@ -113,7 +113,7 @@ export default function page() {
 
             <div
                 role="note"
-                className="mb-4 p-4 rounded-md [border-left:6px_solid_#4c9dcd] bg-[#e8f2ff]"
+                className="mb-4 p-4 rounded-md [border-left:6px_solid_#4c9dcd] bg-[#e8f2ff] dark:bg-[#1e3a5f]"
             >
                 <strong>Additional information:</strong>
                 <p className="mt-2">
@@ -152,7 +152,7 @@ export default function page() {
                 in course content.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] p-3">
+            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <p>
                     Hover or focus the link below to see the tooltip (behaviour
                     may vary between browsers and devices):
@@ -193,11 +193,11 @@ export default function page() {
                 it is visually distinct but always readable.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] p-3">
+            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <p>
                     You can
                     <a href="#"> download the template</a>
-                    <span className="inline-block ml-1 px-[0.4rem] py-[0.1rem] rounded-full bg-[#eef4ff] text-[#111322] text-[0.8rem]">
+                    <span className="inline-block ml-1 px-[0.4rem] py-[0.1rem] rounded-full bg-[#eef4ff] dark:bg-[#1e3a5f] text-[#111322] dark:text-[#e5e7eb] text-[0.8rem]">
                         This opens in a new tab and may take a few seconds to
                         load.
                     </span>

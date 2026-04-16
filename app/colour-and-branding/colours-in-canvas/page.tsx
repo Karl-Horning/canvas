@@ -89,7 +89,7 @@ export default function page() {
             <div className="overflow-x-auto mb-4">
                 <table className="border-collapse w-full text-[0.95rem]">
                     <thead>
-                        <tr className="bg-[#f0f0f0]">
+                        <tr className="bg-[#f0f0f0] dark:bg-[#374151]">
                             <th
                                 scope="col"
                                 className="border border-[#ccc] p-2 text-left"
@@ -117,13 +117,13 @@ export default function page() {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr className="bg-white">
+                        <tr className="bg-white dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">Black</td>
                             <td className="border border-[#ccc] p-2">
                                 <code>#000000</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#000000] text-white">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#000000] text-white">
                                     Text
                                 </span>
                             </td>
@@ -131,13 +131,13 @@ export default function page() {
                                 AAA / AA
                             </td>
                         </tr>
-                        <tr className="bg-[#f9f9f9]">
+                        <tr className="bg-[#f9f9f9] dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">Dark</td>
                             <td className="border border-[#ccc] p-2">
                                 <code>#232333</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#232333] text-white">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#232333] text-white">
                                     Text
                                 </span>
                             </td>
@@ -145,13 +145,13 @@ export default function page() {
                                 AAA / AA
                             </td>
                         </tr>
-                        <tr className="bg-white">
+                        <tr className="bg-white dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">Navy</td>
                             <td className="border border-[#ccc] p-2">
                                 <code>#000080</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#000080] text-white">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#000080] text-white">
                                     Text
                                 </span>
                             </td>
@@ -159,7 +159,7 @@ export default function page() {
                                 AAA / AA
                             </td>
                         </tr>
-                        <tr className="bg-[#f9f9f9]">
+                        <tr className="bg-[#f9f9f9] dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
                                 Imperial Blue
                             </td>
@@ -167,7 +167,7 @@ export default function page() {
                                 <code>#0000cd</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#0000cd] text-white">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#0000cd] text-white">
                                     Text
                                 </span>
                             </td>
@@ -175,7 +175,7 @@ export default function page() {
                                 AAA / AA
                             </td>
                         </tr>
-                        <tr className="bg-white">
+                        <tr className="bg-white dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
                                 Saddle Brown
                             </td>
@@ -183,7 +183,7 @@ export default function page() {
                                 <code>#8b4513</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#8b4513] text-white">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#8b4513] text-white">
                                     Text
                                 </span>
                             </td>
@@ -191,13 +191,13 @@ export default function page() {
                                 AAA / AA
                             </td>
                         </tr>
-                        <tr className="bg-[#f9f9f9]">
+                        <tr className="bg-[#f9f9f9] dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">Teal</td>
                             <td className="border border-[#ccc] p-2">
                                 <code>#008080</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#008080] text-white">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#008080] text-white">
                                     Text
                                 </span>
                             </td>
@@ -205,7 +205,7 @@ export default function page() {
                                 AAA / AA
                             </td>
                         </tr>
-                        <tr className="bg-white">
+                        <tr className="bg-white dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
                                 Medium Violet Red
                             </td>
@@ -213,7 +213,7 @@ export default function page() {
                                 <code>#c71585</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#c71585] text-white">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#c71585] text-white">
                                     Text
                                 </span>
                             </td>
@@ -221,13 +221,13 @@ export default function page() {
                                 AAA / AA
                             </td>
                         </tr>
-                        <tr className="bg-[#f9f9f9]">
+                        <tr className="bg-[#f9f9f9] dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">Indigo</td>
                             <td className="border border-[#ccc] p-2">
                                 <code>#4b0082</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#4b0082] text-white">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#4b0082] text-white">
                                     Text
                                 </span>
                             </td>
@@ -235,7 +235,7 @@ export default function page() {
                                 AAA / AA
                             </td>
                         </tr>
-                        <tr className="bg-white">
+                        <tr className="bg-white dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
                                 Crimson
                             </td>
@@ -243,7 +243,7 @@ export default function page() {
                                 <code>#dc143c</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#dc143c] text-white">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#dc143c] text-white">
                                     Text
                                 </span>
                             </td>
@@ -251,7 +251,7 @@ export default function page() {
                                 AAA / AA
                             </td>
                         </tr>
-                        <tr className="bg-[#f9f9f9]">
+                        <tr className="bg-[#f9f9f9] dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
                                 Dark Green
                             </td>
@@ -259,7 +259,7 @@ export default function page() {
                                 <code>#006400</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#006400] text-white">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#006400] text-white">
                                     Text
                                 </span>
                             </td>
@@ -283,7 +283,7 @@ export default function page() {
             <div className="overflow-x-auto mb-4">
                 <table className="border-collapse w-full text-[0.95rem]">
                     <thead>
-                        <tr className="bg-[#f0f0f0]">
+                        <tr className="bg-[#f0f0f0] dark:bg-[#374151]">
                             <th
                                 scope="col"
                                 className="border border-[#ccc] p-2 text-left"
@@ -311,7 +311,7 @@ export default function page() {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr className="bg-white">
+                        <tr className="bg-white dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
                                 Slate Grey
                             </td>
@@ -319,13 +319,13 @@ export default function page() {
                                 <code>#708090</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#708090] text-white">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#708090] text-white">
                                     Text
                                 </span>
                             </td>
                             <td className="border border-[#ccc] p-2">AA</td>
                         </tr>
-                        <tr className="bg-[#f9f9f9]">
+                        <tr className="bg-[#f9f9f9] dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
                                 Medium Blue Slate
                             </td>
@@ -333,25 +333,25 @@ export default function page() {
                                 <code>#7b68ee</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#7b68ee] text-white">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#7b68ee] text-white">
                                     Text
                                 </span>
                             </td>
                             <td className="border border-[#ccc] p-2">AA</td>
                         </tr>
-                        <tr className="bg-white">
+                        <tr className="bg-white dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">Red</td>
                             <td className="border border-[#ccc] p-2">
                                 <code>#ff0000</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#ff0000] text-white">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#ff0000] text-white">
                                     Text
                                 </span>
                             </td>
                             <td className="border border-[#ccc] p-2">AA</td>
                         </tr>
-                        <tr className="bg-[#f9f9f9]">
+                        <tr className="bg-[#f9f9f9] dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
                                 Orange Red
                             </td>
@@ -359,7 +359,7 @@ export default function page() {
                                 <code>#ff4500</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#ff4500] text-white">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#ff4500] text-white">
                                     Text
                                 </span>
                             </td>
@@ -381,7 +381,7 @@ export default function page() {
             <div className="overflow-x-auto mb-4">
                 <table className="border-collapse w-full text-[0.95rem]">
                     <thead>
-                        <tr className="bg-[#f0f0f0]">
+                        <tr className="bg-[#f0f0f0] dark:bg-[#374151]">
                             <th
                                 scope="col"
                                 className="border border-[#ccc] p-2 text-left"
@@ -409,13 +409,13 @@ export default function page() {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr className="bg-white">
+                        <tr className="bg-white dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">White</td>
                             <td className="border border-[#ccc] p-2">
                                 <code>#ffffff</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 border border-[#ccc] bg-white text-black">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 border border-[#ccc] bg-white dark:bg-[#1f2937] text-black">
                                     Background
                                 </span>
                             </td>
@@ -423,7 +423,7 @@ export default function page() {
                                 Use as a background, not as text on white.
                             </td>
                         </tr>
-                        <tr className="bg-[#f9f9f9]">
+                        <tr className="bg-[#f9f9f9] dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
                                 White Smoke
                             </td>
@@ -431,7 +431,7 @@ export default function page() {
                                 <code>#f5f5f5</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 border border-[#ccc] bg-[#f5f5f5] text-black">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 border border-[#ccc] bg-[#f5f5f5] dark:bg-[#1f2937] text-black">
                                     Background
                                 </span>
                             </td>
@@ -439,7 +439,7 @@ export default function page() {
                                 Use as a light background panel.
                             </td>
                         </tr>
-                        <tr className="bg-white">
+                        <tr className="bg-white dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
                                 Deep Sky Blue
                             </td>
@@ -447,7 +447,7 @@ export default function page() {
                                 <code>#00bfff</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#00bfff] text-black">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#00bfff] text-black">
                                     Swatch
                                 </span>
                             </td>
@@ -456,13 +456,13 @@ export default function page() {
                                 on white.
                             </td>
                         </tr>
-                        <tr className="bg-[#f9f9f9]">
+                        <tr className="bg-[#f9f9f9] dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">Yellow</td>
                             <td className="border border-[#ccc] p-2">
                                 <code>#ffff00</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#ffff00] text-black">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#ffff00] text-black">
                                     Swatch
                                 </span>
                             </td>
@@ -471,13 +471,13 @@ export default function page() {
                                 text.
                             </td>
                         </tr>
-                        <tr className="bg-white">
+                        <tr className="bg-white dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">Khaki</td>
                             <td className="border border-[#ccc] p-2">
                                 <code>#f0e68c</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#f0e68c] text-black">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#f0e68c] text-black">
                                     Swatch
                                 </span>
                             </td>
@@ -485,7 +485,7 @@ export default function page() {
                                 Use as a soft background or accent.
                             </td>
                         </tr>
-                        <tr className="bg-[#f9f9f9]">
+                        <tr className="bg-[#f9f9f9] dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
                                 Turquoise
                             </td>
@@ -493,7 +493,7 @@ export default function page() {
                                 <code>#40e0d0</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#40e0d0] text-black">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#40e0d0] text-black">
                                     Swatch
                                 </span>
                             </td>
@@ -502,7 +502,7 @@ export default function page() {
                                 text.
                             </td>
                         </tr>
-                        <tr className="bg-white">
+                        <tr className="bg-white dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
                                 Pale Turquoise
                             </td>
@@ -510,7 +510,7 @@ export default function page() {
                                 <code>#afeeee</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#afeeee] text-black">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#afeeee] text-black">
                                     Swatch
                                 </span>
                             </td>
@@ -518,13 +518,13 @@ export default function page() {
                                 Light background only; avoid for text.
                             </td>
                         </tr>
-                        <tr className="bg-[#f9f9f9]">
+                        <tr className="bg-[#f9f9f9] dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">Violet</td>
                             <td className="border border-[#ccc] p-2">
                                 <code>#ee82ee</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#ee82ee] text-black">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#ee82ee] text-black">
                                     Swatch
                                 </span>
                             </td>
@@ -532,7 +532,7 @@ export default function page() {
                                 Accent colour; not for body text on white.
                             </td>
                         </tr>
-                        <tr className="bg-white">
+                        <tr className="bg-white dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
                                 Light Pink
                             </td>
@@ -540,7 +540,7 @@ export default function page() {
                                 <code>#ffb6c1</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#ffb6c1] text-black">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#ffb6c1] text-black">
                                     Swatch
                                 </span>
                             </td>
@@ -548,7 +548,7 @@ export default function page() {
                                 Light background only.
                             </td>
                         </tr>
-                        <tr className="bg-[#f9f9f9]">
+                        <tr className="bg-[#f9f9f9] dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
                                 Lavender
                             </td>
@@ -556,7 +556,7 @@ export default function page() {
                                 <code>#e6e6fa</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#e6e6fa] text-black">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#e6e6fa] text-black">
                                     Swatch
                                 </span>
                             </td>
@@ -564,13 +564,13 @@ export default function page() {
                                 Subtle background panel or highlight.
                             </td>
                         </tr>
-                        <tr className="bg-white">
+                        <tr className="bg-white dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">Salmon</td>
                             <td className="border border-[#ccc] p-2">
                                 <code>#fa8072</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#fa8072] text-black">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#fa8072] text-black">
                                     Swatch
                                 </span>
                             </td>
@@ -578,7 +578,7 @@ export default function page() {
                                 Accent; avoid as text on white.
                             </td>
                         </tr>
-                        <tr className="bg-[#f9f9f9]">
+                        <tr className="bg-[#f9f9f9] dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
                                 Dark Orange
                             </td>
@@ -586,7 +586,7 @@ export default function page() {
                                 <code>#ff8c00</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#ff8c00] text-black">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#ff8c00] text-black">
                                     Swatch
                                 </span>
                             </td>
@@ -594,13 +594,13 @@ export default function page() {
                                 Accent colour; check contrast when used.
                             </td>
                         </tr>
-                        <tr className="bg-white">
+                        <tr className="bg-white dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">Orange</td>
                             <td className="border border-[#ccc] p-2">
                                 <code>#ffa500</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#ffa500] text-black">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#ffa500] text-black">
                                     Swatch
                                 </span>
                             </td>
@@ -608,7 +608,7 @@ export default function page() {
                                 Accent only; not recommended for text on white.
                             </td>
                         </tr>
-                        <tr className="bg-[#f9f9f9]">
+                        <tr className="bg-[#f9f9f9] dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
                                 Spring Green
                             </td>
@@ -616,7 +616,7 @@ export default function page() {
                                 <code>#00ff7f</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#00ff7f] text-black">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#00ff7f] text-black">
                                     Swatch
                                 </span>
                             </td>
@@ -624,7 +624,7 @@ export default function page() {
                                 Highlight or accent; check contrast carefully.
                             </td>
                         </tr>
-                        <tr className="bg-white">
+                        <tr className="bg-white dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
                                 Pale Green
                             </td>
@@ -632,7 +632,7 @@ export default function page() {
                                 <code>#98fb98</code>
                             </td>
                             <td className="border border-[#ccc] p-2">
-                                <span className="inline-block px-2 py-1 bg-[#98fb98] text-black">
+                                <span aria-hidden="true" className="inline-block px-2 py-1 bg-[#98fb98] text-black">
                                     Swatch
                                 </span>
                             </td>
