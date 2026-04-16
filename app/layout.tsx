@@ -30,8 +30,8 @@ export default function RootLayout({
         >
             <body className="min-h-full flex">
                 <Sidebar />
-                <main className="m-auto">
-                    <div className="flex-1 min-w-0">{children}</div>
+                <main className="flex-1 min-w-0 p-6">
+                    <div className="max-w-3xl mx-auto">{children}</div>
                 </main>
             </body>
         </html>
