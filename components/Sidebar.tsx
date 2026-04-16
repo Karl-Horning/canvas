@@ -134,7 +134,7 @@ export default function Sidebar() {
                 aria-label="Open navigation menu"
                 aria-expanded={isOpen ? "true" : "false"}
                 aria-controls="site-sidebar"
-                className="fixed top-3 left-3 z-50 flex flex-col justify-center items-center w-9 h-9 gap-1 rounded border border-[#e5e7eb] bg-white shadow-sm md:hidden"
+                className={`fixed top-3 left-3 z-50 flex flex-col justify-center items-center w-9 h-9 gap-1 rounded border border-[#e5e7eb] bg-white shadow-sm md:hidden${isOpen ? " hidden" : ""}`}
                 onClick={() => setIsOpen(true)}
             >
                 <span className="block w-5 h-0.5 bg-[#374151]" />
