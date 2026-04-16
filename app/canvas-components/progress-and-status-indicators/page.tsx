@@ -8,7 +8,7 @@ export default function page() {
                 used to show progress, status, or key information. These
                 patterns rely on older Canvas JavaScript enhancements (for
                 example, <code>pill</code> and <code>ui-progressbar</code>)
-                rather than modern HTML elements such as
+                rather than modern HTML elements such as{" "}
                 <code>&lt;progress&gt;</code>. They are supported within course
                 content but may not behave consistently across all browsers.
             </p>
@@ -124,7 +124,7 @@ export default function page() {
             <h2>Progress bar (Canvas legacy pattern)</h2>
 
             <p>
-                Canvas includes a legacy progress bar built using
+                Canvas includes a legacy progress bar built using{" "}
                 <code>&lt;div&gt;</code> elements and enhanced by JavaScript.
                 This displays a visual bar but does not behave like the semantic
                 HTML <code>&lt;progress&gt;</code> element.
@@ -169,7 +169,7 @@ export default function page() {
             </pre>
 
             <p>
-                If you change the progress value, remember to update
+                If you change the progress value, remember to update{" "}
                 <code>aria-valuenow</code>, <code>aria-valuetext</code>, and the
                 inner bar's <code>width</code> so they all stay in sync (for
                 example, 75% would use <code>aria-valuenow="75"</code>,
@@ -262,7 +262,7 @@ export default function page() {
                     value (for example, "40% complete — 4 of 10 sections read").
                 </li>
                 <li>
-                    Inline-only patterns that use
+                    Inline-only patterns that use{" "}
                     <code>role="progressbar"</code>, <code>aria-valuenow</code>,
                     and visible text are often more robust and predictable than
                     JavaScript-enhanced widgets.

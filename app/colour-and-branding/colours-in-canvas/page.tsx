@@ -6,7 +6,7 @@ export default function page() {
             <p>
                 The colour information and accessibility ratings used on this
                 page are based on Imperial College London's official brand
-                guidance. The source material, including the
+                guidance. The source material, including the{" "}
                 <em>Colour Accessibility Chart — Digital only</em>, is available
                 at{" "}
                 <a

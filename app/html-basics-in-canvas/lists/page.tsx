@@ -5,7 +5,7 @@ export default function page() {
 
             <p>
                 Canvas supports standard HTML list elements, along with optional
-                legacy utility classes such as <code>unstyled</code> and
+                legacy utility classes such as <code>unstyled</code> and{" "}
                 <code>dl-horizontal</code>. The structures shown here follow
                 modern semantic HTML, and the examples demonstrate how each list
                 type appears in this Canvas instance. All examples below can be
@@ -88,7 +88,7 @@ export default function page() {
                 The <code>unstyled</code> class removes bullets or numbering
                 from a list. This utility comes from Canvas' legacy CSS and may
                 behave differently if the institutional theme is updated.
-                Alternatively, you can use inline styles such as
+                Alternatively, you can use inline styles such as{" "}
                 <code>style="list-style: none; padding: 0; margin: 0;"</code>.
             </p>
 
@@ -111,7 +111,7 @@ export default function page() {
             <h2>Definition lists</h2>
 
             <p>
-                Definition lists use <code>&lt;dt&gt;</code> for the term and
+                Definition lists use <code>&lt;dt&gt;</code> for the term and{" "}
                 <code>&lt;dd&gt;</code> for its description. They are useful for
                 glossaries, key-value pairs, or structured explanation lists.
             </p>

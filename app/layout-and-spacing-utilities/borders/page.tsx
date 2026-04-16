@@ -44,7 +44,7 @@ export default function page() {
 
             <p>
                 This example shows a content box with padding and a border on
-                all sides using <code>content-box pad-box-mini</code> and
+                all sides using <code>content-box pad-box-mini</code> and{" "}
                 <code>border border-trbl</code>. These classes are part of
                 Canvas' legacy CSS.
             </p>
@@ -52,7 +52,7 @@ export default function page() {
             <div className="content-box pad-box-mini border border-trbl mb-4 bg-[#f9f9f9]">
                 <h5>Example content box</h5>
                 <p>
-                    This box uses
+                    This box uses{" "}
                     <code>content-box pad-box-mini border border-trbl</code> for
                     spacing and a border on all sides.
                 </p>
@@ -89,7 +89,7 @@ export default function page() {
             <h2>Partial borders (Canvas legacy classes)</h2>
 
             <p>
-                Combine <code>border</code> with directional classes such as
+                Combine <code>border</code> with directional classes such as{" "}
                 <code>border-rbl</code> or <code>border-b</code> to apply
                 borders to specific sides only. These helpers are part of the
                 older Canvas style guide.
@@ -137,7 +137,7 @@ export default function page() {
             <p>
                 Use <code>border-round</code> and related classes to round all
                 corners or specific corners of a bordered element. Under the
-                hood, these classes use the standard
+                hood, these classes use the standard{" "}
                 <code>border-radius</code> property.
             </p>
 
@@ -183,7 +183,7 @@ export default function page() {
             </p>
 
             <p>
-                The examples below use only inline styles for
+                The examples below use only inline styles for{" "}
                 <code>border</code>, <code>border-radius</code>, and spacing.
             </p>
 
@@ -191,7 +191,7 @@ export default function page() {
 
             <div className="border border-[#d0d7de] p-3 mb-4 bg-white">
                 <p className="m-0">
-                    This box uses <code>border: 1px solid #d0d7de;</code> and
+                    This box uses <code>border: 1px solid #d0d7de;</code> and{" "}
                     <code>padding: 0.75rem;</code> applied directly as inline
                     styles.
                 </p>
@@ -218,7 +218,7 @@ export default function page() {
             <div className="[border-left:4px_solid_#0000cd] px-4 py-3 mb-4 bg-[#f5f7ff]">
                 <strong>Callout heading</strong>
                 <p className="mt-2 mb-0">
-                    This callout uses
+                    This callout uses{" "}
                     <code>border-left: 4px solid #0000cd;</code> to emphasise
                     the block without adding borders on all sides.
                 </p>
@@ -239,7 +239,7 @@ export default function page() {
             <h3>Rounded panels and pill-style badges</h3>
 
             <p>
-                Rounded corners are controlled with
+                Rounded corners are controlled with{" "}
                 <code>border-radius</code>. Larger values create softer corners,
                 and very large values can create pill-shaped elements.
             </p>

@@ -5,8 +5,8 @@ export default function page() {
 
             <p>
                 Canvas includes a legacy icon set that can be used inside course
-                content by applying icon classes such as
-                <code>icon-info</code>, <code>icon-warning</code>, or
+                content by applying icon classes such as{" "}
+                <code>icon-info</code>, <code>icon-warning</code>, or{" "}
                 <code>icon-check</code> to an inline element. These icons are
                 provided by Canvas' own CSS and icon font; you do not need to
                 upload images to use them.
@@ -57,7 +57,7 @@ export default function page() {
 
             <p>
                 To display a Canvas icon, add the appropriate icon class to an
-                inline element such as <code>&lt;i&gt;</code> or
+                inline element such as <code>&lt;i&gt;</code> or{" "}
                 <code>&lt;span&gt;</code>. In Canvas' own styles, icons are
                 usually treated as decorative and hidden from screen readers
                 using <code>aria-hidden="true"</code>.
@@ -110,7 +110,7 @@ export default function page() {
                 If an icon is conveying information that is not already present
                 in the visible text, you should include an accessible label. In
                 most cases it is simpler to include this label as visible text
-                next to the icon. If you must rely on the icon alone, use
+                next to the icon. If you must rely on the icon alone, use{" "}
                 <code>role="img"</code> with an <code>aria-label</code>:
             </p>
 

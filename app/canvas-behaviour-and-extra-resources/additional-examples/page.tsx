@@ -243,7 +243,7 @@ export default function page() {
 
             <p>
                 A responsive grid of cards for key resources or readings. The
-                layout uses CSS Grid with <code>auto-fit</code> and
+                layout uses CSS Grid with <code>auto-fit</code> and{" "}
                 <code>minmax()</code> to adapt to different screen sizes.
             </p>
 

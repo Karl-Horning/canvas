@@ -4,8 +4,8 @@ export default function page() {
             <h1>Embeds and External Content</h1>
 
             <p>
-                Canvas supports embedded media using elements such as
-                <code>&lt;iframe&gt;</code>, <code>&lt;audio&gt;</code>, and
+                Canvas supports embedded media using elements such as{" "}
+                <code>&lt;iframe&gt;</code>, <code>&lt;audio&gt;</code>, and{" "}
                 <code>&lt;video&gt;</code>. These patterns use standard HTML and
                 are suitable for including maps, videos, audio clips, and other
                 external resources within pages created in the Rich Content
@@ -71,7 +71,7 @@ export default function page() {
 
             <p>
                 Use the HTML5 <code>&lt;audio&gt;</code> element with one or
-                more <code>&lt;source&gt;</code> children. The
+                more <code>&lt;source&gt;</code> children. The{" "}
                 <code>controls</code> attribute displays built-in browser audio
                 controls.
             </p>
@@ -94,7 +94,7 @@ export default function page() {
             <h2>YouTube video embed</h2>
 
             <p>
-                YouTube videos can be embedded using an
+                YouTube videos can be embedded using an{" "}
                 <code>&lt;iframe&gt;</code> with the <code>/embed/</code> URL
                 format. The example below uses a public Imperial College London
                 video.
@@ -156,8 +156,8 @@ export default function page() {
             <p>
                 Use the HTML5 <code>&lt;video&gt;</code> element to embed a
                 video file directly. The <code>controls</code> attribute
-                displays native playback controls and the
-                <code>poster</code> attribute sets a placeholder image.
+                displays native playback controls and the <code>poster</code>{" "}
+                attribute sets a placeholder image.
             </p>
 
             <div className="mb-4 bg-[#f9f9f9] p-3">
@@ -185,7 +185,7 @@ export default function page() {
 
             <p>
                 Services such as Google Drive and Google Slides provide embed
-                codes that can be used in Canvas via
+                codes that can be used in Canvas via{" "}
                 <code>&lt;iframe&gt;</code>, in the same way as the examples
                 above. These can be pasted into the HTML editor when creating or
                 editing a page.

@@ -4,8 +4,8 @@ export default function page() {
             <h1>Alerts</h1>
 
             <p>
-                Canvas includes several legacy alert classes such as
-                <code>alert-info</code>, <code>alert-success</code>, and
+                Canvas includes several legacy alert classes such as{" "}
+                <code>alert-info</code>, <code>alert-success</code>, and{" "}
                 <code>alert-error</code>. These still work but rely on older
                 Canvas styling. Below are examples using those classes, followed
                 by modern inline-style alternatives you can use anywhere.
@@ -50,17 +50,17 @@ export default function page() {
             </p>
 
             <div className="alert alert-info mb-4" role="status">
-                <strong>Info:</strong> This is an
-                <code>alert alert-info</code> message.
+                <strong>Info:</strong> This is an <code>alert alert-info</code>{" "}
+                message.
             </div>
 
             <div className="alert alert-success mb-4" role="status">
-                <strong>Success:</strong> This is an
+                <strong>Success:</strong> This is an{" "}
                 <code>alert alert-success</code> message.
             </div>
 
             <div className="alert alert-error mb-4" role="alert">
-                <strong>Error:</strong> This is an
+                <strong>Error:</strong> This is an{" "}
                 <code>alert alert-error</code> message.
             </div>
 
@@ -81,8 +81,8 @@ export default function page() {
 
             <p>
                 Inline CSS offers more predictable results and does not depend
-                on Canvas' legacy styles. These examples use
-                <code>padding</code>, <code>border-radius</code>,
+                on Canvas' legacy styles. These examples use{" "}
+                <code>padding</code>, <code>border-radius</code>,{" "}
                 <code>background-color</code>, and <code>border-left</code> to
                 create accessible alert boxes.
             </p>

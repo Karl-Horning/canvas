@@ -4,7 +4,7 @@ export default function page() {
             <h1>Tables</h1>
 
             <p>
-                Tables in Canvas are created using standard HTML
+                Tables in Canvas are created using standard HTML{" "}
                 <code>&lt;table&gt;</code> markup. Canvas also provides a set of
                 legacy utility classes (such as <code>ic-Table</code> and
                 <code>ic-Table--striped</code>) that control visual styling.
@@ -376,7 +376,7 @@ export default function page() {
             <ul>
                 <li>
                     Always include a clear heading or{" "}
-                    <code>&lt;caption&gt;</code>
+                    <code>&lt;caption&gt;</code>{" "}
                     explaining what the table shows.
                 </li>
                 <li>

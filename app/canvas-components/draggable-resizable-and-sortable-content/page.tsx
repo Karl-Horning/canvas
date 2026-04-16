@@ -7,7 +7,7 @@ export default function page() {
                 Canvas can add interactive behaviour to certain elements using
                 its legacy <strong>enhanceable content</strong> system. When the
                 page loads, Canvas runs its built-in JavaScript and looks for
-                elements marked with classes such as
+                elements marked with classes such as{" "}
                 <code>enhanceable_content draggable</code>,
                 <code>resizable</code>, or <code>sortable</code>, and applies
                 the corresponding interactions.
@@ -52,7 +52,7 @@ export default function page() {
             <h2>Draggable content</h2>
 
             <p>
-                A draggable element is created by applying
+                A draggable element is created by applying{" "}
                 <code>class="enhanceable_content draggable"</code> to a
                 container. When Canvas processes the page, it enables
                 drag-and-move behaviour within the element's parent area.
@@ -116,7 +116,7 @@ export default function page() {
             <h2>Sortable lists</h2>
 
             <p>
-                You can create a sortable list by adding
+                You can create a sortable list by adding{" "}
                 <code>class="enhanceable_content sortable"</code> to a list
                 container. Canvas enhances the list so that items can be
                 rearranged by dragging them into a new order.

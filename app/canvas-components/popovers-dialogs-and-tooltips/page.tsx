@@ -4,7 +4,7 @@ export default function page() {
             <h1>Popovers, Dialogs, and Tooltips</h1>
 
             <p>
-                Canvas includes some legacy patterns that use
+                Canvas includes some legacy patterns that use{" "}
                 <code>enhanceable_content</code> and data attributes to turn
                 links and containers into popovers, dialogs, and tooltips. These
                 are powered by Canvas' own JavaScript and CSS and are intended
@@ -54,7 +54,7 @@ export default function page() {
             <h2>Popover dialog (Canvas legacy pattern)</h2>
 
             <p>
-                A popover dialog can be created by marking a container with
+                A popover dialog can be created by marking a container with{" "}
                 <code>class="enhanceable_content dialog"</code> and linking to
                 it with an anchor. When the link is activated, Canvas turns the
                 target into a popover-style dialog. This relies on Canvas'
@@ -136,7 +136,7 @@ export default function page() {
             <h2>Tooltips (Canvas legacy pattern)</h2>
 
             <p>
-                Tooltips can be created by adding a <code>data-tooltip</code>
+                Tooltips can be created by adding a <code>data-tooltip</code>{" "}
                 attribute to a link or other element. Canvas uses this attribute
                 to initialise a tooltip with the specified options, such as the
                 tooltip class and position.

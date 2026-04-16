@@ -4,7 +4,7 @@ export default function page() {
             <h1>Flash Messages</h1>
 
             <p>
-                Canvas provides legacy flash message classes (such as
+                Canvas provides legacy flash message classes (such as{" "}
                 <code>ic-flash-info</code>) that visually emphasise information,
                 success states, and warnings. These examples show how those
                 classes render in this Canvas instance, followed by modern
@@ -46,7 +46,7 @@ export default function page() {
             <h2>Canvas legacy flash message classes</h2>
 
             <p>
-                These examples use Canvas' built-in
+                These examples use Canvas' built-in{" "}
                 <code>ic-flash-*</code> classes with icons. They are part of an
                 older design system but still work in current Canvas content.
             </p>

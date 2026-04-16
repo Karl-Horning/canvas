@@ -4,7 +4,7 @@ export default function page() {
             <h1>Buttons</h1>
 
             <p>
-                In this Canvas instance, actual
+                In this Canvas instance, actual{" "}
                 <code>&lt;button&gt;</code> elements are removed from content
                 created in the Rich Content Editor. Instead, links (
                 <code>&lt;a&gt;</code>) are visually styled to look like
@@ -13,7 +13,7 @@ export default function page() {
 
             <ul>
                 <li>
-                    Canvas' legacy button classes (such as
+                    Canvas' legacy button classes (such as{" "}
                     <code>btn btn-primary</code>).
                 </li>
                 <li>
@@ -24,7 +24,7 @@ export default function page() {
             <p>
                 For navigation (moving to another page, opening a resource),
                 links are semantically correct. For true "actions" (submitting a
-                form, toggling a state) the ideal element would be a real
+                form, toggling a state) the ideal element would be a real{" "}
                 <code>&lt;button&gt;</code>, but this is not available in this
                 Canvas configuration.
             </p>
@@ -56,7 +56,7 @@ export default function page() {
 
             <p>
                 Standard Canvas buttons use the base <code>btn</code> class
-                combined with a contextual class such as
+                combined with a contextual class such as{" "}
                 <code>btn-primary</code> or <code>btn-success</code>. These
                 classes come from a legacy Canvas style guide and may change in
                 future, but still work in current pages.
@@ -142,14 +142,14 @@ export default function page() {
             <p>
                 If you prefer not to rely on Canvas' legacy classes, you can
                 style links as buttons using inline CSS. This uses standard CSS
-                properties such as <code>background-color</code>,
-                <code>padding</code>, <code>border-radius</code>, and
+                properties such as <code>background-color</code>,{" "}
+                <code>padding</code>, <code>border-radius</code>, and{" "}
                 <code>display: inline-block;</code>.
             </p>
 
             <p>
                 The examples below keep the default browser focus outline for
-                keyboard users by not overriding the <code>outline</code>
+                keyboard users by not overriding the <code>outline</code>{" "}
                 property.
             </p>
 
@@ -191,8 +191,8 @@ export default function page() {
             <h3>Full-width call-to-action</h3>
 
             <p>
-                A full-width call-to-action link can be created using
-                <code>display: block;</code> and
+                A full-width call-to-action link can be created using{" "}
+                <code>display: block;</code> and{" "}
                 <code>text-align: center;</code>. This works well for important
                 actions on mobile screens.
             </p>
