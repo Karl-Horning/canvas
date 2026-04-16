@@ -57,8 +57,8 @@ export default function page() {
                 </div>
 
                 <div className="ic-flash__content">
-                    <strong>Info:</strong> This is an
-                    <code>ic-flash-info</code> message.
+                    <strong>Info:</strong> This is an <code>ic-flash-info</code>{" "}
+                    message.
                 </div>
             </div>
 
@@ -68,7 +68,7 @@ export default function page() {
                 </div>
 
                 <div className="ic-flash__content">
-                    <strong>Success:</strong> This is an
+                    <strong>Success:</strong> This is an{" "}
                     <code>ic-flash-success</code> message.
                 </div>
             </div>
@@ -78,7 +78,7 @@ export default function page() {
                     <i className="icon-warning"></i>
                 </div>
                 <div className="ic-flash__content">
-                    <strong>Warning:</strong> This is an
+                    <strong>Warning:</strong> This is an{" "}
                     <code>ic-flash-warning</code> message.
                 </div>
             </div>
@@ -219,7 +219,7 @@ export default function page() {
                     progress).
                 </li>
                 <li>
-                    Icon elements in these examples are marked
+                    Icon elements in these examples are marked{" "}
                     <code>aria-hidden="true"</code> so that screen readers do
                     not announce them twice; the meaningful label is in the text
                     (for example, <strong>Warning:</strong>).

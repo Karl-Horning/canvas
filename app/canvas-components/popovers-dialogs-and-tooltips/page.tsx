@@ -81,22 +81,16 @@ export default function page() {
                 </p>
             </div>
 
-            <pre><code>&lt;div
-    id="example-popover"
-    class="enhanceable_content dialog"
-    popover="auto"
-&gt;
-    &lt;p&gt;
-        This is an example popover dialog. Use it for brief, supporting
-        information instead of critical instructions.
-    &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;
-    &lt;a href="#example-popover" class="btn btn-primary"&gt;
-        Open dialog example
-    &lt;/a&gt;
-&lt;/p&gt;</code></pre>
+            <pre>
+                <code>
+                    &lt;div id="example-popover" class="enhanceable_content
+                    dialog" popover="auto" &gt; &lt;p&gt; This is an example
+                    popover dialog. Use it for brief, supporting information
+                    instead of critical instructions. &lt;/p&gt; &lt;/div&gt;
+                    &lt;p&gt; &lt;a href="#example-popover" class="btn
+                    btn-primary"&gt; Open dialog example &lt;/a&gt; &lt;/p&gt;
+                </code>
+            </pre>
 
             <p>
                 Because this pattern relies on Canvas' JavaScript, the exact
@@ -127,21 +121,17 @@ export default function page() {
                 </p>
             </div>
 
-            <pre><code>&lt;div
-    role="note"
-    style="
-        padding: 1rem;
-        border-radius: 0.375rem;
-        border-left: 6px solid #4c9dcd;
-        background: #e8f2ff;
-    "
-&gt;
-    &lt;strong&gt;Additional information:&lt;/strong&gt;
-    &lt;p style="margin: 0.5rem 0 0 0"&gt;
-        This panel shows information that might otherwise be hidden in
-        a popover. Because it is always visible, all learners can access it.
-    &lt;/p&gt;
-&lt;/div&gt;</code></pre>
+            <pre>
+                <code>
+                    &lt;div role="note" style=" padding: 1rem; border-radius:
+                    0.375rem; border-left: 6px solid #4c9dcd; background:
+                    #e8f2ff; " &gt; &lt;strong&gt;Additional
+                    information:&lt;/strong&gt; &lt;p style="margin: 0.5rem 0 0
+                    0"&gt; This panel shows information that might otherwise be
+                    hidden in a popover. Because it is always visible, all
+                    learners can access it. &lt;/p&gt; &lt;/div&gt;
+                </code>
+            </pre>
 
             <h2>Tooltips (Canvas legacy pattern)</h2>
 
@@ -175,15 +165,15 @@ export default function page() {
                 </p>
             </div>
 
-            <pre><code>&lt;p&gt;
-    &lt;a
-        href="#"
-        title="Additional information about this topic."
-        data-tooltip=&apos;&lbrace;"tooltipClass":"popover popover-padded","position":"right"&rbrace;&apos;
-    &gt;
-        More information about this topic
-    &lt;/a&gt;
-&lt;/p&gt;</code></pre>
+            <pre>
+                <code>
+                    &lt;p&gt; &lt;a href="#" title="Additional information about
+                    this topic."
+                    data-tooltip=&apos;&lbrace;"tooltipClass":"popover
+                    popover-padded","position":"right"&rbrace;&apos; &gt; More
+                    information about this topic &lt;/a&gt; &lt;/p&gt;
+                </code>
+            </pre>
 
             <p>
                 Tooltips are best used for short, supplementary explanations.
@@ -211,23 +201,16 @@ export default function page() {
                 </p>
             </div>
 
-            <pre><code>&lt;p&gt;
-    You can
-    &lt;a href="#"&gt;download the template&lt;/a&gt;
-    &lt;span
-        style="
-            display: inline-block;
-            margin-left: 0.25rem;
-            padding: 0.1rem 0.4rem;
-            border-radius: 999px;
-            background: #eef4ff;
-            color: #111322;
-            font-size: 0.8rem;
-        "
-    &gt;
-        This opens in a new tab and may take a few seconds to load.
-    &lt;/span&gt;
-&lt;/p&gt;</code></pre>
+            <pre>
+                <code>
+                    &lt;p&gt; You can &lt;a href="#"&gt;download the
+                    template&lt;/a&gt; &lt;span style=" display: inline-block;
+                    margin-left: 0.25rem; padding: 0.1rem 0.4rem; border-radius:
+                    999px; background: #eef4ff; color: #111322; font-size:
+                    0.8rem; " &gt; This opens in a new tab and may take a few
+                    seconds to load. &lt;/span&gt; &lt;/p&gt;
+                </code>
+            </pre>
 
             <h2>Accessibility and limitations</h2>
 

@@ -112,7 +112,7 @@ export default function page() {
             <div className="mb-4 bg-[#f9f9f9] p-3">
                 <p>
                     This sentence contains
-                    <strong>important highlighted text</strong> using
+                    <strong>important highlighted text</strong> using{" "}
                     <code>&lt;strong&gt;</code>.
                 </p>
                 <p>
@@ -198,28 +198,28 @@ export default function page() {
                 <p className="muted">Example of muted text.</p>
 
                 <p className="text-warning">
-                    Example of warning text
+                    Example of warning text{" "}
                     <a href="#" className="text-warning">
                         with a link
                     </a>
                 </p>
 
                 <p className="text-error">
-                    Example of error text
+                    Example of error text{" "}
                     <a href="#" className="text-error">
                         with a link
                     </a>
                 </p>
 
                 <p className="text-info">
-                    Example of info text
+                    Example of info text{" "}
                     <a href="#" className="text-info">
                         with a link
                     </a>
                 </p>
 
                 <p className="text-success">
-                    Example of success text
+                    Example of success text{" "}
                     <a href="#" className="text-success">
                         with a link
                     </a>
@@ -309,7 +309,7 @@ export default function page() {
                 If you would like to learn more about the
                 <code>&lt;details&gt;</code> and
                 <code>&lt;summary&gt;</code> elements and the exclusive
-                accordion pattern, see the MDN article
+                accordion pattern, see the MDN article{" "}
                 <a
                     href="https://developer.mozilla.org/en-US/blog/html-details-exclusive-accordions/"
                     target="_blank"
@@ -329,9 +329,9 @@ export default function page() {
                     to <code>&lt;h4&gt;</code>).
                 </li>
                 <li>
-                    Use <code>&lt;strong&gt;</code> and
-                    <code>&lt;em&gt;</code> to convey importance or emphasis,
-                    not just to change the visual appearance.
+                    Use <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code>{" "}
+                    to convey importance or emphasis, not just to change the
+                    visual appearance.
                 </li>
                 <li>
                     Avoid using colour alone to indicate meaning in text (for

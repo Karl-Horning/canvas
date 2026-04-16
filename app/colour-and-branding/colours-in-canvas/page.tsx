@@ -8,19 +8,19 @@ export default function page() {
                 page are based on Imperial College London's official brand
                 guidance. The source material, including the
                 <em>Colour Accessibility Chart — Digital only</em>, is available
-                at
+                at{" "}
                 <a
                     href="https://brand.imperial.ac.uk/document/941#/visual-identity/colour"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     Imperial's brand management platform
-                </a>
+                </a>{" "}
                 (Imperial SSO required).
             </p>
 
             <p>
-                The tables below summarise which colours are suitable for use as
+                The tables below summarise which colours are suitable for use as{" "}
                 <strong>text on a white background</strong> in Canvas content.
                 They are grouped by their WCAG contrast rating when used as text
                 on white:
@@ -87,25 +87,35 @@ export default function page() {
             <table className="border-collapse w-full mb-4 text-[0.95rem]">
                 <thead>
                     <tr className="bg-[#f0f0f0]">
-                        <th scope="col" className="border border-[#ccc] p-2 text-left">
+                        <th
+                            scope="col"
+                            className="border border-[#ccc] p-2 text-left"
+                        >
                             Colour
                         </th>
-                        <th scope="col" className="border border-[#ccc] p-2 text-left">
+                        <th
+                            scope="col"
+                            className="border border-[#ccc] p-2 text-left"
+                        >
                             Hex
                         </th>
-                        <th scope="col" className="border border-[#ccc] p-2 text-left">
+                        <th
+                            scope="col"
+                            className="border border-[#ccc] p-2 text-left"
+                        >
                             Example
                         </th>
-                        <th scope="col" className="border border-[#ccc] p-2 text-left">
+                        <th
+                            scope="col"
+                            className="border border-[#ccc] p-2 text-left"
+                        >
                             Rating (on white)
                         </th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">
-                            Black
-                        </td>
+                        <td className="border border-[#ccc] p-2">Black</td>
                         <td className="border border-[#ccc] p-2">
                             <code>#000000</code>
                         </td>
@@ -114,14 +124,10 @@ export default function page() {
                                 Text
                             </span>
                         </td>
-                        <td className="border border-[#ccc] p-2">
-                            AAA / AA
-                        </td>
+                        <td className="border border-[#ccc] p-2">AAA / AA</td>
                     </tr>
                     <tr className="bg-[#f9f9f9]">
-                        <td className="border border-[#ccc] p-2">
-                            Dark
-                        </td>
+                        <td className="border border-[#ccc] p-2">Dark</td>
                         <td className="border border-[#ccc] p-2">
                             <code>#232333</code>
                         </td>
@@ -130,14 +136,10 @@ export default function page() {
                                 Text
                             </span>
                         </td>
-                        <td className="border border-[#ccc] p-2">
-                            AAA / AA
-                        </td>
+                        <td className="border border-[#ccc] p-2">AAA / AA</td>
                     </tr>
                     <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">
-                            Navy
-                        </td>
+                        <td className="border border-[#ccc] p-2">Navy</td>
                         <td className="border border-[#ccc] p-2">
                             <code>#000080</code>
                         </td>
@@ -146,9 +148,7 @@ export default function page() {
                                 Text
                             </span>
                         </td>
-                        <td className="border border-[#ccc] p-2">
-                            AAA / AA
-                        </td>
+                        <td className="border border-[#ccc] p-2">AAA / AA</td>
                     </tr>
                     <tr className="bg-[#f9f9f9]">
                         <td className="border border-[#ccc] p-2">
@@ -162,9 +162,7 @@ export default function page() {
                                 Text
                             </span>
                         </td>
-                        <td className="border border-[#ccc] p-2">
-                            AAA / AA
-                        </td>
+                        <td className="border border-[#ccc] p-2">AAA / AA</td>
                     </tr>
                     <tr className="bg-white">
                         <td className="border border-[#ccc] p-2">
@@ -178,14 +176,10 @@ export default function page() {
                                 Text
                             </span>
                         </td>
-                        <td className="border border-[#ccc] p-2">
-                            AAA / AA
-                        </td>
+                        <td className="border border-[#ccc] p-2">AAA / AA</td>
                     </tr>
                     <tr className="bg-[#f9f9f9]">
-                        <td className="border border-[#ccc] p-2">
-                            Teal
-                        </td>
+                        <td className="border border-[#ccc] p-2">Teal</td>
                         <td className="border border-[#ccc] p-2">
                             <code>#008080</code>
                         </td>
@@ -194,9 +188,7 @@ export default function page() {
                                 Text
                             </span>
                         </td>
-                        <td className="border border-[#ccc] p-2">
-                            AAA / AA
-                        </td>
+                        <td className="border border-[#ccc] p-2">AAA / AA</td>
                     </tr>
                     <tr className="bg-white">
                         <td className="border border-[#ccc] p-2">
@@ -210,14 +202,10 @@ export default function page() {
                                 Text
                             </span>
                         </td>
-                        <td className="border border-[#ccc] p-2">
-                            AAA / AA
-                        </td>
+                        <td className="border border-[#ccc] p-2">AAA / AA</td>
                     </tr>
                     <tr className="bg-[#f9f9f9]">
-                        <td className="border border-[#ccc] p-2">
-                            Indigo
-                        </td>
+                        <td className="border border-[#ccc] p-2">Indigo</td>
                         <td className="border border-[#ccc] p-2">
                             <code>#4b0082</code>
                         </td>
@@ -226,14 +214,10 @@ export default function page() {
                                 Text
                             </span>
                         </td>
-                        <td className="border border-[#ccc] p-2">
-                            AAA / AA
-                        </td>
+                        <td className="border border-[#ccc] p-2">AAA / AA</td>
                     </tr>
                     <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">
-                            Crimson
-                        </td>
+                        <td className="border border-[#ccc] p-2">Crimson</td>
                         <td className="border border-[#ccc] p-2">
                             <code>#dc143c</code>
                         </td>
@@ -242,14 +226,10 @@ export default function page() {
                                 Text
                             </span>
                         </td>
-                        <td className="border border-[#ccc] p-2">
-                            AAA / AA
-                        </td>
+                        <td className="border border-[#ccc] p-2">AAA / AA</td>
                     </tr>
                     <tr className="bg-[#f9f9f9]">
-                        <td className="border border-[#ccc] p-2">
-                            Dark Green
-                        </td>
+                        <td className="border border-[#ccc] p-2">Dark Green</td>
                         <td className="border border-[#ccc] p-2">
                             <code>#006400</code>
                         </td>
@@ -258,9 +238,7 @@ export default function page() {
                                 Text
                             </span>
                         </td>
-                        <td className="border border-[#ccc] p-2">
-                            AAA / AA
-                        </td>
+                        <td className="border border-[#ccc] p-2">AAA / AA</td>
                     </tr>
                 </tbody>
             </table>
@@ -277,25 +255,35 @@ export default function page() {
             <table className="border-collapse w-full mb-4 text-[0.95rem]">
                 <thead>
                     <tr className="bg-[#f0f0f0]">
-                        <th scope="col" className="border border-[#ccc] p-2 text-left">
+                        <th
+                            scope="col"
+                            className="border border-[#ccc] p-2 text-left"
+                        >
                             Colour
                         </th>
-                        <th scope="col" className="border border-[#ccc] p-2 text-left">
+                        <th
+                            scope="col"
+                            className="border border-[#ccc] p-2 text-left"
+                        >
                             Hex
                         </th>
-                        <th scope="col" className="border border-[#ccc] p-2 text-left">
+                        <th
+                            scope="col"
+                            className="border border-[#ccc] p-2 text-left"
+                        >
                             Example
                         </th>
-                        <th scope="col" className="border border-[#ccc] p-2 text-left">
+                        <th
+                            scope="col"
+                            className="border border-[#ccc] p-2 text-left"
+                        >
                             Rating (on white)
                         </th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">
-                            Slate Grey
-                        </td>
+                        <td className="border border-[#ccc] p-2">Slate Grey</td>
                         <td className="border border-[#ccc] p-2">
                             <code>#708090</code>
                         </td>
@@ -304,9 +292,7 @@ export default function page() {
                                 Text
                             </span>
                         </td>
-                        <td className="border border-[#ccc] p-2">
-                            AA
-                        </td>
+                        <td className="border border-[#ccc] p-2">AA</td>
                     </tr>
                     <tr className="bg-[#f9f9f9]">
                         <td className="border border-[#ccc] p-2">
@@ -320,14 +306,10 @@ export default function page() {
                                 Text
                             </span>
                         </td>
-                        <td className="border border-[#ccc] p-2">
-                            AA
-                        </td>
+                        <td className="border border-[#ccc] p-2">AA</td>
                     </tr>
                     <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">
-                            Red
-                        </td>
+                        <td className="border border-[#ccc] p-2">Red</td>
                         <td className="border border-[#ccc] p-2">
                             <code>#ff0000</code>
                         </td>
@@ -336,14 +318,10 @@ export default function page() {
                                 Text
                             </span>
                         </td>
-                        <td className="border border-[#ccc] p-2">
-                            AA
-                        </td>
+                        <td className="border border-[#ccc] p-2">AA</td>
                     </tr>
                     <tr className="bg-[#f9f9f9]">
-                        <td className="border border-[#ccc] p-2">
-                            Orange Red
-                        </td>
+                        <td className="border border-[#ccc] p-2">Orange Red</td>
                         <td className="border border-[#ccc] p-2">
                             <code>#ff4500</code>
                         </td>
@@ -352,9 +330,7 @@ export default function page() {
                                 Text
                             </span>
                         </td>
-                        <td className="border border-[#ccc] p-2">
-                            AA
-                        </td>
+                        <td className="border border-[#ccc] p-2">AA</td>
                     </tr>
                 </tbody>
             </table>
@@ -371,25 +347,35 @@ export default function page() {
             <table className="border-collapse w-full mb-4 text-[0.95rem]">
                 <thead>
                     <tr className="bg-[#f0f0f0]">
-                        <th scope="col" className="border border-[#ccc] p-2 text-left">
+                        <th
+                            scope="col"
+                            className="border border-[#ccc] p-2 text-left"
+                        >
                             Colour
                         </th>
-                        <th scope="col" className="border border-[#ccc] p-2 text-left">
+                        <th
+                            scope="col"
+                            className="border border-[#ccc] p-2 text-left"
+                        >
                             Hex
                         </th>
-                        <th scope="col" className="border border-[#ccc] p-2 text-left">
+                        <th
+                            scope="col"
+                            className="border border-[#ccc] p-2 text-left"
+                        >
                             Example
                         </th>
-                        <th scope="col" className="border border-[#ccc] p-2 text-left">
+                        <th
+                            scope="col"
+                            className="border border-[#ccc] p-2 text-left"
+                        >
                             Notes
                         </th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">
-                            White
-                        </td>
+                        <td className="border border-[#ccc] p-2">White</td>
                         <td className="border border-[#ccc] p-2">
                             <code>#ffffff</code>
                         </td>
@@ -436,9 +422,7 @@ export default function page() {
                         </td>
                     </tr>
                     <tr className="bg-[#f9f9f9]">
-                        <td className="border border-[#ccc] p-2">
-                            Yellow
-                        </td>
+                        <td className="border border-[#ccc] p-2">Yellow</td>
                         <td className="border border-[#ccc] p-2">
                             <code>#ffff00</code>
                         </td>
@@ -452,9 +436,7 @@ export default function page() {
                         </td>
                     </tr>
                     <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">
-                            Khaki
-                        </td>
+                        <td className="border border-[#ccc] p-2">Khaki</td>
                         <td className="border border-[#ccc] p-2">
                             <code>#f0e68c</code>
                         </td>
@@ -468,9 +450,7 @@ export default function page() {
                         </td>
                     </tr>
                     <tr className="bg-[#f9f9f9]">
-                        <td className="border border-[#ccc] p-2">
-                            Turquoise
-                        </td>
+                        <td className="border border-[#ccc] p-2">Turquoise</td>
                         <td className="border border-[#ccc] p-2">
                             <code>#40e0d0</code>
                         </td>
@@ -500,9 +480,7 @@ export default function page() {
                         </td>
                     </tr>
                     <tr className="bg-[#f9f9f9]">
-                        <td className="border border-[#ccc] p-2">
-                            Violet
-                        </td>
+                        <td className="border border-[#ccc] p-2">Violet</td>
                         <td className="border border-[#ccc] p-2">
                             <code>#ee82ee</code>
                         </td>
@@ -516,9 +494,7 @@ export default function page() {
                         </td>
                     </tr>
                     <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">
-                            Light Pink
-                        </td>
+                        <td className="border border-[#ccc] p-2">Light Pink</td>
                         <td className="border border-[#ccc] p-2">
                             <code>#ffb6c1</code>
                         </td>
@@ -532,9 +508,7 @@ export default function page() {
                         </td>
                     </tr>
                     <tr className="bg-[#f9f9f9]">
-                        <td className="border border-[#ccc] p-2">
-                            Lavender
-                        </td>
+                        <td className="border border-[#ccc] p-2">Lavender</td>
                         <td className="border border-[#ccc] p-2">
                             <code>#e6e6fa</code>
                         </td>
@@ -548,9 +522,7 @@ export default function page() {
                         </td>
                     </tr>
                     <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">
-                            Salmon
-                        </td>
+                        <td className="border border-[#ccc] p-2">Salmon</td>
                         <td className="border border-[#ccc] p-2">
                             <code>#fa8072</code>
                         </td>
@@ -580,9 +552,7 @@ export default function page() {
                         </td>
                     </tr>
                     <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">
-                            Orange
-                        </td>
+                        <td className="border border-[#ccc] p-2">Orange</td>
                         <td className="border border-[#ccc] p-2">
                             <code>#ffa500</code>
                         </td>
@@ -612,9 +582,7 @@ export default function page() {
                         </td>
                     </tr>
                     <tr className="bg-white">
-                        <td className="border border-[#ccc] p-2">
-                            Pale Green
-                        </td>
+                        <td className="border border-[#ccc] p-2">Pale Green</td>
                         <td className="border border-[#ccc] p-2">
                             <code>#98fb98</code>
                         </td>
@@ -649,7 +617,7 @@ export default function page() {
 
             <p>
                 For combinations not shown here (for example, light text on a
-                dark background), please refer directly to Imperial's
+                dark background), please refer directly to Imperial's{" "}
                 <em>Colour Accessibility Chart — Digital only</em> or use a WCAG
                 contrast checker to confirm that your chosen colours meet at
                 least AA contrast.

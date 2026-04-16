@@ -35,16 +35,28 @@ export default function page() {
                 </caption>
                 <thead>
                     <tr>
-                        <th scope="col" className="border border-[#dddddd] p-2 bg-[#f5f5f5] text-left">
+                        <th
+                            scope="col"
+                            className="border border-[#dddddd] p-2 bg-[#f5f5f5] text-left"
+                        >
                             Item
                         </th>
-                        <th scope="col" className="border border-[#dddddd] p-2 bg-[#f5f5f5] text-left">
+                        <th
+                            scope="col"
+                            className="border border-[#dddddd] p-2 bg-[#f5f5f5] text-left"
+                        >
                             Type
                         </th>
-                        <th scope="col" className="border border-[#dddddd] p-2 bg-[#f5f5f5] text-left">
+                        <th
+                            scope="col"
+                            className="border border-[#dddddd] p-2 bg-[#f5f5f5] text-left"
+                        >
                             Canvas behaviour
                         </th>
-                        <th scope="col" className="border border-[#dddddd] p-2 bg-[#f5f5f5] text-left">
+                        <th
+                            scope="col"
+                            className="border border-[#dddddd] p-2 bg-[#f5f5f5] text-left"
+                        >
                             Notes and alternatives
                         </th>
                     </tr>
@@ -71,9 +83,7 @@ export default function page() {
                         <td className="border border-[#dddddd] p-2">
                             <code>&lt;style&gt;</code> and external stylesheets
                         </td>
-                        <td className="border border-[#dddddd] p-2">
-                            Element
-                        </td>
+                        <td className="border border-[#dddddd] p-2">Element</td>
                         <td className="border border-[#dddddd] p-2">
                             Removed or ignored in the Rich Content Editor.
                         </td>
@@ -185,9 +195,7 @@ export default function page() {
                         <td className="border border-[#dddddd] p-2">
                             Inline CSS (style attribute)
                         </td>
-                        <td className="border border-[#dddddd] p-2">
-                            CSS
-                        </td>
+                        <td className="border border-[#dddddd] p-2">CSS</td>
                         <td className="border border-[#dddddd] p-2">
                             Allowed but sanitised. Unsupported properties and
                             values are removed, and some complex shorthand may

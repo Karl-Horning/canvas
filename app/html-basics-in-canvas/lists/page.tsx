@@ -153,7 +153,7 @@ export default function page() {
                 If you want full control of spacing and alignment, you can
                 recreate a similar layout using inline CSS Grid. This avoids
                 relying on legacy classes and behaves consistently across modern
-                browsers. For a full reference of grid properties, see:
+                browsers. For a full reference of grid properties, see:{" "}
                 <a
                     href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout"
                     target="_blank"

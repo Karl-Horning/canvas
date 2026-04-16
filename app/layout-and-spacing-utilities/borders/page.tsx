@@ -5,8 +5,8 @@ export default function page() {
 
             <p>
                 Canvas provides legacy utility classes for adding borders and
-                rounded corners to elements. These include classes such as
-                <code>border</code>, <code>border-trbl</code>, and
+                rounded corners to elements. These include classes such as{" "}
+                <code>border</code>, <code>border-trbl</code>, and{" "}
                 <code>border-round</code>. They come from an older Canvas style
                 guide and may change in future, but still work for styling
                 content created in the Rich Content Editor.

@@ -93,9 +93,7 @@ export default function page() {
 
             <div className="mb-4 bg-[#f9f9f9] p-3">
                 <div className="w-full h-50">
-                    <div
-                        className="enhanceable_content resizable text-center bg-[#232333] text-white w-100 h-20"
-                    >
+                    <div className="enhanceable_content resizable text-center bg-[#232333] text-white w-100 h-20">
                         <p className="p-3.75 m-0">
                             Resize this box using the handle in the corner
                         </p>
@@ -132,19 +130,13 @@ export default function page() {
 
                 <ul className="enhanceable_content sortable">
                     <li className="text-center bg-[#000080] text-white w-75 h-15 mb-2">
-                        <p className="p-3.75 m-0">
-                            Box 1 — drag to re-order
-                        </p>
+                        <p className="p-3.75 m-0">Box 1 — drag to re-order</p>
                     </li>
                     <li className="text-center bg-[#0000cd] text-white w-75 h-15 mb-2">
-                        <p className="p-3.75 m-0">
-                            Box 2 — drag to re-order
-                        </p>
+                        <p className="p-3.75 m-0">Box 2 — drag to re-order</p>
                     </li>
                     <li className="text-center bg-[#232333] text-white w-75 h-15">
-                        <p className="p-3.75 m-0">
-                            Box 3 — drag to re-order
-                        </p>
+                        <p className="p-3.75 m-0">Box 3 — drag to re-order</p>
                     </li>
                 </ul>
             </div>

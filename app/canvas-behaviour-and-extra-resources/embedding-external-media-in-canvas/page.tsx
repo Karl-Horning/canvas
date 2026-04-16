@@ -144,8 +144,7 @@ export default function page() {
 
             <pre>
                 <code>
-                    &lt;iframe
-                    src="https://www.google.com/maps/embed?pb=..."
+                    &lt;iframe src="https://www.google.com/maps/embed?pb=..."
                     width="100%" height="450" style="border:0;" allowfullscreen
                     loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                     &gt;&lt;/iframe&gt;

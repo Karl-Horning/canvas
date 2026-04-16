@@ -143,9 +143,7 @@ export default function page() {
                     aria-valuenow={50}
                     aria-valuetext="50% complete"
                 >
-                    <div
-                        className="ui-progressbar-value ui-widget-header ui-corner-left w-[50%] bg-[#0000cd]"
-                    ></div>
+                    <div className="ui-progressbar-value ui-widget-header ui-corner-left w-[50%] bg-[#0000cd]"></div>
                 </div>
 
                 <p>
