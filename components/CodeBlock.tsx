@@ -39,9 +39,11 @@ export default function CodeBlock({ children }: CodeBlockProps) {
 
     return (
         <div className="relative mb-4">
-            <pre className="bg-[#f5f5f5] border border-[#ddd] rounded-md p-4 pr-20 overflow-x-auto text-sm font-mono whitespace-pre">
-                <code>{children}</code>
-            </pre>
+            <div className="overflow-x-auto rounded-md border border-[#ddd]">
+                <pre className="bg-[#f5f5f5] p-4 pr-20 m-0 text-sm font-mono whitespace-pre w-max min-w-full">
+                    <code>{children}</code>
+                </pre>
+            </div>
             <button
                 type="button"
                 onClick={handleCopy}
