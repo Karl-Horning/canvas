@@ -1,3 +1,5 @@
+import CodeBlock from "@/components/CodeBlock";
+
 export default function page() {
     return (
         <article>
@@ -83,28 +85,32 @@ export default function page() {
                 </div>
             </div>
 
-            <pre>
-                <code>
-                    &lt;div class="ic-flash-info" role="status"&gt; &lt;div
-                    class="ic-flash__icon" aria-hidden="true"&gt; &lt;i
-                    class="icon-info"&gt;&lt;/i&gt; &lt;/div&gt; &lt;div
-                    class="ic-flash__content"&gt;
-                    &lt;strong&gt;Info:&lt;/strong&gt; This is an info message.
-                    &lt;/div&gt; &lt;/div&gt; &lt;div class="ic-flash-success"
-                    role="status"&gt; &lt;div class="ic-flash__icon"
-                    aria-hidden="true"&gt; &lt;i
-                    class="icon-check"&gt;&lt;/i&gt; &lt;/div&gt; &lt;div
-                    class="ic-flash__content"&gt;
-                    &lt;strong&gt;Success:&lt;/strong&gt; This is a success
-                    message. &lt;/div&gt; &lt;/div&gt; &lt;div
-                    class="ic-flash-warning" role="alert"&gt; &lt;div
-                    class="ic-flash__icon" aria-hidden="true"&gt; &lt;i
-                    class="icon-warning"&gt;&lt;/i&gt; &lt;/div&gt; &lt;div
-                    class="ic-flash__content"&gt;
-                    &lt;strong&gt;Warning:&lt;/strong&gt; This is a warning
-                    message. &lt;/div&gt; &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div class="ic-flash-info" role="status">
+  <div class="ic-flash__icon" aria-hidden="true">
+    <i class="icon-info"></i>
+  </div>
+  <div class="ic-flash__content">
+    <strong>Info:</strong> This is an info message.
+  </div>
+</div>
+
+<div class="ic-flash-success" role="status">
+  <div class="ic-flash__icon" aria-hidden="true">
+    <i class="icon-check"></i>
+  </div>
+  <div class="ic-flash__content">
+    <strong>Success:</strong> This is a success message.
+  </div>
+</div>
+
+<div class="ic-flash-warning" role="alert">
+  <div class="ic-flash__icon" aria-hidden="true">
+    <i class="icon-warning"></i>
+  </div>
+  <div class="ic-flash__content">
+    <strong>Warning:</strong> This is a warning message.
+  </div>
+</div>`}</CodeBlock>
 
             <h2>Modern inline-style flash messages</h2>
 
@@ -169,42 +175,38 @@ export default function page() {
                 </div>
             </div>
 
-            <pre>
-                <code>
-                    &lt;div role="status" style=" padding: 1rem; border-radius:
-                    0.375rem; background: #e8f2ff; border-left: 6px solid
-                    #4c9dcd; " &gt; &lt;div style=" display: flex; gap: 0.75rem;
-                    align-items: flex-start; " &gt; &lt;div aria-hidden="true"
-                    style=" width: 1.75rem; height: 1.75rem; border-radius:
-                    999px; background: #4c9dcd; display: flex; align-items:
-                    center; justify-content: center; color: #ffffff;
-                    font-weight: 700; font-size: 0.9rem; " &gt; i &lt;/div&gt;
-                    &lt;div&gt; &lt;strong&gt;Info:&lt;/strong&gt; This is an
-                    informational flash message. &lt;/div&gt; &lt;/div&gt;
-                    &lt;/div&gt; &lt;div role="status" style=" padding: 1rem;
-                    border-radius: 0.375rem; background: #e8f8ea; border-left:
-                    6px solid #2d8a3b; " &gt; &lt;div style=" display: flex;
-                    gap: 0.75rem; align-items: flex-start; " &gt; &lt;div
-                    aria-hidden="true" style=" width: 1.75rem; height: 1.75rem;
-                    border-radius: 999px; background: #2d8a3b; display: flex;
-                    align-items: center; justify-content: center; color:
-                    #ffffff; font-weight: 700; font-size: 0.9rem; " &gt; ✓
-                    &lt;/div&gt; &lt;div&gt;
-                    &lt;strong&gt;Success:&lt;/strong&gt; Your changes have been
-                    saved successfully. &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;
-                    &lt;div role="alert" style=" padding: 1rem; border-radius:
-                    0.375rem; background: #fff7e6; border-left: 6px solid
-                    #cc7a00; " &gt; &lt;div style=" display: flex; gap: 0.75rem;
-                    align-items: flex-start; " &gt; &lt;div aria-hidden="true"
-                    style=" width: 1.75rem; height: 1.75rem; border-radius:
-                    999px; background: #cc7a00; display: flex; align-items:
-                    center; justify-content: center; color: #ffffff;
-                    font-weight: 700; font-size: 0.9rem; " &gt; ! &lt;/div&gt;
-                    &lt;div&gt; &lt;strong&gt;Warning:&lt;/strong&gt; Please
-                    review this information before continuing. &lt;/div&gt;
-                    &lt;/div&gt; &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div role="status" style="padding: 1rem; border-radius: 0.375rem; background: #e8f2ff; border-left: 6px solid #4c9dcd;">
+  <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+    <div aria-hidden="true" style="width: 1.75rem; height: 1.75rem; border-radius: 999px; background: #4c9dcd; display: flex; align-items: center; justify-content: center; color: #ffffff; font-weight: 700; font-size: 0.9rem; flex-shrink: 0;">
+      i
+    </div>
+    <div>
+      <strong>Info:</strong> This is an informational flash message.
+    </div>
+  </div>
+</div>
+
+<div role="status" style="padding: 1rem; border-radius: 0.375rem; background: #e8f8ea; border-left: 6px solid #2d8a3b;">
+  <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+    <div aria-hidden="true" style="width: 1.75rem; height: 1.75rem; border-radius: 999px; background: #2d8a3b; display: flex; align-items: center; justify-content: center; color: #ffffff; font-weight: 700; font-size: 0.9rem; flex-shrink: 0;">
+      ✓
+    </div>
+    <div>
+      <strong>Success:</strong> Your changes have been saved successfully.
+    </div>
+  </div>
+</div>
+
+<div role="alert" style="padding: 1rem; border-radius: 0.375rem; background: #fff7e6; border-left: 6px solid #cc7a00;">
+  <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+    <div aria-hidden="true" style="width: 1.75rem; height: 1.75rem; border-radius: 999px; background: #cc7a00; display: flex; align-items: center; justify-content: center; color: #ffffff; font-weight: 700; font-size: 0.9rem; flex-shrink: 0;">
+      !
+    </div>
+    <div>
+      <strong>Warning:</strong> Please review this information before continuing.
+    </div>
+  </div>
+</div>`}</CodeBlock>
 
             <h2>Accessibility notes</h2>
             <ul>

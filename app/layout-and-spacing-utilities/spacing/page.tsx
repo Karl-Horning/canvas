@@ -1,3 +1,5 @@
+import CodeBlock from "@/components/CodeBlock";
+
 export default function page() {
     return (
         <article>
@@ -75,15 +77,12 @@ export default function page() {
                 Second content box with the same class and spacing.
             </div>
 
-            <pre>
-                <code>
-                    &lt;div class="content-box border border-trbl"&gt; First
-                    content box using &lt;code&gt;content-box&lt;/code&gt;.
-                    &lt;/div&gt; &lt;div class="content-box border
-                    border-trbl"&gt; Second content box with the same class and
-                    spacing. &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div class="content-box border border-trbl">
+  First content box using <code>content-box</code>.
+</div>
+<div class="content-box border border-trbl">
+  Second content box with the same class and spacing.
+</div>`}</CodeBlock>
 
             <h2>Padding utilities (Canvas legacy classes)</h2>
 
@@ -112,20 +111,18 @@ export default function page() {
                 <strong>pad-box-micro</strong> (very small padding)
             </div>
 
-            <pre>
-                <code>
-                    &lt;div class="pad-box-mega border border-trbl"&gt;
-                    &lt;strong&gt;pad-box-mega&lt;/strong&gt; (largest padding)
-                    &lt;/div&gt; &lt;div class="pad-box border border-trbl"&gt;
-                    &lt;strong&gt;pad-box&lt;/strong&gt; (standard padding)
-                    &lt;/div&gt; &lt;div class="pad-box-mini border
-                    border-trbl"&gt; &lt;strong&gt;pad-box-mini&lt;/strong&gt;
-                    (small padding) &lt;/div&gt; &lt;div class="pad-box-micro
-                    border border-trbl"&gt;
-                    &lt;strong&gt;pad-box-micro&lt;/strong&gt; (very small
-                    padding) &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div class="pad-box-mega border border-trbl">
+  <strong>pad-box-mega</strong> (largest padding)
+</div>
+<div class="pad-box border border-trbl">
+  <strong>pad-box</strong> (standard padding)
+</div>
+<div class="pad-box-mini border border-trbl">
+  <strong>pad-box-mini</strong> (small padding)
+</div>
+<div class="pad-box-micro border border-trbl">
+  <strong>pad-box-micro</strong> (very small padding)
+</div>`}</CodeBlock>
 
             <h2>Modern spacing with inline CSS</h2>
 
@@ -189,31 +186,27 @@ export default function page() {
                 </p>
             </div>
 
-            <pre>
-                <code>
-                    &lt;div style=" border: 1px solid #d0d7de; border-radius:
-                    0.5rem; padding: 1rem; margin-bottom: 1rem; background:
-                    #f9fafb; " &gt; &lt;h3 style="margin-top: 0; margin-bottom:
-                    0.5rem"&gt; Card with standard padding &lt;/h3&gt; &lt;p
-                    style="margin: 0"&gt; This card uses &lt;code&gt;padding:
-                    1rem;&lt;/code&gt; and &lt;code&gt;margin-bottom:
-                    1rem;&lt;/code&gt; to create clear spacing around the
-                    content and between cards. &lt;/p&gt; &lt;/div&gt; &lt;div
-                    style=" border: 1px solid #d0d7de; border-radius: 0.5rem;
-                    padding: 0.75rem; margin-bottom: 1rem; background: #ffffff;
-                    " &gt; &lt;h3 style="margin-top: 0; margin-bottom:
-                    0.5rem"&gt; Card with slightly smaller padding &lt;/h3&gt;
-                    &lt;p style="margin: 0"&gt; This card uses
-                    &lt;code&gt;padding: 0.75rem;&lt;/code&gt; for a slightly
-                    more compact layout. &lt;/p&gt; &lt;/div&gt; &lt;div style="
-                    border: 1px solid #d0d7de; border-radius: 999px; padding:
-                    0.75rem 1.25rem; margin-bottom: 1rem; background: #eef6ff;
-                    display: inline-block; " &gt; &lt;p style="margin: 0"&gt;
-                    This pill-style badge uses &lt;code&gt;border-radius:
-                    999px;&lt;/code&gt; and extra horizontal padding. &lt;/p&gt;
-                    &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div style="border: 1px solid #d0d7de; border-radius: 0.5rem; padding: 1rem; margin-bottom: 1rem; background: #f9fafb;">
+  <h3 style="margin-top: 0; margin-bottom: 0.5rem">Card with standard padding</h3>
+  <p style="margin: 0">
+    This card uses <code>padding: 1rem;</code> and
+    <code>margin-bottom: 1rem;</code> to create clear spacing around
+    the content and between cards.
+  </p>
+</div>
+
+<div style="border: 1px solid #d0d7de; border-radius: 0.5rem; padding: 0.75rem; margin-bottom: 1rem; background: #ffffff;">
+  <h3 style="margin-top: 0; margin-bottom: 0.5rem">Card with slightly smaller padding</h3>
+  <p style="margin: 0">
+    This card uses <code>padding: 0.75rem;</code> for a slightly more compact layout.
+  </p>
+</div>
+
+<div style="border: 1px solid #d0d7de; border-radius: 999px; padding: 0.75rem 1.25rem; margin-bottom: 1rem; background: #eef6ff; display: inline-block;">
+  <p style="margin: 0">
+    This pill-style badge uses <code>border-radius: 999px;</code> and extra horizontal padding.
+  </p>
+</div>`}</CodeBlock>
 
             <h3>Spacing between sections</h3>
 
@@ -234,19 +227,13 @@ export default function page() {
                 </p>
             </div>
 
-            <pre>
-                <code>
-                    &lt;div style=" border-left: 4px solid #0000cd; padding:
-                    0.75rem 1rem; margin-top: 1.5rem; margin-bottom: 1.5rem;
-                    background: #f5f7ff; " &gt; &lt;h3 style="margin-top: 0;
-                    margin-bottom: 0.5rem"&gt; Section callout &lt;/h3&gt; &lt;p
-                    style="margin: 0"&gt; This callout uses
-                    &lt;code&gt;margin-top&lt;/code&gt; and
-                    &lt;code&gt;margin-bottom&lt;/code&gt; on the container to
-                    create space above and below the block. &lt;/p&gt;
-                    &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div style="border-left: 4px solid #0000cd; padding: 0.75rem 1rem; margin-top: 1.5rem; margin-bottom: 1.5rem; background: #f5f7ff;">
+  <h3 style="margin-top: 0; margin-bottom: 0.5rem">Section callout</h3>
+  <p style="margin: 0">
+    This callout uses <code>margin-top</code> and <code>margin-bottom</code>
+    on the container to create space above and below the block.
+  </p>
+</div>`}</CodeBlock>
 
             <h2>Accessibility and limitations</h2>
 

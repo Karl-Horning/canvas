@@ -1,3 +1,5 @@
+import CodeBlock from "@/components/CodeBlock";
+
 export default function page() {
     return (
         <article>
@@ -90,23 +92,17 @@ export default function page() {
                 </p>
             </div>
 
-            <pre>
-                <code>
-                    &lt;a class="btn btn-primary" href="#"&gt;Primary
-                    button&lt;/a&gt; &lt;a class="btn btn-secondary"
-                    href="#"&gt;Secondary button&lt;/a&gt; &lt;a class="btn
-                    btn-success" href="#"&gt;Success button&lt;/a&gt; &lt;a
-                    class="btn btn-warning" href="#"&gt;Warning button&lt;/a&gt;
-                    &lt;a class="btn btn-danger" href="#"&gt;Danger
-                    button&lt;/a&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<a class="btn btn-primary" href="#">Primary button</a>
+<a class="btn btn-secondary" href="#">Secondary button</a>
+<a class="btn btn-success" href="#">Success button</a>
+<a class="btn btn-warning" href="#">Warning button</a>
+<a class="btn btn-danger" href="#">Danger button</a>`}</CodeBlock>
 
             <h2>Button sizes (Canvas legacy classes)</h2>
 
             <p>
                 You can adjust the size of a Canvas button by adding one of the
-                optional size classes: <code>btn-large</code>,
+                optional size classes: <code>btn-large</code>,{" "}
                 <code>btn-small</code>, or <code>btn-mini</code>.
             </p>
 
@@ -128,14 +124,9 @@ export default function page() {
                 </p>
             </div>
 
-            <pre>
-                <code>
-                    &lt;a class="btn btn-primary btn-large" href="#"&gt;Primary
-                    button&lt;/a&gt; &lt;a class="btn btn-primary btn-small"
-                    href="#"&gt;Primary button&lt;/a&gt; &lt;a class="btn
-                    btn-primary btn-mini" href="#"&gt;Primary button&lt;/a&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<a class="btn btn-primary btn-large" href="#">Primary button (large)</a>
+<a class="btn btn-primary btn-small" href="#">Primary button (small)</a>
+<a class="btn btn-primary btn-mini" href="#">Primary button (mini)</a>`}</CodeBlock>
 
             <h2>Modern inline-styled links as buttons</h2>
 
@@ -175,18 +166,13 @@ export default function page() {
                 </p>
             </div>
 
-            <pre>
-                <code>
-                    &lt;a href="#" style=" display: inline-block; padding:
-                    0.5rem 1rem; border-radius: 0.375rem; background-color:
-                    #0000cd; color: #ffffff; text-decoration: none; font-weight:
-                    600; " &gt; Primary action &lt;/a&gt; &lt;a href="#" style="
-                    display: inline-block; padding: 0.5rem 1rem; border-radius:
-                    0.375rem; border: 1px solid #0000cd; color: #0000cd;
-                    background-color: #ffffff; text-decoration: none;
-                    font-weight: 600; " &gt; Secondary action &lt;/a&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<a href="#" style="display: inline-block; padding: 0.5rem 1rem; border-radius: 0.375rem; background-color: #0000cd; color: #ffffff; text-decoration: none; font-weight: 600;">
+  Primary action
+</a>
+
+<a href="#" style="display: inline-block; padding: 0.5rem 1rem; border-radius: 0.375rem; border: 1px solid #0000cd; color: #0000cd; background-color: #ffffff; text-decoration: none; font-weight: 600;">
+  Secondary action
+</a>`}</CodeBlock>
 
             <h3>Full-width call-to-action</h3>
 
@@ -206,15 +192,9 @@ export default function page() {
                 </a>
             </div>
 
-            <pre>
-                <code>
-                    &lt;a href="#" style=" display: block; padding: 0.75rem
-                    1rem; border-radius: 0.5rem; background-color: #008080;
-                    color: #ffffff; text-align: center; text-decoration: none;
-                    font-weight: 600; " &gt; Full-width call to action
-                    &lt;/a&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<a href="#" style="display: block; padding: 0.75rem 1rem; border-radius: 0.5rem; background-color: #008080; color: #ffffff; text-align: center; text-decoration: none; font-weight: 600;">
+  Full-width call to action
+</a>`}</CodeBlock>
 
             <h3>Subtle text-style button</h3>
 
@@ -233,13 +213,9 @@ export default function page() {
                 </a>
             </div>
 
-            <pre>
-                <code>
-                    &lt;a href="#" style=" display: inline-block; padding:
-                    0.25rem 0; color: #0000cd; text-decoration: underline;
-                    font-weight: 500; " &gt; Subtle action link &lt;/a&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<a href="#" style="display: inline-block; padding: 0.25rem 0; color: #0000cd; text-decoration: underline; font-weight: 500;">
+  Subtle action link
+</a>`}</CodeBlock>
 
             <h2>Accessibility notes</h2>
 

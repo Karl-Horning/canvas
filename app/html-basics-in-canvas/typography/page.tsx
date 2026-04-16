@@ -1,3 +1,5 @@
+import CodeBlock from "@/components/CodeBlock";
+
 export default function page() {
     return (
         <article>
@@ -64,7 +66,7 @@ export default function page() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        MDN — <code>&lt;details&gt;</code> and
+                        MDN — <code>&lt;details&gt;</code> and{" "}
                         <code>&lt;summary&gt;</code>
                     </a>
                 </li>
@@ -75,9 +77,9 @@ export default function page() {
             <p>
                 Use <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> to
                 structure content hierarchically. <code>&lt;h1&gt;</code> is the
-                most important heading on the page, and{" "}
-                <code>&lt;h6&gt;</code> is the least important. In most Canvas
-                pages you will only need levels one to three.
+                most important heading on the page, and <code>&lt;h6&gt;</code>{" "}
+                is the least important. In most Canvas pages you will only need
+                levels one to three.
             </p>
 
             <div className="mb-4 bg-[#f9f9f9] p-3">
@@ -89,14 +91,12 @@ export default function page() {
                 <h6>H6 Heading example</h6>
             </div>
 
-            <pre>
-                <code>
-                    &lt;h1&gt;H1 Heading example&lt;/h1&gt; &lt;h2&gt;H2 Heading
-                    example&lt;/h2&gt; &lt;h3&gt;H3 Heading example&lt;/h3&gt;
-                    &lt;h4&gt;H4 Heading example&lt;/h4&gt; &lt;h5&gt;H5 Heading
-                    example&lt;/h5&gt; &lt;h6&gt;H6 Heading example&lt;/h6&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<h1>H1 Heading example</h1>
+<h2>H2 Heading example</h2>
+<h3>H3 Heading example</h3>
+<h4>H4 Heading example</h4>
+<h5>H5 Heading example</h5>
+<h6>H6 Heading example</h6>`}</CodeBlock>
 
             <h2>Emphasis</h2>
 
@@ -126,19 +126,18 @@ export default function page() {
                 </p>
             </div>
 
-            <pre>
-                <code>
-                    &lt;p&gt; This sentence contains &lt;strong&gt;important
-                    highlighted text&lt;/strong&gt; using
-                    &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;. &lt;/p&gt;
-                    &lt;p&gt; This sentence uses &lt;em&gt;emphasised text for
-                    stress&lt;/em&gt; with
-                    &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt;. &lt;/p&gt;
-                    &lt;p&gt; This line includes &lt;small&gt;supporting details
-                    in smaller text&lt;/small&gt; using
-                    &lt;code&gt;&amp;lt;small&amp;gt;&lt;/code&gt;. &lt;/p&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<p>
+  This sentence contains <strong>important highlighted text</strong>
+  using <code>&lt;strong&gt;</code>.
+</p>
+<p>
+  This sentence uses <em>emphasised text for stress</em>
+  with <code>&lt;em&gt;</code>.
+</p>
+<p>
+  This line includes <small>supporting details in smaller text</small>
+  using <code>&lt;small&gt;</code>.
+</p>`}</CodeBlock>
 
             <h2>Alignment</h2>
 
@@ -163,15 +162,9 @@ export default function page() {
                 <p className="text-right">This paragraph is right-aligned.</p>
             </div>
 
-            <pre>
-                <code>
-                    &lt;p class="text-left"&gt;This paragraph is
-                    left-aligned.&lt;/p&gt; &lt;p class="text-center"&gt;This
-                    paragraph is centre-aligned.&lt;/p&gt; &lt;p
-                    class="text-right"&gt;This paragraph is
-                    right-aligned.&lt;/p&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<p class="text-left">This paragraph is left-aligned.</p>
+<p class="text-center">This paragraph is centre-aligned.</p>
+<p class="text-right">This paragraph is right-aligned.</p>`}</CodeBlock>
 
             <h2>Text colour</h2>
 
@@ -182,7 +175,7 @@ export default function page() {
             </p>
 
             <p>
-                Classes like <code>muted</code>, <code>text-warning</code>,
+                Classes like <code>muted</code>, <code>text-warning</code>,{" "}
                 <code>text-error</code>, <code>text-info</code>, and{" "}
                 <code>text-success</code> are provided by Canvas' legacy CSS.
                 They still work, but the exact colours may change if Canvas'
@@ -224,21 +217,19 @@ export default function page() {
                 </p>
             </div>
 
-            <pre>
-                <code>
-                    &lt;p class="muted"&gt;Example of muted text.&lt;/p&gt;
-                    &lt;p class="text-warning"&gt; Example of warning text &lt;a
-                    href="#" class="text-warning"&gt;with a link&lt;/a&gt;
-                    &lt;/p&gt; &lt;p class="text-error"&gt; Example of error
-                    text &lt;a href="#" class="text-error"&gt;with a
-                    link&lt;/a&gt; &lt;/p&gt; &lt;p class="text-info"&gt;
-                    Example of info text &lt;a href="#"
-                    class="text-info"&gt;with a link&lt;/a&gt; &lt;/p&gt; &lt;p
-                    class="text-success"&gt; Example of success text &lt;a
-                    href="#" class="text-success"&gt;with a link&lt;/a&gt;
-                    &lt;/p&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<p class="muted">Example of muted text.</p>
+<p class="text-warning">
+  Example of warning text <a href="#" class="text-warning">with a link</a>
+</p>
+<p class="text-error">
+  Example of error text <a href="#" class="text-error">with a link</a>
+</p>
+<p class="text-info">
+  Example of info text <a href="#" class="text-info">with a link</a>
+</p>
+<p class="text-success">
+  Example of success text <a href="#" class="text-success">with a link</a>
+</p>`}</CodeBlock>
 
             <h2>Collapsible content with &lt;details&gt;</h2>
 
@@ -276,38 +267,44 @@ export default function page() {
                 </details>
             </div>
 
-            <pre>
-                <code>
-                    &lt;details&gt; &lt;summary&gt;Collapsible section
-                    one&lt;/summary&gt; &lt;p&gt; This is some additional
-                    content that can be shown or hidden by activating the
-                    summary above. &lt;/p&gt; &lt;/details&gt; &lt;details&gt;
-                    &lt;summary&gt;Collapsible section two&lt;/summary&gt;
-                    &lt;p&gt; You can use multiple
-                    &lt;code&gt;&amp;lt;details&amp;gt;&lt;/code&gt; elements on
-                    a page for separate blocks of content. &lt;/p&gt;
-                    &lt;/details&gt; &lt;details&gt; &lt;summary&gt;Collapsible
-                    section three&lt;/summary&gt; &lt;p&gt; Avoid hiding
-                    critical instructions inside collapsed content, as some
-                    learners may miss it. &lt;/p&gt; &lt;/details&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<details>
+  <summary>Collapsible section one</summary>
+  <p>
+    This is some additional content that can be shown or hidden
+    by activating the summary above.
+  </p>
+</details>
+
+<details>
+  <summary>Collapsible section two</summary>
+  <p>
+    You can use multiple <code>&lt;details&gt;</code> elements on
+    a page for separate blocks of content.
+  </p>
+</details>
+
+<details>
+  <summary>Collapsible section three</summary>
+  <p>
+    Avoid hiding critical instructions inside collapsed content,
+    as some learners may miss it.
+  </p>
+</details>`}</CodeBlock>
 
             <p>
                 Some browsers support "exclusive" accordion behaviour using a{" "}
-                <code>name</code> attribute on{" "}
-                <code>&lt;details&gt;</code> (where opening one section closes
-                the others). However, in this Canvas instance the{" "}
-                <code>name</code> attribute is removed from{" "}
+                <code>name</code> attribute on <code>&lt;details&gt;</code>{" "}
+                (where opening one section closes the others). However, in this
+                Canvas instance the <code>name</code> attribute is removed from{" "}
                 <code>&lt;details&gt;</code> elements, so this exclusive
                 accordion pattern is not available.
             </p>
 
             <p>
                 If you would like to learn more about the{" "}
-                <code>&lt;details&gt;</code> and{" "}
-                <code>&lt;summary&gt;</code> elements and the exclusive
-                accordion pattern, see the MDN article{" "}
+                <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code>{" "}
+                elements and the exclusive accordion pattern, see the MDN
+                article{" "}
                 <a
                     href="https://developer.mozilla.org/en-US/blog/html-details-exclusive-accordions/"
                     target="_blank"

@@ -150,12 +150,9 @@ export default function introduction() {
                 Example heading
             </h2>
 
-            <pre>
-                <code>
-                    &lt;h2 style=" background:#0000cd; color:#ffd6e5;
-                    padding:1rem; "&gt; Example heading &lt;/h2&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<h2 style="background: #0000cd; color: #ffd6e5; padding: 1rem;">
+  Example heading
+</h2>`}</CodeBlock>
 
             <h3>Mood 2 — Bold, forward-looking</h3>
 
@@ -169,12 +166,9 @@ export default function introduction() {
                 Example heading
             </h2>
 
-            <pre>
-                <code>
-                    &lt;h2 style=" background:#fff200; color:#4b4f57;
-                    padding:1rem; "&gt; Example heading &lt;/h2&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<h2 style="background: #fff200; color: #4b4f57; padding: 1rem;">
+  Example heading
+</h2>`}</CodeBlock>
 
             <h3>Mood 3 — Fresh, modern</h3>
 
@@ -188,12 +182,9 @@ export default function introduction() {
                 Example heading
             </h2>
 
-            <pre>
-                <code>
-                    &lt;h2 style=" background:#00e67a; color:#111322;
-                    padding:1rem; "&gt; Example heading &lt;/h2&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<h2 style="background: #00e67a; color: #111322; padding: 1rem;">
+  Example heading
+</h2>`}</CodeBlock>
 
             <h3>Optional variations</h3>
 
@@ -203,16 +194,13 @@ export default function introduction() {
                 wrapping the text in a container:
             </p>
 
-            <pre>
-                <code>
-                    &lt;h3 style=" background:#0000cd; color:#ffd6e5;
-                    padding:0.75rem; "&gt; Subsection heading &lt;/h3&gt;
-                    &lt;div style=" background:#fff200; color:#4b4f57;
-                    padding:1.25rem; margin:1rem 0; "&gt; &lt;h2
-                    style="margin:0;"&gt;Module introduction&lt;/h2&gt;
-                    &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<h3 style="background: #0000cd; color: #ffd6e5; padding: 0.75rem;">
+  Subsection heading
+</h3>
+
+<div style="background: #fff200; color: #4b4f57; padding: 1.25rem; margin: 1rem 0;">
+  <h2 style="margin: 0;">Module introduction</h2>
+</div>`}</CodeBlock>
 
             <p>
                 When creating your own colour combinations, always check

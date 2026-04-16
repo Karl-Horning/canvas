@@ -1,3 +1,5 @@
+import CodeBlock from "@/components/CodeBlock";
+
 export default function page() {
     return (
         <article>
@@ -92,26 +94,28 @@ export default function page() {
                 </div>
             </div>
 
-            <pre>
-                <code>
-                    &lt;div class="enhanceable_content tabs"&gt; &lt;ul&gt;
-                    &lt;li&gt;&lt;a
-                    href="#tab-one"&gt;Overview&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a
-                    href="#tab-two"&gt;Details&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href="#tab-three"&gt;Further
-                    support&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;div
-                    id="tab-one"&gt; &lt;h4&gt;Overview&lt;/h4&gt; &lt;p&gt; Use
-                    this tab for a short summary or introduction. &lt;/p&gt;
-                    &lt;/div&gt; &lt;div id="tab-two"&gt;
-                    &lt;h4&gt;Details&lt;/h4&gt; &lt;p&gt; Place more detailed
-                    information here — for example, steps or criteria.
-                    &lt;/p&gt; &lt;/div&gt; &lt;div id="tab-three"&gt;
-                    &lt;h4&gt;Further support&lt;/h4&gt; &lt;p&gt; Use this tab
-                    for links to help, FAQs, or related resources. &lt;/p&gt;
-                    &lt;/div&gt; &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div class="enhanceable_content tabs">
+  <ul>
+    <li><a href="#tab-one">Overview</a></li>
+    <li><a href="#tab-two">Details</a></li>
+    <li><a href="#tab-three">Further support</a></li>
+  </ul>
+
+  <div id="tab-one">
+    <h4>Overview</h4>
+    <p>Use this tab for a short summary or introduction.</p>
+  </div>
+
+  <div id="tab-two">
+    <h4>Details</h4>
+    <p>Place more detailed information here — for example, steps or criteria.</p>
+  </div>
+
+  <div id="tab-three">
+    <h4>Further support</h4>
+    <p>Use this tab for links to help, FAQs, or related resources.</p>
+  </div>
+</div>`}</CodeBlock>
 
             <h2>Accessibility notes</h2>
 
@@ -134,7 +138,8 @@ export default function page() {
                 </li>
                 <li>
                     For simpler show/hide content that does not require tabbed
-                    navigation, consider native <code>&lt;details&gt;</code> /
+                    navigation, consider native{" "}
+                    <code>&lt;details&gt;</code> /{" "}
                     <code>&lt;summary&gt;</code> instead, as shown on the
                     Typography page.
                 </li>

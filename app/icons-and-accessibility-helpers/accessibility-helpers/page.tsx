@@ -1,3 +1,5 @@
+import CodeBlock from "@/components/CodeBlock";
+
 export default function page() {
     return (
         <article>
@@ -88,17 +90,18 @@ export default function page() {
                 </p>
             </div>
 
-            <pre>
-                <code>
-                    &lt;p&gt; &lt;span class="screenreader-only"&gt; This
-                    sentence is only read by screen readers. &lt;/span&gt;
-                    &lt;span&gt;This sentence is visible to
-                    everyone.&lt;/span&gt; &lt;/p&gt; &lt;p&gt; &lt;a
-                    href="#"&gt; Submit assignment &lt;span
-                    class="screenreader-only"&gt; for Week 3: Data Analysis
-                    &lt;/span&gt; &lt;/a&gt; &lt;/p&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<p>
+  <span class="screenreader-only">
+    This sentence is only read by screen readers.
+  </span>
+  <span>This sentence is visible to everyone.</span>
+</p>
+<p>
+  <a href="#">
+    Submit assignment
+    <span class="screenreader-only">for Week 3: Data Analysis</span>
+  </a>
+</p>`}</CodeBlock>
 
             <h2>Accessibility notes</h2>
 

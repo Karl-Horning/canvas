@@ -1,3 +1,5 @@
+import CodeBlock from "@/components/CodeBlock";
+
 export default function page() {
     return (
         <article>
@@ -89,20 +91,18 @@ export default function page() {
                 </p>
             </div>
 
-            <pre>
-                <code>
-                    &lt;p&gt; &lt;i className="icon-info"
-                    aria-hidden="true"&gt;&lt;/i&gt;
-                    &lt;strong&gt;Information:&lt;/strong&gt; Submissions are
-                    due by Friday at 17:00. &lt;/p&gt; &lt;p&gt; &lt;i
-                    className="icon-warning" aria-hidden="true"&gt;&lt;/i&gt;
-                    &lt;strong&gt;Warning:&lt;/strong&gt; Late work may receive
-                    a reduced mark. &lt;/p&gt; &lt;p&gt; &lt;i
-                    className="icon-check" aria-hidden="true"&gt;&lt;/i&gt;
-                    &lt;strong&gt;Completed:&lt;/strong&gt; You have already
-                    submitted this assignment. &lt;/p&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<p>
+  <i class="icon-info" aria-hidden="true"></i>
+  <strong>Information:</strong> Submissions are due by Friday at 17:00.
+</p>
+<p>
+  <i class="icon-warning" aria-hidden="true"></i>
+  <strong>Warning:</strong> Late work may receive a reduced mark.
+</p>
+<p>
+  <i class="icon-check" aria-hidden="true"></i>
+  <strong>Completed:</strong> You have already submitted this assignment.
+</p>`}</CodeBlock>
 
             <h2>Icons with extra meaning</h2>
 
@@ -126,14 +126,10 @@ export default function page() {
                 </p>
             </div>
 
-            <pre>
-                <code>
-                    &lt;p&gt; &lt;i className="icon-warning" role="img"
-                    aria-label="Important update" &gt;&lt;/i&gt;
-                    &lt;strong&gt;Important:&lt;/strong&gt; The deadline for
-                    this activity has changed. &lt;/p&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<p>
+  <i class="icon-warning" role="img" aria-label="Important update"></i>
+  <strong>Important:</strong> The deadline for this activity has changed.
+</p>`}</CodeBlock>
 
             <p>
                 In many cases you can avoid extra ARIA by simply including clear
@@ -162,16 +158,14 @@ export default function page() {
                 </p>
             </div>
 
-            <pre>
-                <code>
-                    &lt;p&gt; &lt;i className="icon-star-light"
-                    aria-hidden="true"&gt;&lt;/i&gt; Recommended reading for
-                    this week. &lt;/p&gt; &lt;p&gt; &lt;i
-                    className="icon-arrow-right"
-                    aria-hidden="true"&gt;&lt;/i&gt; Proceed to the next
-                    activity. &lt;/p&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<p>
+  <i class="icon-star-light" aria-hidden="true"></i>
+  Recommended reading for this week.
+</p>
+<p>
+  <i class="icon-arrow-right" aria-hidden="true"></i>
+  Proceed to the next activity.
+</p>`}</CodeBlock>
 
             <h2>Full icon reference</h2>
 

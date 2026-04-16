@@ -1,3 +1,5 @@
+import CodeBlock from "@/components/CodeBlock";
+
 export default function page() {
     return (
         <article>
@@ -64,18 +66,15 @@ export default function page() {
                 <code>alert alert-error</code> message.
             </div>
 
-            <pre>
-                <code>
-                    &lt;div class="alert alert-info" role="status"&gt;
-                    &lt;strong&gt;Info:&lt;/strong&gt; This is an info alert.
-                    &lt;/div&gt; &lt;div class="alert alert-success"
-                    role="status"&gt; &lt;strong&gt;Success:&lt;/strong&gt; This
-                    is a success alert. &lt;/div&gt; &lt;div class="alert
-                    alert-error" role="alert"&gt;
-                    &lt;strong&gt;Error:&lt;/strong&gt; This is an error alert.
-                    &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div class="alert alert-info" role="status">
+  <strong>Info:</strong> This is an info alert.
+</div>
+<div class="alert alert-success" role="status">
+  <strong>Success:</strong> This is a success alert.
+</div>
+<div class="alert alert-error" role="alert">
+  <strong>Error:</strong> This is an error alert.
+</div>`}</CodeBlock>
 
             <h2>Modern inline-style alerts</h2>
 
@@ -115,22 +114,17 @@ export default function page() {
                 attention.
             </div>
 
-            <pre>
-                <code>
-                    &lt;div role="status" style=" padding: 1rem; border-radius:
-                    0.375rem; background: #e8f2ff; border-left: 6px solid
-                    #4c9dcd; " &gt; &lt;strong&gt;Info:&lt;/strong&gt;
-                    Inline-styled information alert. &lt;/div&gt; &lt;div
-                    role="status" style=" padding: 1rem; border-radius:
-                    0.375rem; background: #e8f8ea; border-left: 6px solid
-                    #2d8a3b; " &gt; &lt;strong&gt;Success:&lt;/strong&gt; Action
-                    completed successfully. &lt;/div&gt; &lt;div role="alert"
-                    style=" padding: 1rem; border-radius: 0.375rem; background:
-                    #fdeaea; border-left: 6px solid #cb2d6f; " &gt;
-                    &lt;strong&gt;Error:&lt;/strong&gt; Something has gone
-                    wrong. &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div role="status" style="padding: 1rem; border-radius: 0.375rem; background: #e8f2ff; border-left: 6px solid #4c9dcd;">
+  <strong>Info:</strong> Inline-styled information alert.
+</div>
+
+<div role="status" style="padding: 1rem; border-radius: 0.375rem; background: #e8f8ea; border-left: 6px solid #2d8a3b;">
+  <strong>Success:</strong> Action completed successfully.
+</div>
+
+<div role="alert" style="padding: 1rem; border-radius: 0.375rem; background: #fdeaea; border-left: 6px solid #cb2d6f;">
+  <strong>Error:</strong> Something has gone wrong.
+</div>`}</CodeBlock>
 
             <h2>Accessibility notes</h2>
             <ul>

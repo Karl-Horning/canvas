@@ -1,3 +1,5 @@
+import CodeBlock from "@/components/CodeBlock";
+
 export default function page() {
     return (
         <article>
@@ -605,15 +607,13 @@ export default function page() {
                 styles on text or containers. For example:
             </p>
 
-            <pre>
-                <code>
-                    &lt;p style="color: #0000cd;"&gt; This heading uses Imperial
-                    Blue as text on white. &lt;/p&gt; &lt;div
-                    style="background-color: #f5f5f5; padding: 1rem;"&gt;
-                    &lt;p&gt;This panel uses White Smoke as a light
-                    background.&lt;/p&gt; &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<p style="color: #0000cd;">
+  This heading uses Imperial Blue as text on white.
+</p>
+
+<div style="background-color: #f5f5f5; padding: 1rem;">
+  <p>This panel uses White Smoke as a light background.</p>
+</div>`}</CodeBlock>
 
             <p>
                 For combinations not shown here (for example, light text on a

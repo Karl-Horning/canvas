@@ -1,3 +1,5 @@
+import CodeBlock from "@/components/CodeBlock";
+
 export default function page() {
     return (
         <article>
@@ -92,22 +94,22 @@ export default function page() {
                 </div>
             </div>
 
-            <pre>
-                <code>
-                    &lt;div class="content-box"&gt; &lt;div class="grid-row"&gt;
-                    &lt;div class="col-xs-12 col-md-8"&gt; &lt;div
-                    style="background: #eef; padding: 0.75rem;"&gt;
-                    &lt;h5&gt;Main column (8/12)&lt;/h5&gt; &lt;p&gt; Uses
-                    &lt;code&gt;col-xs-12 col-md-8&lt;/code&gt;. Full width on
-                    small screens. &lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;div
-                    class="col-xs-12 col-md-4"&gt; &lt;div style="background:
-                    #eef; padding: 0.75rem;"&gt; &lt;h5&gt;Side column
-                    (4/12)&lt;/h5&gt; &lt;p&gt; Uses &lt;code&gt;col-xs-12
-                    col-md-4&lt;/code&gt;. Stacks below on smaller screens.
-                    &lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;
-                    &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div class="content-box">
+  <div class="grid-row">
+    <div class="col-xs-12 col-md-8">
+      <div style="background: #eef; padding: 0.75rem;">
+        <h5>Main column (8/12)</h5>
+        <p>Uses <code>col-xs-12 col-md-8</code>. Full width on small screens.</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <div style="background: #eef; padding: 0.75rem;">
+        <h5>Side column (4/12)</h5>
+        <p>Uses <code>col-xs-12 col-md-4</code>. Stacks below on smaller screens.</p>
+      </div>
+    </div>
+  </div>
+</div>`}</CodeBlock>
 
             <h2>Three-column layout (Canvas legacy grid)</h2>
 
@@ -152,26 +154,28 @@ export default function page() {
                 </div>
             </div>
 
-            <pre>
-                <code>
-                    &lt;div class="content-box"&gt; &lt;div class="grid-row"&gt;
-                    &lt;div class="col-xs-12 col-md-4"&gt; &lt;div
-                    style="background: #eef; padding: 0.75rem;"&gt;
-                    &lt;p&gt;&lt;strong&gt;Column 1&lt;/strong&gt;&lt;/p&gt;
-                    &lt;p&gt;Uses &lt;code&gt;col-xs-12
-                    col-md-4&lt;/code&gt;.&lt;/p&gt; &lt;/div&gt; &lt;/div&gt;
-                    &lt;div class="col-xs-12 col-md-4"&gt; &lt;div
-                    style="background: #eef; padding: 0.75rem;"&gt;
-                    &lt;p&gt;&lt;strong&gt;Column 2&lt;/strong&gt;&lt;/p&gt;
-                    &lt;p&gt;Also uses &lt;code&gt;col-xs-12
-                    col-md-4&lt;/code&gt;.&lt;/p&gt; &lt;/div&gt; &lt;/div&gt;
-                    &lt;div class="col-xs-12 col-md-4"&gt; &lt;div
-                    style="background: #eef; padding: 0.75rem;"&gt;
-                    &lt;p&gt;&lt;strong&gt;Column 3&lt;/strong&gt;&lt;/p&gt;
-                    &lt;p&gt;Same width as the others.&lt;/p&gt; &lt;/div&gt;
-                    &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div class="content-box">
+  <div class="grid-row">
+    <div class="col-xs-12 col-md-4">
+      <div style="background: #eef; padding: 0.75rem;">
+        <p><strong>Column 1</strong></p>
+        <p>Uses <code>col-xs-12 col-md-4</code>.</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <div style="background: #eef; padding: 0.75rem;">
+        <p><strong>Column 2</strong></p>
+        <p>Also uses <code>col-xs-12 col-md-4</code>.</p>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <div style="background: #eef; padding: 0.75rem;">
+        <p><strong>Column 3</strong></p>
+        <p>Same width as the others.</p>
+      </div>
+    </div>
+  </div>
+</div>`}</CodeBlock>
 
             <h2>Nested grid (Canvas legacy grid)</h2>
 
@@ -215,26 +219,30 @@ export default function page() {
                 </div>
             </div>
 
-            <pre>
-                <code>
-                    &lt;div class="content-box"&gt; &lt;div class="grid-row"&gt;
-                    &lt;div class="col-xs-12 col-md-8"&gt; &lt;div
-                    style="background: #eef; padding: 0.75rem;"&gt;
-                    &lt;h5&gt;Main column with nested content&lt;/h5&gt;
-                    &lt;p&gt;This column contains a nested grid:&lt;/p&gt;
-                    &lt;div class="grid-row"&gt; &lt;div class="col-xs-6"&gt;
-                    &lt;div style="background: #def; padding: 0.5rem;"&gt;
-                    Nested 1 (6/12) &lt;/div&gt; &lt;/div&gt; &lt;div
-                    class="col-xs-6"&gt; &lt;div style="background: #def;
-                    padding: 0.5rem;"&gt; Nested 2 (6/12) &lt;/div&gt;
-                    &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div
-                    class="col-xs-12 col-md-4"&gt; &lt;div style="background:
-                    #eef; padding: 0.75rem;"&gt; &lt;h5&gt;Side
-                    column&lt;/h5&gt; &lt;p&gt;This column sits beside the
-                    nested example.&lt;/p&gt; &lt;/div&gt; &lt;/div&gt;
-                    &lt;/div&gt; &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div class="content-box">
+  <div class="grid-row">
+    <div class="col-xs-12 col-md-8">
+      <div style="background: #eef; padding: 0.75rem;">
+        <h5>Main column with nested content</h5>
+        <p>This column contains a nested grid:</p>
+        <div class="grid-row">
+          <div class="col-xs-6">
+            <div style="background: #def; padding: 0.5rem;">Nested 1 (6/12)</div>
+          </div>
+          <div class="col-xs-6">
+            <div style="background: #def; padding: 0.5rem;">Nested 2 (6/12)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <div style="background: #eef; padding: 0.75rem;">
+        <h5>Side column</h5>
+        <p>This column sits beside the nested example.</p>
+      </div>
+    </div>
+  </div>
+</div>`}</CodeBlock>
 
             <h2>Full-width section (Canvas legacy grid)</h2>
 
@@ -254,16 +262,15 @@ export default function page() {
                 </div>
             </div>
 
-            <pre>
-                <code>
-                    &lt;div class="content-box"&gt; &lt;div class="grid-row"&gt;
-                    &lt;div class="col-xs-12"&gt; &lt;div style="background:
-                    #def; padding: 1rem;"&gt; &lt;strong&gt;Full-width
-                    section&lt;/strong&gt; using
-                    &lt;code&gt;col-xs-12&lt;/code&gt;. &lt;/div&gt;
-                    &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div class="content-box">
+  <div class="grid-row">
+    <div class="col-xs-12">
+      <div style="background: #def; padding: 1rem;">
+        <strong>Full-width section</strong> using <code>col-xs-12</code>.
+      </div>
+    </div>
+  </div>
+</div>`}</CodeBlock>
 
             <h2>Modern CSS Grid with inline styles</h2>
 
@@ -276,7 +283,8 @@ export default function page() {
 
             <p>
                 The examples below use the same pattern:{" "}
-                <code>display: grid</code>, <code>grid-template-columns</code>{" "}
+                <code>display: grid</code>,{" "}
+                <code>grid-template-columns</code>{" "}
                 with <code>repeat(auto-fit, minmax(...))</code>, and a{" "}
                 <code>gap</code> between items.
             </p>
@@ -284,7 +292,8 @@ export default function page() {
             <h3>Two-column responsive grid (inline styles)</h3>
 
             <p>
-                This example uses <code>auto-fit</code> and <code>minmax</code>{" "}
+                This example uses <code>auto-fit</code> and{" "}
+                <code>minmax</code>{" "}
                 so that columns wrap when there is not enough space. On wider
                 screens you will see two columns; on narrow screens they stack.
             </p>
@@ -306,20 +315,22 @@ export default function page() {
                 </div>
             </div>
 
-            <pre>
-                <code>
-                    &lt;div style=" display: grid; grid-template-columns:
-                    repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; " &gt;
-                    &lt;div style="background: #eef; padding: 0.75rem;"&gt;
-                    &lt;h5&gt;Main content&lt;/h5&gt; &lt;p&gt; This is the
-                    first column. It uses CSS Grid with inline styles and a
-                    minimum width of 260px. &lt;/p&gt; &lt;/div&gt; &lt;div
-                    style="background: #def; padding: 0.75rem;"&gt;
-                    &lt;h5&gt;Supporting content&lt;/h5&gt; &lt;p&gt; When the
-                    available width is too small for two 260px columns, the
-                    items stack vertically. &lt;/p&gt; &lt;/div&gt; &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem;">
+  <div style="background: #eef; padding: 0.75rem;">
+    <h5>Main content</h5>
+    <p>
+      This is the first column. It uses CSS Grid with inline styles
+      and a minimum width of 260px.
+    </p>
+  </div>
+  <div style="background: #def; padding: 0.75rem;">
+    <h5>Supporting content</h5>
+    <p>
+      When the available width is too small for two 260px columns,
+      the items stack vertically.
+    </p>
+  </div>
+</div>`}</CodeBlock>
 
             <h3>Auto-fit card layout (inline styles)</h3>
 
@@ -344,21 +355,20 @@ export default function page() {
                 </div>
             </div>
 
-            <pre>
-                <code>
-                    &lt;div style=" display: grid; grid-template-columns:
-                    repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; " &gt;
-                    &lt;div style="background: #eef; padding: 0.75rem;"&gt;
-                    &lt;h5&gt;Card 1&lt;/h5&gt; &lt;p&gt;Responsive card using
-                    CSS Grid.&lt;/p&gt; &lt;/div&gt; &lt;div style="background:
-                    #eef; padding: 0.75rem;"&gt; &lt;h5&gt;Card 2&lt;/h5&gt;
-                    &lt;p&gt;The grid fits as many cards per row as space
-                    allows.&lt;/p&gt; &lt;/div&gt; &lt;div style="background:
-                    #eef; padding: 0.75rem;"&gt; &lt;h5&gt;Card 3&lt;/h5&gt;
-                    &lt;p&gt;On narrow screens, these cards stack
-                    vertically.&lt;/p&gt; &lt;/div&gt; &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
+  <div style="background: #eef; padding: 0.75rem;">
+    <h5>Card 1</h5>
+    <p>Responsive card using CSS Grid.</p>
+  </div>
+  <div style="background: #eef; padding: 0.75rem;">
+    <h5>Card 2</h5>
+    <p>The grid fits as many cards per row as space allows.</p>
+  </div>
+  <div style="background: #eef; padding: 0.75rem;">
+    <h5>Card 3</h5>
+    <p>On narrow screens, these cards stack vertically.</p>
+  </div>
+</div>`}</CodeBlock>
 
             <h3>Header / main / aside layout (inline styles)</h3>
 
@@ -395,24 +405,24 @@ export default function page() {
                 </div>
             </div>
 
-            <pre>
-                <code>
-                    &lt;div&gt; &lt;div style=" background: #ddeeff; padding:
-                    0.75rem; margin-bottom: 1rem; " &gt; &lt;strong&gt;Header
-                    area&lt;/strong&gt; — this block always spans the full width
-                    above the content grid. &lt;/div&gt; &lt;div style="
-                    display: grid; grid-template-columns: repeat(auto-fit,
-                    minmax(260px, 1fr)); gap: 1rem; " &gt; &lt;div
-                    style="background: #eef; padding: 0.75rem;"&gt;
-                    &lt;h5&gt;Main content&lt;/h5&gt; &lt;p&gt; This is the main
-                    content area. On wider screens it appears beside the side
-                    panel. &lt;/p&gt; &lt;/div&gt; &lt;div style="background:
-                    #def; padding: 0.75rem;"&gt; &lt;h5&gt;Side panel&lt;/h5&gt;
-                    &lt;p&gt; This section sits next to the main content when
-                    there is enough space, and stacks below on narrow screens.
-                    &lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div>
+  <div style="background: #ddeeff; padding: 0.75rem; margin-bottom: 1rem;">
+    <strong>Header area</strong> — this block always spans the full width above the content grid.
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem;">
+    <div style="background: #eef; padding: 0.75rem;">
+      <h5>Main content</h5>
+      <p>This is the main content area. On wider screens it appears beside the side panel.</p>
+    </div>
+    <div style="background: #def; padding: 0.75rem;">
+      <h5>Side panel</h5>
+      <p>
+        This section sits next to the main content when there is enough space,
+        and stacks below on narrow screens.
+      </p>
+    </div>
+  </div>
+</div>`}</CodeBlock>
 
             <h2>Accessibility notes</h2>
 
