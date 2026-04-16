@@ -53,12 +53,16 @@
         line-height: 1.65;
     }
 
-    article a {
+    article a,
+    main a {
         color: #0000cd;
         text-decoration: underline;
+        cursor: pointer;
     }
 
-    article a:hover {
+    article a:hover,
+    main a:hover {
+        color: #00008b;
         text-decoration: none;
     }
 
