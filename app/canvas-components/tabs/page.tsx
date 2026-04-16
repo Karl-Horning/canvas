@@ -122,7 +122,7 @@ export default function page() {
                     sections if enhancement fails.
                 </li>
                 <li>
-                    Avoid adding your own <code>role="tab"</code>,
+                    Avoid adding your own <code>role="tab"</code>,{" "}
                     <code>role="tablist"</code>, or related attributes unless
                     you are building a fully custom tabs pattern outside Canvas'
                     enhancement system.
@@ -134,9 +134,9 @@ export default function page() {
                 </li>
                 <li>
                     For simpler show/hide content that does not require tabbed
-                    navigation, consider native
-                    <code>&lt;details&gt;</code> /<code>&lt;summary&gt;</code>{" "}
-                    instead, as shown on the Typography page.
+                    navigation, consider native <code>&lt;details&gt;</code> /
+                    <code>&lt;summary&gt;</code> instead, as shown on the
+                    Typography page.
                 </li>
             </ul>
         </article>

@@ -247,7 +247,7 @@ export default function page() {
                 <div className="grid-row">
                     <div className="col-xs-12">
                         <div className="bg-[#def] p-4">
-                            <strong>Full-width section</strong> using
+                            <strong>Full-width section</strong> using{" "}
                             <code>col-xs-12</code>.
                         </div>
                     </div>
@@ -275,20 +275,18 @@ export default function page() {
             </p>
 
             <p>
-                The examples below use the same pattern:
-                <code>display: grid</code>,<code>grid-template-columns</code>{" "}
-                with
-                <code>repeat(auto-fit, minmax(...))</code>, and a
+                The examples below use the same pattern:{" "}
+                <code>display: grid</code>, <code>grid-template-columns</code>{" "}
+                with <code>repeat(auto-fit, minmax(...))</code>, and a{" "}
                 <code>gap</code> between items.
             </p>
 
             <h3>Two-column responsive grid (inline styles)</h3>
 
             <p>
-                This example uses <code>auto-fit</code> and
-                <code>minmax</code> so that columns wrap when there is not
-                enough space. On wider screens you will see two columns; on
-                narrow screens they stack.
+                This example uses <code>auto-fit</code> and <code>minmax</code>{" "}
+                so that columns wrap when there is not enough space. On wider
+                screens you will see two columns; on narrow screens they stack.
             </p>
 
             <div className="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-4 mb-4">
@@ -366,7 +364,7 @@ export default function page() {
 
             <p>
                 This layout uses a simple wrapper for the header and a nested
-                CSS Grid for the main and aside areas. The inner grid uses
+                CSS Grid for the main and aside areas. The inner grid uses{" "}
                 <code>auto-fit</code> and <code>minmax</code>, so the main and
                 aside sections wrap in a similar way to the card example.
             </p>

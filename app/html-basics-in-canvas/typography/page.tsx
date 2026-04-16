@@ -75,7 +75,7 @@ export default function page() {
             <p>
                 Use <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> to
                 structure content hierarchically. <code>&lt;h1&gt;</code> is the
-                most important heading on the page, and
+                most important heading on the page, and{" "}
                 <code>&lt;h6&gt;</code> is the least important. In most Canvas
                 pages you will only need levels one to three.
             </p>
@@ -101,7 +101,7 @@ export default function page() {
             <h2>Emphasis</h2>
 
             <p>
-                Use <code>&lt;strong&gt;</code> to indicate important text,
+                Use <code>&lt;strong&gt;</code> to indicate important text,{" "}
                 <code>&lt;em&gt;</code> for emphasised text (often read with
                 stress by screen readers), and <code>&lt;small&gt;</code> for
                 secondary or fine-print text. These are standard HTML elements
@@ -111,19 +111,18 @@ export default function page() {
 
             <div className="mb-4 bg-[#f9f9f9] p-3">
                 <p>
-                    This sentence contains
-                    <strong>important highlighted text</strong> using
+                    This sentence contains{" "}
+                    <strong>important highlighted text</strong> using{" "}
                     <code>&lt;strong&gt;</code>.
                 </p>
                 <p>
-                    This sentence uses
-                    <em>emphasised text for stress</em>
-                    with <code>&lt;em&gt;</code>.
+                    This sentence uses <em>emphasised text for stress</em> with{" "}
+                    <code>&lt;em&gt;</code>.
                 </p>
                 <p>
-                    This line includes
-                    <small>supporting details in smaller text</small>
-                    using <code>&lt;small&gt;</code>.
+                    This line includes{" "}
+                    <small>supporting details in smaller text</small> using{" "}
+                    <code>&lt;small&gt;</code>.
                 </p>
             </div>
 
@@ -145,7 +144,7 @@ export default function page() {
 
             <p>
                 Alignment utility classes adjust the horizontal alignment of
-                text. Use <code>text-left</code>, <code>text-right</code>, or
+                text. Use <code>text-left</code>, <code>text-right</code>, or{" "}
                 <code>text-center</code> on block-level elements.
             </p>
 
@@ -153,10 +152,9 @@ export default function page() {
                 These <code>text-*</code> classes are part of Canvas' legacy
                 utility CSS. They still work in this Canvas instance, but
                 behaviour or naming could change in the future. You can also use
-                inline styles such as
-                <code>style="text-align: center;"</code> if you prefer a more
-                standard HTML approach that does not depend on Canvas'
-                stylesheets.
+                inline styles such as <code>style="text-align: center;"</code>{" "}
+                if you prefer a more standard HTML approach that does not depend
+                on Canvas' stylesheets.
             </p>
 
             <div className="mb-4 bg-[#f9f9f9] p-3">
@@ -185,7 +183,7 @@ export default function page() {
 
             <p>
                 Classes like <code>muted</code>, <code>text-warning</code>,
-                <code>text-error</code>, <code>text-info</code>, and
+                <code>text-error</code>, <code>text-info</code>, and{" "}
                 <code>text-success</code> are provided by Canvas' legacy CSS.
                 They still work, but the exact colours may change if Canvas'
                 theme is updated. For precise colour control that aligns with
@@ -198,28 +196,28 @@ export default function page() {
                 <p className="muted">Example of muted text.</p>
 
                 <p className="text-warning">
-                    Example of warning text
+                    Example of warning text{" "}
                     <a href="#" className="text-warning">
                         with a link
                     </a>
                 </p>
 
                 <p className="text-error">
-                    Example of error text
+                    Example of error text{" "}
                     <a href="#" className="text-error">
                         with a link
                     </a>
                 </p>
 
                 <p className="text-info">
-                    Example of info text
+                    Example of info text{" "}
                     <a href="#" className="text-info">
                         with a link
                     </a>
                 </p>
 
                 <p className="text-success">
-                    Example of success text
+                    Example of success text{" "}
                     <a href="#" className="text-success">
                         with a link
                     </a>
@@ -245,7 +243,7 @@ export default function page() {
             <h2>Collapsible content with &lt;details&gt;</h2>
 
             <p>
-                You can use the native HTML <code>&lt;details&gt;</code> and
+                You can use the native HTML <code>&lt;details&gt;</code> and{" "}
                 <code>&lt;summary&gt;</code> elements to create simple
                 collapsible sections. These are useful for optional extra
                 information, examples, or FAQs, without needing any custom
@@ -264,7 +262,7 @@ export default function page() {
                 <details>
                     <summary>Collapsible section two</summary>
                     <p>
-                        You can use multiple <code>&lt;details&gt;</code>
+                        You can use multiple <code>&lt;details&gt;</code>{" "}
                         elements on a page for separate blocks of content.
                     </p>
                 </details>
@@ -296,20 +294,20 @@ export default function page() {
             </pre>
 
             <p>
-                Some browsers support "exclusive" accordion behaviour using a
-                <code>name</code> attribute on
+                Some browsers support "exclusive" accordion behaviour using a{" "}
+                <code>name</code> attribute on{" "}
                 <code>&lt;details&gt;</code> (where opening one section closes
-                the others). However, in this Canvas instance the
-                <code>name</code> attribute is removed from
+                the others). However, in this Canvas instance the{" "}
+                <code>name</code> attribute is removed from{" "}
                 <code>&lt;details&gt;</code> elements, so this exclusive
                 accordion pattern is not available.
             </p>
 
             <p>
-                If you would like to learn more about the
-                <code>&lt;details&gt;</code> and
+                If you would like to learn more about the{" "}
+                <code>&lt;details&gt;</code> and{" "}
                 <code>&lt;summary&gt;</code> elements and the exclusive
-                accordion pattern, see the MDN article
+                accordion pattern, see the MDN article{" "}
                 <a
                     href="https://developer.mozilla.org/en-US/blog/html-details-exclusive-accordions/"
                     target="_blank"
@@ -329,9 +327,9 @@ export default function page() {
                     to <code>&lt;h4&gt;</code>).
                 </li>
                 <li>
-                    Use <code>&lt;strong&gt;</code> and
-                    <code>&lt;em&gt;</code> to convey importance or emphasis,
-                    not just to change the visual appearance.
+                    Use <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code>{" "}
+                    to convey importance or emphasis, not just to change the
+                    visual appearance.
                 </li>
                 <li>
                     Avoid using colour alone to indicate meaning in text (for

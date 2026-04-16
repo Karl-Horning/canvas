@@ -4,7 +4,7 @@ export default function page() {
             <h1>Tables</h1>
 
             <p>
-                Tables in Canvas are created using standard HTML
+                Tables in Canvas are created using standard HTML{" "}
                 <code>&lt;table&gt;</code> markup. Canvas also provides a set of
                 legacy utility classes (such as <code>ic-Table</code> and
                 <code>ic-Table--striped</code>) that control visual styling.
@@ -253,13 +253,22 @@ export default function page() {
 
                 <thead>
                     <tr className="bg-[#f0f0f0]">
-                        <th scope="col" className="border border-[#ccc] p-2 text-left">
+                        <th
+                            scope="col"
+                            className="border border-[#ccc] p-2 text-left"
+                        >
                             Week
                         </th>
-                        <th scope="col" className="border border-[#ccc] p-2 text-left">
+                        <th
+                            scope="col"
+                            className="border border-[#ccc] p-2 text-left"
+                        >
                             Topic
                         </th>
-                        <th scope="col" className="border border-[#ccc] p-2 text-left">
+                        <th
+                            scope="col"
+                            className="border border-[#ccc] p-2 text-left"
+                        >
                             Activities
                         </th>
                     </tr>
@@ -267,7 +276,10 @@ export default function page() {
 
                 <tbody>
                     <tr className="bg-white">
-                        <th scope="row" className="border border-[#ccc] p-2 text-left">
+                        <th
+                            scope="row"
+                            className="border border-[#ccc] p-2 text-left"
+                        >
                             1
                         </th>
                         <td className="border border-[#ccc] p-2">
@@ -279,7 +291,10 @@ export default function page() {
                     </tr>
 
                     <tr className="bg-[#f9f9f9]">
-                        <th scope="row" className="border border-[#ccc] p-2 text-left">
+                        <th
+                            scope="row"
+                            className="border border-[#ccc] p-2 text-left"
+                        >
                             2
                         </th>
                         <td className="border border-[#ccc] p-2">
@@ -291,7 +306,10 @@ export default function page() {
                     </tr>
 
                     <tr className="bg-white">
-                        <th scope="row" className="border border-[#ccc] p-2 text-left">
+                        <th
+                            scope="row"
+                            className="border border-[#ccc] p-2 text-left"
+                        >
                             3
                         </th>
                         <td className="border border-[#ccc] p-2">
@@ -357,13 +375,13 @@ export default function page() {
 
             <ul>
                 <li>
-                    Always include a clear heading or
-                    <code>&lt;caption&gt;</code>
+                    Always include a clear heading or{" "}
+                    <code>&lt;caption&gt;</code>{" "}
                     explaining what the table shows.
                 </li>
                 <li>
-                    Use <code>&lt;th&gt;</code> for header cells, and add
-                    <code>scope="col"</code> for column headers and
+                    Use <code>&lt;th&gt;</code> for header cells, and add{" "}
+                    <code>scope="col"</code> for column headers and{" "}
                     <code>scope="row"</code> for row headers where appropriate.
                 </li>
                 <li>

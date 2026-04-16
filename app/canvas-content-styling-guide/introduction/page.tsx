@@ -1,3 +1,5 @@
+import CodeBlock from "@/components/CodeBlock";
+
 export default function introduction() {
     return (
         <article>
@@ -13,9 +15,13 @@ export default function introduction() {
 
             <p>
                 The patterns shown here are based on Canvas' legacy style guide,
-                available at
-                <a href="https://canvas.instructure.com/styleguide">
-                    https://canvas.instructure.com/styleguide
+                available at{" "}
+                <a
+                    href="https://canvas.instructure.com/styleguide"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    canvas.instructure.com/styleguide
                 </a>
                 , with additional adjustments where needed to ensure that they
                 work reliably in this Canvas instance.
@@ -25,21 +31,21 @@ export default function introduction() {
 
             <p>
                 The Canvas style guide describes HTML and CSS components that
-                were developed for use in Canvas prior to 2015. The
+                were developed for use in Canvas prior to 2015. The{" "}
                 <strong>
                     Canvas-provided CSS classes and JavaScript behaviours
-                </strong>
+                </strong>{" "}
                 documented there are no longer actively maintained by
                 Instructure, so their behaviour or appearance may change in
                 future updates to Canvas.
             </p>
 
             <p>
-                In this course, those legacy classes are combined with
+                In this course, those legacy classes are combined with{" "}
                 <strong>
                     modern HTML semantics, inline styles, and current
                     accessibility practices
-                </strong>
+                </strong>{" "}
                 (for example, appropriate use of headings, ARIA attributes, and
                 colour contrast). Inline styles are often the most reliable way
                 to apply consistent visual styling in Canvas content and are
@@ -47,11 +53,11 @@ export default function introduction() {
             </p>
 
             <p>
-                You can therefore think of these examples as:
+                You can therefore think of these examples as:{" "}
                 <strong>
                     modern HTML and accessibility patterns layered on top of
                     Canvas' legacy CSS utilities
-                </strong>
+                </strong>{" "}
                 for authors working inside Canvas, rather than as a design
                 system for new applications.
             </p>
@@ -59,7 +65,7 @@ export default function introduction() {
             <h2>Scope of this guide</h2>
 
             <p>
-                This guide focuses on patterns that work
+                This guide focuses on patterns that work{" "}
                 <strong>reliably</strong> in the Canvas RCE after saving. It is
                 not an exhaustive list of everything Canvas allows. Many legacy
                 classes, JavaScript behaviours, and older components are
@@ -109,14 +115,14 @@ export default function introduction() {
 
             <p>
                 If you are building an LTI tool (for example, with React.js) and
-                want it to visually integrate with Canvas, you should use
+                want it to visually integrate with Canvas, you should use{" "}
                 <a
                     href="https://instructure.design"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     Instructure UI
-                </a>
+                </a>{" "}
                 rather than the legacy Canvas CSS documented here. Instructure
                 UI is the actively maintained design system for Canvas and
                 related products.
@@ -216,10 +222,14 @@ export default function introduction() {
 
             <p>
                 For more detail on Imperial's colour palette and which
-                combinations are suitable for text, see the
-                <a href="https://canvas.imperial.ac.uk/courses/220/pages/imperials-colours">
+                combinations are suitable for text, see the{" "}
+                <a
+                    href="https://canvas.imperial.ac.uk/courses/220/pages/imperials-colours"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     Imperial's colours
-                </a>
+                </a>{" "}
                 page in this course.
             </p>
 
@@ -234,9 +244,9 @@ export default function introduction() {
 
             <p>
                 Where possible, examples also include brief notes about
-                accessibility, such as the use of
-                <code>screenreader-only</code>, <code>aria-hidden="true"</code>,
-                and appropriate heading levels.
+                accessibility, such as the use of <code>screenreader-only</code>
+                , <code>aria-hidden="true"</code>, and appropriate heading
+                levels.
             </p>
         </article>
     );

@@ -84,9 +84,7 @@ export default function page() {
             </p>
 
             <div className="mb-4 border border-[#dddddd] rounded-lg px-5 py-4 bg-white">
-                <h3 className="mt-0 mb-3">
-                    Assessment summary
-                </h3>
+                <h3 className="mt-0 mb-3">Assessment summary</h3>
                 <div className="grid grid-cols-[repeat(auto-fit,minmax(180px,1fr))] gap-x-6 gap-y-3">
                     <div>
                         <p className="m-0 text-[0.9rem] text-[#555555]">
@@ -196,9 +194,7 @@ export default function page() {
 
             <div className="mb-4 grid grid-cols-[minmax(0,2fr)_minmax(0,1fr)] gap-4">
                 <div className="px-5 py-4 border border-[#dddddd] rounded-lg bg-white">
-                    <h3 className="mt-0 mb-3">
-                        Main explanation
-                    </h3>
+                    <h3 className="mt-0 mb-3">Main explanation</h3>
                     <p className="mt-0">
                         Use this area for the primary content, such as a worked
                         example, step-by-step explanation, or short case study.
@@ -209,9 +205,7 @@ export default function page() {
                     </p>
                 </div>
                 <aside className="px-5 py-4 border border-[#dddddd] rounded-lg bg-[#f5f5f5]">
-                    <h3 className="mt-0 mb-3">
-                        Notes and tips
-                    </h3>
+                    <h3 className="mt-0 mb-3">Notes and tips</h3>
                     <ul className="m-0 pl-5">
                         <li>Highlight common mistakes or misconceptions.</li>
                         <li>Provide quick reminders of key definitions.</li>
@@ -249,15 +243,13 @@ export default function page() {
 
             <p>
                 A responsive grid of cards for key resources or readings. The
-                layout uses CSS Grid with <code>auto-fit</code> and
+                layout uses CSS Grid with <code>auto-fit</code> and{" "}
                 <code>minmax()</code> to adapt to different screen sizes.
             </p>
 
             <div className="mb-4 grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-4">
                 <div className="border border-[#dddddd] rounded-lg px-4 py-[0.9rem] bg-white">
-                    <h3 className="mt-0 mb-2 text-[1.05rem]">
-                        Core reading
-                    </h3>
+                    <h3 className="mt-0 mb-2 text-[1.05rem]">Core reading</h3>
                     <p className="mt-0 mb-2">
                         Introduction to the main concepts covered in this week.
                     </p>
@@ -267,9 +259,7 @@ export default function page() {
                 </div>
 
                 <div className="border border-[#dddddd] rounded-lg px-4 py-[0.9rem] bg-white">
-                    <h3 className="mt-0 mb-2 text-[1.05rem]">
-                        Worked example
-                    </h3>
+                    <h3 className="mt-0 mb-2 text-[1.05rem]">Worked example</h3>
                     <p className="mt-0 mb-2">
                         Step-by-step example showing how to apply the method.
                     </p>

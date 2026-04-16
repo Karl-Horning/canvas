@@ -5,7 +5,7 @@ export default function page() {
 
             <p>
                 Canvas includes a small set of utility classes that support
-                accessibility. The most useful is
+                accessibility. The most useful is{" "}
                 <code>screenreader-only</code>, which lets you provide extra
                 information to screen reader users without affecting the visual
                 layout.

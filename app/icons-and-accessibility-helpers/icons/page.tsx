@@ -5,8 +5,8 @@ export default function page() {
 
             <p>
                 Canvas includes a legacy icon set that can be used inside course
-                content by applying icon classes such as
-                <code>icon-info</code>, <code>icon-warning</code>, or
+                content by applying icon classes such as{" "}
+                <code>icon-info</code>, <code>icon-warning</code>, or{" "}
                 <code>icon-check</code> to an inline element. These icons are
                 provided by Canvas' own CSS and icon font; you do not need to
                 upload images to use them.
@@ -57,7 +57,7 @@ export default function page() {
 
             <p>
                 To display a Canvas icon, add the appropriate icon class to an
-                inline element such as <code>&lt;i&gt;</code> or
+                inline element such as <code>&lt;i&gt;</code> or{" "}
                 <code>&lt;span&gt;</code>. In Canvas' own styles, icons are
                 usually treated as decorative and hidden from screen readers
                 using <code>aria-hidden="true"</code>.
@@ -110,7 +110,7 @@ export default function page() {
                 If an icon is conveying information that is not already present
                 in the visible text, you should include an accessible label. In
                 most cases it is simpler to include this label as visible text
-                next to the icon. If you must rely on the icon alone, use
+                next to the icon. If you must rely on the icon alone, use{" "}
                 <code>role="img"</code> with an <code>aria-label</code>:
             </p>
 
@@ -167,8 +167,9 @@ export default function page() {
                     &lt;p&gt; &lt;i className="icon-star-light"
                     aria-hidden="true"&gt;&lt;/i&gt; Recommended reading for
                     this week. &lt;/p&gt; &lt;p&gt; &lt;i
-                    className="icon-arrow-right" aria-hidden="true"&gt;&lt;/i&gt;
-                    Proceed to the next activity. &lt;/p&gt;
+                    className="icon-arrow-right"
+                    aria-hidden="true"&gt;&lt;/i&gt; Proceed to the next
+                    activity. &lt;/p&gt;
                 </code>
             </pre>
 
@@ -295,7 +296,10 @@ export default function page() {
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-arrow-double-start" aria-hidden="true"></i>
+                    <i
+                        className="icon-arrow-double-start"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-arrow-double-start</code>
                     </div>
@@ -442,7 +446,10 @@ export default function page() {
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-bullet-list-alpha" aria-hidden="true"></i>
+                    <i
+                        className="icon-bullet-list-alpha"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-bullet-list-alpha</code>
                     </div>
@@ -459,14 +466,20 @@ export default function page() {
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-bullet-list-roman" aria-hidden="true"></i>
+                    <i
+                        className="icon-bullet-list-roman"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-bullet-list-roman</code>
                     </div>
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-bullet-list-square" aria-hidden="true"></i>
+                    <i
+                        className="icon-bullet-list-square"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-bullet-list-square</code>
                     </div>
@@ -490,7 +503,10 @@ export default function page() {
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-calculator-desmos" aria-hidden="true"></i>
+                    <i
+                        className="icon-calculator-desmos"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-calculator-desmos</code>
                     </div>
@@ -539,7 +555,10 @@ export default function page() {
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-calendar-reserved" aria-hidden="true"></i>
+                    <i
+                        className="icon-calendar-reserved"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-calendar-reserved</code>
                     </div>
@@ -626,7 +645,10 @@ export default function page() {
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-circle-arrow-down" aria-hidden="true"></i>
+                    <i
+                        className="icon-circle-arrow-down"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-circle-arrow-down</code>
                     </div>
@@ -667,14 +689,20 @@ export default function page() {
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-closed-captioning-on" aria-hidden="true"></i>
+                    <i
+                        className="icon-closed-captioning-on"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-closed-captioning-on</code>
                     </div>
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-closed-captioning" aria-hidden="true"></i>
+                    <i
+                        className="icon-closed-captioning"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-closed-captioning</code>
                     </div>
@@ -835,7 +863,10 @@ export default function page() {
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-discussion-reply-2" aria-hidden="true"></i>
+                    <i
+                        className="icon-discussion-reply-2"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-discussion-reply-2</code>
                     </div>
@@ -1079,7 +1110,10 @@ export default function page() {
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-files-public-domain" aria-hidden="true"></i>
+                    <i
+                        className="icon-files-public-domain"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-files-public-domain</code>
                     </div>
@@ -1345,7 +1379,10 @@ export default function page() {
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-keyboard-shortcuts" aria-hidden="true"></i>
+                    <i
+                        className="icon-keyboard-shortcuts"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-keyboard-shortcuts</code>
                     </div>
@@ -1457,7 +1494,10 @@ export default function page() {
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-materials-required" aria-hidden="true"></i>
+                    <i
+                        className="icon-materials-required"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-materials-required</code>
                     </div>
@@ -1499,7 +1539,10 @@ export default function page() {
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-mini-arrow-double" aria-hidden="true"></i>
+                    <i
+                        className="icon-mini-arrow-double"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-mini-arrow-double</code>
                     </div>
@@ -1863,7 +1906,10 @@ export default function page() {
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-quiz-instructions" aria-hidden="true"></i>
+                    <i
+                        className="icon-quiz-instructions"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-quiz-instructions</code>
                     </div>
@@ -1887,7 +1933,10 @@ export default function page() {
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-quiz-stats-deviation" aria-hidden="true"></i>
+                    <i
+                        className="icon-quiz-stats-deviation"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-quiz-stats-deviation</code>
                     </div>
@@ -2257,7 +2306,10 @@ export default function page() {
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-table-delete-column" aria-hidden="true"></i>
+                    <i
+                        className="icon-table-delete-column"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-table-delete-column</code>
                     </div>
@@ -2271,7 +2323,10 @@ export default function page() {
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-table-delete-table" aria-hidden="true"></i>
+                    <i
+                        className="icon-table-delete-table"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-table-delete-table</code>
                     </div>
@@ -2318,28 +2373,40 @@ export default function page() {
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-table-left-header" aria-hidden="true"></i>
+                    <i
+                        className="icon-table-left-header"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-table-left-header</code>
                     </div>
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-table-merge-cells" aria-hidden="true"></i>
+                    <i
+                        className="icon-table-merge-cells"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-table-merge-cells</code>
                     </div>
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-table-row-properties" aria-hidden="true"></i>
+                    <i
+                        className="icon-table-row-properties"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-table-row-properties</code>
                     </div>
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-table-split-cells" aria-hidden="true"></i>
+                    <i
+                        className="icon-table-split-cells"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-table-split-cells</code>
                     </div>
@@ -2398,14 +2465,20 @@ export default function page() {
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-text-direction-ltr" aria-hidden="true"></i>
+                    <i
+                        className="icon-text-direction-ltr"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-text-direction-ltr</code>
                     </div>
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-text-direction-rtl" aria-hidden="true"></i>
+                    <i
+                        className="icon-text-direction-rtl"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-text-direction-rtl</code>
                     </div>
@@ -2573,7 +2646,10 @@ export default function page() {
                 </div>
 
                 <div className="w-37.5 m-2 p-2 text-center bg-[#f9f9f9]">
-                    <i className="icon-warning-borderless" aria-hidden="true"></i>
+                    <i
+                        className="icon-warning-borderless"
+                        aria-hidden="true"
+                    ></i>
                     <div>
                         <code>icon-warning-borderless</code>
                     </div>
@@ -2643,8 +2719,8 @@ export default function page() {
                 </li>
                 <li>
                     If an icon itself carries meaning and there is no visible
-                    text explaining it, provide an accessible name using
-                    <code>aria-label</code> and (optionally)
+                    text explaining it, provide an accessible name using{" "}
+                    <code>aria-label</code> and (optionally){" "}
                     <code>role="img"</code>.
                 </li>
                 <li>

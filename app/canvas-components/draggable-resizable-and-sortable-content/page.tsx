@@ -7,7 +7,7 @@ export default function page() {
                 Canvas can add interactive behaviour to certain elements using
                 its legacy <strong>enhanceable content</strong> system. When the
                 page loads, Canvas runs its built-in JavaScript and looks for
-                elements marked with classes such as
+                elements marked with classes such as{" "}
                 <code>enhanceable_content draggable</code>,
                 <code>resizable</code>, or <code>sortable</code>, and applies
                 the corresponding interactions.
@@ -52,7 +52,7 @@ export default function page() {
             <h2>Draggable content</h2>
 
             <p>
-                A draggable element is created by applying
+                A draggable element is created by applying{" "}
                 <code>class="enhanceable_content draggable"</code> to a
                 container. When Canvas processes the page, it enables
                 drag-and-move behaviour within the element's parent area.
@@ -93,9 +93,7 @@ export default function page() {
 
             <div className="mb-4 bg-[#f9f9f9] p-3">
                 <div className="w-full h-50">
-                    <div
-                        className="enhanceable_content resizable text-center bg-[#232333] text-white w-100 h-20"
-                    >
+                    <div className="enhanceable_content resizable text-center bg-[#232333] text-white w-100 h-20">
                         <p className="p-3.75 m-0">
                             Resize this box using the handle in the corner
                         </p>
@@ -118,7 +116,7 @@ export default function page() {
             <h2>Sortable lists</h2>
 
             <p>
-                You can create a sortable list by adding
+                You can create a sortable list by adding{" "}
                 <code>class="enhanceable_content sortable"</code> to a list
                 container. Canvas enhances the list so that items can be
                 rearranged by dragging them into a new order.
@@ -132,19 +130,13 @@ export default function page() {
 
                 <ul className="enhanceable_content sortable">
                     <li className="text-center bg-[#000080] text-white w-75 h-15 mb-2">
-                        <p className="p-3.75 m-0">
-                            Box 1 — drag to re-order
-                        </p>
+                        <p className="p-3.75 m-0">Box 1 — drag to re-order</p>
                     </li>
                     <li className="text-center bg-[#0000cd] text-white w-75 h-15 mb-2">
-                        <p className="p-3.75 m-0">
-                            Box 2 — drag to re-order
-                        </p>
+                        <p className="p-3.75 m-0">Box 2 — drag to re-order</p>
                     </li>
                     <li className="text-center bg-[#232333] text-white w-75 h-15">
-                        <p className="p-3.75 m-0">
-                            Box 3 — drag to re-order
-                        </p>
+                        <p className="p-3.75 m-0">Box 3 — drag to re-order</p>
                     </li>
                 </ul>
             </div>

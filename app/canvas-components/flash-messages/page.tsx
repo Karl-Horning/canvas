@@ -4,7 +4,7 @@ export default function page() {
             <h1>Flash Messages</h1>
 
             <p>
-                Canvas provides legacy flash message classes (such as
+                Canvas provides legacy flash message classes (such as{" "}
                 <code>ic-flash-info</code>) that visually emphasise information,
                 success states, and warnings. These examples show how those
                 classes render in this Canvas instance, followed by modern
@@ -46,7 +46,7 @@ export default function page() {
             <h2>Canvas legacy flash message classes</h2>
 
             <p>
-                These examples use Canvas' built-in
+                These examples use Canvas' built-in{" "}
                 <code>ic-flash-*</code> classes with icons. They are part of an
                 older design system but still work in current Canvas content.
             </p>
@@ -57,8 +57,8 @@ export default function page() {
                 </div>
 
                 <div className="ic-flash__content">
-                    <strong>Info:</strong> This is an
-                    <code>ic-flash-info</code> message.
+                    <strong>Info:</strong> This is an <code>ic-flash-info</code>{" "}
+                    message.
                 </div>
             </div>
 
@@ -68,7 +68,7 @@ export default function page() {
                 </div>
 
                 <div className="ic-flash__content">
-                    <strong>Success:</strong> This is an
+                    <strong>Success:</strong> This is an{" "}
                     <code>ic-flash-success</code> message.
                 </div>
             </div>
@@ -78,7 +78,7 @@ export default function page() {
                     <i className="icon-warning"></i>
                 </div>
                 <div className="ic-flash__content">
-                    <strong>Warning:</strong> This is an
+                    <strong>Warning:</strong> This is an{" "}
                     <code>ic-flash-warning</code> message.
                 </div>
             </div>
@@ -219,7 +219,7 @@ export default function page() {
                     progress).
                 </li>
                 <li>
-                    Icon elements in these examples are marked
+                    Icon elements in these examples are marked{" "}
                     <code>aria-hidden="true"</code> so that screen readers do
                     not announce them twice; the meaningful label is in the text
                     (for example, <strong>Warning:</strong>).

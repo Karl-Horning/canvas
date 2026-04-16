@@ -5,9 +5,9 @@ export default function page() {
 
             <p>
                 Spacing in Canvas content can be controlled in two main ways:
-                using Canvas' legacy utility classes (such as
+                using Canvas' legacy utility classes (such as{" "}
                 <code>content-box</code> and <code>pad-box</code>) and using
-                modern CSS properties like <code>margin</code> and
+                modern CSS properties like <code>margin</code> and{" "}
                 <code>padding</code> directly in inline styles.
             </p>
 
@@ -89,7 +89,7 @@ export default function page() {
 
             <p>
                 The <code>pad-box</code> utilities control the amount of padding
-                inside an element. Larger values add more space, while
+                inside an element. Larger values add more space, while{" "}
                 <code>pad-box-micro</code> adds only a small amount. These
                 classes are part of Canvas' legacy CSS and may not be available
                 in future versions, but they can still be used in current
@@ -137,9 +137,8 @@ export default function page() {
             </p>
 
             <p>
-                Common properties include:
-                <code>padding</code> (space inside an element),
-                <code>margin</code> (space outside an element),
+                Common properties include: <code>padding</code> (space inside an
+                element), <code>margin</code> (space outside an element),{" "}
                 <code>border</code>, and <code>border-radius</code> (for rounded
                 corners).
             </p>
@@ -164,11 +163,9 @@ export default function page() {
             </ul>
 
             <div className="border border-[#d0d7de] rounded-lg p-4 mb-4 bg-[#f9fafb]">
-                <h3 className="mt-0 mb-2">
-                    Card with standard padding
-                </h3>
+                <h3 className="mt-0 mb-2">Card with standard padding</h3>
                 <p className="m-0">
-                    This card uses <code>padding: 1rem;</code> and
+                    This card uses <code>padding: 1rem;</code> and{" "}
                     <code>margin-bottom: 1rem;</code> to create clear spacing
                     around the content and between cards.
                 </p>
@@ -186,7 +183,7 @@ export default function page() {
 
             <div className="border border-[#d0d7de] rounded-full py-3 px-5 mb-4 bg-[#eef6ff] inline-block">
                 <p className="m-0">
-                    This pill-style badge uses
+                    This pill-style badge uses{" "}
                     <code>border-radius: 999px;</code> and extra horizontal
                     padding.
                 </p>
@@ -229,11 +226,9 @@ export default function page() {
             </p>
 
             <div className="[border-left:4px_solid_#0000cd] px-4 py-3 mt-6 mb-6 bg-[#f5f7ff]">
-                <h3 className="mt-0 mb-2">
-                    Section callout
-                </h3>
+                <h3 className="mt-0 mb-2">Section callout</h3>
                 <p className="m-0">
-                    This callout uses <code>margin-top</code> and
+                    This callout uses <code>margin-top</code> and{" "}
                     <code>margin-bottom</code> on the container to create space
                     above and below the block.
                 </p>

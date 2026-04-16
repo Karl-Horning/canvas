@@ -48,7 +48,7 @@ export default function page() {
                     </summary>
                     <p className="m-0">
                         Canvas removes elements it does not support inside
-                        course content. Examples include
+                        course content. Examples include{" "}
                         <code>&lt;button&gt;</code>, <code>&lt;form&gt;</code>,
                         <code>&lt;input&gt;</code>, <code>&lt;dialog&gt;</code>,
                         <code>&lt;style&gt;</code>, and
@@ -78,7 +78,7 @@ export default function page() {
                         This is part of Canvas' HTML normalisation. The editor
                         treats line breaks as paragraphs. To avoid unwanted
                         spacing, you can use inline <code>&lt;div&gt;</code>
-                        elements or control spacing manually with inline
+                        elements or control spacing manually with inline{" "}
                         <code>margin</code> styles.
                     </p>
                 </details>
@@ -97,7 +97,7 @@ export default function page() {
                         automatically enhances patterns such as tabs, tooltips,
                         popovers, progress bars, draggable items, sortable
                         lists, and resizable containers. These work because
-                        Canvas detects elements marked with
+                        Canvas detects elements marked with{" "}
                         <code>enhanceable_content</code> and upgrades them when
                         the page loads.
                     </p>
@@ -151,7 +151,7 @@ export default function page() {
                         Canvas allows CSS Grid in inline styles, but not all
                         responsive patterns behave consistently. Items inside
                         nested grids may not wrap as expected, and some browsers
-                        may handle <code>auto-fit</code> or
+                        may handle <code>auto-fit</code> or{" "}
                         <code>minmax()</code> differently. The examples in the
                         Grid section focus on patterns that work reliably inside
                         Canvas.
@@ -244,7 +244,7 @@ export default function page() {
                         Is it safe to rely on these components long term?
                     </summary>
                     <p className="m-0">
-                        Yes, but with caution. Anything powered by
+                        Yes, but with caution. Anything powered by{" "}
                         <code>enhanceable_content</code> is legacy and may
                         behave differently in future updates. Use semantic HTML
                         as your base layout, and treat any enhanced behaviour as

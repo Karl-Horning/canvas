@@ -35,16 +35,28 @@ export default function page() {
                 </caption>
                 <thead>
                     <tr>
-                        <th scope="col" className="border border-[#dddddd] p-2 bg-[#f5f5f5] text-left">
+                        <th
+                            scope="col"
+                            className="border border-[#dddddd] p-2 bg-[#f5f5f5] text-left"
+                        >
                             Item
                         </th>
-                        <th scope="col" className="border border-[#dddddd] p-2 bg-[#f5f5f5] text-left">
+                        <th
+                            scope="col"
+                            className="border border-[#dddddd] p-2 bg-[#f5f5f5] text-left"
+                        >
                             Type
                         </th>
-                        <th scope="col" className="border border-[#dddddd] p-2 bg-[#f5f5f5] text-left">
+                        <th
+                            scope="col"
+                            className="border border-[#dddddd] p-2 bg-[#f5f5f5] text-left"
+                        >
                             Canvas behaviour
                         </th>
-                        <th scope="col" className="border border-[#dddddd] p-2 bg-[#f5f5f5] text-left">
+                        <th
+                            scope="col"
+                            className="border border-[#dddddd] p-2 bg-[#f5f5f5] text-left"
+                        >
                             Notes and alternatives
                         </th>
                     </tr>
@@ -62,7 +74,7 @@ export default function page() {
                         </td>
                         <td className="border border-[#dddddd] p-2">
                             You cannot add your own JavaScript to RCE pages.
-                            Only Canvas’ built-in JavaScript (for example
+                            Only Canvas’ built-in JavaScript (for example{" "}
                             <code>enhanceable_content</code>) can run.
                         </td>
                     </tr>
@@ -71,9 +83,7 @@ export default function page() {
                         <td className="border border-[#dddddd] p-2">
                             <code>&lt;style&gt;</code> and external stylesheets
                         </td>
-                        <td className="border border-[#dddddd] p-2">
-                            Element
-                        </td>
+                        <td className="border border-[#dddddd] p-2">Element</td>
                         <td className="border border-[#dddddd] p-2">
                             Removed or ignored in the Rich Content Editor.
                         </td>
@@ -153,7 +163,7 @@ export default function page() {
                             not available.
                         </td>
                         <td className="border border-[#dddddd] p-2">
-                            You can still use multiple collapsible sections with
+                            You can still use multiple collapsible sections with{" "}
                             <code>&lt;details&gt;</code> and
                             <code>&lt;summary&gt;</code>, but they will not
                             auto-close each other.
@@ -169,13 +179,13 @@ export default function page() {
                         </td>
                         <td className="border border-[#dddddd] p-2">
                             Generally preserved. Elements such as alerts and
-                            progress indicators can use
+                            progress indicators can use{" "}
                             <code>role</code>, <code>aria-label</code>, and
                             <code>aria-valuenow</code>.
                         </td>
                         <td className="border border-[#dddddd] p-2">
                             Always test ARIA-heavy patterns after saving, as
-                            Canvas may re-wrap content or insert extra
+                            Canvas may re-wrap content or insert extra{" "}
                             <code>&lt;p&gt;</code> tags that affect the
                             structure.
                         </td>
@@ -185,16 +195,14 @@ export default function page() {
                         <td className="border border-[#dddddd] p-2">
                             Inline CSS (style attribute)
                         </td>
-                        <td className="border border-[#dddddd] p-2">
-                            CSS
-                        </td>
+                        <td className="border border-[#dddddd] p-2">CSS</td>
                         <td className="border border-[#dddddd] p-2">
                             Allowed but sanitised. Unsupported properties and
                             values are removed, and some complex shorthand may
                             be rewritten.
                         </td>
                         <td className="border border-[#dddddd] p-2">
-                            Use widely supported properties such as
+                            Use widely supported properties such as{" "}
                             <code>margin</code>, <code>padding</code>,
                             <code>border</code>, and basic
                             <code>display</code> and <code>grid</code> patterns.
@@ -210,12 +218,12 @@ export default function page() {
                             Markup normalisation
                         </td>
                         <td className="border border-[#dddddd] p-2">
-                            Canvas often wraps content in
+                            Canvas often wraps content in{" "}
                             <code>&lt;p&gt;</code> tags, removes empty elements,
                             and reformats whitespace.
                         </td>
                         <td className="border border-[#dddddd] p-2">
-                            If you need tighter control over spacing, use
+                            If you need tighter control over spacing, use{" "}
                             <code>&lt;div&gt;</code> elements with inline
                             margins instead of relying on blank lines in the
                             editor.
