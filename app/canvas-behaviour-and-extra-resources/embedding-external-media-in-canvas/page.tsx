@@ -1,3 +1,5 @@
+import CodeBlock from "@/components/CodeBlock";
+
 export default function page() {
     return (
         <article>
@@ -83,13 +85,10 @@ export default function page() {
                 </audio>
             </div>
 
-            <pre>
-                <code>
-                    &lt;audio controls&gt; &lt;source src="YOUR_AUDIO_FILE_URL"
-                    type="audio/mpeg" /&gt; Your browser does not support the
-                    audio element. &lt;/audio&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<audio controls>
+  <source src="YOUR_AUDIO_FILE_URL" type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>`}</CodeBlock>
 
             <h2>YouTube video embed</h2>
 
@@ -111,15 +110,14 @@ export default function page() {
                 ></iframe>
             </div>
 
-            <pre>
-                <code>
-                    &lt;iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/NhhsqcSK7jg"
-                    frameborder="0" allow="accelerometer; autoplay;
-                    clipboard-write; encrypted-media; gyroscope;
-                    picture-in-picture" allowfullscreen &gt;&lt;/iframe&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/NhhsqcSK7jg"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>`}</CodeBlock>
 
             <h2>Google Maps embed</h2>
 
@@ -142,14 +140,15 @@ export default function page() {
                 ></iframe>
             </div>
 
-            <pre>
-                <code>
-                    &lt;iframe src="https://www.google.com/maps/embed?pb=..."
-                    width="100%" height="450" style="border:0;" allowfullscreen
-                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                    &gt;&lt;/iframe&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<iframe
+  src="https://www.google.com/maps/embed?pb=..."
+  width="100%"
+  height="450"
+  style="border:0;"
+  allowfullscreen
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+></iframe>`}</CodeBlock>
 
             <h2>Video embed</h2>
 
@@ -171,15 +170,14 @@ export default function page() {
                 </video>
             </div>
 
-            <pre>
-                <code>
-                    &lt;video controls width="620"
-                    src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
-                    poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
-                    &gt; Sorry, your browser does not support embedded videos.
-                    &lt;/video&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<video
+  controls
+  width="620"
+  src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+  poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
+>
+  Sorry, your browser does not support embedded videos.
+</video>`}</CodeBlock>
 
             <h2>Other services</h2>
 

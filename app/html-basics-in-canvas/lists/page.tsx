@@ -1,3 +1,5 @@
+import CodeBlock from "@/components/CodeBlock";
+
 export default function page() {
     return (
         <article>
@@ -51,13 +53,11 @@ export default function page() {
                 </ul>
             </div>
 
-            <pre>
-                <code>
-                    &lt;ul&gt; &lt;li&gt;First unordered item&lt;/li&gt;
-                    &lt;li&gt;Second unordered item&lt;/li&gt; &lt;li&gt;Third
-                    unordered item&lt;/li&gt; &lt;/ul&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<ul>
+  <li>First unordered item</li>
+  <li>Second unordered item</li>
+  <li>Third unordered item</li>
+</ul>`}</CodeBlock>
 
             <h2>Ordered lists</h2>
 
@@ -74,13 +74,11 @@ export default function page() {
                 </ol>
             </div>
 
-            <pre>
-                <code>
-                    &lt;ol&gt; &lt;li&gt;List item one&lt;/li&gt; &lt;li&gt;List
-                    item two&lt;/li&gt; &lt;li&gt;List item three&lt;/li&gt;
-                    &lt;/ol&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<ol>
+  <li>List item one</li>
+  <li>List item two</li>
+  <li>List item three</li>
+</ol>`}</CodeBlock>
 
             <h2>Unstyled lists</h2>
 
@@ -100,13 +98,11 @@ export default function page() {
                 </ul>
             </div>
 
-            <pre>
-                <code>
-                    &lt;ul class="unstyled"&gt; &lt;li&gt;Unstyled list item
-                    one&lt;/li&gt; &lt;li&gt;Unstyled list item two&lt;/li&gt;
-                    &lt;li&gt;Unstyled list item three&lt;/li&gt; &lt;/ul&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<ul class="unstyled">
+  <li>Unstyled list item one</li>
+  <li>Unstyled list item two</li>
+  <li>Unstyled list item three</li>
+</ul>`}</CodeBlock>
 
             <h2>Definition lists</h2>
 
@@ -129,16 +125,16 @@ export default function page() {
                 </dl>
             </div>
 
-            <pre>
-                <code>
-                    &lt;dl&gt; &lt;dt&gt;Placeholder term&lt;/dt&gt; &lt;dd&gt;A
-                    short description relating to the term.&lt;/dd&gt;
-                    &lt;dt&gt;Another term&lt;/dt&gt; &lt;dd&gt;Additional
-                    details describing this item.&lt;/dd&gt; &lt;dt&gt;Final
-                    term&lt;/dt&gt; &lt;dd&gt;A final example
-                    description.&lt;/dd&gt; &lt;/dl&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<dl>
+  <dt>Placeholder term</dt>
+  <dd>A short description relating to the term.</dd>
+
+  <dt>Another term</dt>
+  <dd>Additional details describing this item.</dd>
+
+  <dt>Final term</dt>
+  <dd>A final example description.</dd>
+</dl>`}</CodeBlock>
 
             <h2>Horizontal definition lists</h2>
 
@@ -177,16 +173,16 @@ export default function page() {
                 </dl>
             </div>
 
-            <pre>
-                <code>
-                    &lt;dl class="dl-horizontal"&gt; &lt;dt&gt;Placeholder
-                    term&lt;/dt&gt; &lt;dd&gt;A short description relating to
-                    the term.&lt;/dd&gt; &lt;dt&gt;Another term&lt;/dt&gt;
-                    &lt;dd&gt;Additional details describing this
-                    item.&lt;/dd&gt; &lt;dt&gt;Final term&lt;/dt&gt; &lt;dd&gt;A
-                    final example description.&lt;/dd&gt; &lt;/dl&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<dl class="dl-horizontal">
+  <dt>Placeholder term</dt>
+  <dd>A short description relating to the term.</dd>
+
+  <dt>Another term</dt>
+  <dd>Additional details describing this item.</dd>
+
+  <dt>Final term</dt>
+  <dd>A final example description.</dd>
+</dl>`}</CodeBlock>
 
             <h2>Accessibility notes</h2>
 

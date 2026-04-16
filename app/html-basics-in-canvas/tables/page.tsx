@@ -1,3 +1,5 @@
+import CodeBlock from "@/components/CodeBlock";
+
 export default function page() {
     return (
         <article>
@@ -6,7 +8,7 @@ export default function page() {
             <p>
                 Tables in Canvas are created using standard HTML{" "}
                 <code>&lt;table&gt;</code> markup. Canvas also provides a set of
-                legacy utility classes (such as <code>ic-Table</code> and
+                legacy utility classes (such as <code>ic-Table</code> and{" "}
                 <code>ic-Table--striped</code>) that control visual styling.
                 These classes are still supported in this Canvas instance, but
                 are not actively maintained by Instructure and may change in
@@ -90,27 +92,36 @@ export default function page() {
                 </tbody>
             </table>
 
-            <pre>
-                <code>
-                    &lt;table class="ic-Table"&gt; &lt;thead&gt; &lt;tr&gt;
-                    &lt;th&gt;Name&lt;/th&gt; &lt;th&gt;Email address&lt;/th&gt;
-                    &lt;th&gt;Section&lt;/th&gt; &lt;th&gt;Role&lt;/th&gt;
-                    &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt;
-                    &lt;td&gt;Alex Rivers&lt;/td&gt;
-                    &lt;td&gt;alex.rivers@example.com&lt;/td&gt;
-                    &lt;td&gt;Advanced students&lt;/td&gt;
-                    &lt;td&gt;Student&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
-                    &lt;td&gt;Jamie Patel&lt;/td&gt;
-                    &lt;td&gt;jamie.patel@example.com&lt;/td&gt;
-                    &lt;td&gt;Advanced students&lt;/td&gt;
-                    &lt;td&gt;Student&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
-                    &lt;td&gt;Morgan Lee&lt;/td&gt;
-                    &lt;td&gt;morgan.lee@example.com&lt;/td&gt;
-                    &lt;td&gt;Advanced students&lt;/td&gt;
-                    &lt;td&gt;Student&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt;
-                    &lt;/table&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<table class="ic-Table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email address</th>
+      <th>Section</th>
+      <th>Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alex Rivers</td>
+      <td>alex.rivers@example.com</td>
+      <td>Advanced students</td>
+      <td>Student</td>
+    </tr>
+    <tr>
+      <td>Jamie Patel</td>
+      <td>jamie.patel@example.com</td>
+      <td>Advanced students</td>
+      <td>Student</td>
+    </tr>
+    <tr>
+      <td>Morgan Lee</td>
+      <td>morgan.lee@example.com</td>
+      <td>Advanced students</td>
+      <td>Student</td>
+    </tr>
+  </tbody>
+</table>`}</CodeBlock>
 
             <h2>Striped table (Canvas legacy classes)</h2>
 
@@ -152,28 +163,36 @@ export default function page() {
                 </tbody>
             </table>
 
-            <pre>
-                <code>
-                    &lt;table class="ic-Table ic-Table--hover-row
-                    ic-Table--striped"&gt; &lt;thead&gt; &lt;tr&gt;
-                    &lt;th&gt;Name&lt;/th&gt; &lt;th&gt;Email address&lt;/th&gt;
-                    &lt;th&gt;Section&lt;/th&gt; &lt;th&gt;Role&lt;/th&gt;
-                    &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt;
-                    &lt;td&gt;Alex Rivers&lt;/td&gt;
-                    &lt;td&gt;alex.rivers@example.com&lt;/td&gt;
-                    &lt;td&gt;Advanced students&lt;/td&gt;
-                    &lt;td&gt;Student&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
-                    &lt;td&gt;Jamie Patel&lt;/td&gt;
-                    &lt;td&gt;jamie.patel@example.com&lt;/td&gt;
-                    &lt;td&gt;Advanced students&lt;/td&gt;
-                    &lt;td&gt;Student&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt;
-                    &lt;td&gt;Morgan Lee&lt;/td&gt;
-                    &lt;td&gt;morgan.lee@example.com&lt;/td&gt;
-                    &lt;td&gt;Advanced students&lt;/td&gt;
-                    &lt;td&gt;Student&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt;
-                    &lt;/table&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<table class="ic-Table ic-Table--hover-row ic-Table--striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email address</th>
+      <th>Section</th>
+      <th>Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alex Rivers</td>
+      <td>alex.rivers@example.com</td>
+      <td>Advanced students</td>
+      <td>Student</td>
+    </tr>
+    <tr>
+      <td>Jamie Patel</td>
+      <td>jamie.patel@example.com</td>
+      <td>Advanced students</td>
+      <td>Student</td>
+    </tr>
+    <tr>
+      <td>Morgan Lee</td>
+      <td>morgan.lee@example.com</td>
+      <td>Advanced students</td>
+      <td>Student</td>
+    </tr>
+  </tbody>
+</table>`}</CodeBlock>
 
             <h2>Condensed striped table (Canvas legacy classes)</h2>
 
@@ -209,21 +228,32 @@ export default function page() {
                 </tbody>
             </table>
 
-            <pre>
-                <code>
-                    &lt;table class="ic-Table ic-Table--striped
-                    ic-Table--hover-row ic-Table--condensed"&gt; &lt;thead&gt;
-                    &lt;tr&gt; &lt;th&gt;Column A&lt;/th&gt; &lt;th&gt;Column
-                    B&lt;/th&gt; &lt;th&gt;Column C&lt;/th&gt; &lt;/tr&gt;
-                    &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td&gt;Row 1,
-                    A&lt;/td&gt; &lt;td&gt;Row 1, B&lt;/td&gt; &lt;td&gt;Row 1,
-                    C&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Row 2,
-                    A&lt;/td&gt; &lt;td&gt;Row 2, B&lt;/td&gt; &lt;td&gt;Row 2,
-                    C&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Row 3,
-                    A&lt;/td&gt; &lt;td&gt;Row 3, B&lt;/td&gt; &lt;td&gt;Row 3,
-                    C&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<table class="ic-Table ic-Table--striped ic-Table--hover-row ic-Table--condensed">
+  <thead>
+    <tr>
+      <th>Column A</th>
+      <th>Column B</th>
+      <th>Column C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Row 1, A</td>
+      <td>Row 1, B</td>
+      <td>Row 1, C</td>
+    </tr>
+    <tr>
+      <td>Row 2, A</td>
+      <td>Row 2, B</td>
+      <td>Row 2, C</td>
+    </tr>
+    <tr>
+      <td>Row 3, A</td>
+      <td>Row 3, B</td>
+      <td>Row 3, C</td>
+    </tr>
+  </tbody>
+</table>`}</CodeBlock>
 
             <h2>Modern accessible table (inline CSS only)</h2>
 
@@ -322,45 +352,35 @@ export default function page() {
                 </tbody>
             </table>
 
-            <pre>
-                <code>
-                    &lt;table style=" border-collapse: collapse; width: 100%;
-                    margin-bottom: 1rem; font-size: 0.95rem; "&gt; &lt;caption
-                    style="text-align:left;font-weight:bold;padding:0.5rem
-                    0;"&gt; Example: Module weekly activities &lt;/caption&gt;
-                    &lt;thead&gt; &lt;tr style="background:#f0f0f0;"&gt; &lt;th
-                    scope="col" style="border:1px solid
-                    #ccc;padding:0.5rem;"&gt;Week&lt;/th&gt; &lt;th scope="col"
-                    style="border:1px solid
-                    #ccc;padding:0.5rem;"&gt;Topic&lt;/th&gt; &lt;th scope="col"
-                    style="border:1px solid
-                    #ccc;padding:0.5rem;"&gt;Activities&lt;/th&gt; &lt;/tr&gt;
-                    &lt;/thead&gt; &lt;tbody&gt; &lt;tr
-                    style="background:#ffffff;"&gt; &lt;th scope="row"
-                    style="border:1px solid
-                    #ccc;padding:0.5rem;"&gt;1&lt;/th&gt; &lt;td
-                    style="border:1px solid
-                    #ccc;padding:0.5rem;"&gt;Introduction to the
-                    module&lt;/td&gt; &lt;td style="border:1px solid
-                    #ccc;padding:0.5rem;"&gt;Welcome video, syllabus
-                    quiz&lt;/td&gt; &lt;/tr&gt; &lt;tr
-                    style="background:#f9f9f9;"&gt; &lt;th scope="row"
-                    style="border:1px solid
-                    #ccc;padding:0.5rem;"&gt;2&lt;/th&gt; &lt;td
-                    style="border:1px solid #ccc;padding:0.5rem;"&gt;Research
-                    basics&lt;/td&gt; &lt;td style="border:1px solid
-                    #ccc;padding:0.5rem;"&gt;Reading task, short discussion
-                    post&lt;/td&gt; &lt;/tr&gt; &lt;tr
-                    style="background:#ffffff;"&gt; &lt;th scope="row"
-                    style="border:1px solid
-                    #ccc;padding:0.5rem;"&gt;3&lt;/th&gt; &lt;td
-                    style="border:1px solid #ccc;padding:0.5rem;"&gt;Literature
-                    searching&lt;/td&gt; &lt;td style="border:1px solid
-                    #ccc;padding:0.5rem;"&gt;Video demonstration, practice
-                    worksheet&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt;
-                    &lt;/table&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<table style="border-collapse: collapse; width: 100%; margin-bottom: 1rem; font-size: 0.95rem;">
+  <caption style="text-align: left; font-weight: bold; padding: 0.5rem 0;">
+    Example: Module weekly activities
+  </caption>
+  <thead>
+    <tr style="background: #f0f0f0;">
+      <th scope="col" style="border: 1px solid #ccc; padding: 0.5rem;">Week</th>
+      <th scope="col" style="border: 1px solid #ccc; padding: 0.5rem;">Topic</th>
+      <th scope="col" style="border: 1px solid #ccc; padding: 0.5rem;">Activities</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background: #ffffff;">
+      <th scope="row" style="border: 1px solid #ccc; padding: 0.5rem;">1</th>
+      <td style="border: 1px solid #ccc; padding: 0.5rem;">Introduction to the module</td>
+      <td style="border: 1px solid #ccc; padding: 0.5rem;">Welcome video, syllabus quiz</td>
+    </tr>
+    <tr style="background: #f9f9f9;">
+      <th scope="row" style="border: 1px solid #ccc; padding: 0.5rem;">2</th>
+      <td style="border: 1px solid #ccc; padding: 0.5rem;">Research basics</td>
+      <td style="border: 1px solid #ccc; padding: 0.5rem;">Reading task, short discussion post</td>
+    </tr>
+    <tr style="background: #ffffff;">
+      <th scope="row" style="border: 1px solid #ccc; padding: 0.5rem;">3</th>
+      <td style="border: 1px solid #ccc; padding: 0.5rem;">Literature searching</td>
+      <td style="border: 1px solid #ccc; padding: 0.5rem;">Video demonstration, practice worksheet</td>
+    </tr>
+  </tbody>
+</table>`}</CodeBlock>
 
             <h2>Accessibility notes</h2>
 

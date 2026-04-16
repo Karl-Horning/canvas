@@ -1,3 +1,5 @@
+import CodeBlock from "@/components/CodeBlock";
+
 export default function page() {
     return (
         <article>
@@ -60,20 +62,22 @@ export default function page() {
                 </ul>
             </div>
 
-            <pre>
-                <code>
-                    &lt;div style=" margin-bottom: 1rem; background: #f5f5f5;
-                    padding: 1rem 1.25rem; border: 1px solid #dddddd;
-                    border-radius: 0.5rem; " &gt; &lt;h3 style="margin-top: 0;
-                    margin-bottom: 0.5rem"&gt; By the end of this activity you
-                    should be able to: &lt;/h3&gt; &lt;ul style="margin: 0;
-                    padding-left: 1.25rem"&gt; &lt;li&gt;Describe the key stages
-                    in the workflow.&lt;/li&gt; &lt;li&gt;Explain the main
-                    advantages and limitations.&lt;/li&gt; &lt;li&gt;Apply the
-                    method to a simple example.&lt;/li&gt; &lt;/ul&gt;
-                    &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div style="
+  margin-bottom: 1rem;
+  background: #f5f5f5;
+  padding: 1rem 1.25rem;
+  border: 1px solid #dddddd;
+  border-radius: 0.5rem;
+">
+  <h3 style="margin-top: 0; margin-bottom: 0.5rem">
+    By the end of this activity you should be able to:
+  </h3>
+  <ul style="margin: 0; padding-left: 1.25rem">
+    <li>Describe the key stages in the workflow.</li>
+    <li>Explain the main advantages and limitations.</li>
+    <li>Apply the method to a simple example.</li>
+  </ul>
+</div>`}</CodeBlock>
 
             <h2>Assessment summary panel</h2>
 
@@ -121,31 +125,37 @@ export default function page() {
                 </div>
             </div>
 
-            <pre>
-                <code>
-                    &lt;div style=" margin-bottom: 1rem; border: 1px solid
-                    #dddddd; border-radius: 0.5rem; padding: 1rem 1.25rem;
-                    background: #ffffff; " &gt; &lt;h3 style="margin-top: 0;
-                    margin-bottom: 0.75rem"&gt; Assessment summary &lt;/h3&gt;
-                    &lt;div style=" display: grid; grid-template-columns:
-                    repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem 1.5rem; "
-                    &gt; &lt;div&gt; &lt;p style="margin: 0; font-size: 0.9rem;
-                    color: #555555"&gt; Due date &lt;/p&gt; &lt;p style="margin:
-                    0.1rem 0 0"&gt; &lt;strong&gt;Friday 15 November,
-                    16:00&lt;/strong&gt; &lt;/p&gt; &lt;/div&gt; &lt;div&gt;
-                    &lt;p style="margin: 0; font-size: 0.9rem; color:
-                    #555555"&gt; Weighting &lt;/p&gt; &lt;p style="margin:
-                    0.1rem 0 0"&gt; &lt;strong&gt;30% of module
-                    mark&lt;/strong&gt; &lt;/p&gt; &lt;/div&gt; &lt;div&gt;
-                    &lt;p style="margin: 0; font-size: 0.9rem; color:
-                    #555555"&gt; Format &lt;/p&gt; &lt;p style="margin: 0.1rem 0
-                    0"&gt; Short written report (1500-2000 words) &lt;/p&gt;
-                    &lt;/div&gt; &lt;div&gt; &lt;p style="margin: 0; font-size:
-                    0.9rem; color: #555555"&gt; Submission &lt;/p&gt; &lt;p
-                    style="margin: 0.1rem 0 0"&gt; Upload as a single PDF via
-                    Canvas &lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div style="
+  margin-bottom: 1rem;
+  border: 1px solid #dddddd;
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+  background: #ffffff;
+">
+  <h3 style="margin-top: 0; margin-bottom: 0.75rem">Assessment summary</h3>
+  <div style="
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.75rem 1.5rem;
+  ">
+    <div>
+      <p style="margin: 0; font-size: 0.9rem; color: #555555">Due date</p>
+      <p style="margin: 0.1rem 0 0"><strong>Friday 15 November, 16:00</strong></p>
+    </div>
+    <div>
+      <p style="margin: 0; font-size: 0.9rem; color: #555555">Weighting</p>
+      <p style="margin: 0.1rem 0 0"><strong>30% of module mark</strong></p>
+    </div>
+    <div>
+      <p style="margin: 0; font-size: 0.9rem; color: #555555">Format</p>
+      <p style="margin: 0.1rem 0 0">Short written report (1500-2000 words)</p>
+    </div>
+    <div>
+      <p style="margin: 0; font-size: 0.9rem; color: #555555">Submission</p>
+      <p style="margin: 0.1rem 0 0">Upload as a single PDF via Canvas</p>
+    </div>
+  </div>
+</div>`}</CodeBlock>
 
             <h2>Call-to-action strip (link styled as a button)</h2>
 
@@ -168,21 +178,34 @@ export default function page() {
                 </a>
             </div>
 
-            <pre>
-                <code>
-                    &lt;div style=" margin-bottom: 1rem; padding: 1rem 1.25rem;
-                    background: #0000cd; color: #ffffff; border-radius: 0.5rem;
-                    display: flex; flex-wrap: wrap; align-items: center;
-                    justify-content: space-between; gap: 0.75rem; " &gt; &lt;p
-                    style="margin: 0; font-size: 1rem"&gt; Ready to continue?
-                    Work through the next activity to apply these ideas in
-                    practice. &lt;/p&gt; &lt;a href="#" style=" display:
-                    inline-block; padding: 0.6rem 1.1rem; background: #ffffff;
-                    color: #0000cd; text-decoration: none; border-radius: 999px;
-                    font-weight: 600; font-size: 0.95rem; " &gt; Go to the next
-                    activity &lt;/a&gt; &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div style="
+  margin-bottom: 1rem;
+  padding: 1rem 1.25rem;
+  background: #0000cd;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+">
+  <p style="margin: 0; font-size: 1rem">
+    Ready to continue? Work through the next activity to apply these ideas in practice.
+  </p>
+  <a href="#" style="
+    display: inline-block;
+    padding: 0.6rem 1.1rem;
+    background: #ffffff;
+    color: #0000cd;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+  ">
+    Go to the next activity
+  </a>
+</div>`}</CodeBlock>
 
             <h2>Side-by-side text and notes</h2>
 
@@ -214,30 +237,39 @@ export default function page() {
                 </aside>
             </div>
 
-            <pre>
-                <code>
-                    &lt;div style=" margin-bottom: 1rem; display: grid;
-                    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap:
-                    1rem; " &gt; &lt;div style=" padding: 1rem 1.25rem; border:
-                    1px solid #dddddd; border-radius: 0.5rem; background:
-                    #ffffff; " &gt; &lt;h3 style="margin-top: 0; margin-bottom:
-                    0.75rem"&gt; Main explanation &lt;/h3&gt; &lt;p
-                    style="margin-top: 0"&gt; Use this area for the primary
-                    content, such as a worked example, step-by-step explanation,
-                    or short case study. &lt;/p&gt; &lt;p&gt; Keep paragraphs
-                    short and use headings or lists to break up dense
-                    information. &lt;/p&gt; &lt;/div&gt; &lt;aside style="
-                    padding: 1rem 1.25rem; border: 1px solid #dddddd;
-                    border-radius: 0.5rem; background: #f5f5f5; " &gt; &lt;h3
-                    style="margin-top: 0; margin-bottom: 0.75rem"&gt; Notes and
-                    tips &lt;/h3&gt; &lt;ul style="margin: 0; padding-left:
-                    1.25rem"&gt; &lt;li&gt;Highlight common mistakes or
-                    misconceptions.&lt;/li&gt; &lt;li&gt;Provide quick reminders
-                    of key definitions.&lt;/li&gt; &lt;li&gt;Link to related
-                    resources or further reading.&lt;/li&gt; &lt;/ul&gt;
-                    &lt;/aside&gt; &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div style="
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 1rem;
+">
+  <div style="
+    padding: 1rem 1.25rem;
+    border: 1px solid #dddddd;
+    border-radius: 0.5rem;
+    background: #ffffff;
+  ">
+    <h3 style="margin-top: 0; margin-bottom: 0.75rem">Main explanation</h3>
+    <p style="margin-top: 0">
+      Use this area for the primary content, such as a worked example,
+      step-by-step explanation, or short case study.
+    </p>
+    <p>Keep paragraphs short and use headings or lists to break up dense information.</p>
+  </div>
+  <aside style="
+    padding: 1rem 1.25rem;
+    border: 1px solid #dddddd;
+    border-radius: 0.5rem;
+    background: #f5f5f5;
+  ">
+    <h3 style="margin-top: 0; margin-bottom: 0.75rem">Notes and tips</h3>
+    <ul style="margin: 0; padding-left: 1.25rem">
+      <li>Highlight common mistakes or misconceptions.</li>
+      <li>Provide quick reminders of key definitions.</li>
+      <li>Link to related resources or further reading.</li>
+    </ul>
+  </aside>
+</div>`}</CodeBlock>
 
             <h2>Resource cards grid</h2>
 
@@ -281,35 +313,49 @@ export default function page() {
                 </div>
             </div>
 
-            <pre>
-                <code>
-                    &lt;div style=" margin-bottom: 1rem; display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-                    gap: 1rem; " &gt; &lt;div style=" border: 1px solid #dddddd;
-                    border-radius: 0.5rem; padding: 0.9rem 1rem; background:
-                    #ffffff; " &gt; &lt;h3 style="margin-top: 0; margin-bottom:
-                    0.5rem; font-size: 1.05rem"&gt; Core reading &lt;/h3&gt;
-                    &lt;p style="margin-top: 0; margin-bottom: 0.5rem"&gt;
-                    Introduction to the main concepts covered in this week.
-                    &lt;/p&gt; &lt;a href="#" style="font-weight: 600"&gt;View
-                    article&lt;/a&gt; &lt;/div&gt; &lt;div style=" border: 1px
-                    solid #dddddd; border-radius: 0.5rem; padding: 0.9rem 1rem;
-                    background: #ffffff; " &gt; &lt;h3 style="margin-top: 0;
-                    margin-bottom: 0.5rem; font-size: 1.05rem"&gt; Worked
-                    example &lt;/h3&gt; &lt;p style="margin-top: 0;
-                    margin-bottom: 0.5rem"&gt; Step-by-step example showing how
-                    to apply the method. &lt;/p&gt; &lt;a href="#"
-                    style="font-weight: 600"&gt;Open example&lt;/a&gt;
-                    &lt;/div&gt; &lt;div style=" border: 1px solid #dddddd;
-                    border-radius: 0.5rem; padding: 0.9rem 1rem; background:
-                    #ffffff; " &gt; &lt;h3 style="margin-top: 0; margin-bottom:
-                    0.5rem; font-size: 1.05rem"&gt; Optional extension
-                    &lt;/h3&gt; &lt;p style="margin-top: 0; margin-bottom:
-                    0.5rem"&gt; Extra material if you would like to explore
-                    further. &lt;/p&gt; &lt;a href="#" style="font-weight:
-                    600"&gt;Explore more&lt;/a&gt; &lt;/div&gt; &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div style="
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+">
+  <div style="
+    border: 1px solid #dddddd;
+    border-radius: 0.5rem;
+    padding: 0.9rem 1rem;
+    background: #ffffff;
+  ">
+    <h3 style="margin-top: 0; margin-bottom: 0.5rem; font-size: 1.05rem">Core reading</h3>
+    <p style="margin-top: 0; margin-bottom: 0.5rem">
+      Introduction to the main concepts covered in this week.
+    </p>
+    <a href="#" style="font-weight: 600">View article</a>
+  </div>
+  <div style="
+    border: 1px solid #dddddd;
+    border-radius: 0.5rem;
+    padding: 0.9rem 1rem;
+    background: #ffffff;
+  ">
+    <h3 style="margin-top: 0; margin-bottom: 0.5rem; font-size: 1.05rem">Worked example</h3>
+    <p style="margin-top: 0; margin-bottom: 0.5rem">
+      Step-by-step example showing how to apply the method.
+    </p>
+    <a href="#" style="font-weight: 600">Open example</a>
+  </div>
+  <div style="
+    border: 1px solid #dddddd;
+    border-radius: 0.5rem;
+    padding: 0.9rem 1rem;
+    background: #ffffff;
+  ">
+    <h3 style="margin-top: 0; margin-bottom: 0.5rem; font-size: 1.05rem">Optional extension</h3>
+    <p style="margin-top: 0; margin-bottom: 0.5rem">
+      Extra material if you would like to explore further.
+    </p>
+    <a href="#" style="font-weight: 600">Explore more</a>
+  </div>
+</div>`}</CodeBlock>
 
             <h2>Resource cards grid with images</h2>
 
@@ -380,47 +426,43 @@ export default function page() {
                 </div>
             </div>
 
-            <pre>
-                <code>
-                    &lt;div style=" margin-bottom: 1rem; display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-                    gap: 1rem; " &gt; &lt;div style=" border: 1px solid #dddddd;
-                    border-radius: 0.5rem; background: #ffffff; overflow:
-                    hidden; " &gt; &lt;img
-                    src="https://via.placeholder.com/400x225?text=Core+reading"
-                    alt="Illustrative placeholder image for core reading"
-                    style="display:block; width:100%; height:auto;" /&gt;
-                    &lt;div style="padding: 0.9rem 1rem"&gt; &lt;h3
-                    style="margin:0 0 .5rem; font-size:1.05rem;"&gt;Core
-                    reading&lt;/h3&gt; &lt;p style="margin:0 0 .5rem;"&gt;
-                    Introduction to the main concepts covered in this week.
-                    &lt;/p&gt; &lt;a href="#" style="font-weight:600;"&gt;View
-                    article&lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;div style="
-                    border: 1px solid #dddddd; border-radius: 0.5rem;
-                    background: #ffffff; overflow: hidden; " &gt; &lt;img
-                    src="https://via.placeholder.com/400x225?text=Worked+example"
-                    alt="Illustrative placeholder image for a worked example"
-                    style="display:block; width:100%; height:auto;" /&gt;
-                    &lt;div style="padding: 0.9rem 1rem"&gt; &lt;h3
-                    style="margin:0 0 .5rem; font-size:1.05rem;"&gt;Worked
-                    example&lt;/h3&gt; &lt;p style="margin:0 0 .5rem;"&gt;
-                    Step-by-step example showing how to apply the method.
-                    &lt;/p&gt; &lt;a href="#" style="font-weight:600;"&gt;Open
-                    example&lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;div style="
-                    border: 1px solid #dddddd; border-radius: 0.5rem;
-                    background: #ffffff; overflow: hidden; " &gt; &lt;img
-                    src="https://via.placeholder.com/400x225?text=Optional+extension"
-                    alt="Illustrative placeholder image for an optional
-                    extension resource" style="display:block; width:100%;
-                    height:auto;" /&gt; &lt;div style="padding: 0.9rem 1rem"&gt;
-                    &lt;h3 style="margin:0 0 .5rem;
-                    font-size:1.05rem;"&gt;Optional extension&lt;/h3&gt; &lt;p
-                    style="margin:0 0 .5rem;"&gt; Extra material if you would
-                    like to explore further. &lt;/p&gt; &lt;a href="#"
-                    style="font-weight:600;"&gt;Explore more&lt;/a&gt;
-                    &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div style="
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+">
+  <div style="border: 1px solid #dddddd; border-radius: 0.5rem; background: #ffffff; overflow: hidden;">
+    <img src="https://placehold.co/400x225?text=Core+reading"
+      alt="Illustrative placeholder image for core reading"
+      style="display:block; width:100%; height:auto;" />
+    <div style="padding: 0.9rem 1rem">
+      <h3 style="margin:0 0 .5rem; font-size:1.05rem;">Core reading</h3>
+      <p style="margin:0 0 .5rem;">Introduction to the main concepts covered in this week.</p>
+      <a href="#" style="font-weight:600;">View article</a>
+    </div>
+  </div>
+  <div style="border: 1px solid #dddddd; border-radius: 0.5rem; background: #ffffff; overflow: hidden;">
+    <img src="https://placehold.co/400x225?text=Worked+example"
+      alt="Illustrative placeholder image for a worked example"
+      style="display:block; width:100%; height:auto;" />
+    <div style="padding: 0.9rem 1rem">
+      <h3 style="margin:0 0 .5rem; font-size:1.05rem;">Worked example</h3>
+      <p style="margin:0 0 .5rem;">Step-by-step example showing how to apply the method.</p>
+      <a href="#" style="font-weight:600;">Open example</a>
+    </div>
+  </div>
+  <div style="border: 1px solid #dddddd; border-radius: 0.5rem; background: #ffffff; overflow: hidden;">
+    <img src="https://placehold.co/400x225?text=Optional+extension"
+      alt="Illustrative placeholder image for an optional extension resource"
+      style="display:block; width:100%; height:auto;" />
+    <div style="padding: 0.9rem 1rem">
+      <h3 style="margin:0 0 .5rem; font-size:1.05rem;">Optional extension</h3>
+      <p style="margin:0 0 .5rem;">Extra material if you would like to explore further.</p>
+      <a href="#" style="font-weight:600;">Explore more</a>
+    </div>
+  </div>
+</div>`}</CodeBlock>
         </article>
     );
 }

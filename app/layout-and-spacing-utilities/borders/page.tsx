@@ -1,3 +1,5 @@
+import CodeBlock from "@/components/CodeBlock";
+
 export default function page() {
     return (
         <article>
@@ -58,15 +60,13 @@ export default function page() {
                 </p>
             </div>
 
-            <pre>
-                <code>
-                    &lt;div class="content-box pad-box-mini border
-                    border-trbl"&gt; &lt;h5&gt;Example content box&lt;/h5&gt;
-                    &lt;p&gt; This box uses &lt;code&gt;content-box pad-box-mini
-                    border border-trbl&lt;/code&gt; for spacing and a border on
-                    all sides. &lt;/p&gt; &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div class="content-box pad-box-mini border border-trbl">
+  <h5>Example content box</h5>
+  <p>
+    This box uses <code>content-box pad-box-mini border border-trbl</code>
+    for spacing and a border on all sides.
+  </p>
+</div>`}</CodeBlock>
 
             <h2>Full border (Canvas legacy classes)</h2>
 
@@ -79,12 +79,9 @@ export default function page() {
                 Full border using <code>border border-trbl</code>.
             </div>
 
-            <pre>
-                <code>
-                    &lt;div class="border border-trbl"&gt; Full border using
-                    &lt;code&gt;border border-trbl&lt;/code&gt;. &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div class="border border-trbl">
+  Full border using <code>border border-trbl</code>.
+</div>`}</CodeBlock>
 
             <h2>Partial borders (Canvas legacy classes)</h2>
 
@@ -119,18 +116,12 @@ export default function page() {
                 Top border only (<code>border border-t</code>)
             </div>
 
-            <pre>
-                <code>
-                    &lt;div class="border border-rbl"&gt; Right, bottom, left
-                    border &lt;/div&gt; &lt;div class="border border-tbl"&gt;
-                    Top, bottom, left border &lt;/div&gt; &lt;div class="border
-                    border-bl"&gt; Bottom, left border &lt;/div&gt; &lt;div
-                    class="border border-tl"&gt; Top, left border &lt;/div&gt;
-                    &lt;div class="border border-b"&gt; Bottom border only
-                    &lt;/div&gt; &lt;div class="border border-t"&gt; Top border
-                    only &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div class="border border-rbl">Right, bottom, left border</div>
+<div class="border border-tbl">Top, bottom, left border</div>
+<div class="border border-bl">Bottom, left border</div>
+<div class="border border-tl">Top, left border</div>
+<div class="border border-b">Bottom border only</div>
+<div class="border border-t">Top border only</div>`}</CodeBlock>
 
             <h2>Border radius (Canvas legacy classes)</h2>
 
@@ -161,17 +152,10 @@ export default function page() {
                 <code>border border-trbl border-round-tl</code>)
             </div>
 
-            <pre>
-                <code>
-                    &lt;div class="border border-trbl border-round"&gt; All
-                    corners rounded &lt;/div&gt; &lt;div class="border
-                    border-trbl border-round-b"&gt; Bottom corners rounded
-                    &lt;/div&gt; &lt;div class="border border-trbl
-                    border-round-t"&gt; Top corners rounded &lt;/div&gt; &lt;div
-                    class="border border-trbl border-round-tl"&gt; Top-left
-                    corner rounded &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div class="border border-trbl border-round">All corners rounded</div>
+<div class="border border-trbl border-round-b">Bottom corners rounded</div>
+<div class="border border-trbl border-round-t">Top corners rounded</div>
+<div class="border border-trbl border-round-tl">Top-left corner rounded</div>`}</CodeBlock>
 
             <h2>Modern borders with inline CSS</h2>
 
@@ -197,16 +181,12 @@ export default function page() {
                 </p>
             </div>
 
-            <pre>
-                <code>
-                    &lt;div style=" border: 1px solid #d0d7de; padding: 0.75rem;
-                    margin-bottom: 1rem; background: #ffffff; " &gt; &lt;p
-                    style="margin: 0"&gt; This box uses &lt;code&gt;border: 1px
-                    solid #d0d7de;&lt;/code&gt; and &lt;code&gt;padding:
-                    0.75rem;&lt;/code&gt; applied directly as inline styles.
-                    &lt;/p&gt; &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div style="border: 1px solid #d0d7de; padding: 0.75rem; margin-bottom: 1rem; background: #ffffff;">
+  <p style="margin: 0">
+    This box uses <code>border: 1px solid #d0d7de;</code> and
+    <code>padding: 0.75rem;</code> applied directly as inline styles.
+  </p>
+</div>`}</CodeBlock>
 
             <h3>Left border callout</h3>
 
@@ -224,17 +204,13 @@ export default function page() {
                 </p>
             </div>
 
-            <pre>
-                <code>
-                    &lt;div style=" border-left: 4px solid #0000cd; padding:
-                    0.75rem 1rem; margin-bottom: 1rem; background: #f5f7ff; "
-                    &gt; &lt;strong&gt;Callout heading&lt;/strong&gt; &lt;p
-                    style="margin: 0.5rem 0 0"&gt; This callout uses
-                    &lt;code&gt;border-left: 4px solid #0000cd;&lt;/code&gt; to
-                    emphasise the block without adding borders on all sides.
-                    &lt;/p&gt; &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div style="border-left: 4px solid #0000cd; padding: 0.75rem 1rem; margin-bottom: 1rem; background: #f5f7ff;">
+  <strong>Callout heading</strong>
+  <p style="margin: 0.5rem 0 0">
+    This callout uses <code>border-left: 4px solid #0000cd;</code> to
+    emphasise the block without adding borders on all sides.
+  </p>
+</div>`}</CodeBlock>
 
             <h3>Rounded panels and pill-style badges</h3>
 
@@ -255,20 +231,15 @@ export default function page() {
                 <span>Example pill badge with rounded edges</span>
             </div>
 
-            <pre>
-                <code>
-                    &lt;div style=" border: 1px solid #d0d7de; border-radius:
-                    0.5rem; padding: 0.75rem; margin-bottom: 0.75rem;
-                    background: #f9fafb; " &gt; &lt;p style="margin: 0"&gt; This
-                    panel uses &lt;code&gt;border-radius: 0.5rem;&lt;/code&gt;
-                    for gently rounded corners. &lt;/p&gt; &lt;/div&gt; &lt;div
-                    style=" border: 1px solid #d0d7de; border-radius: 999px;
-                    padding: 0.5rem 1.25rem; display: inline-block;
-                    margin-bottom: 1rem; background: #eef6ff; " &gt;
-                    &lt;span&gt;Example pill badge with rounded
-                    edges&lt;/span&gt; &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div style="border: 1px solid #d0d7de; border-radius: 0.5rem; padding: 0.75rem; margin-bottom: 0.75rem; background: #f9fafb;">
+  <p style="margin: 0">
+    This panel uses <code>border-radius: 0.5rem;</code> for gently rounded corners.
+  </p>
+</div>
+
+<div style="border: 1px solid #d0d7de; border-radius: 999px; padding: 0.5rem 1.25rem; display: inline-block; margin-bottom: 1rem; background: #eef6ff;">
+  <span>Example pill badge with rounded edges</span>
+</div>`}</CodeBlock>
 
             <h2>Accessibility notes</h2>
             <ul>

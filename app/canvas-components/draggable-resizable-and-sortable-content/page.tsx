@@ -1,3 +1,5 @@
+import CodeBlock from "@/components/CodeBlock";
+
 export default function page() {
     return (
         <article>
@@ -70,17 +72,21 @@ export default function page() {
                 </div>
             </div>
 
-            <pre>
-                <code>
-                    &lt;div style="width: 100%; height: 200px;"&gt; &lt;div
-                    class="enhanceable_content draggable"&gt; &lt;div style="
-                    text-align: center; background-color: #0000cd; /* Imperial
-                    Blue */ color: #ffffff; width: 300px; height: 60px; " &gt;
-                    &lt;p style="padding: 15px; margin: 0;"&gt; Drag this box
-                    around inside the area &lt;/p&gt; &lt;/div&gt; &lt;/div&gt;
-                    &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div style="width: 100%; height: 200px;">
+  <div class="enhanceable_content draggable">
+    <div style="
+      text-align: center;
+      background-color: #0000cd;
+      color: #ffffff;
+      width: 300px;
+      height: 60px;
+    ">
+      <p style="padding: 15px; margin: 0;">
+        Drag this box around inside the area
+      </p>
+    </div>
+  </div>
+</div>`}</CodeBlock>
 
             <h2>Resizable content</h2>
 
@@ -101,17 +107,19 @@ export default function page() {
                 </div>
             </div>
 
-            <pre>
-                <code>
-                    &lt;div style="width: 100%; height: 200px;"&gt; &lt;div
-                    class="enhanceable_content resizable" style=" text-align:
-                    center; background-color: #232333; /* Dark */ color:
-                    #ffffff; width: 400px; height: 80px; " &gt; &lt;p
-                    style="padding: 15px; margin: 0;"&gt; Resize this box using
-                    the handle in the corner &lt;/p&gt; &lt;/div&gt;
-                    &lt;/div&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<div style="width: 100%; height: 200px;">
+  <div class="enhanceable_content resizable" style="
+    text-align: center;
+    background-color: #232333;
+    color: #ffffff;
+    width: 400px;
+    height: 80px;
+  ">
+    <p style="padding: 15px; margin: 0;">
+      Resize this box using the handle in the corner
+    </p>
+  </div>
+</div>`}</CodeBlock>
 
             <h2>Sortable lists</h2>
 
@@ -141,24 +149,37 @@ export default function page() {
                 </ul>
             </div>
 
-            <pre>
-                <code>
-                    &lt;ul class="enhanceable_content sortable"&gt; &lt;li
-                    style=" text-align: center; background-color: #000080; /*
-                    Navy */ color: #ffffff; width: 300px; height: 60px;
-                    margin-bottom: 0.5rem; " &gt; &lt;p style="padding: 15px;
-                    margin: 0;"&gt; Box 1 — drag to re-order &lt;/p&gt;
-                    &lt;/li&gt; &lt;li style=" text-align: center;
-                    background-color: #0000cd; /* Imperial Blue */ color:
-                    #ffffff; width: 300px; height: 60px; margin-bottom: 0.5rem;
-                    " &gt; &lt;p style="padding: 15px; margin: 0;"&gt; Box 2 —
-                    drag to re-order &lt;/p&gt; &lt;/li&gt; &lt;li style="
-                    text-align: center; background-color: #232333; /* Dark */
-                    color: #ffffff; width: 300px; height: 60px; " &gt; &lt;p
-                    style="padding: 15px; margin: 0;"&gt; Box 3 — drag to
-                    re-order &lt;/p&gt; &lt;/li&gt; &lt;/ul&gt;
-                </code>
-            </pre>
+            <CodeBlock>{`<ul class="enhanceable_content sortable">
+  <li style="
+    text-align: center;
+    background-color: #000080;
+    color: #ffffff;
+    width: 300px;
+    height: 60px;
+    margin-bottom: 0.5rem;
+  ">
+    <p style="padding: 15px; margin: 0;">Box 1 — drag to re-order</p>
+  </li>
+  <li style="
+    text-align: center;
+    background-color: #0000cd;
+    color: #ffffff;
+    width: 300px;
+    height: 60px;
+    margin-bottom: 0.5rem;
+  ">
+    <p style="padding: 15px; margin: 0;">Box 2 — drag to re-order</p>
+  </li>
+  <li style="
+    text-align: center;
+    background-color: #232333;
+    color: #ffffff;
+    width: 300px;
+    height: 60px;
+  ">
+    <p style="padding: 15px; margin: 0;">Box 3 — drag to re-order</p>
+  </li>
+</ul>`}</CodeBlock>
 
             <h2>Accessibility notes</h2>
 
