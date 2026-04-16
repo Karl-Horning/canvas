@@ -30,11 +30,11 @@ export default function Home() {
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-                <div className="border border-[#e5e7eb] rounded-lg p-5">
+                <div className="border border-[#e5e7eb] rounded-lg p-5 dark:border-[#374151]">
                     <h2 className="mt-0 mb-1 text-base">
                         HTML Basics in Canvas
                     </h2>
-                    <p className="mt-0 mb-3 text-sm text-[#4b5563]">
+                    <p className="mt-0 mb-3 text-sm text-[#4b5563] dark:text-[#9ca3af]">
                         The core HTML elements supported in the Rich Content
                         Editor — how Canvas renders headings, paragraphs, lists,
                         and tables.
@@ -58,9 +58,9 @@ export default function Home() {
                     </ul>
                 </div>
 
-                <div className="border border-[#e5e7eb] rounded-lg p-5">
+                <div className="border border-[#e5e7eb] rounded-lg p-5 dark:border-[#374151]">
                     <h2 className="mt-0 mb-1 text-base">Colour and Branding</h2>
-                    <p className="mt-0 mb-3 text-sm text-[#4b5563]">
+                    <p className="mt-0 mb-3 text-sm text-[#4b5563] dark:text-[#9ca3af]">
                         The colour palette available for Canvas content and how
                         to apply it consistently using inline styles.
                     </p>
@@ -73,9 +73,9 @@ export default function Home() {
                     </ul>
                 </div>
 
-                <div className="border border-[#e5e7eb] rounded-lg p-5">
+                <div className="border border-[#e5e7eb] rounded-lg p-5 dark:border-[#374151]">
                     <h2 className="mt-0 mb-1 text-base">Layout and Spacing</h2>
-                    <p className="mt-0 mb-3 text-sm text-[#4b5563]">
+                    <p className="mt-0 mb-3 text-sm text-[#4b5563] dark:text-[#9ca3af]">
                         CSS Grid, spacing, and border patterns for building
                         structured multi-column layouts in Canvas pages.
                     </p>
@@ -98,9 +98,9 @@ export default function Home() {
                     </ul>
                 </div>
 
-                <div className="border border-[#e5e7eb] rounded-lg p-5">
+                <div className="border border-[#e5e7eb] rounded-lg p-5 dark:border-[#374151]">
                     <h2 className="mt-0 mb-1 text-base">Canvas Components</h2>
-                    <p className="mt-0 mb-3 text-sm text-[#4b5563]">
+                    <p className="mt-0 mb-3 text-sm text-[#4b5563] dark:text-[#9ca3af]">
                         Legacy Canvas UI components — buttons, alerts, tabs,
                         progress bars, and interactive widgets — with accessible
                         markup examples.
@@ -140,11 +140,11 @@ export default function Home() {
                     </ul>
                 </div>
 
-                <div className="border border-[#e5e7eb] rounded-lg p-5">
+                <div className="border border-[#e5e7eb] rounded-lg p-5 dark:border-[#374151]">
                     <h2 className="mt-0 mb-1 text-base">
                         Icons &amp; Accessibility
                     </h2>
-                    <p className="mt-0 mb-3 text-sm text-[#4b5563]">
+                    <p className="mt-0 mb-3 text-sm text-[#4b5563] dark:text-[#9ca3af]">
                         Canvas's built-in icon set and the utility classes
                         available for improving accessibility in page content.
                     </p>
@@ -162,9 +162,9 @@ export default function Home() {
                     </ul>
                 </div>
 
-                <div className="border border-[#e5e7eb] rounded-lg p-5">
+                <div className="border border-[#e5e7eb] rounded-lg p-5 dark:border-[#374151]">
                     <h2 className="mt-0 mb-1 text-base">Canvas Behaviour</h2>
-                    <p className="mt-0 mb-3 text-sm text-[#4b5563]">
+                    <p className="mt-0 mb-3 text-sm text-[#4b5563] dark:text-[#9ca3af]">
                         How Canvas processes HTML in the Rich Content Editor —
                         what it strips, what it modifies, and how to embed
                         external media.

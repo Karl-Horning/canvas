@@ -134,12 +134,12 @@ export default function Sidebar() {
                 aria-label="Open navigation menu"
                 aria-expanded={isOpen ? "true" : "false"}
                 aria-controls="site-sidebar"
-                className={`fixed top-3 left-3 z-50 flex flex-col justify-center items-center w-9 h-9 gap-1 rounded border border-[#e5e7eb] bg-white shadow-sm md:hidden${isOpen ? " hidden" : ""}`}
+                className={`fixed top-3 left-3 z-50 flex flex-col justify-center items-center w-9 h-9 gap-1 rounded border border-[#e5e7eb] bg-white shadow-sm md:hidden dark:bg-[#1f2937] dark:border-[#374151]${isOpen ? " hidden" : ""}`}
                 onClick={() => setIsOpen(true)}
             >
-                <span className="block w-5 h-0.5 bg-[#374151]" />
-                <span className="block w-5 h-0.5 bg-[#374151]" />
-                <span className="block w-5 h-0.5 bg-[#374151]" />
+                <span className="block w-5 h-0.5 bg-[#374151] dark:bg-[#9ca3af]" />
+                <span className="block w-5 h-0.5 bg-[#374151] dark:bg-[#9ca3af]" />
+                <span className="block w-5 h-0.5 bg-[#374151] dark:bg-[#9ca3af]" />
             </button>
 
             {/* Backdrop — dims page content when sidebar is open on mobile */}
@@ -155,7 +155,7 @@ export default function Sidebar() {
             <aside
                 id="site-sidebar"
                 className={[
-                    "w-60 shrink-0 h-screen overflow-y-auto border-r border-[#e5e7eb] bg-white",
+                    "w-60 shrink-0 h-screen overflow-y-auto border-r border-[#e5e7eb] bg-white dark:bg-[#1f2937] dark:border-[#374151]",
                     // Mobile: fixed overlay, slides in/out
                     "fixed top-0 left-0 z-40 transition-transform duration-200",
                     isOpen ? "translate-x-0" : "-translate-x-full",
@@ -163,10 +163,10 @@ export default function Sidebar() {
                     "md:sticky md:translate-x-0",
                 ].join(" ")}
             >
-                <div className="px-4 py-4 border-b border-[#e5e7eb] flex items-center justify-between">
+                <div className="px-4 py-4 border-b border-[#e5e7eb] flex items-center justify-between dark:border-[#374151]">
                     <Link
                         href="/"
-                        className="text-sm font-bold text-[#1f2937] no-underline hover:no-underline hover:text-[#0000cd]"
+                        className="text-sm font-bold text-[#1f2937] no-underline hover:no-underline hover:text-[#0000cd] dark:text-[#e5e7eb] dark:hover:text-[#93c5fd]"
                         onClick={close}
                     >
                         Canvas Guide
@@ -176,7 +176,7 @@ export default function Sidebar() {
                     <button
                         type="button"
                         aria-label="Close navigation menu"
-                        className="md:hidden flex items-center justify-center w-7 h-7 rounded text-[#4b5563] hover:bg-[#f3f4f6] hover:text-[#111827]"
+                        className="md:hidden flex items-center justify-center w-7 h-7 rounded text-[#4b5563] hover:bg-[#f3f4f6] hover:text-[#111827] dark:text-[#9ca3af] dark:hover:bg-[#374151] dark:hover:text-[#f9fafb]"
                         onClick={close}
                     >
                         <span aria-hidden="true" className="text-lg leading-none">
@@ -192,7 +192,7 @@ export default function Sidebar() {
                              * Section heading uses #4b5563 (≈7:1 on white) to satisfy
                              * WCAG AA contrast at this small font size.
                              */}
-                            <div className="px-4 pb-1 text-[0.7rem] font-semibold uppercase tracking-wider text-[#4b5563]">
+                            <div className="px-4 pb-1 text-[0.7rem] font-semibold uppercase tracking-wider text-[#4b5563] dark:text-[#9ca3af]">
                                 {section}
                             </div>
                             <ul className="list-none p-0 m-0">
@@ -205,8 +205,8 @@ export default function Sidebar() {
                                                 onClick={close}
                                                 className={
                                                     isActive
-                                                        ? "flex text-sm py-1.5 px-3.25 border-l-[3px] border-[#0000cd] bg-[#eff6ff] text-[#0000cd] font-medium no-underline"
-                                                        : "flex text-sm py-1.5 px-4 text-[#374151] no-underline hover:bg-[#f3f4f6] hover:text-[#111827]"
+                                                        ? "flex text-sm py-1.5 px-3.25 border-l-[3px] border-[#0000cd] bg-[#eff6ff] text-[#0000cd] font-medium no-underline dark:border-[#93c5fd] dark:bg-[#172554] dark:text-[#93c5fd]"
+                                                        : "flex text-sm py-1.5 px-4 text-[#374151] no-underline hover:bg-[#f3f4f6] hover:text-[#111827] dark:text-[#d1d5db] dark:hover:bg-[#374151] dark:hover:text-[#f9fafb]"
                                                 }
                                             >
                                                 {label}

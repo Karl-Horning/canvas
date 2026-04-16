@@ -82,7 +82,7 @@ export default function page() {
                 levels one to three.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] p-3">
+            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <h1>H1 Heading example</h1>
                 <h2>H2 Heading example</h2>
                 <h3>H3 Heading example</h3>
@@ -109,7 +109,7 @@ export default function page() {
                 meaning.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] p-3">
+            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <p>
                     This sentence contains{" "}
                     <strong>important highlighted text</strong> using{" "}
@@ -156,7 +156,7 @@ export default function page() {
                 on Canvas' stylesheets.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] p-3">
+            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <p className="text-left">This paragraph is left-aligned.</p>
                 <p className="text-center">This paragraph is centre-aligned.</p>
                 <p className="text-right">This paragraph is right-aligned.</p>
@@ -185,7 +185,7 @@ export default function page() {
                 classes.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] p-3">
+            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <p className="muted">Example of muted text.</p>
 
                 <p className="text-warning">
@@ -241,7 +241,7 @@ export default function page() {
                 JavaScript.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] p-3">
+            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <details>
                     <summary>Collapsible section one</summary>
                     <p>

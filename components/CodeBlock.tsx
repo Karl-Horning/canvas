@@ -29,12 +29,15 @@ interface CodeBlockProps {
 export default async function CodeBlock({ children }: CodeBlockProps) {
     const highlighted = await codeToHtml(children, {
         lang: "html",
-        theme: "github-light",
+        themes: {
+            light: "github-light",
+            dark: "github-dark",
+        },
     });
 
     return (
         <div className="relative mb-4">
-            <div className="overflow-x-auto rounded-md border border-[#ddd]">
+            <div className="overflow-x-auto rounded-md border border-[#ddd] dark:border-[#374151]">
                 <div
                     className="[&>pre]:m-0 [&>pre]:p-4 [&>pre]:pr-20 [&>pre]:text-sm [&>pre]:whitespace-pre [&>pre]:w-max [&>pre]:min-w-full"
                     // biome-ignore lint/security/noDangerouslySetInnerHtml: Shiki output is generated server-side from trusted template literals, not user input.

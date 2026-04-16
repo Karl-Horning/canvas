@@ -38,25 +38,25 @@ export default function page() {
                         <tr>
                             <th
                                 scope="col"
-                                className="border border-[#dddddd] p-2 bg-[#f5f5f5] text-left"
+                                className="border border-[#dddddd] p-2 bg-[#f5f5f5] dark:bg-[#1f2937] text-left"
                             >
                                 Item
                             </th>
                             <th
                                 scope="col"
-                                className="border border-[#dddddd] p-2 bg-[#f5f5f5] text-left"
+                                className="border border-[#dddddd] p-2 bg-[#f5f5f5] dark:bg-[#1f2937] text-left"
                             >
                                 Type
                             </th>
                             <th
                                 scope="col"
-                                className="border border-[#dddddd] p-2 bg-[#f5f5f5] text-left"
+                                className="border border-[#dddddd] p-2 bg-[#f5f5f5] dark:bg-[#1f2937] text-left"
                             >
                                 Canvas behaviour
                             </th>
                             <th
                                 scope="col"
-                                className="border border-[#dddddd] p-2 bg-[#f5f5f5] text-left"
+                                className="border border-[#dddddd] p-2 bg-[#f5f5f5] dark:bg-[#1f2937] text-left"
                             >
                                 Notes and alternatives
                             </th>

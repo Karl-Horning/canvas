@@ -15,7 +15,7 @@ export default function page() {
             <h2>HTML sanitisation and removed elements</h2>
 
             <div className="mb-6">
-                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] px-4 py-3">
+                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] dark:bg-[#1f2937] px-4 py-3">
                     <summary className="font-semibold mb-2 cursor-pointer">
                         Why does Canvas sometimes change my HTML?
                     </summary>
@@ -29,7 +29,7 @@ export default function page() {
                     </p>
                 </details>
 
-                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] px-4 py-3">
+                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] dark:bg-[#1f2937] px-4 py-3">
                     <summary className="font-semibold mb-2 cursor-pointer">
                         Why are my scripts removed?
                     </summary>
@@ -41,7 +41,7 @@ export default function page() {
                     </p>
                 </details>
 
-                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] px-4 py-3">
+                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] dark:bg-[#1f2937] px-4 py-3">
                     <summary className="font-semibold mb-2 cursor-pointer">
                         Why are some elements removed, such as buttons, forms,
                         or progress bars?
@@ -58,7 +58,7 @@ export default function page() {
                     </p>
                 </details>
 
-                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] px-4 py-3">
+                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] dark:bg-[#1f2937] px-4 py-3">
                     <summary className="font-semibold mb-2 cursor-pointer">
                         Why do my custom CSS styles disappear?
                     </summary>
@@ -70,7 +70,7 @@ export default function page() {
                     </p>
                 </details>
 
-                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] px-4 py-3">
+                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] dark:bg-[#1f2937] px-4 py-3">
                     <summary className="font-semibold mb-2 cursor-pointer">
                         Why does Canvas wrap everything in paragraphs?
                     </summary>
@@ -87,7 +87,7 @@ export default function page() {
             <h2>Layouts, styles, and components</h2>
 
             <div className="mb-6">
-                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] px-4 py-3">
+                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] dark:bg-[#1f2937] px-4 py-3">
                     <summary className="font-semibold mb-2 cursor-pointer">
                         Why do some Canvas components work even though I cannot
                         use JavaScript?
@@ -107,7 +107,7 @@ export default function page() {
                     </p>
                 </details>
 
-                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] px-4 py-3">
+                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] dark:bg-[#1f2937] px-4 py-3">
                     <summary className="font-semibold mb-2 cursor-pointer">
                         Why do my tables or layouts look different after saving?
                     </summary>
@@ -129,7 +129,7 @@ export default function page() {
                     </p>
                 </details>
 
-                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] px-4 py-3">
+                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] dark:bg-[#1f2937] px-4 py-3">
                     <summary className="font-semibold mb-2 cursor-pointer">
                         Why do my inline styles get rewritten or reordered?
                     </summary>
@@ -143,7 +143,7 @@ export default function page() {
                     </p>
                 </details>
 
-                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] px-4 py-3">
+                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] dark:bg-[#1f2937] px-4 py-3">
                     <summary className="font-semibold mb-2 cursor-pointer">
                         Why will my CSS Grid layout not behave responsively?
                     </summary>
@@ -158,7 +158,7 @@ export default function page() {
                     </p>
                 </details>
 
-                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] px-4 py-3">
+                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] dark:bg-[#1f2937] px-4 py-3">
                     <summary className="font-semibold mb-2 cursor-pointer">
                         Can I use ARIA attributes?
                     </summary>
@@ -170,7 +170,7 @@ export default function page() {
                     </p>
                 </details>
 
-                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] px-4 py-3">
+                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] dark:bg-[#1f2937] px-4 py-3">
                     <summary className="font-semibold mb-2 cursor-pointer">
                         Why cannot I rely on tooltips, popovers, or draggable
                         content?
@@ -188,7 +188,7 @@ export default function page() {
             <h2>Editing workflow and long-term maintenance</h2>
 
             <div className="mb-6">
-                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] px-4 py-3">
+                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] dark:bg-[#1f2937] px-4 py-3">
                     <summary className="font-semibold mb-2 cursor-pointer">
                         Can I copy and paste content directly into Canvas?
                     </summary>
@@ -201,7 +201,7 @@ export default function page() {
                     </p>
                 </details>
 
-                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] px-4 py-3">
+                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] dark:bg-[#1f2937] px-4 py-3">
                     <summary className="font-semibold mb-2 cursor-pointer">
                         How should I edit and manage my Canvas HTML?
                     </summary>
@@ -226,7 +226,7 @@ export default function page() {
                     </p>
                 </details>
 
-                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] px-4 py-3">
+                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] dark:bg-[#1f2937] px-4 py-3">
                     <summary className="font-semibold mb-2 cursor-pointer">
                         What happens if Canvas updates its styles or JavaScript?
                     </summary>
@@ -239,7 +239,7 @@ export default function page() {
                     </p>
                 </details>
 
-                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] px-4 py-3">
+                <details className="mb-3 border border-[#d0d7de] rounded-lg bg-[#f9f9f9] dark:bg-[#1f2937] px-4 py-3">
                     <summary className="font-semibold mb-2 cursor-pointer">
                         Is it safe to rely on these components long term?
                     </summary>

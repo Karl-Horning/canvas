@@ -53,7 +53,7 @@ export default function page() {
                 such as its weighting, rules, or points.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] p-3">
+            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <p>Example assignment settings:</p>
 
                 <ul className="pill">
@@ -85,19 +85,19 @@ export default function page() {
                 in any context that allows inline CSS.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] p-3">
+            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <p>Example assignment settings:</p>
 
                 <p>
-                    <span className="inline-block mx-1 mb-1 px-2 py-[0.15rem] rounded-full bg-[#eef4ff] text-[#111322] text-[0.85rem]">
+                    <span className="inline-block mx-1 mb-1 px-2 py-[0.15rem] rounded-full bg-[#eef4ff] dark:bg-[#1e3a5f] text-[#111322] dark:text-[#e5e7eb] text-[0.85rem]">
                         30% of module mark
                     </span>
 
-                    <span className="inline-block mx-1 mb-1 px-2 py-[0.15rem] rounded-full bg-[#eef4ff] text-[#111322] text-[0.85rem]">
+                    <span className="inline-block mx-1 mb-1 px-2 py-[0.15rem] rounded-full bg-[#eef4ff] dark:bg-[#1e3a5f] text-[#111322] dark:text-[#e5e7eb] text-[0.85rem]">
                         2 late submission rules
                     </span>
 
-                    <span className="inline-block mx-1 mb-1 px-2 py-[0.15rem] rounded-full bg-[#eef4ff] text-[#111322] text-[0.85rem]">
+                    <span className="inline-block mx-1 mb-1 px-2 py-[0.15rem] rounded-full bg-[#eef4ff] dark:bg-[#1e3a5f] text-[#111322] dark:text-[#e5e7eb] text-[0.85rem]">
                         10 points total
                     </span>
                 </p>
@@ -125,7 +125,7 @@ export default function page() {
                 HTML <code>&lt;progress&gt;</code> element.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] p-3">
+            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <p>Example: module completion status</p>
 
                 <div
@@ -184,7 +184,7 @@ export default function page() {
                 inline CSS is allowed.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] p-3">
+            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <p id="inline-progress-label">Reading progress:</p>
 
                 <div
@@ -194,7 +194,7 @@ export default function page() {
                     aria-valuemax={100}
                     aria-valuenow={40}
                     aria-valuetext="40% complete"
-                    className="w-full h-5 rounded-full border border-[#d0d4dd] bg-[#f5f7fb] overflow-hidden"
+                    className="w-full h-5 rounded-full border border-[#d0d4dd] bg-[#f5f7fb] dark:bg-[#1f2937] overflow-hidden"
                 >
                     <div className="w-[40%] h-full [background:linear-gradient(90deg,#0000cd,#4c9dcd)]"></div>
                 </div>

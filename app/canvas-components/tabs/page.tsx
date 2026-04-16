@@ -56,7 +56,7 @@ export default function page() {
                 link points to a corresponding panel by ID.
             </p>
 
-            <div className="enhanceable_content tabs mb-4 bg-[#f9f9f9] p-4">
+            <div className="enhanceable_content tabs mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-4">
                 <ul>
                     <li>
                         <a href="#tab-one">Overview</a>
