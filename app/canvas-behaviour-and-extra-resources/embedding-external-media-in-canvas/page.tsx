@@ -105,18 +105,18 @@ export default function page() {
             <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <iframe
                     title="Imperial College London — YouTube video"
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/NhhsqcSK7jg"
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/dwXwah-feFk"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                 ></iframe>
             </div>
 
             <CodeBlock>{`<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/NhhsqcSK7jg"
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/dwXwah-feFk"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen
@@ -165,7 +165,7 @@ export default function page() {
             <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <video
                     controls
-                    width="620"
+                    width="100%"
                     src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
                     poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
                 >
@@ -175,7 +175,7 @@ export default function page() {
 
             <CodeBlock>{`<video
   controls
-  width="620"
+  width="100%"
   src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
   poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
 >
