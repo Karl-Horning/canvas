@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "app/icons-and-accessibility-helpers"  ],
   "exclude": ["node_modules"]
 }
