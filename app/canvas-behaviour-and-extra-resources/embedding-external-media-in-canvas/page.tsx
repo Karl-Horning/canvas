@@ -80,7 +80,10 @@ export default function page() {
 
             <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <audio controls>
-                    <source src="YOUR_AUDIO_FILE_URL" type="audio/mpeg" />
+                    <source
+                        src="/audio/penguinmusic-future-design-344320.mp3"
+                        type="audio/mp3"
+                    />
                     Your browser does not support the audio element.
                 </audio>
             </div>
@@ -183,10 +186,9 @@ export default function page() {
 
             <p>
                 Services such as Google Drive and Google Slides provide embed
-                codes that can be used in Canvas via{" "}
-                <code>&lt;iframe&gt;</code>, in the same way as the examples
-                above. These can be pasted into the HTML editor when creating or
-                editing a page.
+                codes that can be used in Canvas via <code>&lt;iframe&gt;</code>
+                , in the same way as the examples above. These can be pasted
+                into the HTML editor when creating or editing a page.
             </p>
 
             <h2>Accessibility and limitations</h2>
