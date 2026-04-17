@@ -6,11 +6,11 @@ export default function introduction() {
             <h1>Canvas Content Styling Guide</h1>
 
             <p>
-                This course collects examples of HTML and CSS patterns that can
-                be used to style content created with the Canvas Rich Content
-                Editor (RCE). All examples have been tested in Canvas and are
-                intended for everyday use when building pages, assignments, and
-                other course content.
+                This guide collects examples of HTML and CSS patterns
+                that can be used to style content created with the Canvas Rich
+                Content Editor (RCE). All examples have been tested in Canvas
+                and are intended for everyday use when building pages,
+                assignments, and other course content.
             </p>
 
             <p>
@@ -41,7 +41,7 @@ export default function introduction() {
             </p>
 
             <p>
-                In this course, those legacy classes are combined with{" "}
+                In this guide, those legacy classes are combined with{" "}
                 <strong>
                     modern HTML semantics, inline styles, and current
                     accessibility practices
@@ -85,7 +85,7 @@ export default function introduction() {
 
             <h2>When to use these patterns</h2>
 
-            <p>Use the patterns in this course when you are:</p>
+            <p>Use the patterns in this guide when you are:</p>
 
             <ul>
                 <li>Creating or updating Canvas content in the RCE.</li>
@@ -131,11 +131,11 @@ export default function introduction() {
             <h2>Using colour for headings</h2>
 
             <p>
-                Imperial's visual identity pairs colour and typography to create
-                different moods while maintaining accessible contrast. The
-                examples below adapt three of these combinations for use as
-                headings in Canvas. They are intended for short headings or
-                banners rather than long paragraphs of text.
+                Combining background colour with text colour can create distinct
+                visual moods while maintaining accessible contrast. The examples
+                below show three ready-to-use combinations for headings in
+                Canvas. They are intended for short headings or banners rather
+                than long paragraphs of text.
             </p>
 
             <h3>Mood 1 — Calm, scientific, trustworthy</h3>
@@ -210,16 +210,12 @@ export default function introduction() {
             </p>
 
             <p>
-                For more detail on Imperial's colour palette and which
-                combinations are suitable for text, see the{" "}
-                <a
-                    href="https://canvas.imperial.ac.uk/courses/220/pages/imperials-colours"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Imperial's colours
+                For more detail on which colours are suitable for text and
+                background combinations, see the{" "}
+                <a href="/colour-and-branding/colours-in-canvas">
+                    Colours in Canvas
                 </a>{" "}
-                page in this course.
+                page in this guide.
             </p>
 
             <h2>How to use the examples</h2>

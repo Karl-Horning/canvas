@@ -14,8 +14,8 @@ export default function page() {
             </p>
 
             <p>
-                The table below summarises the main behaviours observed in this
-                Canvas instance while building the examples in this course.
+                The table below summarises the main behaviours observed in
+                Canvas while building the examples in this guide.
                 Details may vary slightly between institutions and over time as
                 Canvas is updated, so always test important content after
                 saving.
@@ -76,7 +76,7 @@ export default function page() {
                             </td>
                             <td className="border border-[#dddddd] p-2">
                                 You cannot add your own JavaScript to RCE pages.
-                                Only Canvas’ built-in JavaScript (for example{" "}
+                                Only Canvas' built-in JavaScript (for example{" "}
                                 <code>enhanceable_content</code>) can run.
                             </td>
                         </tr>
@@ -94,8 +94,7 @@ export default function page() {
                             </td>
                             <td className="border border-[#dddddd] p-2">
                                 Use inline styles on individual elements
-                                instead. This course uses inline CSS for all
-                                layout and spacing examples.
+                                instead.
                             </td>
                         </tr>
 
@@ -132,7 +131,7 @@ export default function page() {
                             </td>
                             <td className="border border-[#dddddd] p-2">
                                 Use styled links that look like buttons, and
-                                Canvas’ legacy progress bar or inline text
+                                Canvas' legacy progress bar or inline text
                                 descriptions instead of native elements.
                             </td>
                         </tr>
@@ -150,8 +149,8 @@ export default function page() {
                             </td>
                             <td className="border border-[#dddddd] p-2">
                                 For predictable results, rely on inline styles
-                                and the legacy Canvas classes documented in this
-                                course (for example <code>btn</code>,
+                                and the legacy Canvas classes in this
+                                guide (for example <code>btn</code>,
                                 <code>ic-Table</code>,
                                 <code>enhanceable_content</code>).
                             </td>
