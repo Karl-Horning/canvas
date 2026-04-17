@@ -91,12 +91,17 @@ export default function page() {
                 <h6>H6 Heading example</h6>
             </div>
 
-            <CodeBlock>{`<h1>H1 Heading example</h1>
-<h2>H2 Heading example</h2>
-<h3>H3 Heading example</h3>
-<h4>H4 Heading example</h4>
-<h5>H5 Heading example</h5>
-<h6>H6 Heading example</h6>`}</CodeBlock>
+            <CodeBlock>{`<h1>H1 Heading example</h1>`}</CodeBlock>
+
+            <CodeBlock>{`<h2>H2 Heading example</h2>`}</CodeBlock>
+
+            <CodeBlock>{`<h3>H3 Heading example</h3>`}</CodeBlock>
+
+            <CodeBlock>{`<h4>H4 Heading example</h4>`}</CodeBlock>
+
+            <CodeBlock>{`<h5>H5 Heading example</h5>`}</CodeBlock>
+
+            <CodeBlock>{`<h6>H6 Heading example</h6>`}</CodeBlock>
 
             <h2>Emphasis</h2>
 
@@ -129,12 +134,14 @@ export default function page() {
             <CodeBlock>{`<p>
   This sentence contains <strong>important highlighted text</strong>
   using <code>&lt;strong&gt;</code>.
-</p>
-<p>
+</p>`}</CodeBlock>
+
+            <CodeBlock>{`<p>
   This sentence uses <em>emphasised text for stress</em>
   with <code>&lt;em&gt;</code>.
-</p>
-<p>
+</p>`}</CodeBlock>
+
+            <CodeBlock>{`<p>
   This line includes <small>supporting details in smaller text</small>
   using <code>&lt;small&gt;</code>.
 </p>`}</CodeBlock>
@@ -162,9 +169,11 @@ export default function page() {
                 <p className="text-right">This paragraph is right-aligned.</p>
             </div>
 
-            <CodeBlock>{`<p class="text-left">This paragraph is left-aligned.</p>
-<p class="text-center">This paragraph is centre-aligned.</p>
-<p class="text-right">This paragraph is right-aligned.</p>`}</CodeBlock>
+            <CodeBlock>{`<p class="text-left">This paragraph is left-aligned.</p>`}</CodeBlock>
+
+            <CodeBlock>{`<p class="text-center">This paragraph is centre-aligned.</p>`}</CodeBlock>
+
+            <CodeBlock>{`<p class="text-right">This paragraph is right-aligned.</p>`}</CodeBlock>
 
             <h2>Text colour</h2>
 
@@ -217,17 +226,21 @@ export default function page() {
                 </p>
             </div>
 
-            <CodeBlock>{`<p class="muted">Example of muted text.</p>
-<p class="text-warning">
+            <CodeBlock>{`<p class="muted">Example of muted text.</p>`}</CodeBlock>
+
+            <CodeBlock>{`<p class="text-warning">
   Example of warning text <a href="#" class="text-warning">with a link</a>
-</p>
-<p class="text-error">
+</p>`}</CodeBlock>
+
+            <CodeBlock>{`<p class="text-error">
   Example of error text <a href="#" class="text-error">with a link</a>
-</p>
-<p class="text-info">
+</p>`}</CodeBlock>
+
+            <CodeBlock>{`<p class="text-info">
   Example of info text <a href="#" class="text-info">with a link</a>
-</p>
-<p class="text-success">
+</p>`}</CodeBlock>
+
+            <CodeBlock>{`<p class="text-success">
   Example of success text <a href="#" class="text-success">with a link</a>
 </p>`}</CodeBlock>
 

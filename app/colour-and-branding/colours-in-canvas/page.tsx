@@ -653,9 +653,9 @@ export default function page() {
 
             <CodeBlock>{`<p style="color: #0000cd;">
   This heading uses Imperial Blue as text on white.
-</p>
+</p>`}</CodeBlock>
 
-<div style="background-color: #f5f5f5; padding: 1rem;">
+            <CodeBlock>{`<div style="background-color: #f5f5f5; padding: 1rem;">
   <p>This panel uses White Smoke as a light background.</p>
 </div>`}</CodeBlock>
 

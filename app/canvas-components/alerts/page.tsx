@@ -68,11 +68,13 @@ export default function page() {
 
             <CodeBlock>{`<div class="alert alert-info" role="status">
   <strong>Info:</strong> This is an info alert.
-</div>
-<div class="alert alert-success" role="status">
+</div>`}</CodeBlock>
+
+            <CodeBlock>{`<div class="alert alert-success" role="status">
   <strong>Success:</strong> This is a success alert.
-</div>
-<div class="alert alert-error" role="alert">
+</div>`}</CodeBlock>
+
+            <CodeBlock>{`<div class="alert alert-error" role="alert">
   <strong>Error:</strong> This is an error alert.
 </div>`}</CodeBlock>
 
@@ -116,13 +118,13 @@ export default function page() {
 
             <CodeBlock>{`<div role="status" style="padding: 1rem; border-radius: 0.375rem; background: #e8f2ff; border-left: 6px solid #4c9dcd;">
   <strong>Info:</strong> Inline-styled information alert.
-</div>
+</div>`}</CodeBlock>
 
-<div role="status" style="padding: 1rem; border-radius: 0.375rem; background: #e8f8ea; border-left: 6px solid #2d8a3b;">
+            <CodeBlock>{`<div role="status" style="padding: 1rem; border-radius: 0.375rem; background: #e8f8ea; border-left: 6px solid #2d8a3b;">
   <strong>Success:</strong> Action completed successfully.
-</div>
+</div>`}</CodeBlock>
 
-<div role="alert" style="padding: 1rem; border-radius: 0.375rem; background: #fdeaea; border-left: 6px solid #cb2d6f;">
+            <CodeBlock>{`<div role="alert" style="padding: 1rem; border-radius: 0.375rem; background: #fdeaea; border-left: 6px solid #cb2d6f;">
   <strong>Error:</strong> Something has gone wrong.
 </div>`}</CodeBlock>
 

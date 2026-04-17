@@ -113,14 +113,17 @@ export default function page() {
 
             <CodeBlock>{`<div class="pad-box-mega border border-trbl">
   <strong>pad-box-mega</strong> (largest padding)
-</div>
-<div class="pad-box border border-trbl">
+</div>`}</CodeBlock>
+
+            <CodeBlock>{`<div class="pad-box border border-trbl">
   <strong>pad-box</strong> (standard padding)
-</div>
-<div class="pad-box-mini border border-trbl">
+</div>`}</CodeBlock>
+
+            <CodeBlock>{`<div class="pad-box-mini border border-trbl">
   <strong>pad-box-mini</strong> (small padding)
-</div>
-<div class="pad-box-micro border border-trbl">
+</div>`}</CodeBlock>
+
+            <CodeBlock>{`<div class="pad-box-micro border border-trbl">
   <strong>pad-box-micro</strong> (very small padding)
 </div>`}</CodeBlock>
 
@@ -193,16 +196,16 @@ export default function page() {
     <code>margin-bottom: 1rem;</code> to create clear spacing around
     the content and between cards.
   </p>
-</div>
+</div>`}</CodeBlock>
 
-<div style="border: 1px solid #d0d7de; border-radius: 0.5rem; padding: 0.75rem; margin-bottom: 1rem; background: #ffffff;">
+            <CodeBlock>{`<div style="border: 1px solid #d0d7de; border-radius: 0.5rem; padding: 0.75rem; margin-bottom: 1rem; background: #ffffff;">
   <h3 style="margin-top: 0; margin-bottom: 0.5rem">Card with slightly smaller padding</h3>
   <p style="margin: 0">
     This card uses <code>padding: 0.75rem;</code> for a slightly more compact layout.
   </p>
-</div>
+</div>`}</CodeBlock>
 
-<div style="border: 1px solid #d0d7de; border-radius: 999px; padding: 0.75rem 1.25rem; margin-bottom: 1rem; background: #eef6ff; display: inline-block;">
+            <CodeBlock>{`<div style="border: 1px solid #d0d7de; border-radius: 999px; padding: 0.75rem 1.25rem; margin-bottom: 1rem; background: #eef6ff; display: inline-block;">
   <p style="margin: 0">
     This pill-style badge uses <code>border-radius: 999px;</code> and extra horizontal padding.
   </p>
