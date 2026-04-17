@@ -29,6 +29,12 @@ export default function RootLayout({
             lang="en"
             className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
         >
+            <head>
+                <link
+                    rel="stylesheet"
+                    href="/fonts/instructure_icons/Line/InstructureIcons-Line.css"
+                />
+            </head>
             <body className="min-h-full flex">
                 <Sidebar />
                 <main className="flex-1 min-w-0 flex flex-col">
