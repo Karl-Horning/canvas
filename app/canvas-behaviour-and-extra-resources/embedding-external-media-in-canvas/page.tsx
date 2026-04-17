@@ -98,13 +98,12 @@ export default function page() {
             <p>
                 YouTube videos can be embedded using an{" "}
                 <code>&lt;iframe&gt;</code> with the <code>/embed/</code> URL
-                format. The example below uses a public Imperial College London
-                video.
+                format. The example below uses a public Canvas 101 video.
             </p>
 
             <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <iframe
-                    title="Imperial College London — YouTube video"
+                    title="Canvas 101 — YouTube video"
                     width="100%"
                     height="400"
                     src="https://www.youtube.com/embed/dwXwah-feFk"
@@ -127,13 +126,13 @@ export default function page() {
             <p>
                 Google Maps provides embed code that can be pasted directly into
                 Canvas as an <code>&lt;iframe&gt;</code>. The example below
-                shows an embedded map for Imperial College London.
+                shows an embedded map for Tate Modern.
             </p>
 
             <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <iframe
-                    title="Imperial College London — Google Maps"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.7844898572976!2d-0.17745378699239867!3d51.498822171693895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760567da220a01%3A0x31911b371c692e86!2sImperial%20College%20London!5e0!3m2!1sen!2suk!4v1763656310877!5m2!1sen!2suk"
+                    title="Tate Modern — Google Maps"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.6509037157691!2d-0.10013424061170775!3d51.507678771728145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604a931761995%3A0x1ffc6f23e06b9be7!2sTate%20Modern!5e0!3m2!1sen!2suk!4v1776430360702!5m2!1sen!2suk"
                     width="100%"
                     height="450"
                     className="border-0"

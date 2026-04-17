@@ -42,7 +42,7 @@ export default function page() {
             </ul>
 
             <p>
-                In this course, ARIA attributes are not added manually to the
+                In this guide, ARIA attributes are not added manually to the
                 tab markup. Canvas manages the interactive behaviour internally,
                 and manually adding partial ARIA patterns could conflict with or
                 duplicate what Canvas injects.

@@ -188,10 +188,12 @@ export default function page() {
                 <code>text-error</code>, <code>text-info</code>, and{" "}
                 <code>text-success</code> are provided by Canvas' legacy CSS.
                 They still work, but the exact colours may change if Canvas'
-                theme is updated. For precise colour control that aligns with
-                Imperial's palette, you can also use inline styles (for example
-                from the <em>Imperial's colours</em> page) alongside these
-                classes.
+                theme is updated. For precise colour control you can also use
+                inline styles (for example from the{" "}
+                <a href="/colour-and-branding/colours-in-canvas">
+                    Colours in Canvas
+                </a>{" "}
+                page) alongside these classes.
             </p>
 
             <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
