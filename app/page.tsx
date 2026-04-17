@@ -155,8 +155,13 @@ export default function Home() {
                             </Link>
                         </li>
                         <li>
-                            <Link href="/icons-and-accessibility-helpers/icons">
-                                Icons
+                            <Link href="/icons-and-accessibility-helpers/legacy-icons">
+                                Legacy Icons
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/icons-and-accessibility-helpers/full-legacy-icons-reference">
+                                Full Legacy Icons Reference
                             </Link>
                         </li>
                     </ul>

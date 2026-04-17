@@ -1,6 +1,23 @@
 @import "tailwindcss";
 
 @layer base {
+    [class^="icon-"],
+    [class*=" icon-"] {
+        vertical-align: middle;
+    }
+
+    [class^="icon-"]::before,
+    [class*=" icon-"]::before {
+        display: inline-block;
+        font-family: "InstructureIcons-Line";
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
     article {
         max-width: 60rem;
         padding: 2rem;

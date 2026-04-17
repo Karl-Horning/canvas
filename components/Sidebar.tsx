@@ -77,8 +77,12 @@ const nav = [
                 href: "/icons-and-accessibility-helpers/accessibility-helpers",
             },
             {
-                label: "Icons",
-                href: "/icons-and-accessibility-helpers/icons",
+                label: "Legacy Icons",
+                href: "/icons-and-accessibility-helpers/legacy-icons",
+            },
+            {
+                label: "Full Legacy Icons Reference",
+                href: "/icons-and-accessibility-helpers/full-legacy-icons-reference",
             },
         ],
     },
