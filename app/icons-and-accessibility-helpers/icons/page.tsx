@@ -7,11 +7,10 @@ export default function page() {
 
             <p>
                 Canvas includes a legacy icon set that can be used inside course
-                content by applying icon classes such as{" "}
-                <code>icon-info</code>, <code>icon-warning</code>, or{" "}
-                <code>icon-check</code> to an inline element. These icons are
-                provided by Canvas' own CSS and icon font; you do not need to
-                upload images to use them.
+                content by applying icon classes such as <code>icon-info</code>,{" "}
+                <code>icon-warning</code>, or <code>icon-check</code> to an
+                inline element. These icons are provided by Canvas' own CSS and
+                icon font; you do not need to upload images to use them.
             </p>
 
             <p>
@@ -94,12 +93,14 @@ export default function page() {
             <CodeBlock>{`<p>
   <i class="icon-info" aria-hidden="true"></i>
   <strong>Information:</strong> Submissions are due by Friday at 17:00.
-</p>
-<p>
+</p>`}</CodeBlock>
+
+            <CodeBlock>{`<p>
   <i class="icon-warning" aria-hidden="true"></i>
   <strong>Warning:</strong> Late work may receive a reduced mark.
-</p>
-<p>
+</p>`}</CodeBlock>
+
+            <CodeBlock>{`<p>
   <i class="icon-check" aria-hidden="true"></i>
   <strong>Completed:</strong> You have already submitted this assignment.
 </p>`}</CodeBlock>
@@ -161,8 +162,9 @@ export default function page() {
             <CodeBlock>{`<p>
   <i class="icon-star-light" aria-hidden="true"></i>
   Recommended reading for this week.
-</p>
-<p>
+</p>`}</CodeBlock>
+
+            <CodeBlock>{`<p>
   <i class="icon-arrow-right" aria-hidden="true"></i>
   Proceed to the next activity.
 </p>`}</CodeBlock>

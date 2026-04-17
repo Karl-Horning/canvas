@@ -190,15 +190,16 @@ export default function introduction() {
 
             <p>
                 You can adapt the same colour combinations for smaller headings
-                or simple banner blocks by changing the heading level or
-                wrapping the text in a container:
+                or simple banner blocks by changing the heading level:
             </p>
 
             <CodeBlock>{`<h3 style="background: #0000cd; color: #ffd6e5; padding: 0.75rem;">
   Subsection heading
-</h3>
+  </h3>`}</CodeBlock>
 
-<div style="background: #fff200; color: #4b4f57; padding: 1.25rem; margin: 1rem 0;">
+            <p>Or wrapping the text in a container:</p>
+
+            <CodeBlock>{`<div style="background: #fff200; color: #4b4f57; padding: 1.25rem; margin: 1rem 0;">
   <h2 style="margin: 0;">Module introduction</h2>
 </div>`}</CodeBlock>
 

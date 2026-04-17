@@ -48,9 +48,9 @@ export default function page() {
             <h2>Canvas legacy flash message classes</h2>
 
             <p>
-                These examples use Canvas' built-in{" "}
-                <code>ic-flash-*</code> classes with icons. They are part of an
-                older design system but still work in current Canvas content.
+                These examples use Canvas' built-in <code>ic-flash-*</code>{" "}
+                classes with icons. They are part of an older design system but
+                still work in current Canvas content.
             </p>
 
             <div className="ic-flash-info mb-4" role="status">
@@ -92,18 +92,18 @@ export default function page() {
   <div class="ic-flash__content">
     <strong>Info:</strong> This is an info message.
   </div>
-</div>
+</div>`}</CodeBlock>
 
-<div class="ic-flash-success" role="status">
+            <CodeBlock>{`<div class="ic-flash-success" role="status">
   <div class="ic-flash__icon" aria-hidden="true">
     <i class="icon-check"></i>
   </div>
   <div class="ic-flash__content">
     <strong>Success:</strong> This is a success message.
   </div>
-</div>
+</div>`}</CodeBlock>
 
-<div class="ic-flash-warning" role="alert">
+            <CodeBlock>{`<div class="ic-flash-warning" role="alert">
   <div class="ic-flash__icon" aria-hidden="true">
     <i class="icon-warning"></i>
   </div>
@@ -184,9 +184,9 @@ export default function page() {
       <strong>Info:</strong> This is an informational flash message.
     </div>
   </div>
-</div>
+</div>`}</CodeBlock>
 
-<div role="status" style="padding: 1rem; border-radius: 0.375rem; background: #e8f8ea; border-left: 6px solid #2d8a3b;">
+            <CodeBlock>{`<div role="status" style="padding: 1rem; border-radius: 0.375rem; background: #e8f8ea; border-left: 6px solid #2d8a3b;">
   <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
     <div aria-hidden="true" style="width: 1.75rem; height: 1.75rem; border-radius: 999px; background: #2d8a3b; display: flex; align-items: center; justify-content: center; color: #ffffff; font-weight: 700; font-size: 0.9rem; flex-shrink: 0;">
       ✓
@@ -195,9 +195,9 @@ export default function page() {
       <strong>Success:</strong> Your changes have been saved successfully.
     </div>
   </div>
-</div>
+</div>`}</CodeBlock>
 
-<div role="alert" style="padding: 1rem; border-radius: 0.375rem; background: #fff7e6; border-left: 6px solid #cc7a00;">
+            <CodeBlock>{`<div role="alert" style="padding: 1rem; border-radius: 0.375rem; background: #fff7e6; border-left: 6px solid #cc7a00;">
   <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
     <div aria-hidden="true" style="width: 1.75rem; height: 1.75rem; border-radius: 999px; background: #cc7a00; display: flex; align-items: center; justify-content: center; color: #ffffff; font-weight: 700; font-size: 0.9rem; flex-shrink: 0;">
       !

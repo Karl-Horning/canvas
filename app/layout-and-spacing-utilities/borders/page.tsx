@@ -116,20 +116,25 @@ export default function page() {
                 Top border only (<code>border border-t</code>)
             </div>
 
-            <CodeBlock>{`<div class="border border-rbl">Right, bottom, left border</div>
-<div class="border border-tbl">Top, bottom, left border</div>
-<div class="border border-bl">Bottom, left border</div>
-<div class="border border-tl">Top, left border</div>
-<div class="border border-b">Bottom border only</div>
-<div class="border border-t">Top border only</div>`}</CodeBlock>
+            <CodeBlock>{`<div class="border border-rbl">Right, bottom, left border</div>`}</CodeBlock>
+
+            <CodeBlock>{`<div class="border border-tbl">Top, bottom, left border</div>`}</CodeBlock>
+
+            <CodeBlock>{`<div class="border border-bl">Bottom, left border</div>`}</CodeBlock>
+
+            <CodeBlock>{`<div class="border border-tl">Top, left border</div>`}</CodeBlock>
+
+            <CodeBlock>{`<div class="border border-b">Bottom border only</div>`}</CodeBlock>
+
+            <CodeBlock>{`<div class="border border-t">Top border only</div>`}</CodeBlock>
 
             <h2>Border radius (Canvas legacy classes)</h2>
 
             <p>
                 Use <code>border-round</code> and related classes to round all
                 corners or specific corners of a bordered element. Under the
-                hood, these classes use the standard{" "}
-                <code>border-radius</code> property.
+                hood, these classes use the standard <code>border-radius</code>{" "}
+                property.
             </p>
 
             <div className="border border-trbl border-round mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
@@ -152,10 +157,13 @@ export default function page() {
                 <code>border border-trbl border-round-tl</code>)
             </div>
 
-            <CodeBlock>{`<div class="border border-trbl border-round">All corners rounded</div>
-<div class="border border-trbl border-round-b">Bottom corners rounded</div>
-<div class="border border-trbl border-round-t">Top corners rounded</div>
-<div class="border border-trbl border-round-tl">Top-left corner rounded</div>`}</CodeBlock>
+            <CodeBlock>{`<div class="border border-trbl border-round">All corners rounded</div>`}</CodeBlock>
+
+            <CodeBlock>{`<div class="border border-trbl border-round-b">Bottom corners rounded</div>`}</CodeBlock>
+
+            <CodeBlock>{`<div class="border border-trbl border-round-t">Top corners rounded</div>`}</CodeBlock>
+
+            <CodeBlock>{`<div class="border border-trbl border-round-tl">Top-left corner rounded</div>`}</CodeBlock>
 
             <h2>Modern borders with inline CSS</h2>
 
@@ -215,9 +223,9 @@ export default function page() {
             <h3>Rounded panels and pill-style badges</h3>
 
             <p>
-                Rounded corners are controlled with{" "}
-                <code>border-radius</code>. Larger values create softer corners,
-                and very large values can create pill-shaped elements.
+                Rounded corners are controlled with <code>border-radius</code>.
+                Larger values create softer corners, and very large values can
+                create pill-shaped elements.
             </p>
 
             <div className="border border-[#d0d7de] rounded-lg p-3 mb-3 bg-[#f9fafb] dark:bg-[#1f2937]">
@@ -235,9 +243,9 @@ export default function page() {
   <p style="margin: 0">
     This panel uses <code>border-radius: 0.5rem;</code> for gently rounded corners.
   </p>
-</div>
+</div>`}</CodeBlock>
 
-<div style="border: 1px solid #d0d7de; border-radius: 999px; padding: 0.5rem 1.25rem; display: inline-block; margin-bottom: 1rem; background: #eef6ff;">
+            <CodeBlock>{`<div style="border: 1px solid #d0d7de; border-radius: 999px; padding: 0.5rem 1.25rem; display: inline-block; margin-bottom: 1rem; background: #eef6ff;">
   <span>Example pill badge with rounded edges</span>
 </div>`}</CodeBlock>
 
