@@ -75,7 +75,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
                         <Link
                             href="/"
                             className="sidebar-brand-link"
-                            aria-label="Karl Horning — CMALT Portfolio, home"
+                            aria-label="Canvas Content Styling Guide, home"
                         >
                             <svg
                                 className="site-logo"

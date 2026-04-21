@@ -44,7 +44,7 @@ export default function page() {
                 The examples on this page show how to use Canvas icons alongside
                 text in an accessible way. A full reference list of available
                 icon classes is provided on the{" "}
-                <Link href="/icons-and-accessibility-helpers/full-legacy-icons-reference">
+                <Link href="/full-legacy-icons-reference">
                     Full Legacy Icons Reference
                 </Link>{" "}
                 page.

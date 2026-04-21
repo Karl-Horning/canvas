@@ -223,7 +223,7 @@ export default function page() {
             <p>
                 For more detail on which colours are suitable for text and
                 background combinations, see the{" "}
-                <a href="/colour-and-branding/colours-in-canvas">
+                <a href="/colours-in-canvas">
                     Colours in Canvas
                 </a>{" "}
                 page in this guide.
