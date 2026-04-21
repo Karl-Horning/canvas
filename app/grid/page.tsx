@@ -202,7 +202,7 @@ export default function page() {
                 <div className="grid-row">
                     <div className="col-xs-12 col-md-8">
                         <div className="bg-[#eef] dark:bg-[#1e2a4a] p-3">
-                            <h5>Main column with nested content</h5>
+                            <h3>Main column with nested content</h3>
                             <p>This column contains a nested grid:</p>
 
                             <div className="grid-row">
@@ -223,7 +223,7 @@ export default function page() {
 
                     <div className="col-xs-12 col-md-4">
                         <div className="bg-[#eef] dark:bg-[#1e2a4a] p-3">
-                            <h5>Side column</h5>
+                            <h3>Side column</h3>
                             <p>This column sits beside the nested example.</p>
                         </div>
                     </div>

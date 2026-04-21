@@ -97,7 +97,7 @@ export default function page() {
                 </div>
 
                 <div id="tab-three">
-                    <h4>Further support</h4>
+                    <h3>Further support</h3>
                     <p>
                         This tab can be used for links to help, FAQs, or related
                         resources without cluttering the main content.
