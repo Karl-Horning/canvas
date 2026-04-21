@@ -14,7 +14,7 @@ export default function NotFound() {
                 moved.
             </p>
             <p>
-                <Link href="/">Return to the portfolio home</Link>, or use the
+                <Link href="/">Return to the home page</Link>, or use the
                 navigation to find a section.
             </p>
         </div>
