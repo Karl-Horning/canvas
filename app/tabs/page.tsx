@@ -1,9 +1,20 @@
 import CodeBlock from "@/components/CodeBlock";
+import JsonLd from "@/components/JsonLd";
+import PageHeader from "@/components/PageHeader";
+import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
+import { meta } from "./meta";
+
+export const metadata = generatePageMetadata(meta);
 
 export default function page() {
     return (
         <article>
-            <h1>Tabs</h1>
+            <JsonLd data={generatePageJsonLd(meta)} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
 
             <p>
                 Canvas can convert simple lists into interactive tabbed panels
@@ -14,8 +25,8 @@ export default function page() {
             </p>
 
             <p>
-                This behaviour depends on Canvas&apos; own JavaScript and CSS. It
-                cannot be recreated with inline styles alone — the examples
+                This behaviour depends on Canvas&apos; own JavaScript and CSS.
+                It cannot be recreated with inline styles alone — the examples
                 below work only because Canvas enhances the markup for you.
             </p>
 
@@ -42,9 +53,9 @@ export default function page() {
             </ul>
 
             <p>
-                In this guide, ARIA attributes are not added manually to the
-                tab markup. Canvas manages the interactive behaviour internally,
-                and manually adding partial ARIA patterns could conflict with or
+                In this guide, ARIA attributes are not added manually to the tab
+                markup. Canvas manages the interactive behaviour internally, and
+                manually adding partial ARIA patterns could conflict with or
                 duplicate what Canvas injects.
             </p>
 
@@ -121,15 +132,15 @@ export default function page() {
 
             <ul>
                 <li>
-                    The tab behaviour and ARIA attributes are handled by Canvas&apos;
-                    own scripts. The raw HTML will appear as a list of links and
-                    sections if enhancement fails.
+                    The tab behaviour and ARIA attributes are handled by
+                    Canvas&apos; own scripts. The raw HTML will appear as a list
+                    of links and sections if enhancement fails.
                 </li>
                 <li>
                     Avoid adding your own <code>role=&quot;tab&quot;</code>,{" "}
-                    <code>role=&quot;tablist&quot;</code>, or related attributes unless
-                    you are building a fully custom tabs pattern outside Canvas&apos;
-                    enhancement system.
+                    <code>role=&quot;tablist&quot;</code>, or related attributes
+                    unless you are building a fully custom tabs pattern outside
+                    Canvas&apos; enhancement system.
                 </li>
                 <li>
                     Ensure that important instructions are not hidden only in a
@@ -138,8 +149,7 @@ export default function page() {
                 </li>
                 <li>
                     For simpler show/hide content that does not require tabbed
-                    navigation, consider native{" "}
-                    <code>&lt;details&gt;</code> /{" "}
+                    navigation, consider native <code>&lt;details&gt;</code> /{" "}
                     <code>&lt;summary&gt;</code> instead, as shown on the
                     Typography page.
                 </li>

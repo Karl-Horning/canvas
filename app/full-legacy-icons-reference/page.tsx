@@ -6,6 +6,12 @@
 import fs from "fs";
 import path from "path";
 import IconGrid from "@/components/IconGrid";
+import JsonLd from "@/components/JsonLd";
+import PageHeader from "@/components/PageHeader";
+import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
+import { meta } from "./meta";
+
+export const metadata = generatePageMetadata(meta);
 
 /**
  * Reads the Instructure Icons Line SCSS map at build time and extracts all
@@ -42,7 +48,12 @@ export default function page() {
 
     return (
         <article>
-            <h2>Full legacy icon reference</h2>
+            <JsonLd data={generatePageJsonLd(meta)} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
 
             <p>
                 The grid below shows all {names.length} icon classes available
@@ -53,9 +64,9 @@ export default function page() {
 
             <p>
                 Use the class on an <code>&lt;i&gt;</code> element with{" "}
-                <code>aria-hidden=&quot;true&quot;</code> for decorative icons, or with{" "}
-                <code>role=&quot;img&quot;</code> and <code>aria-label</code> when the
-                icon carries meaning. See the{" "}
+                <code>aria-hidden=&quot;true&quot;</code> for decorative icons,
+                or with <code>role=&quot;img&quot;</code> and{" "}
+                <code>aria-label</code> when the icon carries meaning. See the{" "}
                 <a href="/icons-and-accessibility-helpers/icons">Icons page</a>{" "}
                 for usage examples.
             </p>

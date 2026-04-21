@@ -1,21 +1,32 @@
 import CodeBlock from "@/components/CodeBlock";
+import JsonLd from "@/components/JsonLd";
+import PageHeader from "@/components/PageHeader";
+import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
+import { meta } from "./meta";
 
-export default function introduction() {
+export const metadata = generatePageMetadata(meta);
+
+export default function page() {
     return (
         <article>
-            <h1>Canvas Content Styling Guide</h1>
+            <JsonLd data={generatePageJsonLd(meta)} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
 
             <p>
-                This guide collects examples of HTML and CSS patterns
-                that can be used to style content created with the Canvas Rich
-                Content Editor (RCE). All examples have been tested in Canvas
-                and are intended for everyday use when building pages,
-                assignments, and other course content.
+                This guide collects examples of HTML and CSS patterns that can
+                be used to style content created with the Canvas Rich Content
+                Editor (RCE). All examples have been tested in Canvas and are
+                intended for everyday use when building pages, assignments, and
+                other course content.
             </p>
 
             <p>
-                The patterns shown here are based on Canvas&apos; legacy style guide,
-                available at{" "}
+                The patterns shown here are based on Canvas&apos; legacy style
+                guide, available at{" "}
                 <a
                     href="https://canvas.instructure.com/styleguide"
                     target="_blank"
@@ -230,8 +241,8 @@ export default function introduction() {
             <p>
                 Where possible, examples also include brief notes about
                 accessibility, such as the use of <code>screenreader-only</code>
-                , <code>aria-hidden=&quot;true&quot;</code>, and appropriate heading
-                levels.
+                , <code>aria-hidden=&quot;true&quot;</code>, and appropriate
+                heading levels.
             </p>
         </article>
     );

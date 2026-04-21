@@ -1,25 +1,36 @@
 import CodeBlock from "@/components/CodeBlock";
+import JsonLd from "@/components/JsonLd";
+import PageHeader from "@/components/PageHeader";
+import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
+import { meta } from "./meta";
+
+export const metadata = generatePageMetadata(meta);
 
 export default function page() {
     return (
         <article>
-            <h1>Grid</h1>
+            <JsonLd data={generatePageJsonLd(meta)} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
 
             <p>
                 Canvas includes a legacy responsive grid system based on rows
                 and columns. Columns adapt to different screen sizes using
                 classes such as <code>col-xs-12</code> (full width on small
                 screens) and <code>col-md-4</code> (four columns wide on medium
-                screens). These classes are part of Canvas&apos; older CSS and still
-                work in this Canvas instance, but they may change in future if
-                the underlying theme is updated.
+                screens). These classes are part of Canvas&apos; older CSS and
+                still work in this Canvas instance, but they may change in
+                future if the underlying theme is updated.
             </p>
 
             <p>
                 You can also build layouts using native CSS Grid directly in
-                inline styles. This does not rely on Canvas&apos; legacy CSS. Support
-                depends on the learner&apos;s browser, but current browsers handle
-                CSS Grid well.
+                inline styles. This does not rely on Canvas&apos; legacy CSS.
+                Support depends on the learner&apos;s browser, but current
+                browsers handle CSS Grid well.
             </p>
 
             <h2>Useful references</h2>
@@ -283,8 +294,7 @@ export default function page() {
 
             <p>
                 The examples below use the same pattern:{" "}
-                <code>display: grid</code>,{" "}
-                <code>grid-template-columns</code>{" "}
+                <code>display: grid</code>, <code>grid-template-columns</code>{" "}
                 with <code>repeat(auto-fit, minmax(...))</code>, and a{" "}
                 <code>gap</code> between items.
             </p>
@@ -292,8 +302,7 @@ export default function page() {
             <h3>Two-column responsive grid (inline styles)</h3>
 
             <p>
-                This example uses <code>auto-fit</code> and{" "}
-                <code>minmax</code>{" "}
+                This example uses <code>auto-fit</code> and <code>minmax</code>{" "}
                 so that columns wrap when there is not enough space. On wider
                 screens you will see two columns; on narrow screens they stack.
             </p>

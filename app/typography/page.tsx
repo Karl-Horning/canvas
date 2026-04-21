@@ -1,9 +1,20 @@
 import CodeBlock from "@/components/CodeBlock";
+import JsonLd from "@/components/JsonLd";
+import PageHeader from "@/components/PageHeader";
+import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
+import { meta } from "./meta";
+
+export const metadata = generatePageMetadata(meta);
 
 export default function page() {
     return (
         <article>
-            <h1>Typography</h1>
+            <JsonLd data={generatePageJsonLd(meta)} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
 
             <p>
                 Canvas uses standard HTML elements for headings, paragraphs, and
@@ -155,12 +166,13 @@ export default function page() {
             </p>
 
             <p>
-                These <code>text-*</code> classes are part of Canvas&apos; legacy
-                utility CSS. They still work in this Canvas instance, but
+                These <code>text-*</code> classes are part of Canvas&apos;
+                legacy utility CSS. They still work in this Canvas instance, but
                 behaviour or naming could change in the future. You can also use
-                inline styles such as <code>style=&quot;text-align: center;&quot;</code>{" "}
-                if you prefer a more standard HTML approach that does not depend
-                on Canvas&apos; stylesheets.
+                inline styles such as{" "}
+                <code>style=&quot;text-align: center;&quot;</code> if you prefer
+                a more standard HTML approach that does not depend on
+                Canvas&apos; stylesheets.
             </p>
 
             <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
@@ -186,10 +198,10 @@ export default function page() {
             <p>
                 Classes like <code>muted</code>, <code>text-warning</code>,{" "}
                 <code>text-error</code>, <code>text-info</code>, and{" "}
-                <code>text-success</code> are provided by Canvas&apos; legacy CSS.
-                They still work, but the exact colours may change if Canvas&apos;
-                theme is updated. For precise colour control you can also use
-                inline styles (for example from the{" "}
+                <code>text-success</code> are provided by Canvas&apos; legacy
+                CSS. They still work, but the exact colours may change if
+                Canvas&apos; theme is updated. For precise colour control you
+                can also use inline styles (for example from the{" "}
                 <a href="/colour-and-branding/colours-in-canvas">
                     Colours in Canvas
                 </a>{" "}
@@ -307,10 +319,11 @@ export default function page() {
 </details>`}</CodeBlock>
 
             <p>
-                Some browsers support &quot;exclusive&quot; accordion behaviour using a{" "}
-                <code>name</code> attribute on <code>&lt;details&gt;</code>{" "}
-                (where opening one section closes the others). However, in this
-                Canvas instance the <code>name</code> attribute is removed from{" "}
+                Some browsers support &quot;exclusive&quot; accordion behaviour
+                using a <code>name</code> attribute on{" "}
+                <code>&lt;details&gt;</code> (where opening one section closes
+                the others). However, in this Canvas instance the{" "}
+                <code>name</code> attribute is removed from{" "}
                 <code>&lt;details&gt;</code> elements, so this exclusive
                 accordion pattern is not available.
             </p>
@@ -345,7 +358,8 @@ export default function page() {
                 </li>
                 <li>
                     Avoid using colour alone to indicate meaning in text (for
-                    example, &quot;items in red are required&quot; without any other cue).
+                    example, &quot;items in red are required&quot; without any
+                    other cue).
                 </li>
                 <li>
                     Treat <code>&lt;details&gt;</code> as a way to hide optional

@@ -1,9 +1,20 @@
 import CodeBlock from "@/components/CodeBlock";
+import JsonLd from "@/components/JsonLd";
+import PageHeader from "@/components/PageHeader";
+import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
+import { meta } from "./meta";
+
+export const metadata = generatePageMetadata(meta);
 
 export default function page() {
     return (
         <article>
-            <h1>Lists</h1>
+            <JsonLd data={generatePageJsonLd(meta)} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
 
             <p>
                 Canvas supports standard HTML list elements, along with optional
@@ -84,10 +95,13 @@ export default function page() {
 
             <p>
                 The <code>unstyled</code> class removes bullets or numbering
-                from a list. This utility comes from Canvas&apos; legacy CSS and may
-                behave differently if the institutional theme is updated.
+                from a list. This utility comes from Canvas&apos; legacy CSS and
+                may behave differently if the institutional theme is updated.
                 Alternatively, you can use inline styles such as{" "}
-                <code>style=&quot;list-style: none; padding: 0; margin: 0;&quot;</code>.
+                <code>
+                    style=&quot;list-style: none; padding: 0; margin: 0;&quot;
+                </code>
+                .
             </p>
 
             <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">

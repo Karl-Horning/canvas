@@ -1,9 +1,20 @@
 import CodeBlock from "@/components/CodeBlock";
+import JsonLd from "@/components/JsonLd";
+import PageHeader from "@/components/PageHeader";
+import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
+import { meta } from "./meta";
+
+export const metadata = generatePageMetadata(meta);
 
 export default function page() {
     return (
         <article>
-            <h1>Alerts</h1>
+            <JsonLd data={generatePageJsonLd(meta)} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
 
             <p>
                 Canvas includes several legacy alert classes such as{" "}
@@ -89,8 +100,9 @@ export default function page() {
             </p>
 
             <p>
-                Use <code>role=&quot;status&quot;</code> for neutral or success messages,
-                and <code>role=&quot;alert&quot;</code> for critical errors.
+                Use <code>role=&quot;status&quot;</code> for neutral or success
+                messages, and <code>role=&quot;alert&quot;</code> for critical
+                errors.
             </p>
 
             <div
@@ -131,18 +143,18 @@ export default function page() {
             <h2>Accessibility notes</h2>
             <ul>
                 <li>
-                    <code>role=&quot;alert&quot;</code> should only be used for urgent,
-                    time-sensitive errors.
+                    <code>role=&quot;alert&quot;</code> should only be used for
+                    urgent, time-sensitive errors.
                 </li>
                 <li>
-                    <code>role=&quot;status&quot;</code> is appropriate for neutral or
-                    positive updates.
+                    <code>role=&quot;status&quot;</code> is appropriate for
+                    neutral or positive updates.
                 </li>
                 <li>Keep a clear visual distinction between alert types.</li>
                 <li>Maintain colour contrast of at least AA for all text.</li>
                 <li>
-                    Avoid removing or overriding the browser&apos;s focus outline so
-                    keyboard users can navigate reliably.
+                    Avoid removing or overriding the browser&apos;s focus
+                    outline so keyboard users can navigate reliably.
                 </li>
             </ul>
         </article>

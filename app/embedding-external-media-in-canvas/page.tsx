@@ -1,9 +1,20 @@
 import CodeBlock from "@/components/CodeBlock";
+import JsonLd from "@/components/JsonLd";
+import PageHeader from "@/components/PageHeader";
+import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
+import { meta } from "./meta";
+
+export const metadata = generatePageMetadata(meta);
 
 export default function page() {
     return (
         <article>
-            <h1>Embeds and External Content</h1>
+            <JsonLd data={generatePageJsonLd(meta)} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
 
             <p>
                 Canvas supports embedded media using elements such as{" "}
@@ -206,8 +217,8 @@ export default function page() {
                 </li>
                 <li>
                     Provide direct links to the original resource (for example,
-                    &quot;Open in a new tab&quot;) beneath embeds in case the iframe or
-                    media player does not load.
+                    &quot;Open in a new tab&quot;) beneath embeds in case the
+                    iframe or media player does not load.
                 </li>
                 <li>
                     Some embeds may not work if your institution blocks certain

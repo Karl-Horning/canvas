@@ -1,9 +1,20 @@
 import CodeBlock from "@/components/CodeBlock";
+import JsonLd from "@/components/JsonLd";
+import PageHeader from "@/components/PageHeader";
+import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
+import { meta } from "./meta";
+
+export const metadata = generatePageMetadata(meta);
 
 export default function page() {
     return (
         <article>
-            <h1>Colours in Canvas</h1>
+            <JsonLd data={generatePageJsonLd(meta)} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
 
             <p>
                 Canvas&apos; Rich Content Editor gives you access to a range of
@@ -151,9 +162,7 @@ export default function page() {
                                     Sample text
                                 </span>
                             </td>
-                            <td className="border border-[#ccc] p-2">
-                                15.4:1
-                            </td>
+                            <td className="border border-[#ccc] p-2">15.4:1</td>
                         </tr>
                         <tr className="bg-white dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
@@ -170,9 +179,7 @@ export default function page() {
                                     Sample text
                                 </span>
                             </td>
-                            <td className="border border-[#ccc] p-2">
-                                16.1:1
-                            </td>
+                            <td className="border border-[#ccc] p-2">16.1:1</td>
                         </tr>
                         <tr className="bg-[#f9f9f9] dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
@@ -189,9 +196,7 @@ export default function page() {
                                     Sample text
                                 </span>
                             </td>
-                            <td className="border border-[#ccc] p-2">
-                                11.2:1
-                            </td>
+                            <td className="border border-[#ccc] p-2">11.2:1</td>
                         </tr>
                         <tr className="bg-white dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
@@ -276,9 +281,7 @@ export default function page() {
                                     Sample text
                                 </span>
                             </td>
-                            <td className="border border-[#ccc] p-2">
-                                16.6:1
-                            </td>
+                            <td className="border border-[#ccc] p-2">16.6:1</td>
                         </tr>
                         <tr className="bg-[#f9f9f9] dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
@@ -295,9 +298,7 @@ export default function page() {
                                     Sample text
                                 </span>
                             </td>
-                            <td className="border border-[#ccc] p-2">
-                                16.4:1
-                            </td>
+                            <td className="border border-[#ccc] p-2">16.4:1</td>
                         </tr>
                         <tr className="bg-white dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
@@ -314,9 +315,7 @@ export default function page() {
                                     Sample text
                                 </span>
                             </td>
-                            <td className="border border-[#ccc] p-2">
-                                16.8:1
-                            </td>
+                            <td className="border border-[#ccc] p-2">16.8:1</td>
                         </tr>
                     </tbody>
                 </table>
@@ -387,9 +386,7 @@ export default function page() {
                                     Sample text
                                 </span>
                             </td>
-                            <td className="border border-[#ccc] p-2">
-                                15.4:1
-                            </td>
+                            <td className="border border-[#ccc] p-2">15.4:1</td>
                         </tr>
                         <tr className="bg-white dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
@@ -406,9 +403,7 @@ export default function page() {
                                     Sample text
                                 </span>
                             </td>
-                            <td className="border border-[#ccc] p-2">
-                                16.1:1
-                            </td>
+                            <td className="border border-[#ccc] p-2">16.1:1</td>
                         </tr>
                         <tr className="bg-[#f9f9f9] dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
@@ -425,9 +420,7 @@ export default function page() {
                                     Sample text
                                 </span>
                             </td>
-                            <td className="border border-[#ccc] p-2">
-                                11.2:1
-                            </td>
+                            <td className="border border-[#ccc] p-2">11.2:1</td>
                         </tr>
                         <tr className="bg-white dark:bg-[#1f2937]">
                             <td className="border border-[#ccc] p-2">
@@ -1172,8 +1165,8 @@ export default function page() {
                 >
                     WebAIM Contrast Checker
                 </a>{" "}
-                to verify that your chosen colours meet at least AA contrast (4.5:1
-                for normal text, 3:1 for large text).
+                to verify that your chosen colours meet at least AA contrast
+                (4.5:1 for normal text, 3:1 for large text).
             </p>
         </article>
     );

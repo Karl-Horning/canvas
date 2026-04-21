@@ -5,6 +5,12 @@
 
 import CodeBlock from "@/components/CodeBlock";
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
+import PageHeader from "@/components/PageHeader";
+import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
+import { meta } from "./meta";
+
+export const metadata = generatePageMetadata(meta);
 
 /**
  * Renders the Icons page.
@@ -15,17 +21,23 @@ import Link from "next/link";
  *
  * @return The icons article.
  */
+
 export default function page() {
     return (
         <article>
-            <h1>Legacy Icons</h1>
+            <JsonLd data={generatePageJsonLd(meta)} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
 
             <p>
                 Canvas includes a legacy icon set that can be used inside course
                 content by applying icon classes such as <code>icon-info</code>,{" "}
                 <code>icon-warning</code>, or <code>icon-check</code> to an
-                inline element. These icons are provided by Canvas&apos; own CSS and
-                icon font; you do not need to upload images to use them.
+                inline element. These icons are provided by Canvas&apos; own CSS
+                and icon font; you do not need to upload images to use them.
             </p>
 
             <p>
@@ -57,7 +69,8 @@ export default function page() {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        MDN — <code>role=&quot;img&quot;</code> and labelling icons
+                        MDN — <code>role=&quot;img&quot;</code> and labelling
+                        icons
                     </a>
                 </li>
                 <li>
@@ -130,7 +143,8 @@ export default function page() {
                 in the visible text, you should include an accessible label. In
                 most cases it is simpler to include this label as visible text
                 next to the icon. If you must rely on the icon alone, use{" "}
-                <code>role=&quot;img&quot;</code> with an <code>aria-label</code>:
+                <code>role=&quot;img&quot;</code> with an{" "}
+                <code>aria-label</code>:
             </p>
 
             <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
@@ -153,7 +167,8 @@ export default function page() {
             <p>
                 In many cases you can avoid extra ARIA by simply including clear
                 visible text next to a decorative icon and hiding the icon from
-                assistive technology using <code>aria-hidden=&quot;true&quot;</code>.
+                assistive technology using{" "}
+                <code>aria-hidden=&quot;true&quot;</code>.
             </p>
 
             <h2>Purely decorative icons</h2>
@@ -196,8 +211,8 @@ export default function page() {
                     descriptions.
                 </li>
                 <li>
-                    Use <code>aria-hidden=&quot;true&quot;</code> on purely decorative
-                    icons so they are ignored by screen readers.
+                    Use <code>aria-hidden=&quot;true&quot;</code> on purely
+                    decorative icons so they are ignored by screen readers.
                 </li>
                 <li>
                     If an icon itself carries meaning and there is no visible

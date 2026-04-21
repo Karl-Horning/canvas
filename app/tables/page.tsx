@@ -1,9 +1,20 @@
 import CodeBlock from "@/components/CodeBlock";
+import JsonLd from "@/components/JsonLd";
+import PageHeader from "@/components/PageHeader";
+import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
+import { meta } from "./meta";
+
+export const metadata = generatePageMetadata(meta);
 
 export default function page() {
     return (
         <article>
-            <h1>Tables</h1>
+            <JsonLd data={generatePageJsonLd(meta)} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
 
             <p>
                 Tables in Canvas are created using standard HTML{" "}
@@ -55,10 +66,10 @@ export default function page() {
             <h2>Default table (Canvas legacy classes)</h2>
 
             <p>
-                The base <code>ic-Table</code> class applies Canvas&apos; default
-                table styling without stripes or hover effects. This class comes
-                from Canvas&apos; legacy CSS, but is still useful for quickly
-                applying a consistent table style.
+                The base <code>ic-Table</code> class applies Canvas&apos;
+                default table styling without stripes or hover effects. This
+                class comes from Canvas&apos; legacy CSS, but is still useful
+                for quickly applying a consistent table style.
             </p>
 
             <div className="overflow-x-auto mb-4">
@@ -130,8 +141,8 @@ export default function page() {
             <p>
                 Add <code>ic-Table--striped</code> for alternating row stripes
                 and <code>ic-Table--hover-row</code> to highlight rows on hover.
-                These classes are part of Canvas&apos; legacy utility CSS, but are
-                still available for course content.
+                These classes are part of Canvas&apos; legacy utility CSS, but
+                are still available for course content.
             </p>
 
             <div className="overflow-x-auto mb-4">
@@ -265,8 +276,8 @@ export default function page() {
 
             <p>
                 You can also create tables using standard HTML and inline CSS
-                without relying on Canvas&apos; legacy classes. The example below
-                demonstrates a more accessible pattern, including:
+                without relying on Canvas&apos; legacy classes. The example
+                below demonstrates a more accessible pattern, including:
             </p>
 
             <ul>
@@ -274,8 +285,9 @@ export default function page() {
                     a <code>&lt;caption&gt;</code> describing the table
                 </li>
                 <li>
-                    <code>scope=&quot;col&quot;</code> and <code>scope=&quot;row&quot;</code> to
-                    help screen readers understand headers
+                    <code>scope=&quot;col&quot;</code> and{" "}
+                    <code>scope=&quot;row&quot;</code> to help screen readers
+                    understand headers
                 </li>
                 <li>
                     clear borders and zebra striping defined with inline CSS
@@ -410,7 +422,8 @@ export default function page() {
                 <li>
                     Use <code>&lt;th&gt;</code> for header cells, and add{" "}
                     <code>scope=&quot;col&quot;</code> for column headers and{" "}
-                    <code>scope=&quot;row&quot;</code> for row headers where appropriate.
+                    <code>scope=&quot;row&quot;</code> for row headers where
+                    appropriate.
                 </li>
                 <li>
                     Keep table structures as simple as possible. Avoid nested

@@ -1,25 +1,36 @@
 import CodeBlock from "@/components/CodeBlock";
+import JsonLd from "@/components/JsonLd";
+import PageHeader from "@/components/PageHeader";
+import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
+import { meta } from "./meta";
+
+export const metadata = generatePageMetadata(meta);
 
 export default function page() {
     return (
         <article>
-            <h1>Popovers, Dialogs, and Tooltips</h1>
+            <JsonLd data={generatePageJsonLd(meta)} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
 
             <p>
                 Canvas includes some legacy patterns that use{" "}
                 <code>enhanceable_content</code> and data attributes to turn
                 links and containers into popovers, dialogs, and tooltips. These
-                are powered by Canvas&apos; own JavaScript and CSS and are intended
-                for small pieces of supporting content, not for critical
-                instructions.
+                are powered by Canvas&apos; own JavaScript and CSS and are
+                intended for small pieces of supporting content, not for
+                critical instructions.
             </p>
 
             <p>
                 The examples below show how to create a simple popover dialog
-                and a tooltip using Canvas&apos; legacy classes, followed by the HTML
-                needed to reproduce them in this Canvas instance. Inline-style
-                alternatives are also included for cases where you do not want
-                to rely on Canvas&apos; JavaScript.
+                and a tooltip using Canvas&apos; legacy classes, followed by the
+                HTML needed to reproduce them in this Canvas instance.
+                Inline-style alternatives are also included for cases where you
+                do not want to rely on Canvas&apos; JavaScript.
             </p>
 
             <h2>Useful references</h2>
@@ -57,11 +68,11 @@ export default function page() {
 
             <p>
                 A popover dialog can be created by marking a container with{" "}
-                <code>class=&quot;enhanceable_content dialog&quot;</code> and linking to
-                it with an anchor. When the link is activated, Canvas turns the
-                target into a popover-style dialog. This relies on Canvas&apos;
-                legacy JavaScript and cannot be recreated with inline styles
-                alone.
+                <code>class=&quot;enhanceable_content dialog&quot;</code> and
+                linking to it with an anchor. When the link is activated, Canvas
+                turns the target into a popover-style dialog. This relies on
+                Canvas&apos; legacy JavaScript and cannot be recreated with
+                inline styles alone.
             </p>
 
             <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
@@ -96,17 +107,17 @@ export default function page() {
 </p>`}</CodeBlock>
 
             <p>
-                Because this pattern relies on Canvas&apos; JavaScript, the exact
-                behaviour (for example, how focus is handled and how the dialog
-                is closed) may change over time. Avoid placing essential
+                Because this pattern relies on Canvas&apos; JavaScript, the
+                exact behaviour (for example, how focus is handled and how the
+                dialog is closed) may change over time. Avoid placing essential
                 instructions or assessment content only inside a popover dialog.
             </p>
 
             <h3>Inline-only alternative: always-visible support panel</h3>
 
             <p>
-                If you want to avoid relying on Canvas&apos; dialog enhancement, you
-                can present supporting information in a clearly styled panel
+                If you want to avoid relying on Canvas&apos; dialog enhancement,
+                you can present supporting information in a clearly styled panel
                 directly on the page using inline styles. This works without any
                 JavaScript and is more predictable for assistive technologies.
             </p>
@@ -224,10 +235,10 @@ export default function page() {
 
             <ul>
                 <li>
-                    Popover dialogs and tooltips shown here depend on Canvas&apos;
-                    legacy JavaScript and may not fully match modern
-                    accessibility recommendations for focus management and
-                    announcements.
+                    Popover dialogs and tooltips shown here depend on
+                    Canvas&apos; legacy JavaScript and may not fully match
+                    modern accessibility recommendations for focus management
+                    and announcements.
                 </li>
                 <li>
                     Some learners may not discover tooltips triggered only by
@@ -241,8 +252,8 @@ export default function page() {
                 </li>
                 <li>
                     If you build your own custom dialog or popover outside
-                    Canvas&apos; enhancement system, follow the patterns in the MDN
-                    and WAI-ARIA guidance linked above.
+                    Canvas&apos; enhancement system, follow the patterns in the
+                    MDN and WAI-ARIA guidance linked above.
                 </li>
             </ul>
         </article>

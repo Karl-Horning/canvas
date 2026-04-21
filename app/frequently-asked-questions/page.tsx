@@ -1,7 +1,19 @@
+import JsonLd from "@/components/JsonLd";
+import PageHeader from "@/components/PageHeader";
+import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
+import { meta } from "./meta";
+
+export const metadata = generatePageMetadata(meta);
+
 export default function page() {
     return (
         <article>
-            <h1>Frequently Asked Questions</h1>
+            <JsonLd data={generatePageJsonLd(meta)} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
 
             <p>
                 This page answers common questions about how Canvas handles
@@ -65,8 +77,8 @@ export default function page() {
                     <p className="m-0">
                         Canvas removes <code>&lt;style&gt;</code> tags, external
                         stylesheets, and most custom classes. Only inline styles
-                        and Canvas&apos; built-in classes are allowed. The examples
-                        in this guide use inline CSS for this reason.
+                        and Canvas&apos; built-in classes are allowed. The
+                        examples in this guide use inline CSS for this reason.
                     </p>
                 </details>
 
@@ -75,9 +87,10 @@ export default function page() {
                         Why does Canvas wrap everything in paragraphs?
                     </summary>
                     <p className="m-0">
-                        This is part of Canvas&apos; HTML normalisation. The editor
-                        treats line breaks as paragraphs. To avoid unwanted
-                        spacing, you can use inline <code>&lt;div&gt;</code>
+                        This is part of Canvas&apos; HTML normalisation. The
+                        editor treats line breaks as paragraphs. To avoid
+                        unwanted spacing, you can use inline{" "}
+                        <code>&lt;div&gt;</code>
                         elements or control spacing manually with inline{" "}
                         <code>margin</code> styles.
                     </p>

@@ -1,7 +1,19 @@
+import JsonLd from "@/components/JsonLd";
+import PageHeader from "@/components/PageHeader";
+import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
+import { meta } from "./meta";
+
+export const metadata = generatePageMetadata(meta);
+
 export default function page() {
     return (
         <article>
-            <h1>What Canvas Removes and Modifies</h1>
+            <JsonLd data={generatePageJsonLd(meta)} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
 
             <h2>Overview</h2>
 
@@ -15,10 +27,9 @@ export default function page() {
 
             <p>
                 The table below summarises the main behaviours observed in
-                Canvas while building the examples in this guide.
-                Details may vary slightly between institutions and over time as
-                Canvas is updated, so always test important content after
-                saving.
+                Canvas while building the examples in this guide. Details may
+                vary slightly between institutions and over time as Canvas is
+                updated, so always test important content after saving.
             </p>
 
             <h2>Summary of what Canvas removes and modifies</h2>
@@ -76,8 +87,9 @@ export default function page() {
                             </td>
                             <td className="border border-[#dddddd] p-2">
                                 You cannot add your own JavaScript to RCE pages.
-                                Only Canvas&apos; built-in JavaScript (for example{" "}
-                                <code>enhanceable_content</code>) can run.
+                                Only Canvas&apos; built-in JavaScript (for
+                                example <code>enhanceable_content</code>) can
+                                run.
                             </td>
                         </tr>
 
@@ -149,9 +161,8 @@ export default function page() {
                             </td>
                             <td className="border border-[#dddddd] p-2">
                                 For predictable results, rely on inline styles
-                                and the legacy Canvas classes in this
-                                guide (for example <code>btn</code>,
-                                <code>ic-Table</code>,
+                                and the legacy Canvas classes in this guide (for
+                                example <code>btn</code>,<code>ic-Table</code>,
                                 <code>enhanceable_content</code>).
                             </td>
                         </tr>

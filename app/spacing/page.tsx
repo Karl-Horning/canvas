@@ -1,9 +1,20 @@
 import CodeBlock from "@/components/CodeBlock";
+import JsonLd from "@/components/JsonLd";
+import PageHeader from "@/components/PageHeader";
+import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
+import { meta } from "./meta";
+
+export const metadata = generatePageMetadata(meta);
 
 export default function page() {
     return (
         <article>
-            <h1>Spacing</h1>
+            <JsonLd data={generatePageJsonLd(meta)} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
 
             <p>
                 Spacing in Canvas content can be controlled in two main ways:
@@ -90,9 +101,9 @@ export default function page() {
                 The <code>pad-box</code> utilities control the amount of padding
                 inside an element. Larger values add more space, while{" "}
                 <code>pad-box-micro</code> adds only a small amount. These
-                classes are part of Canvas&apos; legacy CSS and may not be available
-                in future versions, but they can still be used in current
-                content.
+                classes are part of Canvas&apos; legacy CSS and may not be
+                available in future versions, but they can still be used in
+                current content.
             </p>
 
             <div className="pad-box-mega border border-trbl mb-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
@@ -146,8 +157,8 @@ export default function page() {
             <h3>Card-style blocks with padding and margin</h3>
 
             <p>
-                The example below shows three &quot;card&quot; blocks that use only inline
-                styles for spacing and borders. Each card has:
+                The example below shows three &quot;card&quot; blocks that use
+                only inline styles for spacing and borders. Each card has:
             </p>
             <ul>
                 <li>

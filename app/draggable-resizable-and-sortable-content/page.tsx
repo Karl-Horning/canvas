@@ -1,9 +1,20 @@
 import CodeBlock from "@/components/CodeBlock";
+import JsonLd from "@/components/JsonLd";
+import PageHeader from "@/components/PageHeader";
+import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
+import { meta } from "./meta";
+
+export const metadata = generatePageMetadata(meta);
 
 export default function page() {
     return (
         <article>
-            <h1>Draggable, Resizable, and Sortable Content</h1>
+            <JsonLd data={generatePageJsonLd(meta)} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
 
             <p>
                 Canvas can add interactive behaviour to certain elements using
@@ -16,8 +27,8 @@ export default function page() {
             </p>
 
             <p>
-                These behaviours are handled by Canvas&apos; own JavaScript and CSS.
-                They cannot be recreated with inline styles alone, and you
+                These behaviours are handled by Canvas&apos; own JavaScript and
+                CSS. They cannot be recreated with inline styles alone, and you
                 cannot add your own <code>&lt;script&gt;</code> to Rich Content
                 Editor pages. The examples on this page work because Canvas
                 enhances the markup automatically.
@@ -55,8 +66,8 @@ export default function page() {
 
             <p>
                 A draggable element is created by applying{" "}
-                <code>class=&quot;enhanceable_content draggable&quot;</code> to a
-                container. When Canvas processes the page, it enables
+                <code>class=&quot;enhanceable_content draggable&quot;</code> to
+                a container. When Canvas processes the page, it enables
                 drag-and-move behaviour within the element&apos;s parent area.
             </p>
 
@@ -91,8 +102,9 @@ export default function page() {
             <h2>Resizable content</h2>
 
             <p>
-                Applying <code>class=&quot;enhanceable_content resizable&quot;</code> to a
-                container allows Canvas to add a resize handle. Learners can
+                Applying{" "}
+                <code>class=&quot;enhanceable_content resizable&quot;</code> to
+                a container allows Canvas to add a resize handle. Learners can
                 resize the element directly in the page, typically by dragging a
                 corner.
             </p>
@@ -125,8 +137,8 @@ export default function page() {
 
             <p>
                 You can create a sortable list by adding{" "}
-                <code>class=&quot;enhanceable_content sortable&quot;</code> to a list
-                container. Canvas enhances the list so that items can be
+                <code>class=&quot;enhanceable_content sortable&quot;</code> to a
+                list container. Canvas enhances the list so that items can be
                 rearranged by dragging them into a new order.
             </p>
 
@@ -184,9 +196,9 @@ export default function page() {
             <h2>Accessibility notes</h2>
 
             <p>
-                These interactions are provided by Canvas&apos; legacy JavaScript and
-                do not use modern, semantic drag-and-drop patterns. In
-                particular:
+                These interactions are provided by Canvas&apos; legacy
+                JavaScript and do not use modern, semantic drag-and-drop
+                patterns. In particular:
             </p>
 
             <ul>

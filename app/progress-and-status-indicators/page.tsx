@@ -1,9 +1,20 @@
 import CodeBlock from "@/components/CodeBlock";
+import JsonLd from "@/components/JsonLd";
+import PageHeader from "@/components/PageHeader";
+import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
+import { meta } from "./meta";
+
+export const metadata = generatePageMetadata(meta);
 
 export default function page() {
     return (
         <article>
-            <h1>Progress and Status Indicators</h1>
+            <JsonLd data={generatePageJsonLd(meta)} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
 
             <p>
                 Canvas includes a small set of legacy UI components that can be
@@ -17,8 +28,8 @@ export default function page() {
 
             <p>
                 Where possible, this page also shows inline-style alternatives
-                that do not depend on Canvas&apos; legacy classes and are closer to
-                modern accessibility practice.
+                that do not depend on Canvas&apos; legacy classes and are closer
+                to modern accessibility practice.
             </p>
 
             <h2>Useful references</h2>
@@ -168,8 +179,9 @@ export default function page() {
             <p>
                 If you change the progress value, remember to update{" "}
                 <code>aria-valuenow</code>, <code>aria-valuetext</code>, and the
-                inner bar&apos;s <code>width</code> so they all stay in sync (for
-                example, 75% would use <code>aria-valuenow=&quot;75&quot;</code>,{" "}
+                inner bar&apos;s <code>width</code> so they all stay in sync
+                (for example, 75% would use{" "}
+                <code>aria-valuenow=&quot;75&quot;</code>,{" "}
                 <code>aria-valuetext=&quot;75% complete&quot;</code>, and{" "}
                 <code>style=&quot;width: 75%;&quot;</code>).
             </p>
@@ -249,7 +261,8 @@ export default function page() {
                 <li>
                     Colour should never be the only way of communicating meaning
                     or status. Always include a text description of the current
-                    value (for example, &quot;40% complete — 4 of 10 sections read&quot;).
+                    value (for example, &quot;40% complete — 4 of 10 sections
+                    read&quot;).
                 </li>
                 <li>
                     Inline-only patterns that use{" "}

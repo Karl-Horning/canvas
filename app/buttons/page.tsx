@@ -1,16 +1,26 @@
 import CodeBlock from "@/components/CodeBlock";
+import JsonLd from "@/components/JsonLd";
+import PageHeader from "@/components/PageHeader";
+import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
+import { meta } from "./meta";
+
+export const metadata = generatePageMetadata(meta);
 
 export default function page() {
     return (
         <article>
-            <h1>Buttons</h1>
+            <JsonLd data={generatePageJsonLd(meta)} />
+            <PageHeader
+                title={meta.title}
+                date={meta.date}
+                readingTime={meta.readingTime}
+            />
 
             <p>
-                In this Canvas instance, actual{" "}
-                <code>&lt;button&gt;</code> elements are removed from content
-                created in the Rich Content Editor. Instead, links (
-                <code>&lt;a&gt;</code>) are visually styled to look like
-                buttons. This page shows:
+                In this Canvas instance, actual <code>&lt;button&gt;</code>{" "}
+                elements are removed from content created in the Rich Content
+                Editor. Instead, links (<code>&lt;a&gt;</code>) are visually
+                styled to look like buttons. This page shows:
             </p>
 
             <ul>
@@ -25,10 +35,10 @@ export default function page() {
 
             <p>
                 For navigation (moving to another page, opening a resource),
-                links are semantically correct. For true &quot;actions&quot; (submitting a
-                form, toggling a state) the ideal element would be a real{" "}
-                <code>&lt;button&gt;</code>, but this is not available in this
-                Canvas configuration.
+                links are semantically correct. For true &quot;actions&quot;
+                (submitting a form, toggling a state) the ideal element would be
+                a real <code>&lt;button&gt;</code>, but this is not available in
+                this Canvas configuration.
             </p>
 
             <h2>Useful references</h2>
@@ -137,9 +147,9 @@ export default function page() {
             <h2>Modern inline-styled links as buttons</h2>
 
             <p>
-                If you prefer not to rely on Canvas&apos; legacy classes, you can
-                style links as buttons using inline CSS. This uses standard CSS
-                properties such as <code>background-color</code>,{" "}
+                If you prefer not to rely on Canvas&apos; legacy classes, you
+                can style links as buttons using inline CSS. This uses standard
+                CSS properties such as <code>background-color</code>,{" "}
                 <code>padding</code>, <code>border-radius</code>, and{" "}
                 <code>display: inline-block;</code>.
             </p>
@@ -227,14 +237,14 @@ export default function page() {
 
             <ul>
                 <li>
-                    Use these styles for navigation actions (for example, &quot;View
-                    assignment&quot;, &quot;Open resource&quot;), where a link is the correct
-                    HTML element.
+                    Use these styles for navigation actions (for example,
+                    &quot;View assignment&quot;, &quot;Open resource&quot;),
+                    where a link is the correct HTML element.
                 </li>
                 <li>
-                    Avoid adding <code>role=&quot;button&quot;</code> to links unless you
-                    also handle keyboard activation exactly like a real button
-                    (which usually requires JavaScript).
+                    Avoid adding <code>role=&quot;button&quot;</code> to links
+                    unless you also handle keyboard activation exactly like a
+                    real button (which usually requires JavaScript).
                 </li>
                 <li>
                     Do not remove the focus outline. The inline examples here
