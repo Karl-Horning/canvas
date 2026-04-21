@@ -239,14 +239,14 @@ export default function page() {
                         up dense information.
                     </p>
                 </div>
-                <aside className="px-5 py-4 border border-[#dddddd] rounded-lg bg-[#f5f5f5] dark:bg-[#1f2937]">
+                <div className="px-5 py-4 border border-[#dddddd] rounded-lg bg-[#f5f5f5] dark:bg-[#1f2937]">
                     <h3 className="mt-0 mb-3">Notes and tips</h3>
                     <ul className="m-0 pl-5">
                         <li>Highlight common mistakes or misconceptions.</li>
                         <li>Provide quick reminders of key definitions.</li>
                         <li>Link to related resources or further reading.</li>
                     </ul>
-                </aside>
+                </div>
             </div>
 
             <CodeBlock>{`<div style="
