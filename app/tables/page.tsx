@@ -72,7 +72,7 @@ export default function page() {
                 for quickly applying a consistent table style.
             </p>
 
-            <div className="overflow-x-auto mb-4">
+            <div className="overflow-x-auto mb-4" tabIndex={0}>
                 <table className="ic-Table">
                     <thead>
                         <tr>
@@ -145,7 +145,7 @@ export default function page() {
                 are still available for course content.
             </p>
 
-            <div className="overflow-x-auto mb-4">
+            <div className="overflow-x-auto mb-4" tabIndex={0}>
                 <table className="ic-Table ic-Table--hover-row ic-Table--striped">
                     <thead>
                         <tr>
@@ -216,7 +216,7 @@ export default function page() {
                 This can be useful when displaying tables with many rows.
             </p>
 
-            <div className="overflow-x-auto mb-4">
+            <div className="overflow-x-auto mb-4" tabIndex={0}>
                 <table className="ic-Table ic-Table--striped ic-Table--hover-row ic-Table--condensed">
                     <thead>
                         <tr>
@@ -294,7 +294,7 @@ export default function page() {
                 </li>
             </ul>
 
-            <div className="overflow-x-auto mb-4">
+            <div className="overflow-x-auto mb-4" tabIndex={0}>
                 <table className="border-collapse w-full text-[0.95rem]">
                     <caption className="text-left font-bold py-2">
                         Example: Module weekly activities

@@ -40,7 +40,7 @@ export default function page() {
                 account-level branding.
             </p>
 
-            <div className="overflow-x-auto mb-4">
+            <div className="overflow-x-auto mb-4" tabIndex={0}>
                 <table className="w-full border-collapse text-[0.95rem]">
                     <caption className="text-left font-semibold mb-2">
                         Common HTML and CSS behaviours in this Canvas instance
