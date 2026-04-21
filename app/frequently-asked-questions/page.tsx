@@ -22,7 +22,18 @@ export default function page() {
                 Canvas Content Styling Guide.
             </p>
 
-            <p>Use the questions below to expand and collapse each answer.</p>
+            <p>
+                Use the questions below to expand and collapse each answer. To
+                ask a question not included here,{" "}
+                <a
+                    href="https://github.com/Karl-Horning/canvas/issues"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    open an issue on GitHub
+                </a>
+                .
+            </p>
 
             <h2>HTML sanitisation and removed elements</h2>
 
