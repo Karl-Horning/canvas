@@ -1,22 +1,90 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+// To change fonts: swap the imports below and update the two variable names in
+// the html className and the --font-* custom properties in globals.css.
+import { Fraunces, Outfit } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/Footer";
-import Sidebar from "@/components/Sidebar";
+import {
+    AUTHOR_NAME,
+    AUTHOR_URL,
+    SITE_DESCRIPTION,
+    SITE_NAME,
+    SITE_TITLE,
+    SITE_URL,
+} from "@/lib/config";
+import SiteShell from "@/components/SiteShell";
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
+const fraunces = Fraunces({
+    variable: "--font-fraunces",
     subsets: ["latin"],
+    display: "swap",
 });
 
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
+const outfit = Outfit({
+    variable: "--font-outfit",
     subsets: ["latin"],
+    display: "swap",
 });
 
 export const metadata: Metadata = {
-    title: "Canvas Content Styling Guide",
-    description: "A guide for styling content in Canvas LMS",
+    metadataBase: new URL(SITE_URL),
+    title: {
+        template: `%s | ${SITE_TITLE} | ${AUTHOR_NAME}`,
+        default: `${SITE_TITLE} | ${AUTHOR_NAME}`,
+    },
+    description: SITE_DESCRIPTION,
+    authors: [{ name: AUTHOR_NAME, url: AUTHOR_URL }],
+    icons: {
+        icon: [
+            {
+                url: "/favicons/light/favicon-32x32.png",
+                sizes: "32x32",
+                media: "(prefers-color-scheme: light)",
+            },
+            {
+                url: "/favicons/dark/favicon-32x32.png",
+                sizes: "32x32",
+                media: "(prefers-color-scheme: dark)",
+            },
+            {
+                url: "/favicons/light/favicon-16x16.png",
+                sizes: "16x16",
+                media: "(prefers-color-scheme: light)",
+            },
+            {
+                url: "/favicons/dark/favicon-16x16.png",
+                sizes: "16x16",
+                media: "(prefers-color-scheme: dark)",
+            },
+        ],
+        shortcut: [
+            {
+                url: "/favicons/light/favicon.ico",
+                media: "(prefers-color-scheme: light)",
+            },
+            {
+                url: "/favicons/dark/favicon.ico",
+                media: "(prefers-color-scheme: dark)",
+            },
+        ],
+        apple: [
+            {
+                url: "/favicons/light/apple-icon.png",
+                media: "(prefers-color-scheme: light)",
+            },
+            {
+                url: "/favicons/dark/apple-icon.png",
+                media: "(prefers-color-scheme: dark)",
+            },
+        ],
+    },
+    openGraph: {
+        siteName: SITE_NAME,
+        locale: "en_GB",
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+    },
 };
 
 export default function RootLayout({
@@ -25,24 +93,12 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html
-            lang="en"
-            className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-        >
-            <head>
-                <link
-                    rel="stylesheet"
-                    href="/fonts/instructure_icons/Line/InstructureIcons-Line.css"
-                />
-            </head>
-            <body className="min-h-full flex">
-                <Sidebar />
-                <main className="flex-1 min-w-0 flex flex-col">
-                    <div className="flex-1 p-6">
-                        <div className="max-w-3xl mx-auto">{children}</div>
-                    </div>
-                    <Footer />
-                </main>
+        <html lang="en" className={`${fraunces.variable} ${outfit.variable}`}>
+            <body>
+                <a href="#main-content" className="skip-link">
+                    Skip to main content
+                </a>
+                <SiteShell>{children}</SiteShell>
             </body>
         </html>
     );
