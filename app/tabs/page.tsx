@@ -81,7 +81,7 @@ export default function page() {
                 </ul>
 
                 <div id="tab-one">
-                    <h4>Overview</h4>
+                    <h3>Overview</h3>
                     <p>
                         Use this tab for a short summary or introduction. Canvas
                         will show this panel when the page first loads.
@@ -89,7 +89,7 @@ export default function page() {
                 </div>
 
                 <div id="tab-two">
-                    <h4>Details</h4>
+                    <h3>Details</h3>
                     <p>
                         Place more detailed information here — for example,
                         step-by-step instructions or criteria.

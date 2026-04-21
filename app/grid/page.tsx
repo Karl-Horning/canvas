@@ -85,7 +85,7 @@ export default function page() {
                 <div className="grid-row">
                     <div className="col-xs-12 col-md-8">
                         <div className="bg-[#eef] dark:bg-[#1e2a4a] p-3">
-                            <h5>Main column (8/12)</h5>
+                            <h3>Main column (8/12)</h3>
                             <p>
                                 Uses <code>col-xs-12 col-md-8</code>. Full width
                                 on small screens.
@@ -95,7 +95,7 @@ export default function page() {
 
                     <div className="col-xs-12 col-md-4">
                         <div className="bg-[#eef] dark:bg-[#1e2a4a] p-3">
-                            <h5>Side column (4/12)</h5>
+                            <h3>Side column (4/12)</h3>
                             <p>
                                 Uses <code>col-xs-12 col-md-4</code>. Stacks
                                 below on smaller screens.
@@ -309,14 +309,14 @@ export default function page() {
 
             <div className="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-4 mb-4">
                 <div className="bg-[#eef] dark:bg-[#1e2a4a] p-3">
-                    <h5>Main content</h5>
+                    <h4>Main content</h4>
                     <p>
                         This is the first column. It uses CSS Grid with inline
                         styles and a minimum width of 260px.
                     </p>
                 </div>
                 <div className="bg-[#def] dark:bg-[#172d4a] p-3">
-                    <h5>Supporting content</h5>
+                    <h4>Supporting content</h4>
                     <p>
                         When the available width is too small for two 260px
                         columns, the items stack vertically.
@@ -351,15 +351,15 @@ export default function page() {
 
             <div className="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-4 mb-4">
                 <div className="bg-[#eef] dark:bg-[#1e2a4a] p-3">
-                    <h5>Card 1</h5>
+                    <h4>Card 1</h4>
                     <p>Responsive card using CSS Grid.</p>
                 </div>
                 <div className="bg-[#eef] dark:bg-[#1e2a4a] p-3">
-                    <h5>Card 2</h5>
+                    <h4>Card 2</h4>
                     <p>The grid fits as many cards per row as space allows.</p>
                 </div>
                 <div className="bg-[#eef] dark:bg-[#1e2a4a] p-3">
-                    <h5>Card 3</h5>
+                    <h4>Card 3</h4>
                     <p>On narrow screens, these cards stack vertically.</p>
                 </div>
             </div>
@@ -396,7 +396,7 @@ export default function page() {
 
                 <div className="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-4">
                     <div className="bg-[#eef] dark:bg-[#1e2a4a] p-3">
-                        <h5>Main content</h5>
+                        <h4>Main content</h4>
                         <p>
                             This is the main content area. On wider screens it
                             appears beside the side panel.
@@ -404,7 +404,7 @@ export default function page() {
                     </div>
 
                     <div className="bg-[#def] dark:bg-[#172d4a] p-3">
-                        <h5>Side panel</h5>
+                        <h4>Side panel</h4>
                         <p>
                             This section sits next to the main content when
                             there is enough space, and stacks below on narrow
