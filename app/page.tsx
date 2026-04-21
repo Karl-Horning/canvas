@@ -1,52 +1,41 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import JsonLd from "@/components/JsonLd";
-import { AUTHOR_NAME, AUTHOR_URL, SITE_URL } from "@/lib/config";
-import KSiteIcon from "@/components/icons/KSiteIcon";
+import {
+    AUTHOR_NAME,
+    AUTHOR_URL,
+    SITE_DESCRIPTION,
+    SITE_NAME,
+    SITE_TITLE,
+    SITE_URL,
+} from "@/lib/config";
 
 export const metadata: Metadata = {
-    title: "CMALT Portfolio — Karl Horning",
-    description:
-        "Full-stack developer with commercial experience building production systems. CMALT is a peer-assessed professional credential completed alongside continued development work.",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
     alternates: { canonical: SITE_URL },
     openGraph: {
-        title: "CMALT Portfolio — Karl Horning",
-        description:
-            "Full-stack developer with commercial experience building production systems. CMALT is a peer-assessed professional credential completed alongside continued development work.",
+        title: SITE_NAME,
+        description: SITE_DESCRIPTION,
         url: SITE_URL,
-        images: [
-            {
-                url: "/og/preview-image.png",
-                alt: "Karl Horning CMALT Portfolio",
-            },
-        ],
         type: "website",
     },
     twitter: {
-        title: "CMALT Portfolio — Karl Horning",
-        description:
-            "Full-stack developer with commercial experience building production systems. CMALT is a peer-assessed professional credential completed alongside continued development work.",
-        images: ["/og/preview-image.png"],
+        title: SITE_NAME,
+        description: SITE_DESCRIPTION,
     },
 };
 
 const homeJsonLd = {
     "@context": "https://schema.org",
-    "@type": "ProfilePage",
-    name: "Karl Horning — CMALT Portfolio",
-    description:
-        "Full-stack developer with commercial experience building production systems. CMALT is a peer-assessed professional credential completed alongside continued development work.",
+    "@type": "WebSite",
+    name: SITE_NAME,
+    description: SITE_DESCRIPTION,
     url: SITE_URL,
-    mainEntity: {
+    author: {
         "@type": "Person",
         name: AUTHOR_NAME,
         url: AUTHOR_URL,
-        sameAs: [
-            AUTHOR_URL,
-            "https://www.linkedin.com/in/karl-horning",
-            "https://www.karlhorning.dev/",
-        ],
     },
 };
 
@@ -55,57 +44,37 @@ export default function Home() {
         <>
             <JsonLd data={homeJsonLd} />
             <div className="home-hero">
-                <h1>Karl Horning</h1>
-                <p className="home-subtitle">Full-Stack Developer</p>
-                <p>
-                    Full-stack developer with commercial experience building
-                    production systems across Node.js, GraphQL, Python, and AWS.
-                    CMALT is a peer-assessed professional credential requiring
-                    three or more years of demonstrated experience. This
-                    portfolio was completed alongside continued development
-                    work.
+                <h1>Canvas Content Styling Guide</h1>
+                <p className="home-subtitle">
+                    Style your Canvas courses with HTML and CSS — no prior
+                    coding experience needed
                 </p>
-                <nav className="home-links" aria-label="External profiles">
-                    <a
-                        href="https://github.com/Karl-Horning"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="home-link"
-                    >
-                        <FaGithub aria-hidden="true" />
-                        GitHub
-                    </a>
-                    <a
-                        href="https://www.linkedin.com/in/karl-horning"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="home-link"
-                    >
-                        <FaLinkedin aria-hidden="true" />
-                        LinkedIn
-                    </a>
-                    <a
-                        href="https://www.karlhorning.dev/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="home-link"
-                    >
-                        <KSiteIcon aria-hidden="true" />
-                        karlhorning.dev
-                    </a>
-                </nav>
+                <p>
+                    A practical reference for administrative staff in further
+                    and higher education who want to make their Canvas course
+                    pages look clear, consistent, and professional. Every
+                    example is ready to copy and paste directly into the Canvas
+                    Rich Content Editor.
+                </p>
             </div>
 
             <section>
-                <h2>CMALT Portfolio</h2>
+                <h2>What you will find here</h2>
                 <p>
-                    The portfolio is structured across six areas, from
-                    operational practice and teaching to legislation, policy,
-                    communication, and a specialist section on JavaScript
-                    development.
+                    The guide starts with the basics — headings, lists, and
+                    tables — and gradually introduces layout, colour, components
+                    such as buttons and tabs, and accessibility techniques. Each
+                    section covers both Canvas&apos;s own built-in CSS classes
+                    and modern inline styles, so the examples work regardless of
+                    how your institution has configured Canvas.
                 </p>
-                <Link href="/contextual-statement" className="home-cta">
-                    Begin with the Contextual Statement →
+                <p>
+                    Every code block has a copy button, and where a topic goes
+                    deeper than this guide covers, there is a link to the
+                    relevant MDN documentation.
+                </p>
+                <Link href="/introduction" className="home-cta">
+                    Start with the Introduction →
                 </Link>
             </section>
         </>
