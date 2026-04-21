@@ -10,12 +10,22 @@ import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
 import { routes } from "../lib/nav";
 
+// Violations inside third-party iframes that cannot be fixed by the page author.
+const YOUTUBE_IFRAME = `iframe[title="Canvas 101 — YouTube video"]`;
+
 for (const route of routes) {
     test(`${route} — no automatically detectable accessibility violations`, async ({
         page,
     }) => {
         await page.goto(route);
-        const results = await new AxeBuilder({ page }).analyze();
+
+        let builder = new AxeBuilder({ page });
+
+        if (route === "/embedding-external-media-in-canvas") {
+            builder = builder.exclude(YOUTUBE_IFRAME);
+        }
+
+        const results = await builder.analyze();
         expect(results.violations).toEqual([]);
     });
 }
