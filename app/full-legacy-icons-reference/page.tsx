@@ -67,7 +67,7 @@ export default function page() {
                 <code>aria-hidden=&quot;true&quot;</code> for decorative icons,
                 or with <code>role=&quot;img&quot;</code> and{" "}
                 <code>aria-label</code> when the icon carries meaning. See the{" "}
-                <a href="/icons-and-accessibility-helpers/icons">Icons page</a>{" "}
+                <a href="/legacy-icons">Legacy Icons page</a>{" "}
                 for usage examples.
             </p>
 

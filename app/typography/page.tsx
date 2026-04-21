@@ -202,7 +202,7 @@ export default function page() {
                 CSS. They still work, but the exact colours may change if
                 Canvas&apos; theme is updated. For precise colour control you
                 can also use inline styles (for example from the{" "}
-                <a href="/colour-and-branding/colours-in-canvas">
+                <a href="/colours-in-canvas">
                     Colours in Canvas
                 </a>{" "}
                 page) alongside these classes.
