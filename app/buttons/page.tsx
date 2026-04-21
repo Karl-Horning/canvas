@@ -166,7 +166,7 @@ export default function page() {
                 <p className="mb-2">
                     <a
                         href="#"
-                        className="inline-block px-4 py-2 rounded-md bg-[#0000cd] text-white no-underline font-semibold"
+                        className="inline-block px-4 py-2 rounded-md bg-[#0000cd] text-white! no-underline! font-semibold"
                     >
                         Primary action
                     </a>
@@ -175,7 +175,7 @@ export default function page() {
                 <p className="mb-0">
                     <a
                         href="#"
-                        className="inline-block px-4 py-2 rounded-md border border-[#0000cd] text-[#0000cd] bg-white dark:bg-[#1f2937] no-underline font-semibold"
+                        className="inline-block px-4 py-2 rounded-md border border-[#0000cd] text-[#0000cd]! bg-white dark:bg-[#1f2937] no-underline! font-semibold"
                     >
                         Secondary action
                     </a>
@@ -202,7 +202,7 @@ export default function page() {
             <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <a
                     href="#"
-                    className="block px-4 py-3 rounded-lg bg-[#008080] text-white text-center no-underline font-semibold"
+                    className="block px-4 py-3 rounded-lg bg-[#008080] text-white! text-center no-underline! font-semibold"
                 >
                     Full-width call to action
                 </a>
@@ -223,7 +223,7 @@ export default function page() {
             <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <a
                     href="#"
-                    className="inline-block py-1 text-[#0000cd] underline font-medium"
+                    className="inline-block py-1 text-[#0000cd]! underline font-medium"
                 >
                     Subtle action link
                 </a>

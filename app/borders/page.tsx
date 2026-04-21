@@ -63,7 +63,7 @@ export default function page() {
             </p>
 
             <div className="content-box pad-box-mini border border-trbl mb-4 bg-[#f9f9f9] dark:bg-[#1f2937]">
-                <h5>Example content box</h5>
+                <h3>Example content box</h3>
                 <p>
                     This box uses{" "}
                     <code>content-box pad-box-mini border border-trbl</code> for

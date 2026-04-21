@@ -232,6 +232,13 @@ export default function page() {
                     that critical information appears in the main page content
                     as well as inside the embedded frame.
                 </li>
+                <li>
+                    Automated accessibility checkers (such as axe or WAVE) may
+                    flag errors inside embedded iframes from services like
+                    YouTube or Google Maps. These originate from the third
+                    party&apos;s own markup and cannot be fixed by the page
+                    author. They do not reflect a problem with your Canvas page.
+                </li>
             </ul>
         </article>
     );

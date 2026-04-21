@@ -99,7 +99,7 @@ export default function page() {
 
             <h3>Dark text on light or coloured backgrounds</h3>
 
-            <div className="overflow-x-auto mb-4">
+            <div className="overflow-x-auto mb-4" tabIndex={0}>
                 <table className="border-collapse w-full text-[0.95rem]">
                     <thead>
                         <tr className="bg-[#f0f0f0] dark:bg-[#374151]">
@@ -323,7 +323,7 @@ export default function page() {
 
             <h3>Light text on dark backgrounds</h3>
 
-            <div className="overflow-x-auto mb-4">
+            <div className="overflow-x-auto mb-4" tabIndex={0}>
                 <table className="border-collapse w-full text-[0.95rem]">
                     <thead>
                         <tr className="bg-[#f0f0f0] dark:bg-[#374151]">
@@ -496,7 +496,7 @@ export default function page() {
 
             <h2>Colours suitable for body text on white (AAA / AA)</h2>
 
-            <div className="overflow-x-auto mb-4">
+            <div className="overflow-x-auto mb-4" tabIndex={0}>
                 <table className="border-collapse w-full text-[0.95rem]">
                     <thead>
                         <tr className="bg-[#f0f0f0] dark:bg-[#374151]">
@@ -720,7 +720,7 @@ export default function page() {
                 paragraphs.
             </p>
 
-            <div className="overflow-x-auto mb-4">
+            <div className="overflow-x-auto mb-4" tabIndex={0}>
                 <table className="border-collapse w-full text-[0.95rem]">
                     <thead>
                         <tr className="bg-[#f0f0f0] dark:bg-[#374151]">
@@ -761,7 +761,7 @@ export default function page() {
                             <td className="border border-[#ccc] p-2">
                                 <span
                                     aria-hidden="true"
-                                    className="inline-block px-2 py-1 bg-[#708090] text-white"
+                                    className="inline-block px-2 py-1 bg-[#708090] text-white text-xl font-bold"
                                 >
                                     Text
                                 </span>
@@ -778,7 +778,7 @@ export default function page() {
                             <td className="border border-[#ccc] p-2">
                                 <span
                                     aria-hidden="true"
-                                    className="inline-block px-2 py-1 bg-[#7b68ee] text-white"
+                                    className="inline-block px-2 py-1 bg-[#7b68ee] text-white text-xl font-bold"
                                 >
                                     Text
                                 </span>
@@ -793,7 +793,7 @@ export default function page() {
                             <td className="border border-[#ccc] p-2">
                                 <span
                                     aria-hidden="true"
-                                    className="inline-block px-2 py-1 bg-[#ff0000] text-white"
+                                    className="inline-block px-2 py-1 bg-[#ff0000] text-white text-xl font-bold"
                                 >
                                     Text
                                 </span>
@@ -810,7 +810,7 @@ export default function page() {
                             <td className="border border-[#ccc] p-2">
                                 <span
                                     aria-hidden="true"
-                                    className="inline-block px-2 py-1 bg-[#ff4500] text-white"
+                                    className="inline-block px-2 py-1 bg-[#ff4500] text-white text-xl font-bold"
                                 >
                                     Text
                                 </span>
@@ -830,7 +830,7 @@ export default function page() {
                 overlaid text is checked.
             </p>
 
-            <div className="overflow-x-auto mb-4">
+            <div className="overflow-x-auto mb-4" tabIndex={0}>
                 <table className="border-collapse w-full text-[0.95rem]">
                     <thead>
                         <tr className="bg-[#f0f0f0] dark:bg-[#374151]">
