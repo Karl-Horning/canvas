@@ -51,8 +51,9 @@ export default function IconGrid({ names }: IconGridProps) {
 
     return (
         <div>
-            <div className="mb-3 flex gap-3 items-center">
+            <div className="mb-7 flex gap-3 items-center">
                 <input
+                    id="filter"
                     type="search"
                     placeholder="Filter icons…"
                     value={filter}

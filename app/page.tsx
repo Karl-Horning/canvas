@@ -1,203 +1,82 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
+import {
+    AUTHOR_NAME,
+    AUTHOR_URL,
+    SITE_DESCRIPTION,
+    SITE_NAME,
+    SITE_TITLE,
+    SITE_URL,
+} from "@/lib/config";
 
-/**
- * Landing page for the Canvas Content Styling Guide.
- *
- * Provides a short introduction to the guide and a section overview with
- * links to every page it contains.
- *
- * @returns The rendered landing page.
- */
+export const metadata: Metadata = {
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    alternates: { canonical: SITE_URL },
+    openGraph: {
+        title: SITE_NAME,
+        description: SITE_DESCRIPTION,
+        url: SITE_URL,
+        type: "website",
+    },
+    twitter: {
+        title: SITE_NAME,
+        description: SITE_DESCRIPTION,
+    },
+};
+
+const homeJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    author: {
+        "@type": "Person",
+        name: AUTHOR_NAME,
+        url: AUTHOR_URL,
+    },
+};
+
 export default function Home() {
     return (
-        <article>
-            <h1>Canvas Content Styling Guide</h1>
-
-            <p>
-                This guide documents HTML patterns, CSS techniques, and
-                Canvas-specific components for structuring content in Canvas
-                LMS. Each section pairs working examples with the markup needed
-                to reproduce them, with accessibility notes where relevant.
-            </p>
-
-            <p>
-                The{" "}
-                <Link href="/canvas-content-styling-guide/introduction">
-                    Introduction
-                </Link>{" "}
-                covers the scope and overall structure if you are coming to this
-                for the first time.
-            </p>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-                <div className="border border-[#e5e7eb] rounded-lg p-5 dark:border-[#374151]">
-                    <h2 className="mt-0 mb-1 text-base">
-                        HTML Basics in Canvas
-                    </h2>
-                    <p className="mt-0 mb-3 text-sm text-[#4b5563] dark:text-[#9ca3af]">
-                        The core HTML elements supported in the Rich Content
-                        Editor — how Canvas renders headings, paragraphs, lists,
-                        and tables.
-                    </p>
-                    <ul className="list-none p-0 m-0 text-sm space-y-1">
-                        <li>
-                            <Link href="/html-basics-in-canvas/typography">
-                                Typography
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/html-basics-in-canvas/lists">
-                                Lists
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/html-basics-in-canvas/tables">
-                                Tables
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-
-                <div className="border border-[#e5e7eb] rounded-lg p-5 dark:border-[#374151]">
-                    <h2 className="mt-0 mb-1 text-base">Colour and Branding</h2>
-                    <p className="mt-0 mb-3 text-sm text-[#4b5563] dark:text-[#9ca3af]">
-                        The colour palette available for Canvas content and how
-                        to apply it consistently using inline styles.
-                    </p>
-                    <ul className="list-none p-0 m-0 text-sm space-y-1">
-                        <li>
-                            <Link href="/colour-and-branding/colours-in-canvas">
-                                Colours in Canvas
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-
-                <div className="border border-[#e5e7eb] rounded-lg p-5 dark:border-[#374151]">
-                    <h2 className="mt-0 mb-1 text-base">Layout and Spacing</h2>
-                    <p className="mt-0 mb-3 text-sm text-[#4b5563] dark:text-[#9ca3af]">
-                        CSS Grid, spacing, and border patterns for building
-                        structured multi-column layouts in Canvas pages.
-                    </p>
-                    <ul className="list-none p-0 m-0 text-sm space-y-1">
-                        <li>
-                            <Link href="/layout-and-spacing-utilities/grid">
-                                Grid
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/layout-and-spacing-utilities/spacing">
-                                Spacing
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/layout-and-spacing-utilities/borders">
-                                Borders
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-
-                <div className="border border-[#e5e7eb] rounded-lg p-5 dark:border-[#374151]">
-                    <h2 className="mt-0 mb-1 text-base">Canvas Components</h2>
-                    <p className="mt-0 mb-3 text-sm text-[#4b5563] dark:text-[#9ca3af]">
-                        Legacy Canvas UI components — buttons, alerts, tabs,
-                        progress bars, and interactive widgets — with accessible
-                        markup examples.
-                    </p>
-                    <ul className="list-none p-0 m-0 text-sm space-y-1">
-                        <li>
-                            <Link href="/canvas-components/buttons">
-                                Buttons
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/canvas-components/alerts">Alerts</Link>
-                        </li>
-                        <li>
-                            <Link href="/canvas-components/flash-messages">
-                                Flash Messages
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/canvas-components/tabs">Tabs</Link>
-                        </li>
-                        <li>
-                            <Link href="/canvas-components/popovers-dialogs-and-tooltips">
-                                Popovers, Dialogs &amp; Tooltips
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/canvas-components/progress-and-status-indicators">
-                                Progress &amp; Status Indicators
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/canvas-components/draggable-resizable-and-sortable-content">
-                                Draggable, Resizable &amp; Sortable
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-
-                <div className="border border-[#e5e7eb] rounded-lg p-5 dark:border-[#374151]">
-                    <h2 className="mt-0 mb-1 text-base">
-                        Icons &amp; Accessibility
-                    </h2>
-                    <p className="mt-0 mb-3 text-sm text-[#4b5563] dark:text-[#9ca3af]">
-                        Canvas's built-in icon set and the utility classes
-                        available for improving accessibility in page content.
-                    </p>
-                    <ul className="list-none p-0 m-0 text-sm space-y-1">
-                        <li>
-                            <Link href="/icons-and-accessibility-helpers/accessibility-helpers">
-                                Accessibility Helpers
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/icons-and-accessibility-helpers/legacy-icons">
-                                Legacy Icons
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/icons-and-accessibility-helpers/full-legacy-icons-reference">
-                                Full Legacy Icons Reference
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-
-                <div className="border border-[#e5e7eb] rounded-lg p-5 dark:border-[#374151]">
-                    <h2 className="mt-0 mb-1 text-base">Canvas Behaviour</h2>
-                    <p className="mt-0 mb-3 text-sm text-[#4b5563] dark:text-[#9ca3af]">
-                        How Canvas processes HTML in the Rich Content Editor —
-                        what it strips, what it modifies, and how to embed
-                        external media.
-                    </p>
-                    <ul className="list-none p-0 m-0 text-sm space-y-1">
-                        <li>
-                            <Link href="/canvas-behaviour-and-extra-resources/frequently-asked-questions">
-                                Frequently Asked Questions
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/canvas-behaviour-and-extra-resources/what-canvas-removes-and-modifies">
-                                What Canvas Removes
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/canvas-behaviour-and-extra-resources/embedding-external-media-in-canvas">
-                                Embedding External Media
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="/canvas-behaviour-and-extra-resources/additional-examples">
-                                Additional Examples
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
+        <>
+            <JsonLd data={homeJsonLd} />
+            <div className="home-hero">
+                <h1>Canvas Content Styling Guide</h1>
+                <p className="home-subtitle">
+                    Style your Canvas courses with HTML and CSS — no prior
+                    coding experience needed
+                </p>
+                <p>
+                    A practical reference for administrative staff in further
+                    and higher education who want to make their Canvas course
+                    pages look clear, consistent, and professional. Every
+                    example is ready to copy and paste directly into the Canvas
+                    Rich Content Editor.
+                </p>
             </div>
-        </article>
+
+            <section>
+                <h2>What you will find here</h2>
+                <p>
+                    The guide starts with the basics — headings, lists, and
+                    tables — and gradually introduces layout, colour, components
+                    such as buttons and tabs, and accessibility techniques. Each
+                    section covers both Canvas&apos;s own built-in CSS classes
+                    and modern inline styles, so the examples work regardless of
+                    how your institution has configured Canvas.
+                </p>
+                <p>
+                    Every code block has a copy button, and where a topic goes
+                    deeper than this guide covers, there is a link to the
+                    relevant MDN documentation.
+                </p>
+                <Link href="/introduction" className="home-cta">
+                    Start with the Introduction →
+                </Link>
+            </section>
+        </>
     );
 }
