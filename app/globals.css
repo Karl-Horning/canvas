@@ -10,26 +10,26 @@
     --sidebar-width: 260px;
 
     /* Colours */
-    --bg: #faf8f5;
-    --fg: #2c2825;
-    --accent: #1b6b6b;
-    --accent-hover: #155454;
-    --muted: #6b6360;
-    --border: #e0dad4;
-    --surface: #f2ede7;
-    --nav-label: #665b58;
+    --bg: #f8f9fc;
+    --fg: #1e2130;
+    --accent: #4f46e5;
+    --accent-hover: #4338ca;
+    --muted: #6b7280;
+    --border: #dde1ee;
+    --surface: #eef0f8;
+    --nav-label: #545e7d;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: #1c1917;
-        --fg: #f5f1eb;
-        --accent: #3d9e9e;
-        --accent-hover: #57baba;
-        --muted: #a09895;
-        --border: #2e2b28;
-        --surface: #221f1d;
-        --nav-label: #9a8f8c;
+        --bg: #13141f;
+        --fg: #e8eaf6;
+        --accent: #818cf8;
+        --accent-hover: #a5b4fc;
+        --muted: #9ca3af;
+        --border: #2a2d3e;
+        --surface: #1a1d2e;
+        --nav-label: #8b91b0;
     }
 }
 /* ============================================================================= */
@@ -58,7 +58,7 @@
 html {
     background-color: var(--bg);
     color: var(--fg);
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
     font-size: 18px;
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
@@ -81,7 +81,7 @@ body {
     font-size: 0.875rem;
     z-index: 200;
     text-decoration: none;
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
 }
 
 .skip-link:focus {
@@ -168,7 +168,7 @@ body {
     text-transform: uppercase;
     color: var(--nav-label);
     padding: 0.75rem 1.25rem 0.25rem;
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
     margin: 0;
 }
 
@@ -178,7 +178,7 @@ body {
     color: var(--fg);
     text-decoration: none;
     font-size: 0.875rem;
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
     border-left: 2px solid transparent;
     transition:
         color 0.15s,
@@ -210,7 +210,7 @@ body {
     gap: 0.5rem;
     font-size: 0.8125rem;
     color: var(--muted);
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
     margin: 0;
 }
 
@@ -233,10 +233,9 @@ body {
 .content-body h2,
 .content-body h3,
 .content-body h4 {
-    font-family: var(--font-fraunces), Georgia, serif;
+    font-family: var(--font-space-grotesk), Georgia, serif;
     font-weight: 700;
     line-height: 1.2;
-    color: var(--fg);
 }
 
 .content-body code {
@@ -253,7 +252,6 @@ body {
     font-size: 1.625rem;
     margin: 2.5rem 0 0.75rem;
     padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--border); /* remove this line to drop heading rules */
 }
 
 .content-body h3 {
@@ -338,7 +336,7 @@ body {
 .home-subtitle {
     font-size: 1.125rem;
     color: var(--accent);
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
     font-weight: 500;
     margin: 0.25rem 0 1.25rem;
 }
@@ -357,7 +355,7 @@ body {
     color: var(--fg);
     text-decoration: none;
     font-size: 0.9375rem;
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
     font-weight: 500;
     padding: 0.4rem 0.9rem;
     border: 1px solid var(--border);
@@ -378,7 +376,7 @@ body {
     color: var(--accent);
     text-decoration: none;
     font-weight: 500;
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
     font-size: 0.9375rem;
     margin-top: 0.25rem;
     transition: color 0.15s;
@@ -411,7 +409,7 @@ body {
     width: 100%;
     padding: 0.85rem 1.1rem 0.85rem 2.75rem;
     font-size: 1.125rem;
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
     font-weight: 600;
     color: var(--fg);
     background: var(--surface);
@@ -454,7 +452,7 @@ body {
 }
 
 .search-result-title {
-    font-family: var(--font-fraunces), Georgia, serif;
+    font-family: var(--font-space-grotesk), Georgia, serif;
     font-weight: 700;
     font-size: 1rem;
 }
@@ -462,7 +460,7 @@ body {
 .search-result-description {
     font-size: 0.875rem;
     color: var(--muted);
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
 }
 
 .search-result-link:hover .search-result-description {
@@ -472,7 +470,7 @@ body {
 .search-no-results {
     padding: 1rem 0;
     color: var(--muted);
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
     font-size: 0.9375rem;
 }
 
@@ -559,7 +557,7 @@ body {
 
 .prev-next-direction {
     font-size: 0.75rem;
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
     color: var(--muted);
     letter-spacing: 0.03em;
 }
@@ -570,7 +568,7 @@ body {
 
 .prev-next-label {
     font-size: 0.9375rem;
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
     font-weight: 500;
 }
 
@@ -594,7 +592,7 @@ body {
     letter-spacing: 0.07em;
     text-transform: uppercase;
     color: var(--nav-label);
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
     margin: 0 0 0.35rem;
 }
 
@@ -603,7 +601,7 @@ body {
     color: var(--fg);
     text-decoration: none;
     font-size: 0.875rem;
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
     padding: 0.1rem 0;
     transition: color 0.15s;
 }
@@ -625,7 +623,7 @@ body {
 .footer-copyright {
     font-size: 0.8125rem;
     color: var(--muted);
-    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
     margin: 0;
 }
 

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 // To change fonts: swap the imports below and update the two variable names in
 // the html className and the --font-* custom properties in globals.css.
-import { Fraunces, Outfit } from "next/font/google";
+import { Space_Grotesk, DM_Sans } from "next/font/google";
 import "./globals.css";
 import {
     AUTHOR_NAME,
@@ -13,14 +13,14 @@ import {
 } from "@/lib/config";
 import SiteShell from "@/components/SiteShell";
 
-const fraunces = Fraunces({
-    variable: "--font-fraunces",
+const spaceGrotesk = Space_Grotesk({
+    variable: "--font-space-grotesk",
     subsets: ["latin"],
     display: "swap",
 });
 
-const outfit = Outfit({
-    variable: "--font-outfit",
+const dmSans = DM_Sans({
+    variable: "--font-dm-sans",
     subsets: ["latin"],
     display: "swap",
 });
@@ -93,7 +93,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en" className={`${fraunces.variable} ${outfit.variable}`}>
+        <html lang="en" className={`${spaceGrotesk.variable} ${dmSans.variable}`}>
             <body>
                 <a href="#main-content" className="skip-link">
                     Skip to main content

@@ -36,11 +36,8 @@ export default function SearchPage() {
     const [query, setQuery] = useState("");
 
     const results = useMemo(
-        () =>
-            query.length > 1
-                ? fuse.search(query).map((r) => r.item)
-                : [],
-        [query]
+        () => (query.length > 1 ? fuse.search(query).map((r) => r.item) : []),
+        [query],
     );
 
     return (
@@ -48,6 +45,7 @@ export default function SearchPage() {
             <div className="search-input-wrapper">
                 <FaSearch className="search-icon" aria-hidden="true" />
                 <input
+                    id="search"
                     type="search"
                     className="search-input"
                     value={query}
