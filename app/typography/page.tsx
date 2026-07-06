@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 import PageHeader from "@/components/PageHeader";
 import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
 import { meta } from "./meta";
+import "@/styles/canvas/typography.css";
 
 export const metadata = generatePageMetadata(meta);
 
@@ -175,7 +176,7 @@ export default function page() {
                 Canvas&apos; stylesheets.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <div className="canvas-preview mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <p className="text-left">This paragraph is left-aligned.</p>
                 <p className="text-center">This paragraph is centre-aligned.</p>
                 <p className="text-right">This paragraph is right-aligned.</p>
@@ -208,7 +209,7 @@ export default function page() {
                 page) alongside these classes.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <div className="canvas-preview mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <p className="muted">Example of muted text.</p>
 
                 <p className="text-warning">
