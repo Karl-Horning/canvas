@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 import PageHeader from "@/components/PageHeader";
 import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
 import { meta } from "./meta";
+import "@/styles/canvas/flash-messages.css";
 
 export const metadata = generatePageMetadata(meta);
 
@@ -64,7 +65,10 @@ export default function page() {
                 still work in current Canvas content.
             </p>
 
-            <div className="ic-flash-info mb-4 flex gap-1" role="status">
+            <div
+                className="canvas-preview ic-flash-info mb-4 flex gap-1"
+                role="status"
+            >
                 <div className="ic-flash__icon" aria-hidden="true">
                     <i className="icon-info"></i>
                 </div>
@@ -75,7 +79,10 @@ export default function page() {
                 </div>
             </div>
 
-            <div className="ic-flash-success mb-4 flex gap-1" role="status">
+            <div
+                className="canvas-preview ic-flash-success mb-4 flex gap-1"
+                role="status"
+            >
                 <div className="ic-flash__icon" aria-hidden="true">
                     <i className="icon-check"></i>
                 </div>
@@ -86,7 +93,10 @@ export default function page() {
                 </div>
             </div>
 
-            <div className="ic-flash-warning mb-4 flex gap-1" role="alert">
+            <div
+                className="canvas-preview ic-flash-warning mb-4 flex gap-1"
+                role="alert"
+            >
                 <div className="ic-flash__icon" aria-hidden="true">
                     <i className="icon-warning"></i>
                 </div>

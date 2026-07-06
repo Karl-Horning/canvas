@@ -1,0 +1,64 @@
+/*
+ * Canvas's legacy `.text-left`/`.text-center`/`.text-right` alignment
+ * classes and `.muted`/`.text-warning`/`.text-error`/`.text-info`/
+ * `.text-success` colour classes, scoped under `.canvas-preview` so they
+ * only apply inside example wrappers and never leak into the rest of the
+ * site. These sit on nested `<p>`/`<a>` elements inside the wrapper `div`
+ * that carries `.canvas-preview`, so they're scoped as descendants rather
+ * than combined on the same element.
+ *
+ * Sourced from the real Canvas LMS source (instructure/canvas-lms):
+ * - app/stylesheets/components/_alignment.scss (text-left/center/right)
+ * - app/stylesheets/components/_ic-typography.scss (muted, text-* colours)
+ * - app/stylesheets/base/_variables.scss ($ic-hint-text, $ic-color-alert,
+ *   $ic-color-danger, $ic-color-success)
+ * - app/stylesheets/brandable_variables.json (--ic-brand-primary default)
+ */
+
+.canvas-preview .text-left {
+    text-align: left;
+}
+
+.canvas-preview .text-center {
+    text-align: center;
+}
+
+.canvas-preview .text-right {
+    text-align: right;
+}
+
+.canvas-preview .muted {
+    color: #5d7e99;
+}
+
+.canvas-preview .text-warning {
+    color: #f06e26;
+}
+
+.canvas-preview a.text-warning:hover {
+    color: #d4550f;
+}
+
+.canvas-preview .text-error {
+    color: #e62429;
+}
+
+.canvas-preview a.text-error:hover {
+    color: #c1161a;
+}
+
+.canvas-preview .text-info {
+    color: #2b7abc;
+}
+
+.canvas-preview a.text-info:hover {
+    color: #225f92;
+}
+
+.canvas-preview .text-success {
+    color: #03893d;
+}
+
+.canvas-preview a.text-success:hover {
+    color: #025727;
+}

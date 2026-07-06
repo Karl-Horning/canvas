@@ -1,0 +1,23 @@
+/*
+ * Canvas's `screenreader-only` utility class, scoped under
+ * `.canvas-preview` so it only applies inside example wrappers and never
+ * leaks into the rest of the site.
+ *
+ * Sourced from the real Canvas LMS source (instructure/canvas-lms):
+ * - app/stylesheets/components/_show_hide_opacity.scss (the
+ *   `screenreader-only` mixin: the classic clip-rect visually-hidden
+ *   technique, not `display: none` or `visibility: hidden`, so assistive
+ *   technology still reads the content).
+ */
+
+.canvas-preview .screenreader-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+    transform: translatez(0);
+}

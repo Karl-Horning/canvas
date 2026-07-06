@@ -1,0 +1,159 @@
+/*
+ * Canvas's legacy `.btn` / `.btn-primary` etc. classes, scoped under
+ * `.canvas-preview` so they only apply inside example wrappers and never
+ * leak into the rest of the site.
+ *
+ * Values sourced from the real Canvas LMS source (instructure/canvas-lms):
+ * - app/stylesheets/components/_buttons.scss (structure, sizes)
+ * - app/stylesheets/base/_ic_mixins.scss (the `canvas-button` mixin: base
+ *   colour, hover = darken 5%, active = darken 8%; darken 55%/65% for the
+ *   default light button, since it has different treatment for
+ *   light-background buttons)
+ * - app/stylesheets/brandable_variables.json (default brand colours)
+ *
+ * These colours are Canvas's shipped defaults regardless of institution
+ * theming, and are intentionally NOT adjusted for this site's dark mode —
+ * Canvas itself does not restyle these for dark mode, so this renders
+ * exactly what an instructor would see in Canvas.
+ */
+
+.canvas-preview .btn {
+    display: inline-block;
+    position: relative;
+    min-width: 24px;
+    min-height: 24px;
+    margin-bottom: 0;
+    padding: 8px 14px;
+    border: 1px solid #e8eaec;
+    border-radius: 3px;
+    background: #f2f4f4;
+    color: #273540;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.canvas-preview .btn:hover {
+    background: #e4e8e8;
+    color: #273540;
+    text-decoration: none;
+}
+
+.canvas-preview .btn:focus {
+    color: #273540;
+    outline: none;
+}
+
+.canvas-preview .btn.active {
+    background: #5e6f6f;
+    border-color: #475454;
+    color: #fff;
+}
+
+.canvas-preview .btn.disabled,
+.canvas-preview .btn[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+/* Sizes */
+
+.canvas-preview .btn-large {
+    padding: 11px 19px;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+.canvas-preview .btn-small {
+    padding: 2px 8px;
+    font-size: 14px;
+}
+
+.canvas-preview .btn-mini {
+    padding: 1px 6px;
+    border-radius: 1px;
+    font-size: 10px;
+}
+
+/* Contextual colours */
+
+.canvas-preview .btn-primary {
+    border-color: #2b7abc;
+    background: #2b7abc;
+    color: #fff;
+}
+
+.canvas-preview .btn-primary:hover {
+    background: #266da7;
+    color: #fff;
+}
+
+.canvas-preview .btn-primary.active {
+    background: #23649b;
+}
+
+.canvas-preview .btn-secondary {
+    border-color: #273540;
+    background: #273540;
+    color: #fff;
+}
+
+.canvas-preview .btn-secondary:hover {
+    background: #1d2830;
+    color: #fff;
+}
+
+.canvas-preview .btn-secondary.active {
+    background: #182027;
+}
+
+.canvas-preview .btn-success {
+    border-color: #03893d;
+    background: #03893d;
+    color: #fff;
+}
+
+.canvas-preview .btn-success:hover {
+    background: #027032;
+    color: #fff;
+}
+
+.canvas-preview .btn-success.active {
+    background: #02612b;
+}
+
+.canvas-preview .btn-warning {
+    border-color: #f06e26;
+    background: #f06e26;
+    color: #fff;
+}
+
+.canvas-preview .btn-warning:hover {
+    background: #ec5f10;
+    color: #fff;
+}
+
+.canvas-preview .btn-warning.active {
+    background: #de590f;
+}
+
+.canvas-preview .btn-danger {
+    border-color: #e62429;
+    background: #e62429;
+    color: #fff;
+}
+
+.canvas-preview .btn-danger:hover {
+    background: #d8191e;
+    color: #fff;
+}
+
+.canvas-preview .btn-danger.active {
+    background: #ca171c;
+}

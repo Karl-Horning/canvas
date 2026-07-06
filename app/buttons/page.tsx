@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 import PageHeader from "@/components/PageHeader";
 import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
 import { meta } from "./meta";
+import "@/styles/canvas/buttons.css";
 
 export const metadata = generatePageMetadata(meta);
 
@@ -74,7 +75,7 @@ export default function page() {
                 future, but still work in current pages.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <div className="canvas-preview mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <p>
                     <a className="btn btn-primary" href="#">
                         Primary button
@@ -120,7 +121,7 @@ export default function page() {
                 <code>btn-small</code>, or <code>btn-mini</code>.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <div className="canvas-preview mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <p>
                     <a className="btn btn-primary btn-large" href="#">
                         Primary button (large)

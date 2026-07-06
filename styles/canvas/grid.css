@@ -1,0 +1,77 @@
+/*
+ * Canvas's legacy `.content-box` / `.grid-row` / `.col-xs-*` / `.col-md-*`
+ * grid classes, scoped under `.canvas-preview` so they only apply inside
+ * example wrappers and never leak into the rest of the site.
+ *
+ * Canvas' grid is a modified Flexbox Grid (flexboxgrid.com), with `.row`
+ * renamed to `.grid-row`. Only the column counts actually used on this page
+ * (xs-12, xs-6, md-8, md-4) are included, not the full 1-12 range or the
+ * sm/lg breakpoints.
+ *
+ * Sourced from the real Canvas LMS source (instructure/canvas-lms):
+ * - app/stylesheets/vendor/_flexboxgrid.scss (grid-row, col-*, breakpoints)
+ * - app/stylesheets/components/_spacing.scss (content-box)
+ * - app/stylesheets/base/_ic_mixins.scss (the `clearfix` mixin)
+ * - app/stylesheets/base/mixins/_breakpoints.scss (tablet = 768px)
+ */
+
+.canvas-preview.content-box {
+    clear: both;
+    position: relative;
+    margin: 20px 0;
+}
+
+.canvas-preview.content-box::before,
+.canvas-preview.content-box::after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.canvas-preview.content-box::after {
+    clear: both;
+}
+
+.canvas-preview .grid-row {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: -12px;
+    margin-left: -12px;
+}
+
+.canvas-preview .col-xs-12,
+.canvas-preview .col-xs-6,
+.canvas-preview .col-md-8,
+.canvas-preview .col-md-4 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.canvas-preview .col-xs-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.canvas-preview .col-xs-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+@media (min-width: 768px) {
+    .canvas-preview .col-md-8 {
+        flex-basis: 66.6667%;
+        max-width: 66.6667%;
+    }
+
+    .canvas-preview .col-md-4 {
+        flex-basis: 33.3333%;
+        max-width: 33.3333%;
+    }
+}

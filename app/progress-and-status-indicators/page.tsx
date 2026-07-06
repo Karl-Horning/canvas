@@ -3,6 +3,8 @@ import JsonLd from "@/components/JsonLd";
 import PageHeader from "@/components/PageHeader";
 import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
 import { meta } from "./meta";
+import "@/styles/canvas/progress-and-status-indicators.css";
+import "@/styles/canvas/accessibility-helpers.css";
 
 export const metadata = generatePageMetadata(meta);
 
@@ -64,7 +66,7 @@ export default function page() {
                 such as its weighting, rules, or points.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <div className="canvas-preview mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <p>Example assignment settings:</p>
 
                 <ul className="pill">
@@ -136,7 +138,7 @@ export default function page() {
                 HTML <code>&lt;progress&gt;</code> element.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <div className="canvas-preview mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <p>Example: module completion status</p>
 
                 <div

@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 import PageHeader from "@/components/PageHeader";
 import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
 import { meta } from "./meta";
+import "@/styles/canvas/tables.css";
 
 export const metadata = generatePageMetadata(meta);
 
@@ -73,7 +74,7 @@ export default function page() {
             </p>
 
             <div className="overflow-x-auto mb-4" tabIndex={0}>
-                <table className="ic-Table">
+                <table className="canvas-preview ic-Table">
                     <thead>
                         <tr>
                             <th>Name</th>
@@ -146,7 +147,7 @@ export default function page() {
             </p>
 
             <div className="overflow-x-auto mb-4" tabIndex={0}>
-                <table className="ic-Table ic-Table--hover-row ic-Table--striped">
+                <table className="canvas-preview ic-Table ic-Table--hover-row ic-Table--striped">
                     <thead>
                         <tr>
                             <th>Name</th>
@@ -217,7 +218,7 @@ export default function page() {
             </p>
 
             <div className="overflow-x-auto mb-4" tabIndex={0}>
-                <table className="ic-Table ic-Table--striped ic-Table--hover-row ic-Table--condensed">
+                <table className="canvas-preview ic-Table ic-Table--striped ic-Table--hover-row ic-Table--condensed">
                     <thead>
                         <tr>
                             <th>Column A</th>

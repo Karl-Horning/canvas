@@ -1,0 +1,23 @@
+/*
+ * Canvas's legacy `.pad-box` / `.pad-box-mega` / `.pad-box-micro` padding
+ * utilities, scoped under `.canvas-preview` so they only apply inside
+ * example wrappers and never leak into the rest of the site.
+ *
+ * `.pad-box-mini` is already covered by styles/canvas/borders.css, which
+ * this page also imports for `.content-box` / `.border` / `.border-trbl`.
+ *
+ * Sourced from the real Canvas LMS source (instructure/canvas-lms):
+ * - app/stylesheets/components/_spacing.scss ($spacing-width: 20px)
+ */
+
+.canvas-preview.pad-box-mega {
+    padding: 40px;
+}
+
+.canvas-preview.pad-box {
+    padding: 20px;
+}
+
+.canvas-preview.pad-box-micro {
+    padding: 5px;
+}
