@@ -1,0 +1,69 @@
+/*
+ * Canvas's legacy `.ic-Table` / `.ic-Table--striped` / `.ic-Table--hover-row`
+ * / `.ic-Table--condensed` classes, scoped under `.canvas-preview` so they
+ * only apply inside example wrappers and never leak into the rest of the
+ * site. Applied directly to the `<table>` element (not a wrapper), so
+ * `.canvas-preview` is combined with `.ic-Table` on the same element.
+ *
+ * Sourced from the real Canvas LMS source (instructure/canvas-lms):
+ * - app/stylesheets/components/_tables.scss
+ * - app/stylesheets/base/_variables.scss ($ic-sp, $ic-border-dark,
+ *   $ic-border-light, $ic-bg-light-neutral, $ic-bg-light-primary)
+ * - app/stylesheets/vendor/bootstrap/_variables.scss ($tableBackground)
+ */
+
+.canvas-preview.ic-Table {
+    max-width: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: transparent;
+}
+
+.canvas-preview.ic-Table th,
+.canvas-preview.ic-Table td {
+    padding: 14px 7px;
+    line-height: 1.3;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.canvas-preview.ic-Table th {
+    padding-bottom: 7px;
+    border-bottom-color: #6a7883;
+    font-weight: bold;
+}
+
+.canvas-preview.ic-Table td {
+    border-bottom-color: #e8eaec;
+}
+
+.canvas-preview.ic-Table tbody th {
+    padding-bottom: 14px;
+    border-bottom-color: #e8eaec;
+}
+
+.canvas-preview.ic-Table.ic-Table--condensed td {
+    padding: 7px;
+    font-size: 14px;
+}
+
+.canvas-preview.ic-Table.ic-Table--condensed th {
+    padding: 7px;
+    padding-bottom: 3.5px;
+}
+
+.canvas-preview.ic-Table.ic-Table--condensed tbody th {
+    padding-bottom: 7px;
+    font-size: 14px;
+}
+
+.canvas-preview.ic-Table.ic-Table--striped tbody tr:nth-child(odd) {
+    background-color: #f2f4f4;
+}
+
+.canvas-preview.ic-Table.ic-Table--hover-row tbody tr:hover {
+    background-color: #e0ebf5;
+}
