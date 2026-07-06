@@ -1,0 +1,43 @@
+/*
+ * Canvas's legacy `.unstyled` and `.dl-horizontal` list classes, scoped
+ * under `.canvas-preview` so they only apply inside example wrappers and
+ * never leak into the rest of the site.
+ *
+ * Sourced from the real Canvas LMS source (instructure/canvas-lms):
+ * - app/stylesheets/components/_ic-typography.scss (`.unstyled`,
+ *   `.dl-horizontal`)
+ * - app/stylesheets/base/_ic_mixins.scss (the `clearfix` mixin)
+ * - app/stylesheets/vendor/bootstrap/_variables.scss
+ *   ($horizontalComponentOffset: 180px)
+ */
+
+.canvas-preview ul.unstyled,
+.canvas-preview ol.unstyled {
+    margin-left: 0;
+    list-style: none;
+}
+
+.canvas-preview .dl-horizontal::before,
+.canvas-preview .dl-horizontal::after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.canvas-preview .dl-horizontal::after {
+    clear: both;
+}
+
+.canvas-preview .dl-horizontal dt {
+    float: left;
+    clear: left;
+    width: 160px;
+    overflow: hidden;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.canvas-preview .dl-horizontal dd {
+    margin-left: 180px;
+}

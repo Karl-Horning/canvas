@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 import PageHeader from "@/components/PageHeader";
 import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
 import { meta } from "./meta";
+import "@/styles/canvas/lists.css";
 
 export const metadata = generatePageMetadata(meta);
 
@@ -104,7 +105,7 @@ export default function page() {
                 .
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <div className="canvas-preview mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <ul className="unstyled">
                     <li>Unstyled list item one</li>
                     <li>Unstyled list item two</li>
@@ -174,7 +175,7 @@ export default function page() {
                 .
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <div className="canvas-preview mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <dl className="dl-horizontal">
                     <dt>Placeholder term</dt>
                     <dd>A short description relating to the term.</dd>
