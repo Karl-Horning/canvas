@@ -1,0 +1,36 @@
+/*
+ * Canvas's legacy `.alert` / `.alert-info` / `.alert-success` /
+ * `.alert-error` classes, scoped under `.canvas-preview` so they only apply
+ * inside example wrappers and never leak into the rest of the site.
+ *
+ * These are applied directly to the alert element (not a separate wrapper),
+ * so `.canvas-preview` is combined with the alert class on the same element
+ * rather than as an ancestor.
+ *
+ * Sourced from the real Canvas LMS source (instructure/canvas-lms):
+ * - app/stylesheets/components/_alerts.scss (structure, colour mapping)
+ * - app/stylesheets/base/_variables.scss ($ic-sp, $ic-bg-light-* colours)
+ */
+
+.canvas-preview.alert {
+    padding: 12px 36px 12px 12px;
+    border-radius: 6px;
+    background-color: #fce4e5;
+    color: #cf4a00;
+}
+
+.canvas-preview.alert-success {
+    background-color: #dceee4;
+    color: #03893d;
+}
+
+.canvas-preview.alert-danger,
+.canvas-preview.alert-error {
+    background-color: #fce4e5;
+    color: #e62429;
+}
+
+.canvas-preview.alert-info {
+    background-color: #e0ebf5;
+    color: #334451;
+}

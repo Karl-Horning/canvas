@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 import PageHeader from "@/components/PageHeader";
 import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
 import { meta } from "./meta";
+import "@/styles/canvas/alerts.css";
 
 export const metadata = generatePageMetadata(meta);
 
@@ -62,17 +63,26 @@ export default function page() {
                 but are part of an older theme system and may change in future.
             </p>
 
-            <div className="alert alert-info mb-4" role="status">
+            <div
+                className="canvas-preview alert alert-info mb-4"
+                role="status"
+            >
                 <strong>Info:</strong> This is an <code>alert alert-info</code>{" "}
                 message.
             </div>
 
-            <div className="alert alert-success mb-4" role="status">
+            <div
+                className="canvas-preview alert alert-success mb-4"
+                role="status"
+            >
                 <strong>Success:</strong> This is an{" "}
                 <code>alert alert-success</code> message.
             </div>
 
-            <div className="alert alert-error mb-4" role="alert">
+            <div
+                className="canvas-preview alert alert-error mb-4"
+                role="alert"
+            >
                 <strong>Error:</strong> This is an{" "}
                 <code>alert alert-error</code> message.
             </div>
