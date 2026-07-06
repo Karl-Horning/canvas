@@ -1,0 +1,94 @@
+/*
+ * Canvas's legacy `.border`/`.border-*`/`.content-box`/`.pad-box-mini`
+ * classes, scoped under `.canvas-preview` so they only apply inside example
+ * wrappers and never leak into the rest of the site.
+ *
+ * These are applied directly to the element (not a separate wrapper), so
+ * `.canvas-preview` is combined with each class on the same element rather
+ * than as an ancestor.
+ *
+ * Sourced from the real Canvas LMS source (instructure/canvas-lms):
+ * - app/stylesheets/components/_borders.scss (border/radius classes)
+ * - app/stylesheets/components/_spacing.scss (content-box, pad-box-mini)
+ * - app/stylesheets/base/_ic_mixins.scss (the `clearfix` mixin used by
+ *   content-box)
+ * - app/stylesheets/base/_variables.scss ($borderColor, $borderRadius,
+ *   $spacing-width)
+ */
+
+.canvas-preview.content-box {
+    clear: both;
+    position: relative;
+    margin: 20px 0;
+}
+
+.canvas-preview.content-box::before,
+.canvas-preview.content-box::after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.canvas-preview.content-box::after {
+    clear: both;
+}
+
+.canvas-preview.pad-box-mini {
+    padding: 10px;
+}
+
+.canvas-preview.border {
+    border-width: 0;
+    border-style: solid;
+    border-color: #e8eaec;
+}
+
+.canvas-preview.border-trbl {
+    border-width: 1px;
+}
+
+.canvas-preview.border-rbl {
+    border-width: 1px;
+    border-top: none;
+}
+
+.canvas-preview.border-tbl {
+    border-width: 1px;
+    border-right: none;
+}
+
+.canvas-preview.border-bl {
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+}
+
+.canvas-preview.border-tl {
+    border-top-width: 1px;
+    border-left-width: 1px;
+}
+
+.canvas-preview.border-b {
+    border-bottom-width: 1px;
+}
+
+.canvas-preview.border-t {
+    border-top-width: 1px;
+}
+
+.canvas-preview.border-round {
+    border-radius: 4px;
+}
+
+.canvas-preview.border-round-b {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.canvas-preview.border-round-t {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.canvas-preview.border-round-tl {
+    border-top-left-radius: 4px;
+}

@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 import PageHeader from "@/components/PageHeader";
 import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
 import { meta } from "./meta";
+import "@/styles/canvas/borders.css";
 
 export const metadata = generatePageMetadata(meta);
 
@@ -62,7 +63,7 @@ export default function page() {
                 Canvas&apos; legacy CSS.
             </p>
 
-            <div className="content-box pad-box-mini border border-trbl mb-4 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview content-box pad-box-mini border border-trbl mb-4 bg-[#f9f9f9] dark:bg-[#1f2937]">
                 <h3>Example content box</h3>
                 <p>
                     This box uses{" "}
@@ -86,7 +87,7 @@ export default function page() {
                 sides of an element using Canvas&apos; legacy border utilities.
             </p>
 
-            <div className="border border-trbl mb-4 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview border border-trbl mb-4 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
                 Full border using <code>border border-trbl</code>.
             </div>
 
@@ -103,27 +104,27 @@ export default function page() {
                 older Canvas style guide.
             </p>
 
-            <div className="border border-rbl mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview border border-rbl mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
                 Right, bottom, left border (<code>border border-rbl</code>)
             </div>
 
-            <div className="border border-tbl mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview border border-tbl mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
                 Top, bottom, left border (<code>border border-tbl</code>)
             </div>
 
-            <div className="border border-bl mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview border border-bl mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
                 Bottom, left border (<code>border border-bl</code>)
             </div>
 
-            <div className="border border-tl mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview border border-tl mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
                 Top, left border (<code>border border-tl</code>)
             </div>
 
-            <div className="border border-b mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview border border-b mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
                 Bottom border only (<code>border border-b</code>)
             </div>
 
-            <div className="border border-t mb-4 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview border border-t mb-4 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
                 Top border only (<code>border border-t</code>)
             </div>
 
@@ -148,22 +149,22 @@ export default function page() {
                 property.
             </p>
 
-            <div className="border border-trbl border-round mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview border border-trbl border-round mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
                 All corners rounded (
                 <code>border border-trbl border-round</code>)
             </div>
 
-            <div className="border border-trbl border-round-b mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview border border-trbl border-round-b mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
                 Bottom corners rounded (
                 <code>border border-trbl border-round-b</code>)
             </div>
 
-            <div className="border border-trbl border-round-t mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview border border-trbl border-round-t mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
                 Top corners rounded (
                 <code>border border-trbl border-round-t</code>)
             </div>
 
-            <div className="border border-trbl border-round-tl mb-4 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview border border-trbl border-round-tl mb-4 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
                 Top-left corner rounded (
                 <code>border border-trbl border-round-tl</code>)
             </div>
