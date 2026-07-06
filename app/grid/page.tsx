@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 import PageHeader from "@/components/PageHeader";
 import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
 import { meta } from "./meta";
+import "@/styles/canvas/grid.css";
 
 export const metadata = generatePageMetadata(meta);
 
@@ -81,7 +82,7 @@ export default function page() {
                 vertically. Backgrounds are added here for visibility.
             </p>
 
-            <div className="content-box mb-4">
+            <div className="canvas-preview content-box mb-4">
                 <div className="grid-row">
                     <div className="col-xs-12 col-md-8">
                         <div className="bg-[#eef] dark:bg-[#1e2a4a] p-3">
@@ -130,7 +131,7 @@ export default function page() {
                 becomes full width and stacks vertically.
             </p>
 
-            <div className="content-box mb-4">
+            <div className="canvas-preview content-box mb-4">
                 <div className="grid-row">
                     <div className="col-xs-12 col-md-4">
                         <div className="bg-[#eef] dark:bg-[#1e2a4a] p-3">
@@ -198,7 +199,7 @@ export default function page() {
                 using inline styles alone.
             </p>
 
-            <div className="content-box mb-4">
+            <div className="canvas-preview content-box mb-4">
                 <div className="grid-row">
                     <div className="col-xs-12 col-md-8">
                         <div className="bg-[#eef] dark:bg-[#1e2a4a] p-3">
@@ -262,7 +263,7 @@ export default function page() {
                 The example below uses a highlighted background for visibility.
             </p>
 
-            <div className="content-box mb-4">
+            <div className="canvas-preview content-box mb-4">
                 <div className="grid-row">
                     <div className="col-xs-12">
                         <div className="bg-[#def] dark:bg-[#172d4a] p-4">
