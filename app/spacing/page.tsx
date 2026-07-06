@@ -76,10 +76,11 @@ export default function page() {
             <h2>Content boxes (Canvas legacy classes)</h2>
 
             <p>
-                The <code>content-box</code> class adds padding inside an
-                element, making blocks of content easier to read. In the example
-                below, two boxes use <code>content-box</code> together with
-                Canvas border classes to show the spacing clearly.
+                The <code>content-box</code> class adds vertical margin above
+                and below an element, creating consistent spacing{" "}
+                between blocks of content. In the example below, two
+                boxes use <code>content-box</code> together with Canvas border
+                classes so the spacing between them is easy to see.
             </p>
 
             <div className="canvas-preview content-box border border-trbl mb-4 bg-[#f9f9f9] dark:bg-[#1f2937]">
