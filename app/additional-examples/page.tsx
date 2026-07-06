@@ -380,7 +380,7 @@ export default function page() {
             <div className="mb-4 grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-4">
                 <div className="border border-[#dddddd] rounded-lg bg-white dark:bg-[#1f2937] overflow-hidden">
                     <Image
-                        src="https://placehold.co/400x225?text=Core+reading"
+                        src="https://placehold.co/400x225.png?text=Core+reading"
                         alt="Illustrative placeholder image for core reading"
                         className="block w-full h-auto"
                         height="225"
@@ -402,7 +402,7 @@ export default function page() {
 
                 <div className="border border-[#dddddd] rounded-lg bg-white dark:bg-[#1f2937] overflow-hidden">
                     <Image
-                        src="https://placehold.co/400x225?text=Worked+example"
+                        src="https://placehold.co/400x225.png?text=Worked+example"
                         alt="Illustrative placeholder image for a worked example"
                         className="block w-full h-auto"
                         height="225"
@@ -424,7 +424,7 @@ export default function page() {
 
                 <div className="border border-[#dddddd] rounded-lg bg-white dark:bg-[#1f2937] overflow-hidden">
                     <Image
-                        src="https://placehold.co/400x225?text=Optional+extension"
+                        src="https://placehold.co/400x225.png?text=Optional+extension"
                         alt="Illustrative placeholder image for an optional extension resource"
                         className="block w-full h-auto"
                         height="225"
@@ -451,7 +451,7 @@ export default function page() {
   gap: 1rem;
 ">
   <div style="border: 1px solid #dddddd; border-radius: 0.5rem; background: #ffffff; overflow: hidden;">
-    <img src="https://placehold.co/400x225?text=Core+reading"
+    <img src="https://placehold.co/400x225.png?text=Core+reading"
       alt="Illustrative placeholder image for core reading"
       style="display:block; width:100%; height:auto;" />
     <div style="padding: 0.9rem 1rem">
@@ -461,7 +461,7 @@ export default function page() {
     </div>
   </div>
   <div style="border: 1px solid #dddddd; border-radius: 0.5rem; background: #ffffff; overflow: hidden;">
-    <img src="https://placehold.co/400x225?text=Worked+example"
+    <img src="https://placehold.co/400x225.png?text=Worked+example"
       alt="Illustrative placeholder image for a worked example"
       style="display:block; width:100%; height:auto;" />
     <div style="padding: 0.9rem 1rem">
@@ -471,7 +471,7 @@ export default function page() {
     </div>
   </div>
   <div style="border: 1px solid #dddddd; border-radius: 0.5rem; background: #ffffff; overflow: hidden;">
-    <img src="https://placehold.co/400x225?text=Optional+extension"
+    <img src="https://placehold.co/400x225.png?text=Optional+extension"
       alt="Illustrative placeholder image for an optional extension resource"
       style="display:block; width:100%; height:auto;" />
     <div style="padding: 0.9rem 1rem">
