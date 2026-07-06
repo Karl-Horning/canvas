@@ -1,0 +1,67 @@
+/*
+ * Canvas's legacy `.pill` list and `.ui-progressbar` (jQuery UI widget)
+ * classes, scoped under `.canvas-preview` so they only apply inside example
+ * wrappers and never leak into the rest of the site.
+ *
+ * Sourced from the real Canvas LMS source (instructure/canvas-lms):
+ * - app/stylesheets/components/_pill.scss (`.pill`)
+ * - app/stylesheets/vendor/jqueryui/_jquery.ui.progressbar.scss
+ *   (`.ui-progressbar`, `.ui-progressbar-value`)
+ * - app/stylesheets/vendor/jqueryui/_jquery.ui.theme.scss (`.ui-widget-content`,
+ *   `.ui-corner-all`, `.ui-corner-left`)
+ * - app/stylesheets/vendor/jqueryui/_variables.scss ($borderColorContent,
+ *   $bgColorContent)
+ *
+ * Deliberately not included: Canvas's `.ui-progressbar .ui-widget-header {
+ * @extend .ui-state-active }` override, which would otherwise recolour the
+ * fill bar with jQuery UI's active-state gradient. In real Canvas this is
+ * beaten by the author's own inline `style="background-color: ..."` on the
+ * fill element (inline styles always win). This page's fill colour is set
+ * the same way (a Tailwind arbitrary-value class standing in for an inline
+ * style), so leaving the header/active rules out reproduces the same
+ * result: the author's colour wins, not Canvas's default blue gradient.
+ */
+
+.canvas-preview .pill {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 1em;
+    box-shadow: 0 1px 0 #fff;
+}
+
+.canvas-preview .pill > li {
+    float: left;
+    padding: 0 10px;
+    border-right: solid 1px rgba(0, 0, 0, 0.25);
+    font-size: 14px;
+}
+
+.canvas-preview .pill > li:first-child {
+    padding-left: 10px;
+    border-radius: 1em 0 0 1em;
+}
+
+.canvas-preview .pill > li:last-child {
+    padding-right: 10px;
+    border-right: none;
+    border-radius: 0 1em 1em 0;
+}
+
+.canvas-preview .ui-progressbar {
+    height: 24px;
+    overflow: hidden;
+    text-align: left;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    background: #fff;
+    color: #273540;
+}
+
+.canvas-preview .ui-progressbar-value {
+    height: 100%;
+    margin: -1px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
