@@ -3,6 +3,8 @@ import JsonLd from "@/components/JsonLd";
 import PageHeader from "@/components/PageHeader";
 import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
 import { meta } from "./meta";
+import "@/styles/canvas/borders.css";
+import "@/styles/canvas/spacing.css";
 
 export const metadata = generatePageMetadata(meta);
 
@@ -80,11 +82,11 @@ export default function page() {
                 Canvas border classes to show the spacing clearly.
             </p>
 
-            <div className="content-box border border-trbl mb-4 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview content-box border border-trbl mb-4 bg-[#f9f9f9] dark:bg-[#1f2937]">
                 First content box using <code>content-box</code>.
             </div>
 
-            <div className="content-box border border-trbl mb-4 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview content-box border border-trbl mb-4 bg-[#f9f9f9] dark:bg-[#1f2937]">
                 Second content box with the same class and spacing.
             </div>
 
@@ -106,19 +108,19 @@ export default function page() {
                 current content.
             </p>
 
-            <div className="pad-box-mega border border-trbl mb-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview pad-box-mega border border-trbl mb-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
                 <strong>pad-box-mega</strong> (largest padding)
             </div>
 
-            <div className="pad-box border border-trbl mb-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview pad-box border border-trbl mb-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
                 <strong>pad-box</strong> (standard padding)
             </div>
 
-            <div className="pad-box-mini border border-trbl mb-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview pad-box-mini border border-trbl mb-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
                 <strong>pad-box-mini</strong> (small padding)
             </div>
 
-            <div className="pad-box-micro border border-trbl mb-4 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview pad-box-micro border border-trbl mb-4 bg-[#f9f9f9] dark:bg-[#1f2937]">
                 <strong>pad-box-micro</strong> (very small padding)
             </div>
 
