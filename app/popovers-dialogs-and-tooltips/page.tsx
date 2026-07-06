@@ -3,6 +3,7 @@ import JsonLd from "@/components/JsonLd";
 import PageHeader from "@/components/PageHeader";
 import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
 import { meta } from "./meta";
+import "@/styles/canvas/buttons.css";
 
 export const metadata = generatePageMetadata(meta);
 
@@ -75,7 +76,7 @@ export default function page() {
                 inline styles alone.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <div className="canvas-preview mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
                 <div
                     id="example-popover"
                     className="enhanceable_content dialog"
