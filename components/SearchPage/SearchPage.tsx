@@ -9,6 +9,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { searchIndex } from "@/lib/searchIndex";
+import styles from "./SearchPage.module.css";
 
 /**
  * Fuse instance initialised once at module level to avoid re-creation on every
@@ -41,13 +42,13 @@ export default function SearchPage() {
     );
 
     return (
-        <div className="search-page">
-            <div className="search-input-wrapper">
-                <FaSearch className="search-icon" aria-hidden="true" />
+        <div className={styles.searchPage}>
+            <div className={styles.searchInputWrapper}>
+                <FaSearch className={styles.searchIcon} aria-hidden="true" />
                 <input
                     id="search"
                     type="search"
-                    className="search-input"
+                    className={styles.searchInput}
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
                     placeholder="Search pages…"
@@ -57,25 +58,31 @@ export default function SearchPage() {
             </div>
 
             {query.length > 1 && (
-                <ul className="search-results" role="list">
+                <ul className={styles.searchResults} role="list">
                     {results.length > 0 ? (
                         results.map((item) => (
-                            <li key={item.slug} className="search-result">
+                            <li key={item.slug} className={styles.searchResult}>
                                 <Link
                                     href={`/${item.slug}`}
-                                    className="search-result-link"
+                                    className={styles.searchResultLink}
                                 >
-                                    <span className="search-result-title">
+                                    <span className={styles.searchResultTitle}>
                                         {item.title}
                                     </span>
-                                    <span className="search-result-description">
+                                    <span
+                                        className={
+                                            styles.searchResultDescription
+                                        }
+                                    >
                                         {item.description}
                                     </span>
                                 </Link>
                             </li>
                         ))
                     ) : (
-                        <li className="search-no-results">No results found.</li>
+                        <li className={styles.searchNoResults}>
+                            No results found.
+                        </li>
                     )}
                 </ul>
             )}

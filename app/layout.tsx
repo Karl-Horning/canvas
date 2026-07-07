@@ -11,7 +11,8 @@ import {
     SITE_TITLE,
     SITE_URL,
 } from "@/lib/config";
-import SiteShell from "@/components/SiteShell";
+import SiteShell from "@/components/SiteShell/SiteShell";
+import styles from "./layout.module.css";
 
 const spaceGrotesk = Space_Grotesk({
     variable: "--font-space-grotesk",
@@ -95,7 +96,7 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${spaceGrotesk.variable} ${dmSans.variable}`}>
             <body>
-                <a href="#main-content" className="skip-link">
+                <a href="#main-content" className={styles.skipLink}>
                     Skip to main content
                 </a>
                 <SiteShell>{children}</SiteShell>

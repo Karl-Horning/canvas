@@ -1,5 +1,5 @@
-import JsonLd from "@/components/JsonLd";
-import PageHeader from "@/components/PageHeader";
+import JsonLd from "@/components/JsonLd/JsonLd";
+import PageHeader from "@/components/PageHeader/PageHeader";
 import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
 import { meta } from "./meta";
 

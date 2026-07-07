@@ -1,7 +1,7 @@
 import Image from "next/image";
-import CodeBlock from "@/components/CodeBlock";
-import JsonLd from "@/components/JsonLd";
-import PageHeader from "@/components/PageHeader";
+import CodeBlock from "@/components/CodeBlock/CodeBlock";
+import JsonLd from "@/components/JsonLd/JsonLd";
+import PageHeader from "@/components/PageHeader/PageHeader";
 import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
 import { meta } from "./meta";
 

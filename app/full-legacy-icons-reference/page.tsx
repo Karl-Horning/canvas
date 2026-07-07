@@ -5,9 +5,9 @@
 
 import fs from "fs";
 import path from "path";
-import IconGrid from "@/components/IconGrid";
-import JsonLd from "@/components/JsonLd";
-import PageHeader from "@/components/PageHeader";
+import IconGrid from "@/components/IconGrid/IconGrid";
+import JsonLd from "@/components/JsonLd/JsonLd";
+import PageHeader from "@/components/PageHeader/PageHeader";
 import { generatePageMetadata, generatePageJsonLd } from "@/lib/siteMetadata";
 import { meta } from "./meta";
 

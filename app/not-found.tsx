@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import "./not-found.module.css";
 
 export const metadata: Metadata = {
     title: "Page Not Found",

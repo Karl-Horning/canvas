@@ -2,6 +2,8 @@
  * @fileoverview Page header component displaying title, date, and reading time.
  */
 
+import styles from "./PageHeader.module.css";
+
 /**
  * Props for the PageHeader component.
  */
@@ -40,9 +42,9 @@ export default function PageHeader({
     );
 
     return (
-        <header className="page-header">
+        <header className={styles.pageHeader}>
             <h1>{title}</h1>
-            <p className="page-meta">
+            <p className={styles.pageMeta}>
                 <time dateTime={date}>{formatted}</time>
                 <span aria-hidden="true">·</span>
                 <span>{readingTime} min read</span>

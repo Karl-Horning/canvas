@@ -1,0 +1,13 @@
+/*
+ * :global() here is deliberate: globals.css has a
+ * `.content-body:has(.not-found-body)` rule pairing this page with
+ * SiteShell's content wrapper. Both sides of a :has() need stable, unhashed
+ * class names to reference each other across files, so this can't be a
+ * normal module-scoped class.
+ */
+:global(.not-found-body) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
