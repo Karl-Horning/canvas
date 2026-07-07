@@ -101,7 +101,7 @@ export default function page() {
                 does not load or is not recognised.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <div className="mb-4 bg-white text-[#1e2130] p-3">
                 <p>
                     <i className="icon-info pr-1" aria-hidden="true"></i>
                     <strong>Information:</strong> Submissions are due by Friday
@@ -147,7 +147,7 @@ export default function page() {
                 <code>aria-label</code>:
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <div className="mb-4 bg-white text-[#1e2130] p-3">
                 <p>
                     <i
                         className="icon-warning pr-1"
@@ -180,7 +180,7 @@ export default function page() {
                 announcements.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <div className="mb-4 bg-white text-[#1e2130] p-3">
                 <p>
                     <i className="icon-star-light pr-1" aria-hidden="true"></i>
                     Recommended reading for this week.

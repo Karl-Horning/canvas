@@ -869,7 +869,7 @@ export default function page() {
                             <td className="border border-[#ccc] p-2">
                                 <span
                                     aria-hidden="true"
-                                    className="inline-block px-2 py-1 border border-[#ccc] bg-white dark:bg-[#1f2937] text-black dark:text-white"
+                                    className="inline-block px-2 py-1 border border-[#ccc] bg-white text-black"
                                 >
                                     Background
                                 </span>
@@ -888,7 +888,7 @@ export default function page() {
                             <td className="border border-[#ccc] p-2">
                                 <span
                                     aria-hidden="true"
-                                    className="inline-block px-2 py-1 border border-[#ccc] bg-[#f5f5f5] dark:bg-[#1f2937] text-black dark:text-white"
+                                    className="inline-block px-2 py-1 border border-[#ccc] bg-[#f5f5f5] text-black"
                                 >
                                     Background
                                 </span>

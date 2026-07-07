@@ -30,6 +30,12 @@ When moving jobs, I extracted that content into a standalone documentation site 
 
 **Accessibility testing** — Playwright with `@axe-core/playwright` for automated WCAG checks alongside manual review. The site covers accessibility as a topic, so it needs to model the practices it recommends.
 
+**Known Canvas contrast limitations** — A few of Canvas' own legacy colours (`muted`, `text-warning`, `btn-warning`, `alert-success`, `alert-error`) fail WCAG AA contrast (4.5:1) on Canvas' own white background. Rather than silently changing these to pass, the affected examples show Canvas' real colours with an explicit warning and exact contrast ratio, so the guide stays an accurate reference — see the [Introduction](https://canvas.karlhorning.dev/introduction) page for the current list. As a result, the Playwright accessibility suite has known, expected failures on the `/typography`, `/buttons`, and `/alerts` pages.
+
+Every example on the site — Canvas' legacy classes and this guide's modern inline-style alternatives alike — always renders with a light background and dark text, regardless of this site's own light/dark mode, since Canvas has no dark theme of its own. Note that `tests/accessibility.spec.ts` only runs in Playwright's default light colour scheme — there is currently no dark-mode project, so a regression here wouldn't be caught by CI.
+
+**Known issue:** code block comments use Shiki's `github-dark` theme colour, which fails AA contrast in this site's dark mode (unrelated to Canvas — not yet fixed).
+
 **Search** — Client-side fuzzy search with [Fuse.js](https://fusejs.io/). The index is built at compile time from each page's metadata — no build script, no external service. Supports `Cmd+K` / `Ctrl+K` from anywhere on the site.
 
 **Filterable icon reference** — The full Instructure icon set (400+ icons) is rendered with a live filter input and a copy button on each entry, something not possible within Canvas itself.

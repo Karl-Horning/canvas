@@ -85,7 +85,7 @@ export default function page() {
             <div className="canvas-preview content-box mb-4">
                 <div className="grid-row">
                     <div className="col-xs-12 col-md-8">
-                        <div className="bg-[#eef] dark:bg-[#1e2a4a] p-3">
+                        <div className="bg-[#eef] text-[#1e2130] p-3">
                             <h3>Main column (8/12)</h3>
                             <p>
                                 Uses <code>col-xs-12 col-md-8</code>. Full width
@@ -95,7 +95,7 @@ export default function page() {
                     </div>
 
                     <div className="col-xs-12 col-md-4">
-                        <div className="bg-[#eef] dark:bg-[#1e2a4a] p-3">
+                        <div className="bg-[#eef] text-[#1e2130] p-3">
                             <h3>Side column (4/12)</h3>
                             <p>
                                 Uses <code>col-xs-12 col-md-4</code>. Stacks
@@ -134,7 +134,7 @@ export default function page() {
             <div className="canvas-preview content-box mb-4">
                 <div className="grid-row">
                     <div className="col-xs-12 col-md-4">
-                        <div className="bg-[#eef] dark:bg-[#1e2a4a] p-3">
+                        <div className="bg-[#eef] text-[#1e2130] p-3">
                             <p>
                                 <strong>Column 1</strong>
                             </p>
@@ -145,7 +145,7 @@ export default function page() {
                     </div>
 
                     <div className="col-xs-12 col-md-4">
-                        <div className="bg-[#eef] dark:bg-[#1e2a4a] p-3">
+                        <div className="bg-[#eef] text-[#1e2130] p-3">
                             <p>
                                 <strong>Column 2</strong>
                             </p>
@@ -156,7 +156,7 @@ export default function page() {
                     </div>
 
                     <div className="col-xs-12 col-md-4">
-                        <div className="bg-[#eef] dark:bg-[#1e2a4a] p-3">
+                        <div className="bg-[#eef] text-[#1e2130] p-3">
                             <p>
                                 <strong>Column 3</strong>
                             </p>
@@ -202,19 +202,19 @@ export default function page() {
             <div className="canvas-preview content-box mb-4">
                 <div className="grid-row">
                     <div className="col-xs-12 col-md-8">
-                        <div className="bg-[#eef] dark:bg-[#1e2a4a] p-3">
+                        <div className="bg-[#eef] text-[#1e2130] p-3">
                             <h3>Main column with nested content</h3>
                             <p>This column contains a nested grid:</p>
 
                             <div className="grid-row">
                                 <div className="col-xs-6">
-                                    <div className="bg-[#def] dark:bg-[#172d4a] p-2">
+                                    <div className="bg-[#def] text-[#1e2130] p-2">
                                         Nested 1 (6/12)
                                     </div>
                                 </div>
 
                                 <div className="col-xs-6">
-                                    <div className="bg-[#def] dark:bg-[#172d4a] p-2">
+                                    <div className="bg-[#def] text-[#1e2130] p-2">
                                         Nested 2 (6/12)
                                     </div>
                                 </div>
@@ -223,7 +223,7 @@ export default function page() {
                     </div>
 
                     <div className="col-xs-12 col-md-4">
-                        <div className="bg-[#eef] dark:bg-[#1e2a4a] p-3">
+                        <div className="bg-[#eef] text-[#1e2130] p-3">
                             <h3>Side column</h3>
                             <p>This column sits beside the nested example.</p>
                         </div>
@@ -266,7 +266,7 @@ export default function page() {
             <div className="canvas-preview content-box mb-4">
                 <div className="grid-row">
                     <div className="col-xs-12">
-                        <div className="bg-[#def] dark:bg-[#172d4a] p-4">
+                        <div className="bg-[#def] text-[#1e2130] p-4">
                             <strong>Full-width section</strong> using{" "}
                             <code>col-xs-12</code>.
                         </div>
@@ -309,14 +309,14 @@ export default function page() {
             </p>
 
             <div className="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-4 mb-4">
-                <div className="bg-[#eef] dark:bg-[#1e2a4a] p-3">
+                <div className="bg-[#eef] text-[#1e2130] p-3">
                     <h4>Main content</h4>
                     <p>
                         This is the first column. It uses CSS Grid with inline
                         styles and a minimum width of 260px.
                     </p>
                 </div>
-                <div className="bg-[#def] dark:bg-[#172d4a] p-3">
+                <div className="bg-[#def] text-[#1e2130] p-3">
                     <h4>Supporting content</h4>
                     <p>
                         When the available width is too small for two 260px
@@ -351,15 +351,15 @@ export default function page() {
             </p>
 
             <div className="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-4 mb-4">
-                <div className="bg-[#eef] dark:bg-[#1e2a4a] p-3">
+                <div className="bg-[#eef] text-[#1e2130] p-3">
                     <h4>Card 1</h4>
                     <p>Responsive card using CSS Grid.</p>
                 </div>
-                <div className="bg-[#eef] dark:bg-[#1e2a4a] p-3">
+                <div className="bg-[#eef] text-[#1e2130] p-3">
                     <h4>Card 2</h4>
                     <p>The grid fits as many cards per row as space allows.</p>
                 </div>
-                <div className="bg-[#eef] dark:bg-[#1e2a4a] p-3">
+                <div className="bg-[#eef] text-[#1e2130] p-3">
                     <h4>Card 3</h4>
                     <p>On narrow screens, these cards stack vertically.</p>
                 </div>
@@ -390,13 +390,13 @@ export default function page() {
             </p>
 
             <div className="mb-4">
-                <div className="bg-[#ddeeff] dark:bg-[#1e2a40] p-3 mb-4">
+                <div className="bg-[#ddeeff] text-[#1e2130] p-3 mb-4">
                     <strong>Header area</strong> — this block always spans the
                     full width above the content grid.
                 </div>
 
                 <div className="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-4">
-                    <div className="bg-[#eef] dark:bg-[#1e2a4a] p-3">
+                    <div className="bg-[#eef] text-[#1e2130] p-3">
                         <h4>Main content</h4>
                         <p>
                             This is the main content area. On wider screens it
@@ -404,7 +404,7 @@ export default function page() {
                         </p>
                     </div>
 
-                    <div className="bg-[#def] dark:bg-[#172d4a] p-3">
+                    <div className="bg-[#def] text-[#1e2130] p-3">
                         <h4>Side panel</h4>
                         <p>
                             This section sits next to the main content when

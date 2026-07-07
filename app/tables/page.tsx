@@ -302,7 +302,7 @@ export default function page() {
                     </caption>
 
                     <thead>
-                        <tr className="bg-[#f0f0f0] dark:bg-[#374151]">
+                        <tr className="bg-[#f0f0f0] text-[#1e2130]">
                             <th
                                 scope="col"
                                 className="border border-[#ccc] p-2 text-left"
@@ -325,7 +325,7 @@ export default function page() {
                     </thead>
 
                     <tbody>
-                        <tr className="bg-white dark:bg-[#1f2937]">
+                        <tr className="bg-white text-[#1e2130]">
                             <th
                                 scope="row"
                                 className="border border-[#ccc] p-2 text-left"
@@ -340,7 +340,7 @@ export default function page() {
                             </td>
                         </tr>
 
-                        <tr className="bg-[#f9f9f9] dark:bg-[#1f2937]">
+                        <tr className="bg-[#f9f9f9] text-[#1e2130]">
                             <th
                                 scope="row"
                                 className="border border-[#ccc] p-2 text-left"
@@ -355,7 +355,7 @@ export default function page() {
                             </td>
                         </tr>
 
-                        <tr className="bg-white dark:bg-[#1f2937]">
+                        <tr className="bg-white text-[#1e2130]">
                             <th
                                 scope="row"
                                 className="border border-[#ccc] p-2 text-left"

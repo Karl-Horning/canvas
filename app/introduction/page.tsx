@@ -94,6 +94,59 @@ export default function page() {
                 paste the code directly into the HTML editor.
             </p>
 
+            <h2>Known accessibility limitations in Canvas</h2>
+
+            <p>
+                A handful of Canvas&apos; own legacy colours do not meet WCAG AA
+                contrast requirements (4.5:1 for normal text) — this is true of
+                real Canvas, on Canvas&apos; own white background, not an error
+                introduced by this guide. Rather than quietly changing these
+                colours (which would make the examples stop matching what
+                Canvas actually produces), each affected page shows the real
+                colour alongside an explicit note and the exact contrast
+                ratio, plus an accessible alternative where one exists.
+                Currently known cases:
+            </p>
+
+            <ul>
+                <li>
+                    <a href="/typography">Typography</a> —{" "}
+                    <code>muted</code> (4.28:1) and <code>text-warning</code>{" "}
+                    (3.02:1)
+                </li>
+                <li>
+                    <a href="/buttons">Buttons</a> — <code>btn-warning</code>{" "}
+                    (3.02:1)
+                </li>
+                <li>
+                    <a href="/alerts">Alerts</a> — <code>alert-success</code>{" "}
+                    (3.74:1) and <code>alert-error</code> (3.74:1)
+                </li>
+            </ul>
+
+            <p>
+                Canvas has no dark theme, so every example on this site —
+                Canvas&apos; own legacy classes and this guide&apos;s modern
+                inline-style alternatives alike — always renders with a light
+                background and dark text, regardless of{" "}
+                <em>this guide&apos;s</em> own light/dark mode. This keeps
+                every example matching what Canvas actually produces,
+                whichever theme you&apos;re reading this guide in.
+            </p>
+
+            <p>
+                If you find further contrast issues in Canvas&apos; legacy
+                classes,{" "}
+                <a
+                    href="https://github.com/Karl-Horning/canvas/issues"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    open an issue on GitHub
+                </a>
+                .
+            </p>
+
             <h2>When to use these patterns</h2>
 
             <p>Use the patterns in this guide when you are:</p>

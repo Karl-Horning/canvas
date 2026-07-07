@@ -83,11 +83,11 @@ export default function page() {
                 classes so the spacing between them is easy to see.
             </p>
 
-            <div className="canvas-preview content-box border border-trbl mb-4 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview content-box border border-trbl mb-4 bg-white text-[#1e2130]">
                 First content box using <code>content-box</code>.
             </div>
 
-            <div className="canvas-preview content-box border border-trbl mb-4 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview content-box border border-trbl mb-4 bg-white text-[#1e2130]">
                 Second content box with the same class and spacing.
             </div>
 
@@ -109,19 +109,19 @@ export default function page() {
                 current content.
             </p>
 
-            <div className="canvas-preview pad-box-mega border border-trbl mb-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview pad-box-mega border border-trbl mb-3 bg-white text-[#1e2130]">
                 <strong>pad-box-mega</strong> (largest padding)
             </div>
 
-            <div className="canvas-preview pad-box border border-trbl mb-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview pad-box border border-trbl mb-3 bg-white text-[#1e2130]">
                 <strong>pad-box</strong> (standard padding)
             </div>
 
-            <div className="canvas-preview pad-box-mini border border-trbl mb-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview pad-box-mini border border-trbl mb-3 bg-white text-[#1e2130]">
                 <strong>pad-box-mini</strong> (small padding)
             </div>
 
-            <div className="canvas-preview pad-box-micro border border-trbl mb-4 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview pad-box-micro border border-trbl mb-4 bg-white text-[#1e2130]">
                 <strong>pad-box-micro</strong> (very small padding)
             </div>
 
@@ -176,7 +176,7 @@ export default function page() {
                 </li>
             </ul>
 
-            <div className="border border-[#d0d7de] rounded-lg p-4 mb-4 bg-[#f9fafb] dark:bg-[#1f2937]">
+            <div className="border border-[#d0d7de] rounded-lg p-4 mb-4 bg-[#f9fafb] text-[#1e2130]">
                 <h3 className="mt-0 mb-2">Card with standard padding</h3>
                 <p className="m-0">
                     This card uses <code>padding: 1rem;</code> and{" "}
@@ -185,7 +185,7 @@ export default function page() {
                 </p>
             </div>
 
-            <div className="border border-[#d0d7de] rounded-lg p-3 mb-4 bg-white dark:bg-[#1f2937]">
+            <div className="border border-[#d0d7de] rounded-lg p-3 mb-4 bg-white text-[#1e2130]">
                 <h3 className="mt-0 mb-2">
                     Card with slightly smaller padding
                 </h3>
@@ -195,7 +195,7 @@ export default function page() {
                 </p>
             </div>
 
-            <div className="border border-[#d0d7de] rounded-full py-3 px-5 mb-4 bg-[#eef6ff] dark:bg-[#1e3a5f] inline-block">
+            <div className="border border-[#d0d7de] rounded-full py-3 px-5 mb-4 bg-[#eef6ff] text-[#1e2130] inline-block">
                 <p className="m-0">
                     This pill-style badge uses{" "}
                     <code>border-radius: 999px;</code> and extra horizontal
@@ -235,7 +235,7 @@ export default function page() {
                 line-breaks.
             </p>
 
-            <div className="[border-left:4px_solid_#0000cd] px-4 py-3 mt-6 mb-6 bg-[#f5f7ff] dark:bg-[#1e2a40]">
+            <div className="[border-left:4px_solid_#0000cd] px-4 py-3 mt-6 mb-6 bg-[#f5f7ff] text-[#1e2130]">
                 <h3 className="mt-0 mb-2">Section callout</h3>
                 <p className="m-0">
                     This callout uses <code>margin-top</code> and{" "}

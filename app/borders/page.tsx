@@ -63,7 +63,7 @@ export default function page() {
                 Canvas&apos; legacy CSS.
             </p>
 
-            <div className="canvas-preview content-box pad-box-mini border border-trbl mb-4 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview content-box pad-box-mini border border-trbl mb-4 bg-white text-[#1e2130]">
                 <h3>Example content box</h3>
                 <p>
                     This box uses{" "}
@@ -87,7 +87,7 @@ export default function page() {
                 sides of an element using Canvas&apos; legacy border utilities.
             </p>
 
-            <div className="canvas-preview border border-trbl mb-4 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview border border-trbl mb-4 p-3 bg-white text-[#1e2130]">
                 Full border using <code>border border-trbl</code>.
             </div>
 
@@ -104,27 +104,27 @@ export default function page() {
                 older Canvas style guide.
             </p>
 
-            <div className="canvas-preview border border-rbl mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview border border-rbl mb-3 p-3 bg-white text-[#1e2130]">
                 Right, bottom, left border (<code>border border-rbl</code>)
             </div>
 
-            <div className="canvas-preview border border-tbl mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview border border-tbl mb-3 p-3 bg-white text-[#1e2130]">
                 Top, bottom, left border (<code>border border-tbl</code>)
             </div>
 
-            <div className="canvas-preview border border-bl mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview border border-bl mb-3 p-3 bg-white text-[#1e2130]">
                 Bottom, left border (<code>border border-bl</code>)
             </div>
 
-            <div className="canvas-preview border border-tl mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview border border-tl mb-3 p-3 bg-white text-[#1e2130]">
                 Top, left border (<code>border border-tl</code>)
             </div>
 
-            <div className="canvas-preview border border-b mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview border border-b mb-3 p-3 bg-white text-[#1e2130]">
                 Bottom border only (<code>border border-b</code>)
             </div>
 
-            <div className="canvas-preview border border-t mb-4 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview border border-t mb-4 p-3 bg-white text-[#1e2130]">
                 Top border only (<code>border border-t</code>)
             </div>
 
@@ -149,22 +149,22 @@ export default function page() {
                 property.
             </p>
 
-            <div className="canvas-preview border border-trbl border-round mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview border border-trbl border-round mb-3 p-3 bg-white text-[#1e2130]">
                 All corners rounded (
                 <code>border border-trbl border-round</code>)
             </div>
 
-            <div className="canvas-preview border border-trbl border-round-b mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview border border-trbl border-round-b mb-3 p-3 bg-white text-[#1e2130]">
                 Bottom corners rounded (
                 <code>border border-trbl border-round-b</code>)
             </div>
 
-            <div className="canvas-preview border border-trbl border-round-t mb-3 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview border border-trbl border-round-t mb-3 p-3 bg-white text-[#1e2130]">
                 Top corners rounded (
                 <code>border border-trbl border-round-t</code>)
             </div>
 
-            <div className="canvas-preview border border-trbl border-round-tl mb-4 p-3 bg-[#f9f9f9] dark:bg-[#1f2937]">
+            <div className="canvas-preview border border-trbl border-round-tl mb-4 p-3 bg-white text-[#1e2130]">
                 Top-left corner rounded (
                 <code>border border-trbl border-round-tl</code>)
             </div>
@@ -193,7 +193,7 @@ export default function page() {
 
             <h3>Simple bordered box</h3>
 
-            <div className="border border-[#d0d7de] p-3 mb-4 bg-white dark:bg-[#1f2937]">
+            <div className="border border-[#d0d7de] p-3 mb-4 bg-white text-[#1e2130]">
                 <p className="m-0">
                     This box uses <code>border: 1px solid #d0d7de;</code> and{" "}
                     <code>padding: 0.75rem;</code> applied directly as inline
@@ -215,7 +215,7 @@ export default function page() {
                 one side only, combined with padding and background colour.
             </p>
 
-            <div className="[border-left:4px_solid_#0000cd] px-4 py-3 mb-4 bg-[#f5f7ff] dark:bg-[#1e2a40]">
+            <div className="[border-left:4px_solid_#0000cd] px-4 py-3 mb-4 bg-[#f5f7ff] text-[#1e2130]">
                 <strong>Callout heading</strong>
                 <p className="mt-2 mb-0">
                     This callout uses{" "}
@@ -240,14 +240,14 @@ export default function page() {
                 create pill-shaped elements.
             </p>
 
-            <div className="border border-[#d0d7de] rounded-lg p-3 mb-3 bg-[#f9fafb] dark:bg-[#1f2937]">
+            <div className="border border-[#d0d7de] rounded-lg p-3 mb-3 bg-[#f9fafb] text-[#1e2130]">
                 <p className="m-0">
                     This panel uses <code>border-radius: 0.5rem;</code> for
                     gently rounded corners.
                 </p>
             </div>
 
-            <div className="border border-[#d0d7de] rounded-full px-5 py-2 inline-block mb-4 bg-[#eef6ff] dark:bg-[#1e3a5f]">
+            <div className="border border-[#d0d7de] rounded-full px-5 py-2 inline-block mb-4 bg-[#eef6ff] text-[#1e2130]">
                 <span>Example pill badge with rounded edges</span>
             </div>
 

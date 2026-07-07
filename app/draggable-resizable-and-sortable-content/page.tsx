@@ -71,7 +71,7 @@ export default function page() {
                 drag-and-move behaviour within the element&apos;s parent area.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <div className="mb-4 bg-white text-[#1e2130] p-3">
                 <div className="w-full h-50">
                     <div className="enhanceable_content draggable">
                         <div className="text-center bg-[#0000cd] text-white w-75 h-15">
@@ -109,7 +109,7 @@ export default function page() {
                 corner.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <div className="mb-4 bg-white text-[#1e2130] p-3">
                 <div className="w-full h-50">
                     <div className="enhanceable_content resizable text-center bg-[#232333] text-white w-100 h-20">
                         <p className="p-3.75 m-0">
@@ -142,7 +142,7 @@ export default function page() {
                 rearranged by dragging them into a new order.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <div className="mb-4 bg-white text-[#1e2130] p-3">
                 <p>
                     Drag the boxes below to change their order (behaviour may
                     vary slightly between browsers and devices):

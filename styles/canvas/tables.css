@@ -17,7 +17,16 @@
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
-    background-color: transparent;
+    /*
+     * Real Canvas is always on a white page, so `background-color:
+     * transparent` (the literal value in Canvas's source) always shows
+     * white in practice. This site has a dark mode Canvas doesn't, so
+     * "transparent" here would show this site's dark page background
+     * instead — an opaque white keeps the table's real appearance fixed
+     * regardless of this site's theme.
+     */
+    background-color: #ffffff;
+    color: #1e2130;
 }
 
 .canvas-preview.ic-Table th,

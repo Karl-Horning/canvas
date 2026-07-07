@@ -83,7 +83,7 @@ export default function page() {
                 <li>Adding extra labelling for context.</li>
             </ul>
 
-            <div className="canvas-preview mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <div className="canvas-preview mb-4 bg-white text-[#1e2130] p-3">
                 <p>
                     <span className="screenreader-only">
                         This sentence is only read by screen readers.
@@ -92,7 +92,7 @@ export default function page() {
                 </p>
 
                 <p>
-                    <a href="#">
+                    <a className="text-[#4f46e5]!" href="#">
                         Submit assignment
                         <span className="screenreader-only">
                             for Week 3: Data Analysis
