@@ -144,7 +144,7 @@ export default function page() {
 
             <div
                 role="status"
-                className="mb-4 p-4 rounded-md bg-[#e8f2ff] dark:bg-[#1e3a5f] [border-left:6px_solid_#4c9dcd]"
+                className="mb-4 p-4 rounded-md bg-[#e8f2ff] text-[#1e2130] [border-left:6px_solid_#4c9dcd]"
             >
                 <div className="flex gap-3 items-start">
                     <div
@@ -162,7 +162,7 @@ export default function page() {
 
             <div
                 role="status"
-                className="mb-4 p-4 rounded-md bg-[#e8f8ea] dark:bg-[#14532d] [border-left:6px_solid_#2d8a3b]"
+                className="mb-4 p-4 rounded-md bg-[#e8f8ea] text-[#1e2130] [border-left:6px_solid_#2d8a3b]"
             >
                 <div className="flex gap-3 items-start">
                     <div
@@ -180,7 +180,7 @@ export default function page() {
 
             <div
                 role="alert"
-                className="mb-4 p-4 rounded-md bg-[#fff7e6] dark:bg-[#431407] [border-left:6px_solid_#cc7a00]"
+                className="mb-4 p-4 rounded-md bg-[#fff7e6] text-[#1e2130] [border-left:6px_solid_#cc7a00]"
             >
                 <div className="flex gap-3 items-start">
                     <div

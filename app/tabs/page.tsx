@@ -67,16 +67,22 @@ export default function page() {
                 link points to a corresponding panel by ID.
             </p>
 
-            <div className="enhanceable_content tabs mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-4">
+            <div className="enhanceable_content tabs mb-4 bg-white text-[#1e2130] p-4">
                 <ul>
                     <li>
-                        <a href="#tab-one">Overview</a>
+                        <a className="text-[#4f46e5]!" href="#tab-one">
+                            Overview
+                        </a>
                     </li>
                     <li>
-                        <a href="#tab-two">Details</a>
+                        <a className="text-[#4f46e5]!" href="#tab-two">
+                            Details
+                        </a>
                     </li>
                     <li>
-                        <a href="#tab-three">Further support</a>
+                        <a className="text-[#4f46e5]!" href="#tab-three">
+                            Further support
+                        </a>
                     </li>
                 </ul>
 

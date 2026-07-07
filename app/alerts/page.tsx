@@ -63,6 +63,18 @@ export default function page() {
                 but are part of an older theme system and may change in future.
             </p>
 
+            <p>
+                <strong>Known contrast issue:</strong>{" "}
+                <code>alert-success</code> (3.74:1) and{" "}
+                <code>alert-error</code>{" "}
+                (3.74:1) both fall below the WCAG AA minimum of 4.5:1 for
+                normal text — this is Canvas&apos; own
+                colour pairing, not something introduced by this guide.{" "}
+                <code>alert-info</code> passes comfortably (8.33:1). If you
+                need an accessible success or error message, use the
+                inline-style alternatives below instead of the legacy classes.
+            </p>
+
             <div
                 className="canvas-preview alert alert-info mb-4"
                 role="status"
@@ -117,7 +129,7 @@ export default function page() {
 
             <div
                 role="status"
-                className="mb-4 p-4 rounded-md bg-[#e8f2ff] dark:bg-[#1e3a5f] [border-left:6px_solid_#4c9dcd]"
+                className="mb-4 p-4 rounded-md bg-[#e8f2ff] text-[#1e2130] [border-left:6px_solid_#4c9dcd]"
             >
                 <strong>Info:</strong> This is an inline-styled information
                 alert.
@@ -125,14 +137,14 @@ export default function page() {
 
             <div
                 role="status"
-                className="mb-4 p-4 rounded-md bg-[#e8f8ea] dark:bg-[#14532d] [border-left:6px_solid_#2d8a3b]"
+                className="mb-4 p-4 rounded-md bg-[#e8f8ea] text-[#1e2130] [border-left:6px_solid_#2d8a3b]"
             >
                 <strong>Success:</strong> Action completed successfully.
             </div>
 
             <div
                 role="alert"
-                className="mb-4 p-4 rounded-md bg-[#fdeaea] dark:bg-[#3b0a0a] [border-left:6px_solid_#cb2d6f]"
+                className="mb-4 p-4 rounded-md bg-[#fdeaea] text-[#1e2130] [border-left:6px_solid_#cb2d6f]"
             >
                 <strong>Error:</strong> Something has gone wrong and needs
                 attention.

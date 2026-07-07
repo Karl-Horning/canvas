@@ -31,6 +31,15 @@
     border: 2px solid;
     border-radius: 6px;
     background-color: #fff;
+    /*
+     * Canvas's own source doesn't set an explicit colour here either — it
+     * relies on inherited body text, which is always dark because Canvas's
+     * page is always white. This site has a dark mode Canvas doesn't, so
+     * that inheritance would pull in this site's light dark-mode text
+     * colour instead; a fixed value keeps this matching Canvas regardless
+     * of this site's theme.
+     */
+    color: #1e2130;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
     line-height: 1.3;
     vertical-align: middle;

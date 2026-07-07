@@ -75,7 +75,20 @@ export default function page() {
                 future, but still work in current pages.
             </p>
 
-            <div className="canvas-preview mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <p>
+                <strong>Known contrast issue:</strong> <code>btn-warning</code>
+                &apos;s white text on its orange background is only 3.02:1,
+                below the WCAG AA minimum of 4.5:1 for normal text — this is
+                Canvas&apos; own colour choice, not something introduced by this
+                guide. The other button variants (<code>btn-primary</code>,{" "}
+                <code>btn-secondary</code>, <code>btn-success</code>,{" "}
+                <code>btn-danger</code>) all pass AA comfortably. If you need an
+                accessible warning-style action, use a darker text colour or a
+                manually-checked inline style instead of{" "}
+                <code>btn-warning</code>.
+            </p>
+
+            <div className="canvas-preview mb-4 bg-white text-[#1e2130] p-3">
                 <p>
                     <a className="btn btn-primary" href="#">
                         Primary button
@@ -121,7 +134,7 @@ export default function page() {
                 <code>btn-small</code>, or <code>btn-mini</code>.
             </p>
 
-            <div className="canvas-preview mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <div className="canvas-preview mb-4 bg-white text-[#1e2130] p-3">
                 <p>
                     <a className="btn btn-primary btn-large" href="#">
                         Primary button (large)
@@ -163,7 +176,7 @@ export default function page() {
 
             <h3>Primary and secondary actions</h3>
 
-            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <div className="mb-4 bg-white text-[#1e2130] p-3">
                 <p className="mb-2">
                     <a
                         href="#"
@@ -176,7 +189,7 @@ export default function page() {
                 <p className="mb-0">
                     <a
                         href="#"
-                        className="inline-block px-4 py-2 rounded-md border border-[#0000cd] text-[#0000cd]! bg-white dark:bg-[#1f2937] no-underline! font-semibold"
+                        className="inline-block px-4 py-2 rounded-md border border-[#0000cd] text-[#0000cd]! bg-white no-underline! font-semibold"
                     >
                         Secondary action
                     </a>
@@ -200,7 +213,7 @@ export default function page() {
                 actions on mobile screens.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <div className="mb-4 bg-white text-[#1e2130] p-3">
                 <a
                     href="#"
                     className="block px-4 py-3 rounded-lg bg-[#008080] text-white! text-center no-underline! font-semibold"
@@ -221,7 +234,7 @@ export default function page() {
                 underline and colour, without a filled background.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <div className="mb-4 bg-white text-[#1e2130] p-3">
                 <a
                     href="#"
                     className="inline-block py-1 text-[#0000cd]! underline font-medium"

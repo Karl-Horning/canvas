@@ -94,7 +94,7 @@ export default function page() {
                 levels one to three.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <div className="mb-4 bg-white text-[#1e2130] p-3">
                 <h1>H1 Heading example</h1>
                 <h2>H2 Heading example</h2>
                 <h3>H3 Heading example</h3>
@@ -126,7 +126,7 @@ export default function page() {
                 meaning.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <div className="mb-4 bg-white text-[#1e2130] p-3">
                 <p>
                     This sentence contains{" "}
                     <strong>important highlighted text</strong> using{" "}
@@ -176,7 +176,7 @@ export default function page() {
                 Canvas&apos; stylesheets.
             </p>
 
-            <div className="canvas-preview mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <div className="canvas-preview mb-4 bg-white text-[#1e2130] p-3">
                 <p className="text-left">This paragraph is left-aligned.</p>
                 <p className="text-center">This paragraph is centre-aligned.</p>
                 <p className="text-right">This paragraph is right-aligned.</p>
@@ -199,8 +199,9 @@ export default function page() {
             <p>
                 Classes like <code>muted</code>, <code>text-warning</code>,{" "}
                 <code>text-error</code>, <code>text-info</code>, and{" "}
-                <code>text-success</code> are provided by Canvas&apos; legacy
-                CSS. They still work, but the exact colours may change if
+                <code>text-success</code>{" "}
+                are provided by Canvas&apos; legacy CSS. They still work, but
+                the exact colours may change if
                 Canvas&apos; theme is updated. For precise colour control you
                 can also use inline styles (for example from the{" "}
                 <a href="/colours-in-canvas">
@@ -209,7 +210,26 @@ export default function page() {
                 page) alongside these classes.
             </p>
 
-            <div className="canvas-preview mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <p>
+                <strong>Known contrast issue:</strong> <code>muted</code>{" "}
+                (4.28:1) and <code>text-warning</code>{" "}
+                (3.02:1) both fall short of the WCAG AA minimum of 4.5:1 for
+                normal text on Canvas&apos; own white background — this is
+                Canvas&apos; own colour choice, not something introduced by
+                this guide. Avoid using these two classes for body text.
+            </p>
+
+            <p>
+                Canvas has no dark theme, so the example below always renders
+                with a light background and dark text, regardless of{" "}
+                <em>this guide&apos;s</em> own light/dark mode — matching what
+                you would actually see in Canvas. If you need a colour that
+                passes AA everywhere, choose one from the{" "}
+                <a href="/colours-in-canvas">Colours in Canvas</a> page
+                instead.
+            </p>
+
+            <div className="canvas-preview mb-4 bg-white text-[#1e2130] p-3">
                 <p className="muted">Example of muted text.</p>
 
                 <p className="text-warning">
@@ -269,7 +289,7 @@ export default function page() {
                 JavaScript.
             </p>
 
-            <div className="mb-4 bg-[#f9f9f9] dark:bg-[#1f2937] p-3">
+            <div className="mb-4 bg-white text-[#1e2130] p-3">
                 <details>
                     <summary>Collapsible section one</summary>
                     <p>
