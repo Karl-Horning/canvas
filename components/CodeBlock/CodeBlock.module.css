@@ -1,0 +1,16 @@
+/*
+ * Shiki generates its own `.shiki`/`.shiki span` markup at build time (via
+ * dangerouslySetInnerHTML), so these class names can never be hashed by CSS
+ * Modules — hence the :global() escape. Scoped to .codeBlock as an ancestor
+ * since Shiki output only ever appears inside this component.
+ */
+@media (prefers-color-scheme: dark) {
+    .codeBlock :global(.shiki),
+    .codeBlock :global(.shiki span) {
+        color: var(--shiki-dark) !important;
+        background-color: var(--shiki-dark-bg) !important;
+        font-style: var(--shiki-dark-font-style) !important;
+        font-weight: var(--shiki-dark-font-weight) !important;
+        text-decoration: var(--shiki-dark-text-decoration) !important;
+    }
+}

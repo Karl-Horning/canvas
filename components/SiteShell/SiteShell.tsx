@@ -8,10 +8,11 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import BackToTop from "./BackToTop";
-import Footer from "./Footer";
-import Nav from "./Nav";
-import PrevNextNav from "./PrevNextNav";
+import BackToTop from "../BackToTop/BackToTop";
+import Footer from "../Footer/Footer";
+import Nav from "../Nav/Nav";
+import PrevNextNav from "../PrevNextNav/PrevNextNav";
+import styles from "./SiteShell.module.css";
 
 /**
  * Renders the site header, sidebar navigation, and main content area.
@@ -53,7 +54,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
         <>
             <button
                 type="button"
-                className="nav-toggle-btn"
+                className={styles.navToggleBtn}
                 onClick={() => setOpenAt(open ? null : pathname)}
                 aria-expanded={open}
                 aria-controls="site-sidebar"
@@ -66,19 +67,19 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
                 )}
             </button>
 
-            <div className="site-layout">
+            <div className={styles.siteLayout}>
                 <aside
                     id="site-sidebar"
-                    className={`site-sidebar${open ? " site-sidebar--open" : ""}`}
+                    className={`${styles.siteSidebar}${open ? ` ${styles.siteSidebarOpen}` : ""}`}
                 >
-                    <div className="sidebar-brand">
+                    <div className={styles.sidebarBrand}>
                         <Link
                             href="/"
-                            className="sidebar-brand-link"
+                            className={styles.sidebarBrandLink}
                             aria-label="Canvas Content Styling Guide, home"
                         >
                             <svg
-                                className="site-logo"
+                                className={styles.siteLogo}
                                 viewBox="0 0 1920 1080"
                                 xmlns="http://www.w3.org/2000/svg"
                                 style={{ fillRule: "evenodd" }}
@@ -111,13 +112,21 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
                 </aside>
                 {open && (
                     <div
-                        className="nav-backdrop"
+                        className={styles.navBackdrop}
                         onClick={() => setOpenAt(null)}
                         aria-hidden="true"
                     />
                 )}
                 <BackToTop />
-                <main id="main-content" className="site-main">
+                <main id="main-content" className={styles.siteMain}>
+                    {/*
+                        .content-body is a plain global class, not one of this
+                        module's own: its typography rules target arbitrary
+                        child content rendered by every page, and it pairs
+                        with .not-found-body via a :has() selector, so it
+                        needs to stay a stable, un-hashed name other files
+                        can rely on. See globals.css.
+                    */}
                     <div className="content-body">
                         {children}
                         <PrevNextNav />

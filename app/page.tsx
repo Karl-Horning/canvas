@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import JsonLd from "@/components/JsonLd";
+import JsonLd from "@/components/JsonLd/JsonLd";
 import {
     AUTHOR_NAME,
     AUTHOR_URL,
@@ -9,6 +9,7 @@ import {
     SITE_TITLE,
     SITE_URL,
 } from "@/lib/config";
+import styles from "./page.module.css";
 
 export const metadata: Metadata = {
     title: SITE_TITLE,
@@ -43,9 +44,9 @@ export default function Home() {
     return (
         <>
             <JsonLd data={homeJsonLd} />
-            <div className="home-hero">
+            <div className={styles.homeHero}>
                 <h1>Canvas Content Styling Guide</h1>
-                <p className="home-subtitle">
+                <p className={styles.homeSubtitle}>
                     Style your Canvas courses with HTML and CSS — no prior
                     coding experience needed
                 </p>
@@ -73,7 +74,7 @@ export default function Home() {
                     deeper than this guide covers, there is a link to the
                     relevant MDN documentation.
                 </p>
-                <Link href="/introduction" className="home-cta">
+                <Link href="/introduction" className={styles.homeCta}>
                     Start with the Introduction →
                 </Link>
             </section>

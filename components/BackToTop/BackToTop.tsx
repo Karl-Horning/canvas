@@ -6,6 +6,7 @@
 
 import { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
+import styles from "./BackToTop.module.css";
 
 /**
  * Number of pixels the user must scroll down before the button becomes
@@ -29,7 +30,7 @@ export default function BackToTop() {
 
     useEffect(() => {
         const onScroll = () => {
-            const footer = document.querySelector(".site-footer");
+            const footer = document.getElementById("site-footer");
             const footerVisible =
                 footer !== null &&
                 footer.getBoundingClientRect().top < window.innerHeight;
@@ -49,7 +50,7 @@ export default function BackToTop() {
         <button
             type="button"
             onClick={handleClick}
-            className={`back-to-top${visible ? " back-to-top--visible" : ""}`}
+            className={`${styles.backToTop}${visible ? ` ${styles.visible}` : ""}`}
             aria-label="Back to top"
         >
             <FaArrowUp aria-hidden="true" />

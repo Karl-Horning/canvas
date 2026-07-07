@@ -1,5 +1,6 @@
 import { codeToHtml } from "shiki";
-import CopyButton from "./CopyButton";
+import CopyButton from "../CopyButton/CopyButton";
+import styles from "./CodeBlock.module.css";
 
 /** Props for {@link CodeBlock}. */
 interface CodeBlockProps {
@@ -36,7 +37,7 @@ export default async function CodeBlock({ children }: CodeBlockProps) {
     });
 
     return (
-        <div className="relative mb-4">
+        <div className={`relative mb-4 ${styles.codeBlock}`}>
             <div className="overflow-x-auto rounded-md border border-[#ddd] dark:border-[#374151]">
                 <div
                     className="[&>pre]:m-0 [&>pre]:p-4 [&>pre]:pr-20 [&>pre]:text-sm [&>pre]:whitespace-pre [&>pre]:w-max [&>pre]:min-w-full"
